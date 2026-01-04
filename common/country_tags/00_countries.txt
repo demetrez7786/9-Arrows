@@ -1,0 +1,8 @@
+SOE	= "countries/Solvers Cult.txt"
+SHU	= "countries/Shua.txt"
+CHS	= "countries/Christian League.txt"
+MUR	= "countries/Murmand Empire.txt"
+JCJ	= "countries/Jcjenson.txt"
+DEL	= "countries/Delta Section.txt"
+UNI	= "countries/Union of Karlt Soviet Republics.txt"
+CEN	= "countries/United States of Centralia.txt"

@@ -1,0 +1,43 @@
+#reload countrycolors
+
+SOE = {
+	color = rgb { 255 255 0 }
+	color_ui = rgb { 255 255 0 }
+}
+
+SHU = {
+	color = rgb { 240 120 0 }
+	color_ui = rgb { 240 120 0 }
+}
+
+CHS = {
+	color = rgb { 0 0 251 }
+	color_ui = rgb { 0 0 251 }
+}
+
+MUR = {
+	color = rgb { 83 83 83 }
+	color_ui = rgb { 83 83 83 }
+}
+
+JCJ = {
+	color = rgb { 218 218 218 }
+	color_ui = rgb { 218 218 218 }
+}
+
+DEL = {
+	color = rgb { 94 0 0 }
+	color_ui = rgb { 94 0 0 }
+}
+
+UNI = {
+	color = rgb { 255 0 0 }
+	color_ui = rgb { 255 0 0 }
+}
+
+CEN = {
+	color = rgb { 0 98 145 }
+	color_ui = rgb { 0 98 145 }
+}
+
+

@@ -1,0 +1,218 @@
+ideas = {
+	country = {
+
+		UNI_reorganize_military_idea = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = RES_element_of_suprise
+			
+			modifier = {
+				army_defence_factor = -0.5
+				army_attack_factor = -0.5
+				army_speed_factor = -0.4
+				army_org_factor = -0.4
+			}
+		}
+		
+		UNI_military_ads_idea = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = RES_element_of_suprise
+			
+			modifier = {
+				conscription = 0.05
+			}
+		}
+		
+		UNI_public_services_idea = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = RES_element_of_suprise
+			
+			modifier = {
+				political_power_factor = -0.01
+				stability_factor = 0.1
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		
+		UNI_transparency_law_idea = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = RES_element_of_suprise
+			
+			modifier = {
+				political_power_factor = 0.01
+				stability_factor = 0.1
+				war_support_factor = 0.1
+			}
+		}
+		
+		UNI_draconian_laws_idea = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = RES_element_of_suprise
+			
+			modifier = {
+				stability_factor = 0.15
+				liberalism_drift = -0.01
+				conservatism_drift = -0.01
+				populism_drift = -0.01
+				progressivism_drift = -0.01
+				nationalism_drift = -0.01
+				ultranationalism_drift = -0.01
+				militarism_drift = -0.01
+				monarchism_drift = -0.01
+				theocracy_drift = -0.01
+			}
+		}
+		
+		UNI_sum_influence_idea = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = UNI_sum_influence_idea
+			
+			modifier = {
+				political_power_factor = -0.01
+				militarism_drift = 0.01
+			}
+		}
+		
+		UNI_red_guard_idea = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = RES_element_of_suprise
+			
+			modifier = {
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1
+				army_org_factor = 0.15
+			}
+		}
+		
+		UNI_internal_opposition_idea = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = UNI_internal_opposition_idea
+			
+			modifier = {
+				political_power_factor = -0.02
+			}
+		}
+		
+		UNI_refugee_crisis_idea = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = UNI_refugee_crisis_idea
+			
+			modifier = {
+				stability_factor = -0.1
+				monthly_population = 0.5
+			}
+		}
+		
+		UNI_scars_of_the_karlt_wars_idea = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = UNI_scars_of_the_karlt_wars_idea
+			
+			modifier = {
+				war_support_factor = -0.1
+				army_attack_factor = -0.15
+				conscription = -0.025
+			}
+		}
+	}
+}	

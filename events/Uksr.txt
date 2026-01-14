@@ -1,0 +1,168 @@
+add_namespace = karlt
+
+# aftermath of karlt wars
+country_event = {
+	id = karlt.1
+	title = karlt.1.t
+	desc = karlt.1.d
+	picture = GFX_report_event_MDR_winter_massacre
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = karlt.1.a
+	}
+}
+
+# party status
+country_event = {
+	id = karlt.2
+	title = karlt.2.t
+	desc = karlt.2.d
+	picture = GFX_report_event_MDR_winter_massacre
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = karlt.2.a
+	}
+}
+
+# sum
+country_event = {
+	id = karlt.3
+	title = karlt.3.t
+	desc = karlt.3.d
+	picture = GFX_report_event_MDR_winter_massacre
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = karlt.3.a
+	}
+}
+
+# economical situation
+country_event = {
+	id = karlt.4
+	title = karlt.4.t
+	desc = karlt.4.d
+	picture = GFX_report_event_MDR_winter_massacre
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = karlt.4.a
+	}
+}
+
+# generals protest
+country_event = {
+	id = karlt.5
+	title = karlt.5.t
+	desc = karlt.5.d
+	picture = GFX_report_event_MDR_winter_massacre
+	
+	is_triggered_only = yes
+	
+	option = { #know your place
+		name = karlt.5.a
+	}
+	
+	option = { #he is right
+		name = karlt.5.b
+	}
+}
+
+# crisis in the party
+country_event = {
+	id = karlt.6
+	title = karlt.6.t
+	desc = karlt.6.d
+	picture = GFX_report_event_MDR_winter_massacre
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = karlt.6.a
+		add_political_power = -100
+		add_stability = -0.25
+		add_war_support = -0.25
+		hidden_effect = {
+		    country_event = { id = karlt.7 days = 5 }
+		}
+	}
+}
+
+# resignation of beriansk edirashvili
+country_event = {
+	id = karlt.7
+	title = karlt.7.t
+	desc = karlt.7.d
+	picture = GFX_report_event_MDR_winter_massacre
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = karlt.7.a
+		add_political_power = -25
+		news_event = { id = news.1 }
+		hidden_effect = {
+		    country_event = { id = karlt.8 days = 1 }
+		}
+	}
+}
+
+# snap elections
+country_event = {
+	id = karlt.8
+	title = karlt.8.t
+	desc = karlt.8.d
+	picture = GFX_report_event_MDR_winter_massacre
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = karlt.8.a
+	}
+	
+	option = {
+		name = karlt.8.b
+	}
+	
+	option = {
+		name = karlt.8.g
+	}
+}
+
+# sum questions
+country_event = {
+	id = karlt.9
+	title = karlt.9.t
+	desc = karlt.9.d
+	picture = GFX_report_event_MDR_winter_massacre
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = karlt.9.a
+	}
+	
+	option = {
+		name = karlt.9.b
+	}
+}
+
+# emergency party congress
+country_event = {
+	id = karlt.10
+	title = karlt.10.t
+	desc = karlt.10.d
+	picture = GFX_report_event_MDR_winter_massacre
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = karlt.10.a
+	}
+}

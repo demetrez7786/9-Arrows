@@ -1,0 +1,24 @@
+
+UNI_weak_military = { #NATIONAL SPIRIT
+    enable = { always = yes }
+    icon = GFX_idea_UNI_weak_military_idea
+
+    war_support_factor = UNI_wm_war_support_factor
+    army_attack_factor = UNI_wm_army_attack_factor
+    army_defence_factor = UNI_wm_army_defence_factor
+	army_speed_factor = UNI_wm_army_speed_factor
+    army_org_factor = UNI_wm_army_org_factor
+	training_time_factor = UNI_wm_training_time_factor
+}
+
+UNI_failing_economy = { #NATIONAL SPIRIT
+    enable = { always = yes }
+    icon = GFX_idea_UNI_falling_economy_idea
+
+    consumer_goods_factor = UNI_fe_consumer_goods_factor
+    production_speed_buildings_factor = UNI_fe_production_speed_buildings_factor
+	production_speed_industrial_complex_factor = UNI_fe_production_speed_industrial_complex_factor
+    production_speed_arms_factory_factor = UNI_fe_production_speed_arms_factory_factor
+	industrial_capacity_dockyard = UNI_fe_industrial_capacity_dockyard
+    industrial_capacity_factory = UNI_fe_industrial_capacity_factory
+}

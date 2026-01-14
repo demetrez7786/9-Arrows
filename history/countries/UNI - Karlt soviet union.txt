@@ -2,6 +2,22 @@ capital = 8
 
 set_research_slots = 3
 
+add_dynamic_modifier = { modifier = UNI_weak_military }
+add_to_variable = { UNI_wm_war_support_factor = -0.35 }
+add_to_variable = { UNI_wm_army_attack_factor = -0.45 }
+add_to_variable = { UNI_wm_army_defence_factor = -0.45 }
+add_to_variable = { UNI_wm_army_speed_factor = -0.25 }
+add_to_variable = { UNI_wm_army_org_factor = -0.35 }
+add_to_variable = { UNI_wm_training_time_factor = -0.55 }
+
+add_dynamic_modifier = { modifier = UNI_failing_economy }
+add_to_variable = { UNI_fe_consumer_goods_factor = 0.4 }
+add_to_variable = { UNI_fe_production_speed_buildings_factor = -0.45 }
+add_to_variable = { UNI_fe_production_speed_industrial_complex_factor = -0.15 }
+add_to_variable = { UNI_fe_production_speed_arms_factory_factor = -0.15 }
+add_to_variable = { UNI_fe_industrial_capacity_dockyard = -0.35 }
+add_to_variable = { UNI_fe_industrial_capacity_factory = -0.35 }
+
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
@@ -23,13 +39,13 @@ set_politics = {
 	ruling_party = communism
 	last_election = "1936.1.1"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 
 set_popularities = {
 	communism = 62
 	socialism = 30
-	syndicalism = 8
+	militarism = 8
 }
 
 

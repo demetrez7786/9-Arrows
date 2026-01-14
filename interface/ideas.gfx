@@ -1,0 +1,91 @@
+spriteTypes = {
+
+    spriteType = {
+		name = "GFX_idea_UNI_internal_opposition_idea"
+		texturefile = "gfx/interface/ideas/UNI_internal_opposition_idea.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_UNI_refugee_crisis_idea"
+		texturefile = "gfx/interface/ideas/UNI_refugee_crisis_idea.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_UNI_falling_economy_idea"
+		texturefile = "gfx/interface/ideas/UNI_falling_economy_idea.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_UNI_lack_of_party_control_idea"
+		texturefile = "gfx/interface/ideas/UNI_lack_of_party_control_idea.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_UNI_sum_influence_idea"
+		texturefile = "gfx/interface/ideas/UNI_sum_influence_idea.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_UNI_scars_of_the_karlt_wars_idea"
+		texturefile = "gfx/interface/ideas/UNI_scars_of_the_karlt_wars_idea.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_UNI_weak_military_idea"
+		texturefile = "gfx/interface/ideas/UNI_weak_military_idea.png"
+	}
+	
+	### Desc Photos
+	
+	spriteType = {
+		name = "GFX_idea_internal_opposition_desc_photo"
+		textureFile = "/gfx/interface/ideas/internal_opposition_desc_photo.png"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_idea_falling_economy_desc_photo"
+		textureFile = "/gfx/interface/ideas/falling_economy_desc_photo.png"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_idea_lack_of_party_control_desc_photo"
+		textureFile = "/gfx/interface/ideas/lack_of_party_control_desc_photo.png"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_idea_weak_military_desc_photo"
+		textureFile = "/gfx/interface/ideas/weak_military_desc_photo.png"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_idea_scars_of_the_karlt_wars_desc_photo"
+		textureFile = "/gfx/interface/ideas/scars_of_the_karlt_wars_desc_photo.png"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_idea_refugee_crisis_desc_photo"
+		textureFile = "/gfx/interface/ideas/refugee_crisis_desc_photo.png"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_idea_sum_influence_desc_photo"
+		textureFile = "/gfx/interface/ideas/sum_influence_desc_photo.png"
+		legacy_lazy_load = no
+	}
+
+	#######################
+	####  PLACEHOLDER  ####
+	#######################
+
+	spriteType = {
+		name = "GFX_idea_PLACEHOLDER_idea_icon"
+		texturefile = "gfx/interface/ideas/idea_PLACEHOLDER.dds"
+	}
+
+}

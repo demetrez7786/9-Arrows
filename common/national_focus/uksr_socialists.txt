@@ -1,0 +1,340 @@
+focus_tree = {
+	id = uksr_military_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = UNI
+		}
+	}
+	
+	default = no
+	
+	continuous_focus_position = { x = 50 y = 7000 }
+
+    focus = {
+		id = UNI_reformist_faction
+		icon = GFX_UNI_reformist_faction
+		x = 4
+		y = 1
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		    add_political_power = 75
+            add_stability = 0.1
+			add_war_support = 0.1
+			add_popularity = {
+				ideology = socialism
+				popularity = 0.65
+			}
+			set_politics = { 
+			    ruling_party = socialism
+			    elections_allowed = no
+		    }
+			news_event = { id = news.2 }
+		}
+	}
+
+	focus = {
+		id = UNI_soften_tyranny
+		icon = GFX_UNI_soften_tyranny
+		x = 4
+		y = 3
+		prerequisite = { focus = UNI_reformist_faction }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		    add_political_power = -15
+            add_stability = 0.1
+			add_war_support = -0.1
+		}
+	}
+
+	focus = {
+		id = UNI_multiparty_system
+		icon = GFX_UNI_multiparty_system
+		x = 3
+		y = 5
+		prerequisite = { focus = UNI_soften_tyranny }
+
+		cost = 15
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            add_stability = -0.05
+			add_popularity = {
+				ideology = socialism
+				popularity = 0.1
+			}
+		}
+	}
+
+	focus = {
+		id = UNI_arrest_sum_members
+		icon = GFX_UNI_arrest_sum_members
+		x = 5
+		y = 5
+		prerequisite = { focus = UNI_soften_tyranny }
+
+		cost = 15
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		    add_political_power = 75
+            add_stability = 0.1
+			add_war_support = 0.1
+			add_manpower = -765
+		}
+	}
+
+	focus = {
+		id = UNI_release_political_prisoners
+		icon = GFX_UNI_release_political_prisoners
+		x = 6
+		y = 7
+		prerequisite = { focus = UNI_arrest_sum_members }
+
+		cost = 15
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_manpower = 852
+			add_popularity = {
+				ideology = liberalism
+				popularity = 0.01
+			}
+			add_popularity = {
+				ideology = conservatism
+				popularity = 0.01
+			}
+			add_popularity = {
+				ideology = populism
+				popularity = 0.01
+			}
+			add_popularity = {
+				ideology = progressivism
+				popularity = 0.01
+			}
+		}
+	}
+
+	focus = {
+		id = UNI_soften_regulation_on_media
+		icon = GFX_UNI_soften_regulations_on_media
+		x = 2
+		y = 7
+		prerequisite = { focus = UNI_multiparty_system }
+
+		cost = 15
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		    add_political_power = 75
+            add_stability = -0.1
+		}
+	}
+
+	focus = {
+		id = UNI_new_constitution
+		icon = GFX_UNI_new_constitution
+		x = 4
+		y = 7
+		prerequisite = { focus = UNI_multiparty_system }
+		prerequisite = { focus = UNI_arrest_sum_members }
+
+		cost = 15
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		    add_political_power = 175
+            add_stability = 0.15
+			add_war_support = 0.15
+			add_popularity = {
+				ideology = socialism
+				popularity = 0.2
+			}
+		}
+	}
+
+	focus = {
+		id = UNI_transparency_laws
+		icon = GFX_UNI_militarism_came_to_power
+		x = 5
+		y = 9
+		prerequisite = { focus = UNI_new_constitution }
+		prerequisite = { focus = UNI_release_political_prisoners }
+
+		cost = 15
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		    add_ideas = UNI_transparency_law_idea
+		}
+	}
+
+	focus = {
+		id = UNI_introduce_civil_services
+		icon = GFX_UNI_introduce_civil_services
+		x = 3
+		y = 9
+		prerequisite = { focus = UNI_new_constitution }
+		prerequisite = { focus = UNI_soften_regulation_on_media }
+
+		cost = 15
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		    add_ideas = UNI_public_services_idea
+		}
+	}
+}	

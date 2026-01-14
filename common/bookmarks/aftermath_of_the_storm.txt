@@ -1,0 +1,91 @@
+bookmarks = {
+	bookmark = {
+		name = "AFTERMATH_OF_THE_STORM_NAME"
+		desc = "AFTERMATH_OF_THE_STORM_DESC"
+		date = 3172.1.1.12
+		picture = "GFX_select_date_1936"
+		default_country = "MUR"
+		default = yes
+		
+		"CEN"={
+			history = "CEN_AFTERMATH_OF_THE_STORM_DESC"
+			ideology = liberalism
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+		
+		"SHU"={
+			history = "SHU_AFTERMATH_OF_THE_STORM_DESC"
+			ideology = authoritarianism
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+		
+		"SOE"={
+			history = "SOE_AFTERMATH_OF_THE_STORM_DESC"
+			ideology = ultranationalism
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+		
+		"UNI"={
+			history = "UNI_AFTERMATH_OF_THE_STORM_DESC"
+			ideology = communism
+			ideas = {
+				UNI_scars_of_the_karlt_wars_idea
+				UNI_sum_influence_idea
+				UNI_refugee_crisis_idea
+			}
+			focuses = {
+				UNI_aftermath_of_karlt_wars
+				UNI_begin_the_work
+				UNI_this_is_not_working
+			}
+		}
+		
+		"MUR"={
+			history = "MUR_AFTERMATH_OF_THE_STORM_DESC"
+			ideology = monarchist
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+		
+		"DEL"={
+			history = "DEL_AFTERMATH_OF_THE_STORM_DESC"
+			ideology = militarism
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+		
+		"CHS"={
+			history = "CHS_AFTERMATH_OF_THE_STORM_DESC"
+			ideology = theocracy
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+	}
+}

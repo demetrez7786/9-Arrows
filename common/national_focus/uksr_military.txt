@@ -1,0 +1,363 @@
+focus_tree = {
+	id = uksr_military_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = UNI
+		}
+	}
+	
+	default = no
+	
+	continuous_focus_position = { x = 50 y = 7000 }
+
+    focus = {
+		id = UNI_military_junta
+		icon = GFX_UNI_militarism_came_to_power
+		x = 4
+		y = 1
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		    add_political_power = 75
+            add_stability = 0.1
+			add_war_support = 0.1
+			add_popularity = {
+				ideology = militarism
+				popularity = 0.65
+			}
+			set_politics = { 
+			    ruling_party = militarism
+			    elections_allowed = no
+		    }
+			news_event = { id = news.2 }
+		}
+	}
+	
+	focus = {
+		id = UNI_reorganize_the_army
+		icon = GFX_UNI_reorganize_military
+		x = 4
+		y = 3
+		prerequisite = { focus = UNI_military_junta }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		    add_timed_idea = {
+				idea = UNI_reorganize_military_idea
+				days = 120
+			}
+			add_war_support = 0.1
+		}
+	}
+	
+	focus = {
+		id = UNI_purge_young_officers
+		icon = GFX_UNI_purge_young_officers
+		x = 5
+		y = 5
+		prerequisite = { focus = UNI_reorganize_the_army }
+
+		cost = 15
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		    add_political_power = 25
+			add_manpower = -78
+			add_war_support = -0.1
+			add_stability = 0.1
+		}
+	}
+	
+	focus = {
+		id = UNI_sum_question
+		icon = GFX_UNI_sum_question
+		x = 3
+		y = 5
+		prerequisite = { focus = UNI_reorganize_the_army }
+
+		cost = 15
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			country_event = { id = karlt.9 }
+		}
+	}
+
+	focus = {
+		id = UNI_tank_birgades
+		icon = GFX_UNI_tank_brigades
+		x = 2
+		y = 7
+		prerequisite = { focus = UNI_sum_question }
+
+		cost = 15
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		    add_political_power = 75
+            add_stability = 0.1
+			add_war_support = 0.1
+			country_event = { id = karlt.1 }
+		}
+	}
+
+	focus = {
+		id = UNI_rise_military_budget
+		icon = GFX_UNI_rise_military_budget
+		x = 4
+		y = 7
+		prerequisite = { focus = UNI_sum_question }
+		prerequisite = { focus = UNI_purge_young_officers }
+
+		cost = 15
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		    add_political_power = 75
+            add_stability = 0.1
+			add_war_support = 0.1
+			country_event = { id = karlt.1 }
+		}
+	}
+
+	focus = {
+		id = UNI_united_command
+		icon = GFX_UNI_united_command
+		x = 4
+		y = 11
+		prerequisite = { focus = UNI_enforce_discipline }
+		prerequisite = { focus = UNI_depoliticize_the_army }
+
+		cost = 15
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		    add_political_power = 75
+            add_stability = 0.1
+			add_war_support = 0.1
+			country_event = { id = karlt.1 }
+		}
+	}
+
+	focus = {
+		id = UNI_enforce_discipline
+		icon = GFX_goal_unknown
+		x = 3
+		y = 9
+		prerequisite = { focus = UNI_tank_birgades }
+		prerequisite = { focus = UNI_rise_military_budget }
+
+		cost = 15
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		    add_political_power = 75
+            add_stability = 0.1
+			add_war_support = 0.1
+			country_event = { id = karlt.1 }
+		}
+	}
+
+	focus = {
+		id = UNI_depoliticize_the_army
+		icon = GFX_UNI_depoliticize_the_army
+		x = 5
+		y = 9
+		prerequisite = { focus = UNI_rise_military_budget }
+		prerequisite = { focus = UNI_military_propaganda }
+
+		cost = 15
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		    add_political_power = 75
+            add_stability = 0.1
+			add_war_support = 0.1
+			country_event = { id = karlt.1 }
+		}
+	}
+
+	focus = {
+		id = UNI_military_propaganda
+		icon = GFX_UNI_military_ads
+		x = 6
+		y = 7
+		prerequisite = { focus = UNI_purge_young_officers }
+
+		cost = 15
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		    add_ideas = UNI_military_ads_idea
+			add_manpower = 8700
+		}
+	}
+}	

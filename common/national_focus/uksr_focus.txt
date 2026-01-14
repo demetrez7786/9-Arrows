@@ -16,8 +16,8 @@ focus_tree = {
 
     focus = {
 		id = UNI_aftermath_of_karlt_wars
-		icon = GFX_MDR_winter_massacre
-		x = 26
+		icon = GFX_UNI_aftermath_of_karlt_wars
+		x = 10
 		y = 1
 
 		cost = 1
@@ -41,6 +41,433 @@ focus_tree = {
 
 		completion_reward = {
             add_stability = -0.1
+			add_war_support = -0.1
+			country_event = { id = karlt.1 }
+		}
+	}
+
+	focus = {
+		id = UNI_sum_brigades
+		icon = GFX_UNI_sum_brigades
+		x = 10
+		y = 3
+		prerequisite = { focus = UNI_aftermath_of_karlt_wars }
+
+		cost = 3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            add_war_support = 0.05
+			country_event = { id = karlt.3 }
+		}
+	}
+
+	focus = {
+		id = UNI_economical_situation
+		icon = GFX_UNI_economical_question
+		x = 12
+		y = 3
+		prerequisite = { focus = UNI_aftermath_of_karlt_wars }
+
+		cost = 3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            add_stability = -0.1
+			country_event = { id = drones.4 }
+		}
+	}
+
+	focus = {
+		id = UNI_party_status
+		icon = GFX_UNI_party_status
+		x = 8
+		y = 3
+		prerequisite = { focus = UNI_aftermath_of_karlt_wars }
+
+		cost = 3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            add_political_power = -25
+			country_event = { id = karlt.2 }
+		}
+	}
+
+	focus = {
+		id = UNI_begin_the_work
+		icon = GFX_UNI_begin_the_work
+		x = 10
+		y = 5
+		prerequisite = { focus = UNI_sum_brigades }
+		prerequisite = { focus = UNI_party_status }
+		prerequisite = { focus = UNI_economical_situation }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            add_stability = 0.1
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = UNI_party_control
+		icon = GFX_UNI_party_control
+		x = 6
+		y = 6
+		prerequisite = { focus = UNI_begin_the_work }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            add_stability = 0.01
+			add_war_support = 0.01
+		}
+	}
+
+	focus = {
+		id = UNI_financial_support
+		icon = GFX_UNI_financial_support
+		x = 14
+		y = 6
+		prerequisite = { focus = UNI_begin_the_work }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_political_power = 25
+            add_stability = 0.1
+		}
+	}
+
+	focus = {
+		id = UNI_open_new_factories
+		icon = GFX_UNI_open_new_factories
+		x = 14
+		y = 8
+		prerequisite = { focus = UNI_financial_support }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            add_stability = -0.1
+		}
+	}
+
+	focus = {
+		id = UNI_rise_taxes
+		icon = GFX_UNI_rise_taxes
+		x = 12
+		y = 8
+		prerequisite = { focus = UNI_financial_support }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_political_power = 75
+            add_stability = -0.05
+		}
+	}
+
+	focus = {
+		id = UNI_rise_work_time
+		icon = GFX_UNI_rise_work_times
+		x = 16
+		y = 8
+		prerequisite = { focus = UNI_financial_support }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            add_stability = -0.1
+		}
+	}
+
+	focus = {
+		id = UNI_bribe_judges
+		icon = GFX_UNI_bribe_judges
+		x = 6
+		y = 8
+		prerequisite = { focus = UNI_party_control }
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            add_stability = -0.05
+			add_political_power = -5
+		}
+	}
+
+	focus = {
+		id = UNI_demonize_opposition_media
+		icon = GFX_UNI_demonize_opposition_media
+		x = 4
+		y = 8
+		prerequisite = { focus = UNI_party_control }
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            add_stability = -0.1
+			add_political_power = -20
+			add_popularity = {
+				ideology = communism
+				popularity = 0.025
+			}
+		}
+	}
+
+	focus = {
+		id = UNI_defund_the_military
+		icon = GFX_UNI_defund_the_army
+		x = 8
+		y = 8
+		prerequisite = { focus = UNI_party_control }
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            add_war_support = -0.05
+			army_experience = -15
+			country_event = { id = karlt.5 }
+		}
+	}
+
+	focus = {
+		id = UNI_this_is_not_working
+		icon = GFX_UNI_this_is_not_working
+		x = 10
+		y = 9
+		prerequisite = { focus = UNI_defund_the_military }
+		prerequisite = { focus = UNI_bribe_judges }
+		prerequisite = { focus = UNI_demonize_opposition_media }
+		prerequisite = { focus = UNI_rise_taxes }
+		prerequisite = { focus = UNI_open_new_factories }
+		prerequisite = { focus = UNI_rise_work_time }
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            country_event = { id = drones.6 }
 		}
 	}
 }	

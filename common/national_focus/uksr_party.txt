@@ -1,0 +1,351 @@
+focus_tree = {
+	id = uksr_military_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = UNI
+		}
+	}
+	
+	default = no
+	
+	continuous_focus_position = { x = 50 y = 7000 }
+
+    focus = {
+		id = UNI_party_remains
+		icon = GFX_UNI_party_remains
+		x = 4
+		y = 1
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		    add_political_power = 75
+            add_stability = 0.1
+			add_war_support = 0.1
+		}
+	}
+
+	focus = {
+		id = UNI_stronger_grip
+		icon = GFX_UNI_stronger_grip
+		x = 4
+		y = 3
+		prerequisite = { focus = UNI_party_remains }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		    add_political_power = 10
+            add_stability = 0.1
+		}
+	}
+
+	focus = {
+		id = UNI_draconian_laws
+		icon = GFX_UNI_draconian_laws
+		x = 3
+		y = 5
+		prerequisite = { focus = UNI_stronger_grip }
+
+		cost = 15
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		    add_ideas = UNI_draconian_laws_idea
+		}
+	}
+
+	focus = {
+		id = UNI_purge_weak_members
+		icon = GFX_UNI_purge_weak_party_members
+		x = 5
+		y = 5
+		prerequisite = { focus = UNI_stronger_grip }
+
+		cost = 15
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		    add_political_power = 75
+            add_stability = 0.1
+			add_war_support = 0.1
+			country_event = { id = karlt.1 }
+		}
+	}
+
+	focus = {
+		id = UNI_emergency_party_congress
+		icon = GFX_UNI_emergency_party_congress
+		x = 4
+		y = 7
+		prerequisite = { focus = UNI_draconian_laws }
+		prerequisite = { focus = UNI_purge_weak_members }
+
+		cost = 15
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			country_event = { id = karlt.10 }
+		}
+	}
+
+	focus = {
+		id = UNI_crush_internal_opposition
+		icon = GFX_UNI_crush_internal_opposition
+		x = 2
+		y = 7
+		prerequisite = { focus = UNI_draconian_laws }
+
+		cost = 15
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		    add_popularity = {
+				ideology = militarism
+				popularity = -0.15
+			}
+			add_popularity = {
+				ideology = socialism
+				popularity = -0.15
+			}
+			add_popularity = {
+				ideology = syndicalism
+				popularity = -0.15
+			}
+		}
+	}
+
+	focus = {
+		id = UNI_dissolve_sum
+		icon = GFX_UNI_dissolve_sum
+		x = 6
+		y = 7
+		prerequisite = { focus = UNI_purge_weak_members }
+
+		cost = 15
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		    add_manpower = -948
+			remove_ideas = UNI_sum_influence_idea
+		}
+	}
+
+	focus = {
+		id = UNI_form_red_guard
+		icon = GFX_UNI_red_guard
+		x = 5
+		y = 9
+		prerequisite = { focus = UNI_dissolve_sum }
+		prerequisite = { focus = UNI_emergency_party_congress }
+
+		cost = 15
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		    add_ideas = UNI_red_guard_idea
+		}
+	}
+
+	focus = {
+		id = UNI_party_unity
+		icon = GFX_UNI_party_unity
+		x = 3
+		y = 9
+		prerequisite = { focus = UNI_crush_internal_opposition }
+		prerequisite = { focus = UNI_emergency_party_congress }
+
+		cost = 15
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		    add_political_power = 150
+            add_stability = 0.15
+		}
+	}
+
+	focus = {
+		id = UNI_begin_consolidation
+		icon = GFX_UNI_begin_consolidation
+		x = 4
+		y = 11
+		prerequisite = { focus = UNI_party_unity }
+		prerequisite = { focus = UNI_form_red_guard }
+
+		cost = 15
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		    add_political_power = 75
+            add_stability = 0.1
+			add_war_support = 0.1
+			country_event = { id = karlt.1 }
+		}
+	}
+}	

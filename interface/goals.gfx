@@ -1,0 +1,220 @@
+spriteTypes = {	
+
+	#### Murder drones icons
+	
+	SpriteType = {
+	name = "GFX_UNI_red_guard"
+	texturefile = "gfx/interface/goals/UNI_red_guard.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_UNI_begin_consolidation"
+	texturefile = "gfx/interface/goals/UNI_begin_consolidation.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_UNI_party_unity"
+	texturefile = "gfx/interface/goals/UNI_party_unity.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_UNI_dissolve_sum"
+	texturefile = "gfx/interface/goals/UNI_dissolve_sum.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_UNI_emergency_party_congress"
+	texturefile = "gfx/interface/goals/UNI_emergency_party_congress.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_UNI_crush_internal_opposition"
+	texturefile = "gfx/interface/goals/UNI_crush_internal_opposition.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_UNI_purge_weak_party_members"
+	texturefile = "gfx/interface/goals/UNI_purge_weak_party_members.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_UNI_draconian_laws"
+	texturefile = "gfx/interface/goals/UNI_draconian_laws.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_UNI_stronger_grip"
+	texturefile = "gfx/interface/goals/UNI_stronger_grip.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_UNI_party_remains"
+	texturefile = "gfx/interface/goals/UNI_party_remains.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_UNI_transparency_laws"
+	texturefile = "gfx/interface/goals/UNI_transparency_laws.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_UNI_introduce_civil_services"
+	texturefile = "gfx/interface/goals/UNI_introduce_civil_services.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_UNI_soften_regulations_on_media"
+	texturefile = "gfx/interface/goals/UNI_soften_regulations_on_media.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_UNI_new_constitution"
+	texturefile = "gfx/interface/goals/UNI_new_constitution.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_UNI_release_political_prisoners"
+	texturefile = "gfx/interface/goals/UNI_release_political_prisoners.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_UNI_arrest_sum_members"
+	texturefile = "gfx/interface/goals/UNI_arrest_sum_members.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_UNI_multiparty_system"
+	texturefile = "gfx/interface/goals/UNI_multiparty_system.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_UNI_soften_tyranny"
+	texturefile = "gfx/interface/goals/UNI_soften_tyranny.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_UNI_reformist_faction"
+	texturefile = "gfx/interface/goals/UNI_reformist_faction.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_UNI_depoliticize_the_army"
+	texturefile = "gfx/interface/goals/UNI_depoliticize_the_army.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_UNI_united_command"
+	texturefile = "gfx/interface/goals/UNI_united_command.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_UNI_military_ads"
+	texturefile = "gfx/interface/goals/UNI_military_ads.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_UNI_rise_military_budget"
+	texturefile = "gfx/interface/goals/UNI_rise_military_budget.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_UNI_tank_brigades"
+	texturefile = "gfx/interface/goals/UNI_tank_brigades.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_UNI_sum_question"
+	texturefile = "gfx/interface/goals/UNI_sum_question.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_UNI_purge_young_officers"
+	texturefile = "gfx/interface/goals/UNI_purge_young_officers.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_UNI_reorganize_military"
+	texturefile = "gfx/interface/goals/UNI_reorganize_military.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_UNI_militarism_came_to_power"
+	texturefile = "gfx/interface/goals/UNI_militarism_came_to_power.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_UNI_this_is_not_working"
+	texturefile = "gfx/interface/goals/UNI_this_is_not_working.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_UNI_open_new_factories"
+	texturefile = "gfx/interface/goals/UNI_open_new_factories.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_UNI_rise_work_times"
+	texturefile = "gfx/interface/goals/UNI_rise_work_times.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_UNI_rise_taxes"
+	texturefile = "gfx/interface/goals/UNI_rise_taxes.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_UNI_financial_support"
+	texturefile = "gfx/interface/goals/UNI_financial_support.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_UNI_aftermath_of_karlt_wars"
+	texturefile = "gfx/interface/goals/UNI_aftermath_of_karlt_wars.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_UNI_begin_the_work"
+	texturefile = "gfx/interface/goals/UNI_begin_the_work.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_UNI_bribe_judges"
+	texturefile = "gfx/interface/goals/UNI_bribe_judges.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_UNI_defund_the_army"
+	texturefile = "gfx/interface/goals/UNI_defund_the_army.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_UNI_demonize_opposition_media"
+	texturefile = "gfx/interface/goals/UNI_demonize_opposition_media.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_UNI_economical_question"
+	texturefile = "gfx/interface/goals/UNI_economical_question.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_UNI_party_control"
+	texturefile = "gfx/interface/goals/UNI_party_control.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_UNI_party_status"
+	texturefile = "gfx/interface/goals/UNI_party_status.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_UNI_sum_brigades"
+	texturefile = "gfx/interface/goals/UNI_sum_brigades.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_unknown"
+		texturefile = "gfx/interface/goals/goal_unknown.dds"
+		legacy_lazy_load = no
+	}
+}

@@ -4,7 +4,13 @@ state={
 	provinces={
 		11 74 95 147 228 379 394 467 482 
 	}
+	
+	history={
+		owner = MUR
+		add_core_of = MUR
+	}
+	
 	buildings_max_level_factor=1.000
-        manpower=5000
-        state_category = large_town
+    manpower=5000
+    state_category = large_town
 }

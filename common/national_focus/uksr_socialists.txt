@@ -1,5 +1,5 @@
 focus_tree = {
-	id = uksr_military_focus
+	id = uksr_socialist_focus
 	
 	country = {
 		factor = 0
@@ -51,7 +51,7 @@ focus_tree = {
 			    ruling_party = socialism
 			    elections_allowed = no
 		    }
-			news_event = { id = news.2 }
+			news_event = { id = news.4 }
 		}
 	}
 

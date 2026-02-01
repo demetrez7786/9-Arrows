@@ -53,3 +53,103 @@ news_event = {
 		trigger = { TAG = UNI }
 	}
 }
+
+# Party Remains
+news_event = {
+	id = news.3
+	title = news.3.t
+	desc = news.3.d
+	picture = GFX_news_event_001
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.3.a
+		trigger = {
+			NOT = {
+				TAG = UNI
+			}
+		}
+	}
+	option = {
+		name = news.3.b
+		trigger = { TAG = UNI }
+	}
+}
+
+# Reformist Communists in the UKSR
+news_event = {
+	id = news.4
+	title = news.4.t
+	desc = news.4.d
+	picture = GFX_news_event_001
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.4.a
+		trigger = {
+			NOT = {
+				TAG = UNI
+			}
+		}
+	}
+	option = {
+		name = news.4.b
+		trigger = { TAG = UNI }
+	}
+}
+
+# democrats remain
+news_event = {
+	id = news.5
+	title = news.5.t
+	desc = news.5.d
+	picture = GFX_news_event_001
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.5.a
+		trigger = {
+			NOT = {
+				TAG = CEN
+			}
+		}
+	}
+	option = {
+		name = news.5.b
+		trigger = { TAG = CEN }
+	}
+}
+
+# republicans won
+news_event = {
+	id = news.6
+	title = news.6.t
+	desc = news.6.d
+	picture = GFX_news_event_001
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.6.a
+		trigger = {
+			NOT = {
+				TAG = CEN
+			}
+		}
+	}
+	option = {
+		name = news.6.b
+		trigger = { TAG = CEN }
+	}
+}

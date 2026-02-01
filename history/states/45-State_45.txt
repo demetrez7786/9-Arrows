@@ -4,7 +4,13 @@ state={
 	provinces={
 		14 41 50 76 85 92 100 102 108 110 111 127 134 139 154 160 161 166 169 171 174 180 191 193 194 216 227 230 255 276 277 284 301 303 318 327 347 358 372 388 396 403 408 417 430 434 435 437 447 489 491 492 
 	}
+	
+	history={
+		owner = SHU
+		add_core_of = SHU
+	}
+	
 	buildings_max_level_factor=1.000
-        manpower=5000
-        state_category = large_town
+    manpower=1504762
+    state_category = large_town
 }

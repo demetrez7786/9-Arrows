@@ -1,0 +1,467 @@
+focus_tree = {
+	id = usc_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 30
+			tag = CEN
+		}
+	}
+	
+	default = no
+	
+	continuous_focus_position = { x = 50 y = 7000 }
+
+    focus = {
+		id = CEN_last_bastion_of_democracy
+		icon = GFX_CEN_last_bastion_of_democracy
+		x = 10
+		y = 1
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            add_political_power = 100
+		}
+	}
+
+	focus = {
+		id = CEN_the_eagles_status
+		icon = GFX_CEN_status_of_the_eagle
+		x = 10
+		y = 3
+		prerequisite = { focus = CEN_last_bastion_of_democracy }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            add_political_power = 25
+			add_stability = 0.01
+			add_war_support = 0.01
+		}
+	}
+
+	focus = {
+		id = CEN_the_eagles_beak
+		icon = GFX_CEN_the_eagles_beak
+		x = 10
+		y = 5
+		prerequisite = { focus = CEN_the_eagles_status }
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            add_war_support = 0.1
+			country_event = { id = centralia.2 }
+		}
+	}
+
+	focus = {
+		id = CEN_strengthen_ties_with_wdf
+		icon = GFX_CEN_strengthen_ties_with_WDF
+		x = 8
+		y = 6
+		prerequisite = { focus = CEN_the_eagles_beak focus = CEN_the_eagles_left_wing }
+
+		cost = 15
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_political_power = 50
+			add_manpower = 1000
+            add_war_support = 0.1
+		}
+	}
+
+	focus = {
+		id = CEN_fund_wdf
+		icon = GFX_CEN_fund_wdf
+		x = 12
+		y = 6
+		prerequisite = { focus = CEN_the_eagles_beak focus = CEN_the_eagles_right_wing }
+
+		cost = 15
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_political_power = -50
+			add_manpower = 1000
+            add_stability = 0.1
+		}
+	}
+
+	focus = {
+		id = CEN_expand_wdf
+		icon = GFX_CEN_expand_wdf
+		x = 10
+		y = 7
+		prerequisite = { focus = CEN_the_eagles_beak }
+
+		cost = 15
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_manpower = 1000
+		}
+	}
+
+	focus = {
+		id = CEN_send_wdf_in_terrorized_zone
+		icon = GFX_CEN_send_wdf_into_terrorized_zone
+		x = 10
+		y = 9
+		prerequisite = { focus = CEN_expand_wdf }
+
+		cost = 15
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			has_completed_focus = CEN_counter_extremist_organizations
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_manpower = 1000
+		}
+	}
+
+	focus = {
+		id = CEN_upcoming_elections
+		icon = GFX_CEN_upcoming_elections
+		x = 10
+		y = 11
+		prerequisite = { focus = CEN_send_wdf_in_terrorized_zone }
+		prerequisite = { focus = CEN_counter_extremist_organizations }
+		prerequisite = { focus = CEN_influence_north_cariland_economy }
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			country_event = { id = centralia.5 }
+		}
+	}
+
+	focus = {
+		id = CEN_the_eagles_left_wing
+		icon = GFX_CEN_eagles_left_wing
+		x = 6
+		y = 5
+		prerequisite = { focus = CEN_the_eagles_status }
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            add_political_power = 75
+			country_event = { id = centralia.1 }
+		}
+	}
+
+	focus = {
+		id = CEN_address_populists_opposition
+		icon = GFX_CEN_address_populist_opposition
+		x = 6
+		y = 7
+		prerequisite = { focus = CEN_the_eagles_left_wing }
+
+		cost = 15
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            country_event = { id = centralia.4 }
+		}
+	}
+
+	focus = {
+		id = CEN_counter_extremist_organizations
+		icon = GFX_CEN_counter_extremist_organizations
+		x = 6
+		y = 9
+		prerequisite = { focus = CEN_address_populists_opposition }
+
+		cost = 15
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            add_war_support = 0.05
+			custom_effect_tooltip = CEN_unlocks_focus_tt
+		}
+	}
+
+	focus = {
+		id = CEN_the_eagles_right_wing
+		icon = GFX_CEN_eagles_right_wing
+		x = 14
+		y = 5
+		prerequisite = { focus = CEN_the_eagles_status }
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            add_stability = 0.1
+			country_event = { id = centralia.3 }
+		}
+	}
+
+	focus = {
+		id = CEN_lower_taxes
+		icon = GFX_CEN_lower_taxes
+		x = 14
+		y = 7
+		prerequisite = { focus = CEN_the_eagles_right_wing }
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            add_political_power = -25
+			add_stability = 0.1
+			add_popularity = {
+				ideology = liberalism
+				popularity = 0.1
+			}
+		}
+	}
+
+	focus = {
+		id = CEN_influence_north_cariland_economy
+		icon = GFX_CEN_eagles_right_wing
+		x = 14
+		y = 9
+		prerequisite = { focus = CEN_lower_taxes }
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            add_stability = 0.1
+			country_event = { id = centralia.3 }
+		}
+	}
+}	

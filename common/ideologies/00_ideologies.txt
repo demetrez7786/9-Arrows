@@ -4,7 +4,7 @@ ideologies = {
 
 		types = {
 
-			liberalism_generic = { can_be_randomly_selected = no }
+			liberalism_generic = { }
 
 		}
 
@@ -63,7 +63,7 @@ ideologies = {
 
 		types = {
 
-			conservatism_generic = { can_be_randomly_selected = no }
+			conservatism_generic = { }
 
 		}
 
@@ -122,7 +122,7 @@ ideologies = {
 
 		types = {
 
-			populism_generic = { can_be_randomly_selected = no }
+			populism_generic = { }
 
 		}
 
@@ -181,7 +181,7 @@ ideologies = {
 
 		types = {
 
-			progressivism_generic = { can_be_randomly_selected = no }
+			progressivism_generic = { }
 
 		}
 
@@ -240,7 +240,7 @@ ideologies = {
 
 		types = {
 
-			communism_generic = { can_be_randomly_selected = no }
+			communism_generic = { }
 
 		}
 
@@ -290,7 +290,7 @@ ideologies = {
 
 		types = {
 
-			socialism_generic = { can_be_randomly_selected = no }
+			socialism_generic = { }
 
 		}
 
@@ -340,7 +340,7 @@ ideologies = {
 
 		types = {
 
-			syndicalism_generic = { can_be_randomly_selected = no }
+			syndicalism_generic = { }
 
 		}
 
@@ -390,7 +390,7 @@ ideologies = {
 
 		types = {
 
-			anarchism_generic = { can_be_randomly_selected = no }
+			anarchism_generic = { }
 
 		}
 
@@ -440,7 +440,7 @@ ideologies = {
 
 		types = {
 
-			authoritarianism_generic = { can_be_randomly_selected = no }
+			authoritarianism_generic = { }
 
 		}
 
@@ -486,7 +486,7 @@ ideologies = {
 
 		types = {
 
-			nationalism_generic = { can_be_randomly_selected = no }
+			nationalism_generic = { }
 
 		}
 
@@ -532,7 +532,7 @@ ideologies = {
 
 		types = {
 
-			militarism_generic = { can_be_randomly_selected = no }
+			militarism_generic = { }
 
 		}
 
@@ -578,7 +578,7 @@ ideologies = {
 
 		types = {
 
-			ultranationalism_generic = { can_be_randomly_selected = no }
+			ultranationalism_generic = { }
 
 		}
 
@@ -624,7 +624,7 @@ ideologies = {
 
 		types = {
 
-			monarchism_generic = { can_be_randomly_selected = no }
+			monarchism_generic = { }
 
 		}
 
@@ -675,7 +675,7 @@ ideologies = {
 
 		types = {
 
-			theocracy_generic = { can_be_randomly_selected = no }
+			theocracy_generic = { }
 
 		}
 

@@ -4,7 +4,13 @@ state={
 	provinces={
 		28 31 54 81 115 128 219 298 317 338 393 474 485 
 	}
+	
+	history={
+		owner = CHS
+		add_core_of = CHS
+	}
+	
 	buildings_max_level_factor=1.000
-        manpower=5000
-        state_category = large_town
+    manpower=5000
+    state_category = large_town
 }

@@ -1,5 +1,5 @@
 focus_tree = {
-	id = uksr_military_focus
+	id = uksr_party_focus
 	
 	country = {
 		factor = 0
@@ -43,6 +43,7 @@ focus_tree = {
 		    add_political_power = 75
             add_stability = 0.1
 			add_war_support = 0.1
+			news_event = { id = news.3 }
 		}
 	}
 

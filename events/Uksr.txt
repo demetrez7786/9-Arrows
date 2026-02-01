@@ -1,6 +1,6 @@
 add_namespace = karlt
 
-# aftermath of karlt wars
+# aftermath of the karlt wars
 country_event = {
 	id = karlt.1
 	title = karlt.1.t
@@ -124,14 +124,17 @@ country_event = {
 	
 	option = {
 		name = karlt.8.a
+		load_focus_tree = uksr_party_focus
 	}
 	
 	option = {
 		name = karlt.8.b
+		load_focus_tree = uksr_military_focus
 	}
 	
 	option = {
 		name = karlt.8.g
+		load_focus_tree = uksr_socialist_focus
 	}
 }
 

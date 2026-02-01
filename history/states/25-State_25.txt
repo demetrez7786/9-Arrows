@@ -4,7 +4,13 @@ state={
 	provinces={
 		16 27 33 52 59 62 69 83 99 105 106 107 116 119 126 148 162 200 237 248 264 285 289 297 333 363 382 390 404 407 438 466 472 479 
 	}
+	
+	history={
+		owner = UNI
+		add_core_of = UNI
+	}
+	
 	buildings_max_level_factor=1.000
-        manpower=5000
-        state_category = large_town
+    manpower=1446302
+    state_category = large_town
 }

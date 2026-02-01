@@ -1,6 +1,26 @@
 spriteTypes = {
 
     spriteType = {
+		name = "GFX_idea_CEN_populists_protest"
+		texturefile = "gfx/interface/ideas/CEN_populists_protest.png"
+	}
+
+    spriteType = {
+		name = "GFX_idea_CEN_populists_riots"
+		texturefile = "gfx/interface/ideas/CEN_populists_riots.png"
+	}
+
+    spriteType = {
+		name = "GFX_idea_CEN_doormans_terrorism"
+		texturefile = "gfx/interface/ideas/CEN_doormans_terrorism.png"
+	}
+
+    spriteType = {
+		name = "GFX_idea_CEN_the_last_basion_of_democracy"
+		texturefile = "gfx/interface/ideas/CEN_the_last_basion_of_democracy.png"
+	}
+
+    spriteType = {
 		name = "GFX_idea_UNI_internal_opposition_idea"
 		texturefile = "gfx/interface/ideas/UNI_internal_opposition_idea.png"
 	}
@@ -35,7 +55,33 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/UNI_weak_military_idea.png"
 	}
 	
-	### Desc Photos
+	###################
+	### Desc Photos ###
+	###################
+	
+	spriteType = {
+		name = "GFX_idea_populists_protest_desc_photo"
+		textureFile = "/gfx/interface/ideas/populists_protest_desc_photo.png"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_idea_populists_riot_desc_photo"
+		textureFile = "/gfx/interface/ideas/populists_riot_desc_photo.png"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_idea_doorman_terrorists_desc_photo"
+		textureFile = "/gfx/interface/ideas/doorman_terrorists_desc_photo.png"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_idea_the_last_bastion_of_democracy_desc_photo"
+		textureFile = "/gfx/interface/ideas/the_last_bastion_of_democracy_desc_photo.png"
+		legacy_lazy_load = no
+	}
 	
 	spriteType = {
 		name = "GFX_idea_internal_opposition_desc_photo"

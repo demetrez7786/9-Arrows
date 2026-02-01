@@ -32,6 +32,15 @@ set_popularities = {
 	populism = 8
 }
 
+add_ideas = {
+    CEN_the_bastion_of_democracy
+    CEN_doormans_terrorism
+	CEN_populists_riots
+	open_borders
+	the_free_media
+	secularism
+}
+
 
 recruit_character = ABK_kirilli_bechvaya
 

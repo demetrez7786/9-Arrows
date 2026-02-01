@@ -1,8 +1,8 @@
 NDefines = {
 
 NGame = {
-	START_DATE = "1936.1.1.12",
-	END_DATE = "1949.1.1.1",
+	START_DATE = "3172.1.1.12",
+	END_DATE = "4000.1.1.1",
 	MAP_SCALE_PIXEL_TO_KM = 7.114,					-- Yes, we did the math
 	SAVE_VERSION = 30,								-- 1.16.0 (Countenance)
 	MINOR_SAVE_VERSION = 1,                         -- Minor save version is used to identifiy different backward compatible savegame versions

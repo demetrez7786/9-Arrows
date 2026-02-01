@@ -1,0 +1,110 @@
+ideas = {
+	country = {
+
+		CEN_the_bastion_of_democracy = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = CEN_the_last_basion_of_democracy
+			
+			modifier = {
+			    political_power_factor = 0.01
+				stability_factor = 0.15
+				war_support_factor = 0.15
+				army_defence_factor = 0.05
+			}
+		}
+		
+		CEN_doormans_terrorism = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = CEN_doormans_terrorism
+			
+			modifier = {
+			    political_power_factor = -0.05
+				stability_factor = -0.1
+				weekly_manpower = -23
+			}
+		}
+		
+		CEN_populists_riots = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = CEN_populists_riots
+			
+			modifier = {
+			    political_power_factor = -0.01
+				stability_factor = -0.05
+				populism_drift = 0.1
+			}
+		}
+		
+		CEN_populists_riots_2 = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = CEN_populists_riots
+			
+			modifier = {
+			    political_power_factor = -0.05
+				stability_factor = -0.15
+				populism_drift = 0.2
+			}
+		}
+		
+		CEN_populists_protest = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = CEN_populists_protest
+			
+			modifier = {
+			    political_power_factor = -0.01
+				stability_factor = -0.01
+				populism_drift = 0.01
+			}
+		}
+	}
+}	

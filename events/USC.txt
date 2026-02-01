@@ -1,0 +1,110 @@
+add_namespace = centralia
+
+# politics
+country_event = {
+	id = centralia.1
+	title = centralia.1.t
+	desc = centralia.1.d
+	picture = GFX_report_event_MDR_winter_massacre
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = centralia.1.a
+	}
+}
+
+# military
+country_event = {
+	id = centralia.2
+	title = centralia.2.t
+	desc = centralia.2.d
+	picture = GFX_report_event_MDR_winter_massacre
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = centralia.2.a
+	}
+}
+
+# economy
+country_event = {
+	id = centralia.3
+	title = centralia.3.t
+	desc = centralia.3.d
+	picture = GFX_report_event_MDR_winter_massacre
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = centralia.3.a
+	}
+}
+
+# populists riots
+country_event = {
+	id = centralia.4
+	title = centralia.4.t
+	desc = centralia.4.d
+	picture = GFX_report_event_MDR_winter_massacre
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = centralia.4.a
+	}
+	
+	option = {
+		name = centralia.4.b
+	}
+	
+	option = {
+		name = centralia.4.g
+	}
+}
+
+# upcoming elections
+country_event = {
+	id = centralia.5
+	title = centralia.5.t
+	desc = centralia.5.d
+	picture = GFX_report_event_MDR_winter_massacre
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = centralia.5.a
+		load_focus_tree = usc_democrats_focus
+	}
+	
+	option = {
+		name = centralia.5.b
+		load_focus_tree = usc_populists_focus
+	}
+	
+	option = {
+		name = centralia.5.g
+		load_focus_tree = usc_republicans_focus
+	}
+}
+
+# upcoming elections
+country_event = {
+	id = centralia.6
+	title = centralia.6.t
+	desc = centralia.6.d
+	picture = GFX_report_event_MDR_winter_massacre
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = centralia.6.a
+		
+	}
+	
+	option = {
+		name = centralia.6.b
+		
+	}
+}

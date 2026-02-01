@@ -48,6 +48,15 @@ set_popularities = {
 	militarism = 8
 }
 
+add_ideas = {
+    UNI_scars_of_the_karlt_wars_idea
+    UNI_sum_influence_idea
+	UNI_internal_opposition_idea
+	UNI_refugee_crisis_idea
+	closed_borders
+	mixed_media
+	state_atheism
+}
 
 recruit_character = ABK_kirilli_bechvaya
 

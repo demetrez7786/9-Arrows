@@ -1,0 +1,52 @@
+focus_tree = {
+	id = usc_democrats_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = CEN
+		}
+	}
+	
+	default = no
+	
+	continuous_focus_position = { x = 50 y = 7000 }
+
+    focus = {
+		id = CEN_democrats_won
+		icon = GFX_CEN_last_bastion_of_democracy
+		x = 8
+		y = 1
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            add_political_power = 100
+            add_stability = 0.15
+            add_popularity = {
+                ideology = liberalism
+                popularity = 0.3
+            }
+            news_event = { id = news.5 }
+		}
+	}
+}

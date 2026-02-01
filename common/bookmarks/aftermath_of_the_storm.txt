@@ -11,10 +11,14 @@ bookmarks = {
 			history = "CEN_AFTERMATH_OF_THE_STORM_DESC"
 			ideology = liberalism
 			ideas = {
-				
+				CEN_the_bastion_of_democracy
+				CEN_doormans_terrorism
+				CEN_populists_riots
 			}
 			focuses = {
-				
+				CEN_last_bastion_of_democracy
+				CEN_the_eagles_status
+				CEN_upcoming_elections
 			}
 		}
 		

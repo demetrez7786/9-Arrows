@@ -40,4 +40,19 @@ CEN = {
 	color_ui = rgb { 0 98 145 }
 }
 
+ISL = {
+	color = rgb { 16 237 31 }
+	color_ui = rgb { 16 237 31 }
+}
+
+CAL = {
+	color = rgb { 52 191 204 }
+	color_ui = rgb { 52 191 204 }
+}
+
+NAA = {
+	color = rgb { 76 135 80 }
+	color_ui = rgb { 76 135 80 }
+}
+
 

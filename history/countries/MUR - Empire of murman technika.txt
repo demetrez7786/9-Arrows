@@ -1,4 +1,4 @@
-capital = 8
+capital = 14
 
 set_research_slots = 4
 
@@ -34,7 +34,11 @@ set_popularities = {
 	militarism = 10
 }
 
-
-recruit_character = ABK_kirilli_bechvaya
+add_ideas = {
+    MUR_failing_empire
+	MUR_strong_opposition
+	MUR_separatists_movements
+	MUR_divided_parliament
+}
 
 

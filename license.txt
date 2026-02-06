@@ -8,6 +8,6 @@ Partial redistribution is allowed in a case of a language translation.
 
 Partial redistribution is allowed in a case of creating a compability layer with another piece of software.
 
-Any volunteer contribution made to the project falls under the ownership of 9 Arrows: So Far From Earth - Demetre Channel.
+Any volunteer contribution made to the project falls under the ownership of Copper-9: So Far From Earth - Demetre Channel.
 
 Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.

@@ -1,0 +1,89 @@
+ideas = {
+	country = {
+
+		MUR_failing_empire = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = MUR_failing_empire
+			
+			modifier = {
+			    political_power_factor = -0.01
+				stability_factor = -0.35
+				war_support_factor = -0.15
+				political_advisors_cost_factor = 0.75
+			}
+		}
+		
+		MUR_strong_opposition = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = MUR_opposition
+			
+			modifier = {
+			    political_power_factor = -0.05
+				stability_factor = -0.15
+				monarchism_drift = -0.01
+			}
+		}
+		
+		MUR_separatists_movements = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = MUR_separatists
+			
+			modifier = {
+			    political_power_factor = -0.05
+				war_support_factor = -0.15
+				stability_factor = -0.2
+				resistance_activity = 0.15
+			}
+		}
+		
+		MUR_divided_parliament = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = MUR_divided_parliament
+			
+			modifier = {
+			    political_power_factor = -0.15
+				stability_factor = -0.25
+			}
+		}
+	}
+}	

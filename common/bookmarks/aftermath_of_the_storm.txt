@@ -3,7 +3,7 @@ bookmarks = {
 		name = "AFTERMATH_OF_THE_STORM_NAME"
 		desc = "AFTERMATH_OF_THE_STORM_DESC"
 		date = 3172.1.1.12
-		picture = "GFX_select_date_1936"
+		picture = "GFX_select_date_3172"
 		default_country = "MUR"
 		default = yes
 		

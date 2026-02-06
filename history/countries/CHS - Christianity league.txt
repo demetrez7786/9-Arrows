@@ -1,4 +1,4 @@
-capital = 8
+capital = 32
 
 set_research_slots = 3
 
@@ -30,8 +30,5 @@ set_popularities = {
 	theocracy = 80
 	conservatism = 20
 }
-
-
-recruit_character = ABK_kirilli_bechvaya
 
 

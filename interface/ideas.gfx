@@ -1,6 +1,26 @@
 spriteTypes = {
 
     spriteType = {
+		name = "GFX_idea_MUR_opposition"
+		texturefile = "gfx/interface/ideas/MUR_opposition.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_MUR_divided_parliament"
+		texturefile = "gfx/interface/ideas/MUR_divided_parliament.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_MUR_separatists"
+		texturefile = "gfx/interface/ideas/MUR_separatists.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_MUR_failing_empire"
+		texturefile = "gfx/interface/ideas/MUR_failing_empire.png"
+	}
+
+    spriteType = {
 		name = "GFX_idea_CEN_populists_protest"
 		texturefile = "gfx/interface/ideas/CEN_populists_protest.png"
 	}
@@ -58,6 +78,30 @@ spriteTypes = {
 	###################
 	### Desc Photos ###
 	###################
+	
+	spriteType = {
+		name = "GFX_idea_strong_opposition_desc_photo"
+		textureFile = "/gfx/interface/ideas/strong_opposition_desc_photo.png"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_idea_divided_parliament_desc_photo"
+		textureFile = "/gfx/interface/ideas/divided_parliament_desc_photo.png"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_idea_separatists_desc_photo"
+		textureFile = "/gfx/interface/ideas/separatists_desc_photo.png"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_idea_failing_empire_desc_photo"
+		textureFile = "/gfx/interface/ideas/failing_empire_desc_photo.png"
+		legacy_lazy_load = no
+	}
 	
 	spriteType = {
 		name = "GFX_idea_populists_protest_desc_photo"

@@ -139,7 +139,7 @@ focus_tree = {
 
 	focus = {
 		id = MUR_fight_back_partisans
-		icon = GFX_CEN_last_bastion_of_democracy
+		icon = GFX_MUR_fight_back_partisans
 		x = 6
 		y = 7
 		prerequisite = { focus = MUR_mobilize_the_army }
@@ -169,8 +169,8 @@ focus_tree = {
 	}
 
 	focus = {
-		id = MUR_raid_kdp_offices
-		icon = GFX_CEN_last_bastion_of_democracy
+		id = MUR_raid_pcof_offices
+		icon = GFX_MUR_raid_pcof_offices
 		x = 8
 		y = 7
 		prerequisite = { focus = MUR_counter_communist_sympatizers }
@@ -231,6 +231,134 @@ focus_tree = {
 	}
 
 	focus = {
+		id = MUR_failing_economy
+		icon = GFX_MUR_failing_economy
+		x = 10
+		y = 3
+		prerequisite = { focus = MUR_failing_empire }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            add_political_power = -150
+		}
+	}
+
+	focus = {
+		id = MUR_fund_rural_sectors
+		icon = GFX_MUR_eastern_threat
+		x = 10
+		y = 5
+		prerequisite = { focus = MUR_failing_economy }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            add_political_power = -150
+		}
+	}
+
+	focus = {
+		id = MUR_make_prisoners_work
+		icon = GFX_MUR_eastern_threat
+		x = 10
+		y = 7
+		prerequisite = { focus = MUR_fund_rural_sectors }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            add_political_power = -150
+		}
+	}
+
+	focus = {
+		id = MUR_political_front
+		icon = GFX_MUR_eastern_threat
+		x = 10
+		y = 9
+		prerequisite = { focus = MUR_make_prisoners_work }
+		prerequisite = { focus = MUR_raid_pcof_offices }
+		prerequisite = { focus = MUR_fight_back_partisans }
+		prerequisite = { focus = MUR_lessons_of_murman_delta_war }
+		prerequisite = { focus = MUR_deploy_naval_guards }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            add_political_power = -150
+		}
+	}
+
+	focus = {
 		id = MUR_strengthen_naval_officers_administration
 		icon = GFX_MUR_strengthen_naval_administration
 		x = 12
@@ -264,7 +392,7 @@ focus_tree = {
 
 	focus = {
 		id = MUR_lessons_of_murman_delta_war
-		icon = GFX_CEN_last_bastion_of_democracy
+		icon = GFX_MUR_lessons_from_war
 		x = 12
 		y = 7
 		prerequisite = { focus = MUR_strengthen_naval_officers_administration }
@@ -325,7 +453,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = MUR_rise_naval_guards
+		id = MUR_deploy_naval_guards
 		icon = GFX_MUR_coast_guard
 		x = 14
 		y = 7

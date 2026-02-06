@@ -1,8 +1,0 @@
-areas = {
-
-	copper = {
-        strategic_regions = {
-            1
-        }
-    }
-}

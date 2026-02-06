@@ -3,6 +3,31 @@ spriteTypes = {
 	#### Murder drones icons
 	
 	SpriteType = {
+	name = "GFX_goal_generic_trade"
+	texturefile = "gfx/interface/goals/goal_generic_trade.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_MUR_failing_economy"
+	texturefile = "gfx/interface/goals/MUR_failing_economy.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_MUR_lessons_from_war"
+	texturefile = "gfx/interface/goals/MUR_lessons_from_war.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_MUR_fight_back_partisans"
+	texturefile = "gfx/interface/goals/MUR_fight_back_partisans.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_MUR_raid_pcof_offices"
+	texturefile = "gfx/interface/goals/MUR_raid_pcof_offices.png"
+	}
+	
+	SpriteType = {
 	name = "GFX_MUR_strengthen_naval_administration"
 	texturefile = "gfx/interface/goals/MUR_strengthen_naval_administration.png"
 	}

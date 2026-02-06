@@ -22,3 +22,12 @@
  CEN_populists_riots_2_desc:0 "\n\n\n\n£GFX_idea_populists_riot_desc_photo\n\n\n\n\n\n\nPopulist's flooded the streets of the capital city in the late 3171 which begun as just a protest against liberal government, which quickly turned into a riot, clashing with our police with Pyrotechnics, Molotov Cocktails and Guns. \nWe must deal with this."
  CEN_populists_protest:0 "Populist's Protest"
  CEN_populists_protest_desc:0 "\n\n\n\n£GFX_idea_populists_protest_desc_photo\n\n\n\n\n\n\nPopulists have calmed down."
+ 
+ MUR_failing_empire:0 "Failing Empire"
+ MUR_failing_empire_desc:0 "\n\n\n\n£GFX_idea_failing_empire_desc_photo\n\n\n\n\n\n\n"
+ MUR_strong_opposition:0 "Strong Opposition"
+ MUR_strong_opposition_desc:0 "\n\n\n\n£GFX_idea_strong_opposition_desc_photo\n\n\n\n\n\n\n"
+ MUR_separatists_movements:0 "Separatists Movements"
+ MUR_separatists_movements_desc:0 "\n\n\n\n£GFX_idea_separatists_desc_photo\n\n\n\n\n\n\n"
+ MUR_divided_parliament:0 "Divided Parliament"
+ MUR_divided_parliament_desc:0 "\n\n\n\n£GFX_idea_divided_parliament_desc_photo\n\n\n\n\n\n\n"

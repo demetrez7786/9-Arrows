@@ -1,4 +1,4 @@
-capital = 8
+capital = 63
 
 set_research_slots = 2
 
@@ -29,8 +29,5 @@ set_politics = {
 set_popularities = {
 	ultranationalism = 100
 }
-
-
-recruit_character = ABK_kirilli_bechvaya
 
 

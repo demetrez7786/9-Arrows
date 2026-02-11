@@ -1,6 +1,26 @@
 ﻿l_english:
  WHILE_FOCUSING:0 "While focusing on this, there will be the following effects:\n$EFF$"
  
+ MUR_the_failing_empire:0 "Failing Empire"
+ MUR_western_threat:0 "Western Threat"
+ MUR_counter_communist_sympatizers:0 "Counter Communist Sympathizers"
+ MUR_mobilize_the_army:0 "Mobilize the Land Force"
+ MUR_fight_back_partisans:0 "Strike the Partisans"
+ MUR_raid_pcof_offices:0 "Raid Communists Offices"
+ MUR_eastern_threat:0 "Eastern Threat"
+ MUR_failing_economy:0 "Failing Economy"
+ MUR_fund_rural_sectors:0 "Fund Rural Sectors"
+ MUR_make_prisoners_work:0 "Make Prisoners Work"
+ MUR_political_front:0 "Political Front"
+ MUR_expose_corruption_in_opposition:0 "Expose Corruption in Opposition"
+ MUR_restrict_opposition_media:0 "Restrict the Opposition Media"
+ MUR_fund_government_media:0 "Fund the Government Media"
+ MUR_strengthen_naval_officers_administration:0 "Strengthen the Naval Administraiton"
+ MUR_lessons_of_murman_delta_war:0 "Lessons from the Murman-Delta War"
+ MUR_mobilize_the_navy:0 "Mobilize the Navy"
+ MUR_deploy_naval_guards:0 "Deploy the Naval Guards"
+ 
+ 
  CEN_internal_affairs:0 "Internal Affairs"
  CEN_internal_affairs_desc:0 "Our internal affairs are not... okay..."
  CEN_republicans_won:0 "Republicans Won"
@@ -33,6 +53,7 @@
  CEN_the_eagles_status_desc:0 "Let's check our nation..."
  CEN_last_bastion_of_democracy:0 "The Last Bastion of Democarcy"
  CEN_last_bastion_of_democracy_desc:0 "We are the last bastion of democracy as we are only remaining country with free speech and no oppression!"
+ 
  UNI_begin_consolidation:0 "Begin Consolidation"
  UNI_begin_consolidation_desc:0 "This time we are doing it!"
  UNI_form_red_guard:0 "Form the Red Guard"

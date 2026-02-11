@@ -8,7 +8,7 @@ add_to_variable = { UNI_wm_army_attack_factor = -0.45 }
 add_to_variable = { UNI_wm_army_defence_factor = -0.45 }
 add_to_variable = { UNI_wm_army_speed_factor = -0.25 }
 add_to_variable = { UNI_wm_army_org_factor = -0.35 }
-add_to_variable = { UNI_wm_training_time_factor = -0.55 }
+add_to_variable = { UNI_wm_training_time_factor = 0.55 }
 
 add_dynamic_modifier = { modifier = UNI_failing_economy }
 add_to_variable = { UNI_fe_consumer_goods_factor = 0.4 }

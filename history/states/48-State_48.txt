@@ -2,15 +2,9 @@ state={
 	id=48
 	name="STATE_48"
 	provinces={
-		375 
+		49 80 100 192 254 304 509 1023 1415 1712 1858 1967 2064 2206 2369 2390 2727 2757 2880 3111 3445 3673 3876 4003 4249 4765 5180 5239 6300 6444 9704 9716 9752 9753 9770 9772 9773 9780 9788 9793 9795 9802 9805 9855 9870 9871 9880 9897 9910 9919 
 	}
-	
-	history={
-		owner = SHU
-		add_core_of = SHU
-	}
-	
 	buildings_max_level_factor=1.000
-    manpower=5000
-    state_category = large_town
+        manpower=1000
+        state_category = large_town
 }

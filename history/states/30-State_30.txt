@@ -2,15 +2,9 @@ state={
 	id=30
 	name="STATE_30"
 	provinces={
-		151 173 199 262 283 290 
+		223 318 771 1306 1307 1439 1507 2168 2313 2659 2816 3157 3166 3315 3399 3853 4128 4764 5076 5304 5682 5814 5974 8263 8273 8291 8313 8320 8369 8385 8409 8420 8425 8430 8431 8475 8496 8500 8553 8642 
 	}
-	
-	history={
-		owner = UNI
-		add_core_of = UNI
-	}
-	
 	buildings_max_level_factor=1.000
-    manpower=762903
-    state_category = large_town
+        manpower=1000
+        state_category = large_town
 }

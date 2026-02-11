@@ -2,15 +2,9 @@ state={
 	id=53
 	name="STATE_53"
 	provinces={
-		143 331 371 413 456 
+		136 359 498 861 870 877 1071 1493 1580 1854 1970 2259 2979 3065 3136 3308 3582 3629 4025 4054 4439 4760 4874 4908 4944 5410 5928 6415 6593 10033 10040 10047 10054 10057 10063 10070 10071 10072 10084 10089 10092 10095 10111 10114 10115 10121 10133 10134 10144 10154 10179 10186 
 	}
-	
-	history={
-		owner = ISL
-		add_core_of = ISL
-	}
-	
 	buildings_max_level_factor=1.000
-    manpower=5000
-    state_category = large_town
+        manpower=1000
+        state_category = large_town
 }

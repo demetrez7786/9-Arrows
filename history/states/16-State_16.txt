@@ -2,15 +2,9 @@ state={
 	id=16
 	name="STATE_16"
 	provinces={
-		26 77 79 131 136 144 239 274 300 346 361 450 478 
+		2055 2943 3074 4786 4853 5174 5436 6644 7301 7365 
 	}
-	
-	history={
-		owner = MUR
-		add_core_of = MUR
-	}
-	
 	buildings_max_level_factor=1.000
-    manpower=5000
-    state_category = large_town
+        manpower=1000
+        state_category = large_town
 }

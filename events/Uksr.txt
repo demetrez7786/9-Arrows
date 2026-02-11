@@ -5,7 +5,7 @@ country_event = {
 	id = karlt.1
 	title = karlt.1.t
 	desc = karlt.1.d
-	picture = GFX_report_event_MDR_winter_massacre
+	picture = GFX_report_event_UNI_aftermath_of_the_karlt_wars
 	
 	is_triggered_only = yes
 	
@@ -19,7 +19,7 @@ country_event = {
 	id = karlt.2
 	title = karlt.2.t
 	desc = karlt.2.d
-	picture = GFX_report_event_MDR_winter_massacre
+	picture = GFX_report_event_UNI_party_status
 	
 	is_triggered_only = yes
 	
@@ -33,7 +33,7 @@ country_event = {
 	id = karlt.3
 	title = karlt.3.t
 	desc = karlt.3.d
-	picture = GFX_report_event_MDR_winter_massacre
+	picture = GFX_report_event_UNI_sum
 	
 	is_triggered_only = yes
 	
@@ -47,7 +47,7 @@ country_event = {
 	id = karlt.4
 	title = karlt.4.t
 	desc = karlt.4.d
-	picture = GFX_report_event_MDR_winter_massacre
+	picture = GFX_report_event_UNI_economy
 	
 	is_triggered_only = yes
 	
@@ -79,7 +79,7 @@ country_event = {
 	id = karlt.6
 	title = karlt.6.t
 	desc = karlt.6.d
-	picture = GFX_report_event_MDR_winter_massacre
+	picture = GFX_report_event_UNI_party_status
 	
 	is_triggered_only = yes
 	
@@ -143,7 +143,7 @@ country_event = {
 	id = karlt.9
 	title = karlt.9.t
 	desc = karlt.9.d
-	picture = GFX_report_event_MDR_winter_massacre
+	picture = GFX_report_event_UNI_sum
 	
 	is_triggered_only = yes
 	
@@ -161,7 +161,7 @@ country_event = {
 	id = karlt.10
 	title = karlt.10.t
 	desc = karlt.10.d
-	picture = GFX_report_event_MDR_winter_massacre
+	picture = GFX_report_event_UNI_party_status
 	
 	is_triggered_only = yes
 	

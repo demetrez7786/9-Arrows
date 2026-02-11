@@ -2,15 +2,9 @@ state={
 	id=55
 	name="STATE_55"
 	provinces={
-		60 84 87 315 362 411 432 494 
+		121 175 323 341 694 1313 1447 1760 1843 2507 2516 2565 2839 3285 3670 3712 3817 4001 4199 4451 4547 4939 5011 5554 5718 5881 6465 10077 10102 10105 10109 10129 10156 10172 10181 10188 10202 10240 10269 10280 10298 10314 10341 
 	}
-	
-	history={
-		owner = SOE
-		add_core_of = SOE
-	}
-	
 	buildings_max_level_factor=1.000
-    manpower=5000
-    state_category = large_town
+        manpower=1000
+        state_category = large_town
 }

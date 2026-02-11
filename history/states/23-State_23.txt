@@ -2,15 +2,9 @@ state={
 	id=23
 	name="STATE_23"
 	provinces={
-		5 10 18 21 32 39 40 47 65 101 104 112 140 141 149 156 175 190 205 212 215 223 243 244 249 259 266 288 296 309 321 325 356 357 359 389 392 401 406 409 416 419 421 423 445 451 457 465 470 483 484 
+		1225 4180 6080 7867 7951 7985 
 	}
-	
-	history={
-		owner = CEN
-		add_core_of = CEN
-	}
-	
 	buildings_max_level_factor=1.000
-    manpower=3679804
-    state_category = large_town
+        manpower=1000
+        state_category = large_town
 }

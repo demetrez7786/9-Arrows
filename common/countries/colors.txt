@@ -55,4 +55,9 @@ NAA = {
 	color_ui = rgb { 76 135 80 }
 }
 
+JEW = {
+	color = rgb { 36 189 255 }
+	color_ui = rgb { 36 189 255 }
+}
+
 

@@ -1,0 +1,57 @@
+add_namespace = murman
+
+# Naval administration got more power
+country_event = {
+	id = murman.1
+	title = murman.1.t
+	desc = murman.1.d
+	picture = GFX_report_event_NAA_power
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = murman.1.a
+	}
+}
+
+#Strike succseded
+country_event = {
+	id = murman.2
+	title = murman.2.t
+	desc = murman.2.d
+	picture = GFX_report_event_MUR_raid
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = murman.2.a
+	}
+}
+
+#Strike failed
+country_event = {
+	id = murman.3
+	title = murman.3.t
+	desc = murman.3.d
+	picture = GFX_report_event_MUR_raid_failed
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = murman.3.a
+	}
+}
+
+#Murman Delta war
+country_event = {
+	id = murman.4
+	title = murman.4.t
+	desc = murman.4.d
+	picture = GFX_report_event_MUR_lesson_war
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = murman.4.a
+	}
+}

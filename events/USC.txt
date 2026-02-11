@@ -5,7 +5,7 @@ country_event = {
 	id = centralia.1
 	title = centralia.1.t
 	desc = centralia.1.d
-	picture = GFX_report_event_MDR_winter_massacre
+	picture = GFX_report_event_CEN_politics
 	
 	is_triggered_only = yes
 	
@@ -19,7 +19,7 @@ country_event = {
 	id = centralia.2
 	title = centralia.2.t
 	desc = centralia.2.d
-	picture = GFX_report_event_MDR_winter_massacre
+	picture = GFX_report_event_CEN_military
 	
 	is_triggered_only = yes
 	
@@ -33,7 +33,7 @@ country_event = {
 	id = centralia.3
 	title = centralia.3.t
 	desc = centralia.3.d
-	picture = GFX_report_event_MDR_winter_massacre
+	picture = GFX_report_event_UNI_economy
 	
 	is_triggered_only = yes
 	
@@ -47,7 +47,7 @@ country_event = {
 	id = centralia.4
 	title = centralia.4.t
 	desc = centralia.4.d
-	picture = GFX_report_event_MDR_winter_massacre
+	picture = GFX_report_event_CEN_populists_protest
 	
 	is_triggered_only = yes
 	

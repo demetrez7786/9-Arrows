@@ -15,7 +15,7 @@ focus_tree = {
 	continuous_focus_position = { x = 50 y = 7000 }
 
     focus = {
-		id = MUR_failing_empire
+		id = MUR_the_failing_empire
 		icon = GFX_MUR_failing_empire
 		x = 10
 		y = 1
@@ -49,7 +49,7 @@ focus_tree = {
 		icon = GFX_MUR_western_threat
 		x = 8
 		y = 3
-		prerequisite = { focus = MUR_failing_empire }
+		prerequisite = { focus = MUR_the_failing_empire }
 
 		cost = 5
 
@@ -71,7 +71,6 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-            add_political_power = -150
 		}
 	}
 
@@ -82,7 +81,7 @@ focus_tree = {
 		y = 5
 		prerequisite = { focus = MUR_western_threat }
 
-		cost = 5
+		cost = 25
 
 		ai_will_do = {
 			factor = 1
@@ -102,7 +101,11 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-            add_political_power = -150
+            add_war_support = 0.07
+			add_popularity = {
+				ideology = communism
+				popularity = -0.09
+			}
 		}
 	}
 
@@ -113,7 +116,7 @@ focus_tree = {
 		y = 5
 		prerequisite = { focus = MUR_western_threat }
 
-		cost = 5
+		cost = 25
 
 		ai_will_do = {
 			factor = 1
@@ -133,7 +136,8 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-            add_political_power = -150
+			army_experience = 10
+            add_manpower = 1500
 		}
 	}
 
@@ -144,7 +148,7 @@ focus_tree = {
 		y = 7
 		prerequisite = { focus = MUR_mobilize_the_army }
 
-		cost = 5
+		cost = 25
 
 		ai_will_do = {
 			factor = 1
@@ -164,7 +168,18 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-            add_political_power = -150
+			custom_effect_tooltip = MUR_striking_partisans_tt
+			hidden_effect = {
+            random_list = {
+			    50 = {
+			    country_event = { id = murman.2 }
+			    }
+            
+			    50 = {
+			    country_event = { id = murman.3 }
+			    }
+			}	
+			}
 		}
 	}
 
@@ -175,7 +190,7 @@ focus_tree = {
 		y = 7
 		prerequisite = { focus = MUR_counter_communist_sympatizers }
 
-		cost = 5
+		cost = 25
 
 		ai_will_do = {
 			factor = 1
@@ -195,7 +210,12 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-            add_political_power = -150
+            add_political_power = 25
+			add_stability = 0.03
+			add_popularity = {
+				ideology = communism
+				popularity = -0.16
+			}
 		}
 	}
 
@@ -204,7 +224,7 @@ focus_tree = {
 		icon = GFX_MUR_eastern_threat
 		x = 12
 		y = 3
-		prerequisite = { focus = MUR_failing_empire }
+		prerequisite = { focus = MUR_the_failing_empire }
 
 		cost = 5
 
@@ -226,7 +246,6 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-            add_political_power = -150
 		}
 	}
 
@@ -235,7 +254,7 @@ focus_tree = {
 		icon = GFX_MUR_failing_economy
 		x = 10
 		y = 3
-		prerequisite = { focus = MUR_failing_empire }
+		prerequisite = { focus = MUR_the_failing_empire }
 
 		cost = 5
 
@@ -257,13 +276,12 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-            add_political_power = -150
 		}
 	}
 
 	focus = {
 		id = MUR_fund_rural_sectors
-		icon = GFX_MUR_eastern_threat
+		icon = GFX_MDR_rural_sectors_ministry
 		x = 10
 		y = 5
 		prerequisite = { focus = MUR_failing_economy }
@@ -288,7 +306,14 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-            add_political_power = -150
+			9 = {
+			    add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                }
+				add_extra_state_shared_building_slots = 1
+			}
 		}
 	}
 
@@ -319,7 +344,6 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-            add_political_power = -150
 		}
 	}
 
@@ -359,11 +383,11 @@ focus_tree = {
 	}
 
 	focus = {
-		id = MUR_strengthen_naval_officers_administration
-		icon = GFX_MUR_strengthen_naval_administration
-		x = 12
-		y = 5
-		prerequisite = { focus = MUR_eastern_threat }
+		id = MUR_expose_corruption_in_opposition
+		icon = GFX_MUR_eastern_threat
+		x = 10
+		y = 11
+		prerequisite = { focus = MUR_political_front }
 
 		cost = 5
 
@@ -386,6 +410,101 @@ focus_tree = {
 
 		completion_reward = {
             add_political_power = -150
+		}
+	}
+
+	focus = {
+		id = MUR_restrict_opposition_media
+		icon = GFX_MUR_eastern_threat
+		x = 8
+		y = 11
+		prerequisite = { focus = MUR_political_front }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            add_political_power = -150
+		}
+	}
+
+	focus = {
+		id = MUR_fund_government_media
+		icon = GFX_MUR_eastern_threat
+		x = 12
+		y = 11
+		prerequisite = { focus = MUR_political_front }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            add_political_power = -150
+		}
+	}
+
+	focus = {
+		id = MUR_strengthen_naval_officers_administration
+		icon = GFX_MUR_strengthen_naval_administration
+		x = 12
+		y = 5
+		prerequisite = { focus = MUR_eastern_threat }
+
+		cost = 25
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            NAA = {
+				country_event = { id = murman.1 }
+			}
 		}
 	}
 
@@ -397,7 +516,7 @@ focus_tree = {
 		y = 7
 		prerequisite = { focus = MUR_strengthen_naval_officers_administration }
 
-		cost = 5
+		cost = 25
 
 		ai_will_do = {
 			factor = 1
@@ -417,7 +536,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-            add_political_power = -150
+            country_event = { id = murman.4 }
 		}
 	}
 
@@ -428,7 +547,7 @@ focus_tree = {
 		y = 5
 		prerequisite = { focus = MUR_eastern_threat }
 
-		cost = 5
+		cost = 25
 
 		ai_will_do = {
 			factor = 1
@@ -448,7 +567,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-            add_political_power = -150
+            navy_experience = 10
 		}
 	}
 
@@ -459,7 +578,7 @@ focus_tree = {
 		y = 7
 		prerequisite = { focus = MUR_mobilize_the_navy }
 
-		cost = 5
+		cost = 25
 
 		ai_will_do = {
 			factor = 1

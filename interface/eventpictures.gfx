@@ -1,0 +1,75 @@
+spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_report_event_MUR_lesson_war"
+		texturefile = "gfx/event_pictures/report_event_MUR_lesson_war.png"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_UNI_sum"
+		texturefile = "gfx/event_pictures/report_event_UNI_sum.png"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_UNI_party_status"
+		texturefile = "gfx/event_pictures/report_event_UNI_party_status.png"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_UNI_economy"
+		texturefile = "gfx/event_pictures/report_event_UNI_economy.png"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_UNI_aftermath_of_the_karlt_wars"
+		texturefile = "gfx/event_pictures/report_event_UNI_aftermath_of_the_karlt_wars.png"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_MUR_raid_failed"
+		texturefile = "gfx/event_pictures/report_event_MUR_raid_failed.png"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_MUR_raid"
+		texturefile = "gfx/event_pictures/report_event_MUR_raid.png"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_CEN_populists_protest"
+		texturefile = "gfx/event_pictures/report_event_CEN_populists_protest.png"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_CEN_politics"
+		texturefile = "gfx/event_pictures/report_event_CEN_politics.png"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_CEN_military"
+		texturefile = "gfx/event_pictures/report_event_CEN_military.png"
+	}
+
+		####  #		 ###	####   #####  #   #	 ###   #	#####	##### ####
+		#  	# #		#   #  #    #  #	  #   #	#	#  #	#	 #	#	  #   #
+		####  #		#####  #       ###	  #####	#	#  #	#	  #	###   ####
+		#  	  #		#	#  #    #  #	  #   #	#	#  #	#	 #	#	  #	  #
+		#	  #### 	#	#   ####   #####  #	  #	 ###   #### #####	##### #   #
+
+
+#### Placeholder Art ####
+	# Report Event #
+	spriteType = {
+		name = "GFX_report_event_PLACEHOLDER"
+		texturefile = "gfx/event_pictures/report_event_PLACEHOLDER.dds"
+	}
+	# News Event #
+	spriteType = {
+		name = "GFX_news_event_PLACEHOLDER"
+		texturefile = "gfx/event_pictures/news_event_PLACEHOLDER.dds"
+	}
+
+}
+
+
+

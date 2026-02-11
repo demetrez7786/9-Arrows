@@ -2,15 +2,9 @@ state={
 	id=40
 	name="STATE_40"
 	provinces={
-		254 258 355 
+		1893 4412 5543 9218 9230 
 	}
-	
-	history={
-		owner = CAL
-		add_core_of = CAL
-	}
-	
 	buildings_max_level_factor=1.000
-    manpower=5000
-    state_category = large_town
+        manpower=1000
+        state_category = large_town
 }

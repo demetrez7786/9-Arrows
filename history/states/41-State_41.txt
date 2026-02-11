@@ -2,15 +2,9 @@ state={
 	id=41
 	name="STATE_41"
 	provinces={
-		442 
+		143 162 620 706 1032 1137 1416 1900 2371 2580 2623 2707 2820 3225 3523 3914 4292 4495 4852 4880 5023 5518 5730 5731 5925 5998 6045 6135 6163 6599 9213 9214 9226 9237 9278 9293 9298 9311 9318 9338 9344 9347 9351 9352 9357 9402 9409 9412 9419 9427 9430 9431 
 	}
-	
-	history={
-		owner = CHS
-		add_core_of = CHS
-	}
-	
 	buildings_max_level_factor=1.000
-    manpower=5000
-    state_category = large_town
+        manpower=1000
+        state_category = large_town
 }

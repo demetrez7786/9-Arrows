@@ -2,15 +2,9 @@ state={
 	id=33
 	name="STATE_33"
 	provinces={
-		86 125 170 178 420 
+		6 521 2104 2195 3721 4020 4119 4297 4847 5439 5910 8520 8533 8577 8591 8637 8671 8678 8721 8776 8780 8846 
 	}
-	
-	history={
-		owner = NAA
-		add_core_of = NAA
-	}
-	
 	buildings_max_level_factor=1.000
-    manpower=5000
-    state_category = large_town
+        manpower=1000
+        state_category = large_town
 }

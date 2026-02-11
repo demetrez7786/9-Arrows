@@ -2,15 +2,9 @@ state={
 	id=42
 	name="STATE_42"
 	provinces={
-		23 132 133 158 167 197 275 293 294 330 428 488 
+		306 876 1119 1160 1449 3461 4220 5201 9231 9233 9246 9249 9253 9271 9275 9291 9294 9326 9334 9345 9363 9367 9374 9383 9386 
 	}
-	
-	history={
-		owner = CHS
-		add_core_of = CHS
-	}
-	
 	buildings_max_level_factor=1.000
-    manpower=5000
-    state_category = large_town
+        manpower=1000
+        state_category = large_town
 }

@@ -3,6 +3,56 @@ spriteTypes = {
 	#### Murder drones icons
 	
 	SpriteType = {
+	name = "GFX_CEN_continue_alone"
+	texturefile = "gfx/interface/goals/CEN_continue_alone.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_CEN_alliance"
+	texturefile = "gfx/interface/goals/CEN_alliance.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_CEN_protest_is_over"
+	texturefile = "gfx/interface/goals/CEN_protest_is_over.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_CEN_apologize_for_police_actions"
+	texturefile = "gfx/interface/goals/CEN_apologize_for_police_actions.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_CEN_start_public_debates"
+	texturefile = "gfx/interface/goals/CEN_start_public_debates.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_CEN_give_them_seats_in_senate"
+	texturefile = "gfx/interface/goals/CEN_give_them_seats_in_senate.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_CEN_reopen_talks_with_populists"
+	texturefile = "gfx/interface/goals/CEN_reopen_talks_with_populists.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_CEN_entrentch_our_position"
+	texturefile = "gfx/interface/goals/CEN_entrentch_our_position.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_CEN_democrats_remain"
+	texturefile = "gfx/interface/goals/CEN_democrats_remain.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_MDR_rural_sectors_ministry"
+	texturefile = "gfx/interface/goals/MDR_rural_sectors_ministry.png"
+	}
+	
+	SpriteType = {
 	name = "GFX_goal_generic_trade"
 	texturefile = "gfx/interface/goals/goal_generic_trade.png"
 	}

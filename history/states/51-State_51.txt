@@ -2,15 +2,9 @@ state={
 	id=51
 	name="STATE_51"
 	provinces={
-		135 
+		631 1407 2090 2402 2452 3731 4017 4216 5494 5511 9877 9887 9893 9907 9914 9918 9922 9929 9931 9935 9943 9948 9951 9953 9958 9962 9966 9975 
 	}
-	
-	history={
-		owner = SOE
-		add_core_of = SOE
-	}
-	
 	buildings_max_level_factor=1.000
-    manpower=5000
-    state_category = large_town
+        manpower=1000
+        state_category = large_town
 }

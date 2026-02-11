@@ -81,7 +81,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-            custom_modifier_tooltip = CEN_internal_affairs_tt
+            custom_effect_tooltip = CEN_internal_affairs_tt
 		}
 	}
 

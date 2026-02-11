@@ -16,7 +16,7 @@ focus_tree = {
 
     focus = {
 		id = CEN_democrats_won
-		icon = GFX_CEN_last_bastion_of_democracy
+		icon = GFX_CEN_democrats_remain
 		x = 8
 		y = 1
 
@@ -52,12 +52,12 @@ focus_tree = {
 
 	focus = {
 		id = CEN_entrench_our_positions
-		icon = GFX_CEN_last_bastion_of_democracy
+		icon = GFX_CEN_entrentch_our_position
 		x = 8
 		y = 3
 		prerequisite = { focus = CEN_democrats_won }
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 1
@@ -77,19 +77,14 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-            add_political_power = 100
-            add_stability = 0.15
-            add_popularity = {
-                ideology = liberalism
-                popularity = 0.3
-            }
-            news_event = { id = news.5 }
+            add_political_power = 75
+            add_stability = 0.05
 		}
 	}
 
 	focus = {
 		id = CEN_reopen_talks_with_populists
-		icon = GFX_CEN_last_bastion_of_democracy
+		icon = GFX_CEN_reopen_talks_with_populists
 		x = 8
 		y = 5
 		prerequisite = { focus = CEN_entrench_our_positions }
@@ -114,24 +109,24 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-            add_political_power = 100
-            add_stability = 0.15
+            add_political_power = 5
+            add_stability = 0.02
             add_popularity = {
                 ideology = liberalism
-                popularity = 0.3
+                popularity = 0.01
             }
-            news_event = { id = news.5 }
+			custom_effect_tooltip = CEN_talks_with_populist_tt
 		}
 	}
 
 	focus = {
 		id = CEN_give_them_seats_in_senat
-		icon = GFX_CEN_last_bastion_of_democracy
+		icon = GFX_CEN_give_them_seats_in_senate
 		x = 6
 		y = 7
 		prerequisite = { focus = CEN_reopen_talks_with_populists }
 
-		cost = 5
+		cost = 25
 
 		ai_will_do = {
 			factor = 1
@@ -151,24 +146,23 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-            add_political_power = 100
-            add_stability = 0.15
+            add_political_power = -20
+			add_war_support = -0.07
             add_popularity = {
-                ideology = liberalism
-                popularity = 0.3
+                ideology = populism
+                popularity = 0.1
             }
-            news_event = { id = news.5 }
 		}
 	}
 
 	focus = {
 		id = CEN_apologize_for_police_actions
-		icon = GFX_CEN_last_bastion_of_democracy
+		icon = GFX_CEN_apologize_for_police_actions
 		x = 10
 		y = 7
 		prerequisite = { focus = CEN_reopen_talks_with_populists }
 
-		cost = 5
+		cost = 25
 
 		ai_will_do = {
 			factor = 1
@@ -188,24 +182,20 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-            add_political_power = 100
-            add_stability = 0.15
-            add_popularity = {
-                ideology = liberalism
-                popularity = 0.3
-            }
-            news_event = { id = news.5 }
+            add_political_power = -100
+            add_stability = 0.2
+			add_war_support = -0.15
 		}
 	}
 
 	focus = {
 		id = CEN_start_public_debates
-		icon = GFX_CEN_last_bastion_of_democracy
+		icon = GFX_CEN_start_public_debates
 		x = 8
 		y = 7
 		prerequisite = { focus = CEN_reopen_talks_with_populists }
 
-		cost = 5
+		cost = 25
 
 		ai_will_do = {
 			factor = 1
@@ -225,13 +215,21 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-            add_political_power = 100
-            add_stability = 0.15
+            add_political_power = 5
+            add_stability = 0.07
+			add_war_support = 0.03
             add_popularity = {
                 ideology = liberalism
-                popularity = 0.3
+                popularity = 0.02
             }
-            news_event = { id = news.5 }
+			add_popularity = {
+                ideology = populism
+                popularity = 0.02
+            }
+			add_popularity = {
+                ideology = conservatism
+                popularity = 0.02
+            }
 		}
 	}
 
@@ -352,12 +350,12 @@ focus_tree = {
 
 	focus = {
 		id = CEN_counter_terrorism_demo
-		icon = GFX_CEN_last_bastion_of_democracy
+		icon = GFX_CEN_counter_terrorism
 		x = 8
 		y = 13
 		prerequisite = { focus = CEN_alliance focus = CEN_continue_alone }
 
-		cost = 5
+		cost = 25
 
 		ai_will_do = {
 			factor = 1

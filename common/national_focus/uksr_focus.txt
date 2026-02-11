@@ -267,7 +267,14 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-            add_stability = -0.1
+            25 = {
+			    add_building_construction = {
+                    type = arms_factory
+                    level = 2
+                    instant_build = yes
+                }
+				add_extra_state_shared_building_slots = 2
+			}
 		}
 	}
 
@@ -467,7 +474,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-            country_event = { id = drones.6 }
+            country_event = { id = karlt.6 }
 		}
 	}
 }	

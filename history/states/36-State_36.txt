@@ -2,15 +2,9 @@ state={
 	id=36
 	name="STATE_36"
 	provinces={
-		326 
+		2334 8901 8928 8950 
 	}
-	
-	history={
-		owner = NAA
-		add_core_of = NAA
-	}
-	
 	buildings_max_level_factor=1.000
-    manpower=5000
-    state_category = large_town
+        manpower=1000
+        state_category = large_town
 }

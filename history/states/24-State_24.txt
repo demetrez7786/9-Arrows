@@ -2,15 +2,9 @@ state={
 	id=24
 	name="STATE_24"
 	provinces={
-		98 189 198 208 226 241 253 328 339 405 463 
+		288 312 1175 1218 1653 1675 1898 2358 2523 2886 3392 3453 4079 4321 4692 4769 4931 5463 5581 5802 6125 6232 6285 6377 6381 6638 7941 7993 8028 8066 8090 8130 8139 8215 8249 8286 8345 
 	}
-	
-	history={
-		owner = DEL
-		add_core_of = DEL
-	}
-	
 	buildings_max_level_factor=1.000
-    manpower=98028
-    state_category = large_town
+        manpower=1000
+        state_category = large_town
 }

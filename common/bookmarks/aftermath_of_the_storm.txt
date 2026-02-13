@@ -63,10 +63,14 @@ bookmarks = {
 			history = "MUR_AFTERMATH_OF_THE_STORM_DESC"
 			ideology = monarchist
 			ideas = {
-				
+				MUR_failing_empire
+				MUR_separatists_movements
+				MUR_strong_opposition
 			}
 			focuses = {
-				
+				MUR_the_failing_empire
+				MUR_counter_communist_sympatizers
+				MUR_failing_economy
 			}
 		}
 		

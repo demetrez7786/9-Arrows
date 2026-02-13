@@ -1,0 +1,471 @@
+guiTypes = {
+
+	containerWindowType = {
+		name ="frontend_background"
+		position = { x=0 y =0 }	
+		size = { 
+			width = 1920 
+			height = 1440 
+			min = { width = 100% height = 100% }
+			max = { width = 100% height = 10000 }
+			preserve_aspect_ratio = yes
+		}
+		Orientation = center
+		Origo = center
+		clipping = no 
+		
+		background = {
+			name = "Background"		
+			quadTextureSprite ="GFX_frontend_bg"
+			alwaystransparent = yes
+		}
+		
+	}
+	
+	containerWindowType = {
+		name = "owned_dlc_item"
+		size = { width = 50 height = 50 }
+		
+		buttonType =
+		{
+			position = { x = -230 y = 0 }
+			name ="dlc_button"
+			spriteType = "GFX_frontend_banner_dlc018"
+		}
+		
+		iconType = {
+			name = "glowup"
+			position = { x = -50 y = -21 }
+			spriteType = "GFX_spirit_glow"
+			scale = 0.8
+			#hide = yes
+		}
+		
+		buttonType = {
+			name = "owned_tick"
+			spriteType = "GFX_BPT_area_defense_setting_tick"
+			position = { x = -6 y = 1 }
+			Orientation = center_left
+			scale = 0.56
+			alwaysTransparent = yes
+			#hide = yes
+		}
+		
+		buttonType = {
+			name = "enabled_tick"
+			spriteType = "GFX_general_check"
+			position = { x = 28 y = 24 }
+			Orientation = center_left
+			alwaysTransparent = yes
+		}
+		
+	}
+	
+	containerWindowType = {
+		name = "unowned_dlc_item"
+		size = { width = 50 height = 50 }
+		
+		buttonType =
+		{
+			position = { x = -230 y = 0 }
+			name ="dlc_button"
+			spriteType = "GFX_frontend_banner_dlc018"
+		}
+		
+		buttonType = {
+			name = "owned_tick"
+			spriteType = "GFX_BPT_area_defense_setting_tick"
+			position = { x = -6 y = 1 }
+			Orientation = center_left
+			scale = 0.56
+			alwaysTransparent = yes
+			#enabled = no
+		}
+		
+		buttonType = {
+			name = "enabled_tick"
+			spriteType = "GFX_general_check"
+			position = { x = 28 y = 24 }
+			Orientation = center_left
+			alwaysTransparent = yes
+		}
+		
+	}
+	
+	### MAIN MENU PANEL (DLC Ownership) 
+	containerWindowType = {
+		name  ="mainmenu_dlc_ownership"
+		position = { x=5 y =0 }
+		size = { width = 370 height = 583}
+		Orientation = lower_left
+		origo = lower_left
+		
+		gridBoxType = {
+			name = "potential_dlc_list"
+			position = { x = 0 y = 0}
+			size = { width = 50 height = 300 }
+			#Orientation = upper_left
+			slotsize = {width=50 height=51 }
+			max_slots_vertical = 1
+			format = "RIGHT"
+		}
+	}
+	
+	### MAIN MENU PANEL (upperleft)
+	containerWindowType = {
+		name  ="mainmenu_panel_upperleft"
+		position = { x=0 y =-200 }
+		show_position = { x=0 y =-1 }
+		animation_type = decelerated
+		animation_time = 1000
+		size = { width = 256 height = 768}
+		
+		iconType =
+		{
+			name ="frontend_game_logo"
+			spriteType = "GFX_frontend_game_logo"
+			position = { x= 20 y = 20 }
+		}
+		
+	}
+
+	#containerWindowType = {
+	#	name  ="frontend_alpha_stamp"
+	#	position = { x=100 y =-100  }
+	#	size = { width = 131 height = 132}
+	#	orientation = lower_left
+	#	origo = lower_left
+	#	
+	#	iconType =
+	#	{
+	#		name ="frontend_alpha_stamp"
+	#		spriteType = "GFX_alpha_stamp"
+	#		position = { x= 0 y = 20 }
+	#	}		
+	#	
+	#}	
+	
+	### MAIN MENU PANEL (upperright)
+	containerWindowType = {
+		name ="mainmenu_panel_upperright"
+		position = { x=0 y =-1 }
+		show_position = { x=-256 y =-1 }
+		animation_type = decelerated
+		animation_time = 1000					
+		size = { width = 256 height = 768}
+		Orientation = upper_right
+
+		ButtonType = {
+			name = "achievements_button"
+			position = { x = -50 y = 25 }
+			quadTextureSprite ="achievements"
+			pdx_tooltip = "MENU_ACHIEVEMENTS"
+		}
+
+		iconType =
+		{
+			name ="frontend_dev_logo"
+			spriteType = "GFX_frontend_dev_logo"
+			position = { x= 15 y = 15 }
+		}
+		
+		iconType =
+		{
+			name ="pdx_int_logo"
+			spriteType = "GFX_pdx_int_logo"
+			position = { x= 135 y = 15 }
+		}		
+		
+	}		
+
+	### SINGLE PLAYER MENU
+	containerWindowType = {
+		name = "mainmenu_single_player"
+		position = { x=0 y =0}
+		size = { width = 320 height = 395}
+		Orientation = CENTER
+		Origo = center	
+				
+		background = {
+			name = "Background"		
+			quadTextureSprite ="GFX_tiled_window"
+		}
+		
+		ButtonType = {
+			name = "sp_continue_button"
+			position = { x = 16 y = 18 }
+			quadTextureSprite ="GFX_main_lobby_button"	
+			buttonText = "FE_CONTINUE"
+			buttonFont = "hoi_24header"
+			clicksound = click_default
+			oversound = ui_menu_over
+		}
+		
+		iconType = {
+			name = "sp_continue_flag_left"
+			quadTextureSprite ="GFX_flag_small2_not_masked"
+			position = { x= 35 y = 22 }
+			Orientation = "UPPER_LEFT"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "sp_continue_flag_left_overlay"
+			quadTextureSprite ="GFX_flag_small2_not_masked"
+			position = { x= 35 y = 22 }
+			Orientation = "UPPER_LEFT"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "sp_continue_flag_right"
+			quadTextureSprite ="GFX_flag_small2_not_masked"
+			position = { x= 245 y = 22 }
+			Orientation = "UPPER_LEFT"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "sp_continue_flag_right_overlay"
+			quadTextureSprite ="GFX_flag_small2_not_masked"
+			position = { x= 245 y = 22 }
+			Orientation = "UPPER_LEFT"
+			alwaystransparent = yes
+		}
+		
+		ButtonType = {
+			name = "sp_new_button"
+			position = { x = 16 y = 58 }
+			quadTextureSprite ="GFX_main_lobby_button"	
+			buttonText = "FE_NEW"
+			buttonFont = "hoi_24header"
+			clicksound = click_default
+			oversound = ui_menu_over
+		}
+		
+		ButtonType = {
+			name = "sp_load_button"
+			position = {  x = 16 y = 98 }
+			quadTextureSprite ="GFX_main_lobby_button"	
+			buttonText = "MENU_BAR_LOAD"
+			buttonFont = "hoi_24header"
+			clicksound = click_default
+			oversound = ui_menu_over
+		}
+		
+		ButtonType = {
+			name = "sp_tutorial_button"
+			position = { x = 16 y = 138}
+			quadTextureSprite ="GFX_main_lobby_button"	
+			buttonText = "FE_TUTORIAL"
+			buttonFont = "hoi_24header"
+			clicksound = click_default
+			oversound = ui_menu_over
+		}
+		
+		ButtonType = {
+			name = "sp_back_button"
+			position = { x = 16 y = 218 }
+			quadTextureSprite ="GFX_main_lobby_button"	
+			buttonText = "BACK"
+			buttonFont = "hoi_24header"
+			clicksound = click_close
+			oversound = ui_menu_over
+			shortcut = "ESCAPE"
+		}
+	}
+
+	### MAIN MENU PANEL (bottom)
+	containerWindowType = {
+		name ="mainmenu_panel_bottom"
+		position = { x=0 y =0}
+		size = { width = 320 height = 450 }
+		Orientation = CENTER
+		Origo = center
+			
+		ButtonType = {
+			name = "single_player_button"
+			position = { x = -516 y = 518 }
+			quadTextureSprite ="GFX_singleplayer_button"
+			clicksound = click_default			
+			oversound = ui_menu_over
+		}
+
+		ButtonType = {
+			name = "multi_player_button"
+			position = { x = -216 y = 518}
+			quadTextureSprite ="GFX_multiplayer_button"
+			clicksound = click_default
+			oversound = ui_menu_over
+		}
+
+		instantTextBoxType = {
+
+			name ="version_label"
+			position = { x = 35 y = 421 }
+			textureFile = ""
+			font = "hoi_18b"
+			borderSize = {x = 0 y = 0}
+			text = "ALPHA"	
+			format = centre
+			maxWidth = 250
+			maxHeight = 20	
+		}
+		
+		
+		ButtonType = {
+			name = "settings_button"
+			position = { x = 216 y = 518 }
+			quadTextureSprite ="GFX_options_button"
+			clicksound = click_default
+			oversound = ui_menu_over
+		}
+		
+		ButtonType = {
+			name = "nudge_button"
+			position = { x = 16 y = 618 }
+			quadTextureSprite ="GFX_main_lobby_button"	
+			buttonText = "Nudge!"
+			buttonFont = "hoi_24header"
+		}
+
+		ButtonType = {
+			name = "exit_button"
+			position = { x = 516 y = 518 }
+			quadTextureSprite ="GFX_exit_button"
+			clicksound = click_default
+			oversound = ui_menu_over
+			
+		}
+	}
+	
+	containerWindowType = {
+		name = "mainmenu_social_buttons"
+		position = { x=-50 y=25 }	
+		size = { width = 240 height = 90 }
+		Orientation = center	
+		origo = center
+		
+		positionType = {
+			name = "position_without_social_gui"
+			position = { x = 0 y = 175 }
+		}
+
+		positionType = {
+			name = "subscription_position"
+			position = { x = -50 y = 109 }
+		}
+
+		positionType = {
+			name = "subscription_position_without_social_gui"
+			position = { x = 0 y = 239 }
+		}
+		
+		containerWindowType = {
+			name = "social_view_interface_window"
+			position = { x = 250 y = 0  }
+			size = { width = 60 height = 40 }
+			
+			buttonType = {
+				name = "toggle_button"
+				quadTextureSprite = "GFX_sort_button_83x29" ## Orig: 60x29
+				position = { x=0 y=0  }
+				buttonFont = "hoi_16mbs"
+			}
+				
+			iconType = {
+				name = "button_toggle_socialview_icon"
+				spriteType = "GFX_socialview_icon"
+				position = { x=0 y=0 }
+				alwaystransparent = yes
+			}
+				
+			instantTextBoxType={
+				name = "friends_online"
+				font = "cg_16b"
+				position = { x=20 y=15 }
+				text = "0"
+				maxWidth = 30
+				maxHeight = 16
+				alwaysTransparent = yes
+				format = center
+			}
+				
+			iconType = {
+				name = "new_message"
+				position = { x=42 y =5 }
+				spriteType = "GFX_new_message_icon"
+				pdx_tooltip = "SOCIAL_NEW_MESSAGE"
+			}
+				
+			iconType = {
+				name = "new_friend"
+				position = { x=42 y=17 }
+				spriteType = "GFX_new_friend_icon"
+				pdx_tooltip = "SOCIAL_NEW_FRIEND"
+			}
+		}
+        containerWindowType = {
+            name = "first_row"
+			position = { x=48 y=-17 }
+            ButtonType = {
+                name = "discord_button"
+                position = { x=88 y=140 }
+                quadTextureSprite ="discord"
+                #clicksound = click_default
+                pdx_tooltip = "MENU_DISCORD"
+                web_link = "https://discord.gg/ydKxwA9Fx5"
+                scale = 0.9
+            }
+        }
+        containerWindowType = {
+            name = "second_row"
+			position = { x=30 y=19 }
+            ButtonType = {
+                name = "twitter_button"
+                position = { x=30 y=103 }
+                quadTextureSprite ="x"
+                #clicksound = click_default
+                pdx_tooltip = "MENU_X"
+                web_link = "https://x.com/ironcode_col"
+                scale = 0.9
+            }
+
+            ButtonType = {
+                name = "youtube_button"
+                position = { x=67 y=72 }
+                quadTextureSprite ="youtube"
+                #clicksound = click_default
+                pdx_tooltip = "MENU_YOUTUBE"
+                web_link = "https://www.youtube.com/channel/UC1Yg_lWgcs5T8vRaMHdhaIw"
+                scale = 0.9
+            }
+			
+			ButtonType = {
+                name = "reddit_button"
+                position = { x=65 y=128 }
+                quadTextureSprite ="reddit"
+                #clicksound = click_default
+                pdx_tooltip = "MENU_REDDIT"
+                web_link = "https://www.reddit.com/r/9Arrows/"
+                scale = 0.9
+            }
+		}
+	}
+
+	## This position needs updated
+	containerWindowType = {
+		name = "mainmenu_achievement_button"
+		position = { x = -500 y = 20 }	
+		size = { width = 100 height = 100 }
+		Orientation = upper_right
+		clipping = no
+		
+		ButtonType = {
+			name = "achievements_button"
+			position = { x = 0 y = 0 }
+			quadTextureSprite ="achievements"
+			pdx_tooltip = "MENU_ACHIEVEMENTS"
+		}		
+	}
+}

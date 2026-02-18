@@ -1,0 +1,16 @@
+characters = {
+	MUR_uzi_doorman = {
+		name = "Uzi Doorman" 
+		portraits = {
+			civilian = {
+				large ="gfx/leaders/MUR/portrait_mur_uzi_doorman.png"
+			}
+		}
+		country_leader = {
+			ideology = uzis_party
+			expire = "4950.1.1.1"
+			id = -1
+		}
+	}
+}
+	

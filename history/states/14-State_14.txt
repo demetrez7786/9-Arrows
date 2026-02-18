@@ -4,7 +4,20 @@ state={
 	provinces={
 		82 258 489 606 627 726 811 1280 1551 1925 2292 2345 2881 2883 3422 3504 3709 3804 3934 4046 4086 4584 4694 5417 5462 5667 5769 5771 5888 6560 7176 7177 7178 7190 7193 7229 7244 7245 7254 7260 7265 7281 7288 7297 7302 7314 7315 7332 7339 7352 7353 7399 7417 7427 7446 
 	}
+	
+	history={
+		owner = UNI
+		add_core_of = UNI
+		victory_points = { 2292 35 }
+		buildings = {
+			infrastructure = 4
+			air_base = 8
+			arms_factory = 4
+			industrial_complex = 1
+		}
+	}
+	
 	buildings_max_level_factor=1.000
-        manpower=1000
-        state_category = town
+    manpower=3492000
+    state_category = large_city
 }

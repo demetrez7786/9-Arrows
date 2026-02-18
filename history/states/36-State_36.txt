@@ -4,7 +4,19 @@ state={
 	provinces={
 		3187 8860 
 	}
+	
+	history={
+		owner = DEL
+		add_core_of = DEL
+		victory_points = { 3187 5 }
+		buildings = {
+		    3187 = {
+				naval_base = 5
+			}
+		}
+	}
+	
 	buildings_max_level_factor=1.000
-        manpower=1000
-        state_category = town
+    manpower=65000
+    state_category = town
 }

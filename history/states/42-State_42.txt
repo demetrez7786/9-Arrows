@@ -4,7 +4,13 @@ state={
 	provinces={
 		140 159 617 703 1029 1134 1894 4279 4837 5008 5500 6113 6141 9169 9170 9181 9192 9233 9248 9253 9273 9302 
 	}
+	
+	history={
+		owner = NAA
+		add_core_of = NAA
+	}
+	
 	buildings_max_level_factor=1.000
-        manpower=1000
-        state_category = town
+    manpower=1000
+    state_category = town
 }

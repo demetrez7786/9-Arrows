@@ -4,7 +4,13 @@ state={
 	provinces={
 		5601 
 	}
+	
+	history={
+		owner = JCJ
+		add_core_of = JCJ
+	}
+	
 	buildings_max_level_factor=1.000
-        manpower=1000
-        state_category = town
+    manpower=1000
+    state_category = town
 }

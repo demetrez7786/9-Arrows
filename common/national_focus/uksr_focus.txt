@@ -106,7 +106,7 @@ focus_tree = {
 
 		completion_reward = {
             add_stability = -0.1
-			country_event = { id = drones.4 }
+			country_event = { id = karlt.4 }
 		}
 	}
 

@@ -4,7 +4,18 @@ state={
 	provinces={
 		6 518 2098 2189 3710 4007 4106 4283 4832 5421 5889 8490 8503 8546 8560 8606 8638 8645 8687 8742 8746 8811 
 	}
+	
+	history={
+		owner = CHS
+		add_core_of = CHS
+		buildings = {
+		    8742 = {
+				naval_base = 9
+			}
+		}
+	}	
+	
 	buildings_max_level_factor=1.000
-        manpower=1000
-        state_category = town
+    manpower=15674000
+    state_category = town
 }

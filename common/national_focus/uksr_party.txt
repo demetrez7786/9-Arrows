@@ -44,6 +44,7 @@ focus_tree = {
             add_stability = 0.1
 			add_war_support = 0.1
 			news_event = { id = news.3 }
+			set_country_flag = UNI_party_stays_in_power
 		}
 	}
 

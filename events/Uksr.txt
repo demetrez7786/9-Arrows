@@ -169,3 +169,18 @@ country_event = {
 		name = karlt.10.a
 	}
 }
+
+# other matters
+country_event = {
+	id = karlt.11
+	title = karlt.11.t
+	desc = karlt.11.d
+	picture = GFX_report_event_UNI_party_status
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = karlt.11.a
+		load_focus_tree = uksr_othermatters
+	}
+}

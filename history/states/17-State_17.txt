@@ -4,7 +4,13 @@ state={
 	provinces={
 		1248 2773 4290 5925 6166 7362 7394 7414 
 	}
+	
+	history={
+		owner = DEL
+		add_core_of = DEL
+	}
+	
 	buildings_max_level_factor=1.000
-        manpower=1000
-        state_category = town
+    manpower=1000
+    state_category = town
 }

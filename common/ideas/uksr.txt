@@ -189,7 +189,7 @@ ideas = {
 			picture = UNI_refugee_crisis_idea
 			
 			modifier = {
-				stability_factor = -0.1
+				stability_factor = -0.15
 				monthly_population = 0.5
 			}
 		}
@@ -211,7 +211,7 @@ ideas = {
 			modifier = {
 				war_support_factor = -0.1
 				army_attack_factor = -0.15
-				conscription = -0.025
+				conscription = -0.05
 			}
 		}
 	}

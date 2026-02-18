@@ -625,6 +625,8 @@ ideologies = {
 		types = {
 
 			monarchism_generic = { }
+			
+			uzis_party = { can_be_randomly_selected = no }
 
 		}
 

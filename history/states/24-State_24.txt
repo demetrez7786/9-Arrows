@@ -4,7 +4,13 @@ state={
 	provinces={
 		285 309 1171 1214 1648 1670 1892 2352 2516 2877 3381 3443 4066 4307 4678 4755 4916 5445 5562 5781 6103 6210 6263 6355 6359 6613 7914 7966 8001 8039 8063 8103 8112 8188 8222 8259 8318 
 	}
+	
+	history={
+		owner = MUR
+		add_core_of = MUR
+	}
+	
 	buildings_max_level_factor=1.000
-        manpower=1000
-        state_category = town
+    manpower=1000
+    state_category = town
 }

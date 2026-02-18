@@ -1,4 +1,4 @@
-capital = 14
+capital = 9
 
 set_research_slots = 4
 
@@ -14,6 +14,25 @@ set_technology = {
 	motorised_infantry = 1
 	paratroopers = 1
 	gw_artillery = 1
+}
+
+set_autonomy = {
+	target = NAA
+	autonomous_state = autonomy_puppet
+	freedom_level = 0.7
+}
+
+NAA = {
+	set_politics = {
+		ruling_party = militarism
+		last_election = "1936.1.1"
+		election_frequency = 48
+		elections_allowed = yes	
+	}
+
+	set_popularities = {
+		militarism = 100
+	}
 }
 
 set_grand_doctrine = mass_assault
@@ -41,4 +60,4 @@ add_ideas = {
 	MUR_divided_parliament
 }
 
-
+recruit_character = MUR_uzi_doorman

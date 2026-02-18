@@ -1,0 +1,664 @@
+focus_tree = {
+	id = uksr_othermatters
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = UNI
+		}
+	}
+	
+	default = no
+	
+	continuous_focus_position = { x = 50 y = 7000 }
+
+    focus = {
+		id = UNI_internal_instability
+		icon = GFX_UNI_militarism_came_to_power
+		x = 5
+		y = 1
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		allow_branch = {
+			has_country_flag = UNI_military_in_the_power
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		    
+		}
+	}
+
+	focus = {
+		id = UNI_silence_opposition
+		icon = GFX_UNI_militarism_came_to_power
+		x = 5
+		y = 3
+		prerequisite = { focus = UNI_internal_instability }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		allow_branch = {
+			
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		    
+		}
+	}
+
+	focus = {
+		id = UNI_give_back_sum_their_old_role
+		icon = GFX_UNI_militarism_came_to_power
+		x = 6
+		y = 5
+		prerequisite = { focus = UNI_silence_opposition }
+
+		cost = 15
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		allow_branch = {
+			
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		    
+		}
+	}
+
+	focus = {
+		id = UNI_local_elections
+		icon = GFX_UNI_militarism_came_to_power
+		x = 5
+		y = 7
+		prerequisite = { focus = UNI_peoples_stabilization_decree }
+		prerequisite = { focus = UNI_give_back_sum_their_old_role }
+
+		cost = 25
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		allow_branch = {
+			
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		    
+		}
+	}
+
+	focus = {
+		id = UNI_peoples_stabilization_decree
+		icon = GFX_UNI_militarism_came_to_power
+		x = 4
+		y = 5
+		prerequisite = { focus = UNI_silence_opposition }
+
+		cost = 15
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		allow_branch = {
+			
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		    
+		}
+	}
+
+	focus = {
+		id = UNI_internal_cracks
+		icon = GFX_UNI_militarism_came_to_power
+		x = 5
+		y = 1
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		allow_branch = {
+			has_country_flag = UNI_party_stays_in_power
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		    
+		}
+	}
+
+	focus = {
+		id = UNI_control_internal_opposition
+		icon = GFX_UNI_militarism_came_to_power
+		x = 5
+		y = 3
+		prerequisite = { focus = UNI_internal_cracks }
+
+		cost = 15
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		    
+		}
+	}
+
+	focus = {
+		id = UNI_silent_killing
+		icon = GFX_UNI_militarism_came_to_power
+		x = 6
+		y = 5
+		prerequisite = { focus = UNI_control_internal_opposition }
+
+		cost = 15
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		    
+		}
+	}
+
+	focus = {
+		id = UNI_arrest_them
+		icon = GFX_UNI_militarism_came_to_power
+		x = 4
+		y = 5
+		prerequisite = { focus = UNI_control_internal_opposition }
+
+		cost = 15
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		    
+		}
+	}
+
+	focus = {
+		id = UNI_opposition_is_controlled
+		icon = GFX_UNI_militarism_came_to_power
+		x = 5
+		y = 7
+		prerequisite = { focus = UNI_arrest_them }
+		prerequisite = { focus = UNI_silent_killing }
+
+		cost = 25
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		    
+		}
+	}
+
+	focus = {
+		id = UNI_news_from_murman
+		icon = GFX_UNI_militarism_came_to_power
+		x = 5
+		y = 9
+
+		cost = 25
+
+		allow_branch = {
+			has_global_flag = murman_empire_collapsed
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			always = no
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		    
+		}
+	}
+
+	focus = {
+		id = UNI_military_sickness
+		icon = GFX_UNI_militarism_came_to_power
+		x = 15
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		    
+		}
+	}
+
+	focus = {
+		id = UNI_land_force
+		icon = GFX_UNI_militarism_came_to_power
+		x = 15
+		y = 3
+		prerequisite = { focus = UNI_military_sickness }
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		    
+		}
+	}
+
+	focus = {
+		id = UNI_air_force
+		icon = GFX_UNI_militarism_came_to_power
+		x = 11
+		y = 3
+		prerequisite = { focus = UNI_military_sickness }
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		    
+		}
+	}
+
+	focus = {
+		id = UNI_hunt_corruption
+		icon = GFX_UNI_militarism_came_to_power
+		x = 14
+		y = 5
+		prerequisite = { focus = UNI_land_force }
+
+		cost = 25
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		    
+		}
+	}
+
+	focus = {
+		id = UNI_centralize_air_command
+		icon = GFX_UNI_militarism_came_to_power
+		x = 11
+		y = 7
+		prerequisite = { focus = UNI_modernize_aircrafts }
+		prerequisite = { focus = UNI_rebuild_pilot_corps }
+
+		cost = 25
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		    
+		}
+	}
+
+	focus = {
+		id = UNI_rebuild_pilot_corps
+		icon = GFX_UNI_militarism_came_to_power
+		x = 10
+		y = 5
+		prerequisite = { focus = UNI_air_force }
+
+		cost = 25
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		    
+		}
+	}
+
+	focus = {
+		id = UNI_modernize_aircrafts
+		icon = GFX_UNI_militarism_came_to_power
+		x = 12
+		y = 5
+		prerequisite = { focus = UNI_air_force }
+
+		cost = 25
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		    
+		}
+	}
+
+	focus = {
+		id = UNI_modernize_the_arsenal
+		icon = GFX_UNI_militarism_came_to_power
+		x = 16
+		y = 5
+		prerequisite = { focus = UNI_land_force }
+
+		cost = 25
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		    
+		}
+	}
+
+	focus = {
+		id = UNI_reform_officer_training
+		icon = GFX_UNI_militarism_came_to_power
+		x = 15
+		y = 7
+		prerequisite = { focus = UNI_hunt_corruption }
+		prerequisite = { focus = UNI_modernize_the_arsenal }
+
+		cost = 25
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		    
+		}
+	}
+}

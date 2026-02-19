@@ -60,4 +60,9 @@ JEW = {
 	color_ui = rgb { 36 189 255 }
 }
 
+SAL = {
+	color = rgb { 254 186 46 }
+	color_ui = rgb { 254 186 46 }
+}
+
 

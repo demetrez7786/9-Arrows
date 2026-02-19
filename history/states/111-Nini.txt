@@ -1,0 +1,17 @@
+state={
+	id=111
+	name="STATE_111"
+	provinces={
+		340 947 1176 1216 1774 3454 3570 3640 4311 4862 5501 5560 5616 5839 9914 9919 9934 9935 9951 9952 9962 9968 9972 9988 9993 
+	}
+	
+	History = {
+	    owner = SHU
+		add_core_of = SHU
+	}
+	
+	manpower=1000
+	buildings_max_level_factor=1
+	state_category=town
+	local_supplies=0
+}

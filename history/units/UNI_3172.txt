@@ -1,0 +1,93 @@
+﻿division_template = {
+	name = "Infantry Division"
+	division_names_group = UNI_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+        infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+       	engineer = { x = 0 y = 0 }
+       	artillery = { x = 0 y = 1 }
+	}
+}
+
+units = {
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7953
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 7953
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 7953
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 7953
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 7953
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+}
+
+###airwings in their own file
+
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+instant_effect = {
+
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "UNI"
+		}
+		requested_factories = 3
+		progress = 0.1
+		efficiency = 50
+	}
+	
+}
+#####################

@@ -1,0 +1,17 @@
+state={
+	id=121
+	name="STATE_121"
+	provinces={
+		26 595 742 1254 1434 1689 2248 2335 2741 2743 2804 3142 3408 3718 4008 4364 4554 5570 5659 5808 5867 5875 5885 7944 8002 8066 8100 8148 8153 8204 8205 8210 8265 8269 8295 8307 8313 8364 8435 8513 8570 
+	}
+	
+	History = {
+	    owner = MUR
+		add_core_of = MUR
+	}
+	
+	manpower=1000
+	buildings_max_level_factor=1
+	state_category=town
+	local_supplies=0
+}

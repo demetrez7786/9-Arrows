@@ -1,0 +1,17 @@
+state={
+	id=113
+	name="STATE_113"
+	provinces={
+		22 371 372 425 567 816 824 1122 1249 1617 1836 2020 2296 2576 2657 2702 2836 3048 3155 3331 3765 3866 4382 4397 4531 4716 5100 5188 5199 6072 6130 7913 7918 7925 7939 7940 7999 8000 8005 8038 8052 8070 8119 8134 8156 8157 8176 8187 8211 
+	}
+	
+	History = {
+	    owner = CEN
+		add_core_of = CEN
+	}
+	
+	manpower=1000
+	buildings_max_level_factor=1
+	state_category=town
+	local_supplies=0
+}

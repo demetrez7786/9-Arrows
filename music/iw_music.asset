@@ -1,0 +1,39 @@
+music = {
+	name = "hoi4mainthemeallies"
+	file = "hoi4mainthemeallies.ogg"
+}
+
+music = {
+	name = "bite_me"
+	file = "bite_me.ogg"
+}
+
+music = {
+	name = "click"
+	file = "click.ogg"
+}
+
+music = {
+	name = "eternal_destroyer"
+	file = "eternal_destroyer.ogg"
+}
+
+music = {
+	name = "get_prommed"
+	file = "get_prommed.ogg"
+}
+
+music = {
+	name = "hard_reset"
+	file = "hard_reset.ogg"
+}
+
+music = {
+	name = "heh_nothing_personal_kid"
+	file = "heh_nothing_personal_kid.ogg"
+}
+
+music = {
+	name = "the_knife_dance"
+	file = "the_knife_dance.ogg"
+}

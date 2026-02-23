@@ -65,4 +65,16 @@ SAL = {
 	color_ui = rgb { 254 186 46 }
 }
 
+BAD = {
+	color = rgb { 52 50 50 }
+	color_ui = rgb { 52 50 50 }
+}
+
+
+VES = {
+	color = rgb { 149 85 83 }
+	color_ui = rgb { 149 85 83 }
+}
+
+
 

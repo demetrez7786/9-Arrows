@@ -11,7 +11,7 @@ state={
 		victory_points= { 3777 40 }
 	}
 	
-	manpower=1450600
+	manpower=7450600
 	buildings_max_level_factor=1
 	state_category=large_city
 	local_supplies=0

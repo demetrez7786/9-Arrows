@@ -22,3 +22,28 @@ UNI_failing_economy = { #NATIONAL SPIRIT
 	industrial_capacity_dockyard = UNI_fe_industrial_capacity_dockyard
     industrial_capacity_factory = UNI_fe_industrial_capacity_factory
 }
+
+UNI_airforce = { #NATIONAL SPIRIT
+	enable = { always = yes }
+
+	icon = GFX_idea_SOV_red_airforce_ccp_2d_sov_compatibility
+
+	air_accidents_factor = UNI_soviet_airforce_air_accidents_factor
+	air_ace_generation_chance_factor = UNI_soviet_airforce_air_ace_generation_chance_factor #-0.5
+	air_night_penalty = UNI_soviet_airforce_air_night_penalty #0.3
+	air_weather_penalty = UNI_soviet_airforce_air_weather_penalty #0.3
+	air_wing_xp_loss_when_killed_factor = UNI_soviet_airforce_air_wing_xp_loss_when_killed_factor #0.3
+}
+
+UNI_navy = { #NATIONAL SPIRIT
+	enable = { always = yes }
+
+	icon = GFX_idea_SOV_red_navy_ccp_2d_sov_compatibility
+	
+	naval_coordination = UNI_red_fleet_naval_coordination #0.1 -> Advanced Manevuers
+	navy_visibility = UNI_red_fleet_navy_visibility #-0.05 -> Advanced Manevuers
+	positioning = UNI_red_fleet_positioning #0.1 -> Advanced Manevuers
+	screening_efficiency = UNI_red_fleet_screening_efficiency #0.1 -> Advanced Manevuers
+	naval_invasion_capacity = UNI_red_fleet_naval_invasion_capacity #10 -> Marines
+	invasion_preparation = UNI_red_fleet_invasion_preparation #-0.1 -> Marines
+}

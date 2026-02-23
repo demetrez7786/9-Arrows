@@ -3,6 +3,41 @@ spriteTypes = {
 	#### Murder drones icons
 	
 	SpriteType = {
+	name = "GFX_UNI_military_sickness"
+	texturefile = "gfx/interface/goals/UNI_military_sickness.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_UNI_local_elections"
+	texturefile = "gfx/interface/goals/UNI_local_elections.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_UNI_sum_old_role"
+	texturefile = "gfx/interface/goals/UNI_sum_old_role.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_UNI_stability_decree"
+	texturefile = "gfx/interface/goals/UNI_stability_decree.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_UNI_instability_socialism"
+	texturefile = "gfx/interface/goals/UNI_instability_socialism.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_UNI_instability_party"
+	texturefile = "gfx/interface/goals/UNI_instability_party.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_UNI_instability_military"
+	texturefile = "gfx/interface/goals/UNI_instability_military.png"
+	}
+	
+	SpriteType = {
 	name = "GFX_CEN_continue_alone"
 	texturefile = "gfx/interface/goals/CEN_continue_alone.png"
 	}

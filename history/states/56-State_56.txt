@@ -8,9 +8,10 @@ state={
 	History = {
 	    owner = JEW
 		add_core_of = JEW
+		victory_points = { 5860 30 }
 	}
 	
 	buildings_max_level_factor=1.000
-    manpower=1000
+    manpower=11876062
     state_category = town
 }

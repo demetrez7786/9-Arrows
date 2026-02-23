@@ -11,3 +11,5 @@ CAL	= "countries/Cariland.txt"
 NAA	= "countries/Naval Administration of MT.txt"
 JEW = "countries/Medina Yahodit.txt"
 SAL = "countries/South Cariland.txt"
+BAD = "countries/Bandits.txt" #Yes i love RDR2
+VES = "countries/Republic of Vesta.txt"

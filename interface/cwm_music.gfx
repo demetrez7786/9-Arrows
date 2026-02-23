@@ -1,0 +1,8 @@
+spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_drones_radio_station_cover"
+		textureFile = "gfx/drones_radio_station_cover.png"
+		noOfFrames = 2
+	}
+}

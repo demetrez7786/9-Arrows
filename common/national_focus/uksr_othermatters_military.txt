@@ -444,6 +444,37 @@ focus_tree = {
 	}
 
 	focus = {
+		id = UNI_navy_force
+		icon = GFX_UNI_militarism_came_to_power
+		x = 19
+		y = 3
+		prerequisite = { focus = UNI_military_sickness }
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		    add_dynamic_modifier = { modifier = UNI_navy }
+		}
+	}
+
+	focus = {
 		id = UNI_air_force
 		icon = GFX_UNI_militarism_came_to_power
 		x = 11
@@ -470,7 +501,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-		    
+		    add_dynamic_modifier = { modifier = UNI_airforce }
 		}
 	}
 
@@ -501,7 +532,12 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-		    
+		    add_to_variable = { UNI_wm_war_support_factor = 0.03 }
+            add_to_variable = { UNI_wm_army_attack_factor = 0.03 }
+            add_to_variable = { UNI_wm_army_defence_factor = 0.03 }
+            add_to_variable = { UNI_wm_army_speed_factor = 0.03 }
+            add_to_variable = { UNI_wm_army_org_factor = 0.04 }
+            add_to_variable = { UNI_wm_training_time_factor = -0.03 }
 		}
 	}
 
@@ -533,7 +569,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-		    
+			add_to_variable = { UNI_soviet_airforce_air_accidents_factor = -0.05 }
+            add_to_variable = { UNI_soviet_airforce_air_ace_generation_chance_factor = 0.05 }
+            add_to_variable = { UNI_soviet_airforce_air_night_penalty = -0.05 }
+            add_to_variable = { UNI_soviet_airforce_air_weather_penalty = -0.05 }		    
 		}
 	}
 
@@ -564,7 +603,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-		    
+			add_to_variable = { UNI_soviet_airforce_air_accidents_factor = -0.05 }
+            add_to_variable = { UNI_soviet_airforce_air_ace_generation_chance_factor = 0.05 }
+            add_to_variable = { UNI_soviet_airforce_air_night_penalty = -0.05 }
+            add_to_variable = { UNI_soviet_airforce_air_weather_penalty = -0.05 }
 		}
 	}
 
@@ -595,7 +637,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-		    
+			add_to_variable = { UNI_soviet_airforce_air_accidents_factor = -0.05 }
+            add_to_variable = { UNI_soviet_airforce_air_ace_generation_chance_factor = 0.05 }
+            add_to_variable = { UNI_soviet_airforce_air_night_penalty = -0.05 }
+            add_to_variable = { UNI_soviet_airforce_air_weather_penalty = -0.05 }		    
 		}
 	}
 
@@ -626,7 +671,121 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-		    
+		    add_to_variable = { UNI_wm_war_support_factor = 0.03 }
+            add_to_variable = { UNI_wm_army_attack_factor = 0.03 }
+            add_to_variable = { UNI_wm_army_defence_factor = 0.03 }
+            add_to_variable = { UNI_wm_army_speed_factor = 0.03 }
+            add_to_variable = { UNI_wm_army_org_factor = 0.02 }
+            add_to_variable = { UNI_wm_training_time_factor = -0.03 }
+		}
+	}
+
+	focus = {
+		id = UNI_audit_the_fleet
+		icon = GFX_UNI_militarism_came_to_power
+		x = 18
+		y = 5
+		prerequisite = { focus = UNI_navy_force }
+
+		cost = 25
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		    add_to_variable = { UNI_red_fleet_naval_coordination = 0.05 }
+            add_to_variable = { UNI_red_fleet_navy_visibility = -0.05 }
+            add_to_variable = { UNI_red_fleet_positioning = 0.05 }
+            add_to_variable = { UNI_red_fleet_screening_efficiency = 0.05 }
+            add_to_variable = { UNI_red_fleet_naval_invasion_capacity = 5 }
+            add_to_variable = { UNI_red_fleet_invasion_preparation = 0.05 }		    
+		}
+	}
+
+	focus = {
+		id = UNI_reorganize_naval_command
+		icon = GFX_UNI_militarism_came_to_power
+		x = 20
+		y = 5
+		prerequisite = { focus = UNI_navy_force }
+
+		cost = 25
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		    add_to_variable = { UNI_red_fleet_naval_coordination = 0.05 }
+            add_to_variable = { UNI_red_fleet_navy_visibility = -0.05 }
+            add_to_variable = { UNI_red_fleet_positioning = 0.05 }
+            add_to_variable = { UNI_red_fleet_screening_efficiency = 0.05 }
+            add_to_variable = { UNI_red_fleet_naval_invasion_capacity = 5 }
+            add_to_variable = { UNI_red_fleet_invasion_preparation = 0.05 }			    
+		}
+	}
+
+	focus = {
+		id = UNI_form_naval_academy
+		icon = GFX_UNI_militarism_came_to_power
+		x = 19
+		y = 7
+		prerequisite = { focus = UNI_audit_the_fleet }
+		prerequisite = { focus = UNI_reorganize_naval_command }
+
+		cost = 25
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_to_variable = { UNI_red_fleet_naval_coordination = 0.05 }
+            add_to_variable = { UNI_red_fleet_navy_visibility = -0.05 }
+            add_to_variable = { UNI_red_fleet_positioning = 0.05 }
+            add_to_variable = { UNI_red_fleet_screening_efficiency = 0.05 }
+            add_to_variable = { UNI_red_fleet_naval_invasion_capacity = 5 }
+            add_to_variable = { UNI_red_fleet_invasion_preparation = 0.05 }		    
 		}
 	}
 
@@ -639,6 +798,44 @@ focus_tree = {
 		prerequisite = { focus = UNI_modernize_the_arsenal }
 
 		cost = 25
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		    add_to_variable = { UNI_wm_war_support_factor = 0.03 }
+            add_to_variable = { UNI_wm_army_attack_factor = 0.03 }
+            add_to_variable = { UNI_wm_army_defence_factor = 0.03 }
+            add_to_variable = { UNI_wm_army_speed_factor = 0.03 }
+            add_to_variable = { UNI_wm_army_org_factor = 0.02 }
+            add_to_variable = { UNI_wm_training_time_factor = -0.03 }		    
+		}
+	}
+
+	focus = {
+		id = UNI_red_army
+		icon = GFX_UNI_militarism_came_to_power
+		x = 15
+		y = 9
+		prerequisite = { focus = UNI_reform_officer_training }
+		prerequisite = { focus = UNI_centralize_air_command }
+		prerequisite = { focus = UNI_form_naval_academy }
+
+		cost = 30
 
 		ai_will_do = {
 			factor = 1

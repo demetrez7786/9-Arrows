@@ -1,0 +1,440 @@
+focus_tree = {
+	id = del_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 30
+			tag = DEL
+		}
+	}
+	
+	default = no
+	
+	continuous_focus_position = { x = 50 y = 7000 }
+
+    focus = {
+		id = del_aftermath_of_elections
+		icon = GFX_DEL_aftermath_of_elections
+		x = 5
+		y = 1
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            country_event = { id = delta.1 }
+		}
+	}
+
+	focus = {
+		id = del_civil_administration_issues
+		icon = GFX_DEL_civil_administration_issues
+		x = 8
+		y = 3
+		prerequisite = { focus = del_aftermath_of_elections }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            country_event = { id = delta.2 }
+		}
+	}
+
+	focus = {
+		id = del_recruitment_offices
+		icon = GFX_DEL_recruitment_offices
+		x = 9
+		y = 5
+		prerequisite = { focus = del_civil_administration_issues }
+
+		cost = 15
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            add_days_mission_timeout = {
+                mission = DEL_protest_escalating
+                days = 20
+            }
+			add_manpower = 2000
+			custom_effect_tooltip = DEL_police_tt
+		}
+	}
+
+	focus = {
+		id = del_protest_escalated
+		icon = GFX_goal_unknown
+		x = 8
+		y = 7
+		prerequisite = { focus = del_seize_opposition_channels }
+		prerequisite = { focus = del_recruitment_offices }
+
+		cost = 15
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+            always = no
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            
+		}
+	}
+
+	focus = {
+		id = del_send_riot_police
+		icon = GFX_DEL_send_riotpolice
+		x = 8
+		y = 9
+		prerequisite = { focus = del_protest_escalated }
+
+		cost = 4
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+            
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            add_political_power = -75
+			add_stability = -0.15
+			add_war_support = -0.2
+			country_event = { id = delta.16 }
+		}
+	}
+
+	focus = {
+		id = del_rumors_of_uprisings
+		icon = GFX_DEL_rumors_of_uprisings
+		x = 8
+		y = 11
+		prerequisite = { focus = del_send_riot_police }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+            
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            country_event = { id = delta.13 }
+		}
+	}
+
+	focus = {
+		id = del_seize_opposition_channels
+		icon = GFX_DEL_seize_opposition_channels
+		x = 7
+		y = 5
+		prerequisite = { focus = del_civil_administration_issues }
+
+		cost = 15
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            add_days_mission_timeout = {
+                mission = DEL_protest_escalating
+                days = 20
+            }
+			custom_effect_tooltip = DEL_weak_opposition_tt
+		}
+	}
+
+	focus = {
+		id = del_military_sector
+		icon = GFX_DEL_military_section
+		x = 2
+		y = 3
+		prerequisite = { focus = del_aftermath_of_elections }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            army_experience = 10
+			hidden_effect = {
+				country_event = {
+					days = 75
+					id = delta.4
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = del_emergency_generals_meeting
+		icon = GFX_DEL_emergency_general_meeting
+		x = 1
+		y = 5
+		prerequisite = { focus = del_military_sector }
+
+		cost = 15
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			country_event = { id = delta.12 }
+		}
+	}
+
+	focus = {
+		id = del_address_deserters_issue
+		icon = GFX_DEL_address_deserters_issue
+		x = 3
+		y = 5
+		prerequisite = { focus = del_military_sector }
+
+		cost = 15
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			has_completed_focus = del_emergency_generals_meeting
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = del_incident_in_orphegan
+		icon = GFX_DEL_orphegan_incident
+		x = 2
+		y = 7
+		prerequisite = { focus = del_emergency_generals_meeting }
+		prerequisite = { focus = del_address_deserters_issue }
+
+		cost = 15
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			always = no
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+           
+		}
+	}
+
+	focus = {
+		id = del_send_delegation
+		icon = GFX_DEL_send_delegation
+		x = 2
+		y = 9
+		prerequisite = { focus = del_incident_in_orphegan }
+
+		cost = 15
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			has_country_flag = DEL_work_for_negotiations
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+           MUR = {
+			country_event = { id = murman.6 }
+		   }
+		}
+	}
+
+	focus = {
+		id = del_negotiations_ended
+		icon = GFX_DEL_negotiations_ended
+		x = 2
+		y = 11
+		prerequisite = { focus = del_send_delegation }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			has_country_flag = negitoations_ended
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+           add_political_power = 50
+		   add_stability = 0.15
+		}
+	}
+}

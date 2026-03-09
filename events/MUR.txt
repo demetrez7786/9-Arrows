@@ -55,3 +55,67 @@ country_event = {
 		name = murman.4.a
 	}
 }
+
+#Incident in Orhpegan
+country_event = {
+	id = murman.5
+	title = murman.5.t
+	desc = murman.5.d
+	picture = GFX_report_event_MUR_lesson_war
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		
+	}
+	
+	option = {
+		name = murman.5.a
+		set_country_flag = MUR_prepare_for_war
+		news_event = { id = news.7 }
+	}
+}
+
+#Delta wants negotiatons
+country_event = {
+	id = murman.6
+	title = murman.6.t
+	desc = murman.6.d
+	picture = GFX_report_event_MUR_lesson_war
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		set_country_flag = negotiatons_started
+	}
+	
+	option = {
+		name = murman.6.a
+		unlock_decision_category_tooltip = MUR_negotiations
+		DEL = {
+		    country_event = { id = delta.8 }
+		}
+	}
+}
+
+#Delta is busy
+country_event = {
+	id = murman.7
+	title = murman.7.t
+	desc = murman.7.d
+	picture = GFX_report_event_MUR_lesson_war
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = murman.7.a
+		34 = { transfer_state_to = MUR }
+		36 = { transfer_state_to = MUR }
+		DEL = {
+		    country_event = { 
+			    id = delta.15
+				days = 1
+			}
+		}
+	}
+}

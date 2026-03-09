@@ -153,3 +153,90 @@ news_event = {
 		trigger = { TAG = CEN }
 	}
 }
+
+# Orphegan Incident
+news_event = {
+	id = news.7
+	title = news.7.t
+	desc = news.7.d
+	picture = GFX_news_event_orphegan_incident
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.7.a
+		trigger = {
+			NOT = {
+				TAG = MUR
+				TAG = NAA
+				TAG = DEL
+			}
+		}
+	}
+	option = {
+		name = news.7.b
+		trigger = { TAG = MUR }
+	}
+	
+	option = {
+		name = news.7.g
+		trigger = { TAG = NAA }
+	}
+	
+	option = {
+		name = news.7.c
+		trigger = { TAG = DEL }
+	}
+}
+
+# war for delta
+news_event = {
+	id = news.8
+	title = news.8.t
+	desc = news.8.d
+	picture = GFX_news_event_war_for_delta
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.8.a
+		trigger = {
+			NOT = {
+				TAG = DEL
+			}
+		}
+	}
+	option = {
+		name = news.8.b
+		trigger = { TAG = DEL }
+	}
+}
+
+# Delta war over
+news_event = {
+	id = news.9
+	title = news.9.t
+	desc = news.9.d
+	picture = GFX_news_event_war_for_delta
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.9.a
+		trigger = {
+			NOT = {
+				TAG = DEL
+			}
+		}
+	}
+	option = {
+		name = news.9.b
+		trigger = { TAG = DEL }
+	}
+}

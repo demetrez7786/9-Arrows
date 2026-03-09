@@ -8,6 +8,12 @@ state={
 	history={
 		owner = NAA
 		add_core_of = NAA
+		victory_points = { 8818 20 }
+		buildings = {
+		    8818 = {
+				naval_base = 5
+			}
+		}
 	}
 	
 	buildings_max_level_factor=1.000

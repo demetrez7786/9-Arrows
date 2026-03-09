@@ -565,6 +565,16 @@ spriteTypes = {
 	}
 	
 	spriteType = {
+		name = "GFX_ideology_democrats_party"
+		texturefile = "gfx/interface/ideologies/democrats_party.png"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_officers_council"
+		texturefile = "gfx/interface/ideologies/officers_council.png"
+	}
+	
+	spriteType = {
 		name = "GFX_ideology_unknown"
 		texturefile = "gfx/interface/ideologies/unknown.dds"
 		legacy_lazy_load = no

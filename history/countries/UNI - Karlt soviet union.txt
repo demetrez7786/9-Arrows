@@ -58,6 +58,7 @@ add_ideas = {
 	closed_borders
 	mixed_media
 	state_atheism
+	low_military_spending
 }
 
 

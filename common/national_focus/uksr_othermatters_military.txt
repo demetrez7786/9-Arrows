@@ -16,7 +16,7 @@ focus_tree = {
 
     focus = {
 		id = UNI_internal_instability
-		icon = GFX_UNI_militarism_came_to_power
+		icon = GFX_UNI_instability_military
 		x = 5
 		y = 1
 
@@ -85,7 +85,7 @@ focus_tree = {
 
 	focus = {
 		id = UNI_give_back_sum_their_old_role
-		icon = GFX_UNI_militarism_came_to_power
+		icon = GFX_UNI_sum_old_role
 		x = 6
 		y = 5
 		prerequisite = { focus = UNI_silence_opposition }
@@ -120,7 +120,7 @@ focus_tree = {
 
 	focus = {
 		id = UNI_local_elections
-		icon = GFX_UNI_militarism_came_to_power
+		icon = GFX_UNI_local_elections
 		x = 5
 		y = 7
 		prerequisite = { focus = UNI_peoples_stabilization_decree }
@@ -156,7 +156,7 @@ focus_tree = {
 
 	focus = {
 		id = UNI_peoples_stabilization_decree
-		icon = GFX_UNI_militarism_came_to_power
+		icon = GFX_UNI_stability_decree
 		x = 4
 		y = 5
 		prerequisite = { focus = UNI_silence_opposition }
@@ -191,7 +191,7 @@ focus_tree = {
 
 	focus = {
 		id = UNI_internal_cracks
-		icon = GFX_UNI_militarism_came_to_power
+		icon = GFX_UNI_instability_party
 		x = 5
 		y = 1
 
@@ -203,6 +203,40 @@ focus_tree = {
 
 		allow_branch = {
 			has_country_flag = UNI_party_stays_in_power
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		    
+		}
+	}
+
+	focus = {
+		id = UNI_internal_flames
+		icon = GFX_UNI_instability_socialism
+		x = 5
+		y = 1
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		allow_branch = {
+			has_country_flag = UNI_socialists_in_power
 		}
 
 		available = {
@@ -384,7 +418,7 @@ focus_tree = {
 
 	focus = {
 		id = UNI_military_sickness
-		icon = GFX_UNI_militarism_came_to_power
+		icon = GFX_UNI_military_sickness
 		x = 15
 		y = 1
 

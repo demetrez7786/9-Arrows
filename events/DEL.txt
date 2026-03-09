@@ -1,0 +1,343 @@
+add_namespace = delta
+
+# Aftermath of Election
+country_event = {
+	id = delta.1
+	title = delta.1.t
+	desc = delta.1.d
+	picture = GFX_report_event_NAA_power
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = delta.1.a
+	}
+}
+
+# no guns protest
+country_event = {
+	id = delta.2
+	title = delta.2.t
+	desc = delta.2.d
+	picture = GFX_report_event_no_guns_protest
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = delta.2.a
+	}
+}
+
+# protests have escalated
+country_event = {
+	id = delta.3
+	title = delta.3.t
+	desc = delta.3.d
+	picture = GFX_report_event_DEL_protest_escalated
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = delta.3.a
+		complete_national_focus = del_protest_escalated
+	}
+}
+
+# incident in orphegan
+country_event = {
+	id = delta.4
+	title = delta.4.t
+	desc = delta.4.d
+	picture = GFX_report_event_DEL_incident_in_orphegan
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = delta.4.a
+		complete_national_focus = del_incident_in_orphegan
+		NAA = {
+		    country_event = { id = naval.1 }
+		}
+	}
+}
+
+# murman is preparing for the war
+country_event = {
+	id = delta.5
+	title = delta.5.t
+	desc = delta.5.d
+	picture = GFX_report_event_DEL_incident_in_orphegan
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = delta.5.a
+		set_country_flag = DEL_work_for_negotiations
+	}
+}
+
+# murman called for reservists
+country_event = {
+	id = delta.6
+	title = delta.6.t
+	desc = delta.6.d
+	picture = GFX_report_event_DEL_incident_in_orphegan
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = delta.6.a
+	}
+}
+
+# murman sabotaged ports
+country_event = {
+	id = delta.7
+	title = delta.7.t
+	desc = delta.7.d
+	picture = GFX_report_event_DEL_incident_in_orphegan
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = delta.7.a
+	}
+}
+
+# murman agress on negotiations
+country_event = {
+	id = delta.8
+	title = delta.8.t
+	desc = delta.8.d
+	picture = GFX_report_event_DEL_incident_in_orphegan
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		set_country_flag = negotiatons_started
+	}
+	
+	option = {
+		name = delta.8.a
+		unlock_decision_category_tooltip = DEL_negotiations
+	}
+}
+
+# murman demands punishment for young officers
+country_event = {
+	id = delta.9
+	title = delta.9.t
+	desc = delta.9.d
+	picture = GFX_report_event_DEL_incident_in_orphegan
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = delta.9.a
+		add_manpower = -17
+		add_war_support = -0.05
+		add_to_variable = {
+            var = DEL_progress
+	        value = 25
+		}
+		MUR = {
+		    add_to_variable = {
+            var = MUR_progress
+	        value = 25
+			}
+		}
+	}
+}
+
+# murman demands reparations for damage
+country_event = {
+	id = delta.10
+	title = delta.10.t
+	desc = delta.10.d
+	picture = GFX_report_event_DEL_incident_in_orphegan
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = delta.10.a
+		add_political_power = -150
+		add_war_support = -0.05
+		MUR = {
+		    add_political_power = 150
+			add_to_variable = {
+            var = MUR_progress
+	        value = 25
+			}
+		}
+		add_to_variable = {
+            var = DEL_progress
+	        value = 25
+		}
+	}
+}
+
+# murman demands demilitarization of ports
+country_event = {
+	id = delta.11
+	title = delta.11.t
+	desc = delta.11.d
+	picture = GFX_report_event_DEL_incident_in_orphegan
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = delta.11.a
+		add_war_support = -0.05
+		34 = {
+		    set_demilitarized_zone = yes
+		}
+		36 = {
+		    set_demilitarized_zone = yes
+		}
+		add_to_variable = {
+            var = DEL_progress
+	        value = 50
+		}
+		MUR = {
+		    add_to_variable = {
+            var = MUR_progress
+	        value = 50
+			}
+		}
+	}
+}
+
+# General meeting
+country_event = {
+	id = delta.12
+	title = delta.12.t
+	desc = delta.12.d
+	picture = GFX_report_event_DEL_incident_in_orphegan
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = delta.12.a
+		add_war_support = 0.025
+		army_experience = 15
+	}
+}
+
+# Rumors of Uprisings
+country_event = {
+	id = delta.13
+	title = delta.13.t
+	desc = delta.13.d
+	picture = GFX_report_event_DEL_incident_in_orphegan
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = delta.13.a
+		add_political_power = -25
+		add_stability = -0.025
+		add_war_support = -0.025
+		hidden_effect = {
+		    country_event = {
+			    id = delta.14
+				days = 20
+			}
+		}
+	}
+}
+
+# War for Delta
+country_event = {
+	id = delta.14
+	title = delta.14.t
+	desc = delta.14.d
+	picture = GFX_report_event_DEL_incident_in_orphegan
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		start_civil_war = {
+            ruling_party = militarism
+            ideology = communism
+            size = 0.5
+            capital = 80
+            states = {
+                80 79
+            }
+            keep_political_leader = yes
+            keep_political_party_members = yes
+        }
+	}
+	
+	option = {
+		name = delta.14.a
+		add_manpower = 15000
+		add_war_support = 0.1
+		news_event = { id = news.8 }
+		set_country_flag = delta_civil_war
+		hidden_effect = {
+		    MUR = {
+		    country_event = {
+			    id = murman.7
+				days = 2
+			}
+			}
+		}
+	}
+}
+
+# Murman took ports
+country_event = {
+	id = delta.15
+	title = delta.15.t
+	desc = delta.15.d
+	picture = GFX_report_event_DEL_incident_in_orphegan
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = delta.15.a
+		add_war_support = -0.03
+		add_stability = -0.04
+	}
+}
+
+# Clashes ended with blood
+country_event = {
+	id = delta.16
+	title = delta.16.t
+	desc = delta.16.d
+	picture = GFX_report_event_DEL_incident_in_orphegan
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = delta.16.a
+		add_war_support = -0.07
+		add_stability = -0.06
+		74 = {
+		    add_manpower = -492
+		}
+	}
+}
+
+# Civil War ended
+country_event = {
+	id = delta.17
+	title = delta.17.t
+	desc = delta.17.d
+	picture = GFX_report_event_DEL_incident_in_orphegan
+	
+	trigger = {
+		has_country_flag = delta_civil_war
+		DEL = { has_civil_war = no }
+	}
+	
+	option = {
+		name = delta.17.a
+		add_war_support = 0.15
+		add_stability = 0.15
+	    load_focus_tree = del_aftermath_of_civil_war_focus
+		news_event = { id = news.9 }
+	}
+}

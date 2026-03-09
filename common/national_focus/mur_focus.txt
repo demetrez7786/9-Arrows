@@ -45,6 +45,147 @@ focus_tree = {
 	}
 
 	focus = {
+		id = MUR_preparation_for_war
+		icon = GFX_MUR_failing_empire
+		x = 19
+		y = 1
+
+		cost = 1
+
+		allow_branch = {
+			has_country_flag = MUR_prepare_for_war
+		}
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            add_war_support = 0.05
+			DEL = {
+				country_event = { id = delta.5 }
+			}
+		}
+	}
+
+	focus = {
+		id = MUR_call_for_reservists
+		icon = GFX_MUR_failing_empire
+		x = 19
+		y = 3
+		prerequisite = { focus = MUR_preparation_for_war }
+
+		cost = 2
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+			Not = {
+			has_country_flag = negotiatons_started
+			}
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            add_manpower = 37000
+			DEL = {
+				country_event = { id = delta.6 }
+			}
+		}
+	}
+
+	focus = {
+		id = MUR_relocate_divisions
+		icon = GFX_MUR_failing_empire
+		x = 17
+		y = 3
+		prerequisite = { focus = MUR_preparation_for_war }
+
+		cost = 2
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+			Not = {
+			has_country_flag = negotiatons_started
+			}
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            add_manpower = 37000
+		}
+	}
+
+	focus = {
+		id = MUR_sabotage_ports
+		icon = GFX_MUR_failing_empire
+		x = 21
+		y = 3
+		prerequisite = { focus = MUR_preparation_for_war }
+
+		cost = 2
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+			Not = {
+			has_country_flag = negotiatons_started
+			}
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            add_manpower = 37000
+			DEL = {
+				country_event = { id = delta.7 }
+			}
+		}
+	}
+
+	focus = {
 		id = MUR_western_threat
 		icon = GFX_MUR_western_threat
 		x = 8
@@ -286,7 +427,7 @@ focus_tree = {
 		y = 5
 		prerequisite = { focus = MUR_failing_economy }
 
-		cost = 5
+		cost = 15
 
 		ai_will_do = {
 			factor = 1
@@ -306,7 +447,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-			9 = {
+			116 = {
 			    add_building_construction = {
                     type = industrial_complex
                     level = 1

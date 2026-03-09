@@ -1,0 +1,18 @@
+add_namespace = naval
+
+# Incident in Orphegan
+country_event = {
+	id = naval.1
+	title = naval.1.t
+	desc = naval.1.d
+	picture = GFX_report_event_DEL_incident_in_orphegan
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = naval.1.a
+		MUR = {
+		    country_event = { id = murman.5 }
+		}
+	}
+}

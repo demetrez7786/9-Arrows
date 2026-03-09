@@ -1,0 +1,15 @@
+characters = {
+	USC_khan_doorman = {
+		name = "Khan Doorman" 
+		portraits = {
+			civilian = {
+				large ="gfx/leaders/USC/portrait_USC_khan_doorman.png"
+			}
+		}
+		country_leader = {
+			ideology = democrats_party
+			expire = "4950.1.1.1"
+			id = -1
+		}
+	}
+}

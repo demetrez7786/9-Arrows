@@ -1,0 +1,13 @@
+MUR_negotiations = {
+	priority = 9999
+	icon = GFX_decision_cat_mdr_parliament
+	allowed = {
+		original_tag = MUR
+	}
+	visible = {
+		has_country_flag = negotiatons_started
+		NOT = {
+		    has_country_flag = negitoations_ended
+		}
+	}
+}

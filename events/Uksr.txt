@@ -71,6 +71,7 @@ country_event = {
 	
 	option = { #he is right
 		name = karlt.5.b
+		add_ideas = low_military_spending
 	}
 }
 

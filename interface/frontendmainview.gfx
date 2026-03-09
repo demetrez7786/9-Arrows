@@ -35,22 +35,22 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_singleplayer_button"
-		textureFile = "gfx/interface/mainmenu/singleplayer_button.png"
+		textureFile = "gfx/interface/mainmenu/singleplayer_button.dds"
 	}
 	
 	spriteType = {
 		name = "GFX_multiplayer_button"
-		textureFile = "gfx/interface/mainmenu/multiplayer_button.png"
+		textureFile = "gfx/interface/mainmenu/multiplayer_button.dds"
 	}
 	
 	spriteType = {
 		name = "GFX_exit_button"
-		textureFile = "gfx/interface/mainmenu/exit_button.png"
+		textureFile = "gfx/interface/mainmenu/exit_button.dds"
 	}
 	
 	spriteType = {
 		name = "GFX_options_button"
-		textureFile = "gfx/interface/mainmenu/options_button.png"
+		textureFile = "gfx/interface/mainmenu/options_button.dds"
 	}
 
 	spriteType = {

@@ -1,0 +1,26 @@
+DEL_protest = {
+	priority = 999
+	visible_when_empty = no
+	icon = GFX_decision_cat_mdr_parliament
+	allowed = {
+		original_tag = DEL
+	}
+	visible = {
+		has_country_flag = DEL_no_guns_protest_is_going_on
+	}
+}
+
+DEL_negotiations = {
+	priority = 9999
+	visible_when_empty = yes
+	icon = GFX_decision_cat_mdr_parliament
+	allowed = {
+		original_tag = DEL
+	}
+	visible = {
+		has_country_flag = negotiatons_started
+		NOT = {
+		    has_country_flag = negitoations_ended
+		}
+	}
+}

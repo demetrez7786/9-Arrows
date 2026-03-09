@@ -1,0 +1,15 @@
+characters = {
+	NAA_officers_council = {
+		name = "Officers Council" 
+		portraits = {
+			civilian = {
+				large ="gfx/leaders/NAA/portrait_NAA_officers_council.png"
+			}
+		}
+		country_leader = {
+			ideology = officers_council
+			expire = "4950.1.1.1"
+			id = -1
+		}
+	}
+}

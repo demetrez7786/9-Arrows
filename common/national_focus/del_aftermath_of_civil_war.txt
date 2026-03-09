@@ -1,0 +1,265 @@
+focus_tree = {
+	id = del_aftermath_of_civil_war_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = DEL
+		}
+	}
+	
+	default = no
+	
+	continuous_focus_position = { x = 50 y = 7000 }
+
+    focus = {
+		id = del_aftermath_of_civil_war
+		icon = GFX_DEL_aftermath_of_elections
+		x = 5
+		y = 1
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            country_event = { id = delta.1 }
+		}
+	}
+
+    focus = {
+		id = del_enact_emergency_powers
+		icon = GFX_DEL_aftermath_of_elections
+		x = 5
+		y = 3
+        prerequisite = { focus = del_aftermath_of_civil_war }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            country_event = { id = delta.1 }
+		}
+	}
+
+	focus = {
+		id = del_hunt_the_red_demons
+		icon = GFX_DEL_aftermath_of_elections
+		x = 5
+		y = 5
+        prerequisite = { focus = del_enact_emergency_powers }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            country_event = { id = delta.1 }
+		}
+	}
+
+	focus = {
+		id = del_control_the_army
+		icon = GFX_DEL_aftermath_of_elections
+		x = 3
+		y = 5
+        prerequisite = { focus = del_enact_emergency_powers }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            country_event = { id = delta.1 }
+		}
+	}
+
+	focus = {
+		id = del_control_the_economy
+		icon = GFX_DEL_aftermath_of_elections
+		x = 7
+		y = 5
+        prerequisite = { focus = del_enact_emergency_powers }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            country_event = { id = delta.1 }
+		}
+	}
+
+	focus = {
+		id = del_puppet_the_government
+		icon = GFX_DEL_aftermath_of_elections
+		x = 5
+		y = 7
+        prerequisite = { focus = del_hunt_the_red_demons }
+		prerequisite = { focus = del_control_the_army }
+		prerequisite = { focus = del_control_the_economy }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            country_event = { id = delta.1 }
+		}
+	}
+
+	focus = {
+		id = del_purge_mps
+		icon = GFX_DEL_aftermath_of_elections
+		x = 4
+		y = 9
+        prerequisite = { focus = del_puppet_the_government }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            country_event = { id = delta.1 }
+		}
+	}
+
+	focus = {
+		id = del_pressure_pm
+		icon = GFX_DEL_aftermath_of_elections
+		x = 6
+		y = 9
+        prerequisite = { focus = del_puppet_the_government }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			has_completed_focus = del_purge_mps
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            country_event = { id = delta.1 }
+		}
+	}
+}

@@ -43,11 +43,9 @@
  
  
  
- MEN_democratic_party: "Ulanqab League"
- MEN_democratic_party_long: "The Ulanqab League"
- MEN_communism_party: "IMPRP"
- MEN_communism_party_long: "Inner Mongolian People's Revolutionary Party"
- MEN_fascism_party: "Chinggisid"
- MEN_fascism_party_long: "House Chinggisid"
- MEN_neutrality_party: "Pailingmiao Council"
- MEN_neutrality_party_long: "Mongol Local Autonomy Political Affairs Committee"
+ MUR_communism_party: "§R|OUTLAWED|§!"
+ MUR_communism_party_long: "§R|OUTLAWED|§!"
+ DEL_communism_party: "§R|OUTLAWED|§!"
+ DEL_communism_party_long: "§R|OUTLAWED|§!"
+ CHS_communism_party: "§R|OUTLAWED|§!"
+ CHS_communism_party_long: "§R|OUTLAWED|§!"

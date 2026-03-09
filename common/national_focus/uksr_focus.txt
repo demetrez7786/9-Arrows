@@ -438,7 +438,10 @@ focus_tree = {
 		completion_reward = {
             add_war_support = -0.05
 			army_experience = -15
-			country_event = { id = karlt.5 }
+			add_ideas = very_low_military_spending
+			hidden_effect = {
+			    country_event = { id = karlt.5 }
+			}
 		}
 	}
 

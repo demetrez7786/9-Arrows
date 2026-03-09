@@ -88,6 +88,13 @@ focus_tree = {
 				days = 120
 			}
 			add_war_support = 0.1
+			custom_effect_tooltip = army_will_be_stronge_tt
+			hidden_effect = {
+				country_event = { 
+					id = karlt.12 
+					days = 121
+				}
+			}
 		}
 	}
 	
@@ -122,6 +129,7 @@ focus_tree = {
 			add_manpower = -78
 			add_war_support = -0.1
 			add_stability = 0.1
+			custom_effect_tooltip = army_will_be_stronge_tt
 		}
 	}
 	
@@ -217,9 +225,14 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-		    add_political_power = 75
-            add_stability = 0.1
-			add_war_support = 0.1
+		    add_ideas = low_military_spending
+			if = {
+                limit = {
+                    has_idea = low_military_spending
+                } 
+                add_ideas = normal_military_spending
+            }
+			custom_effect_tooltip = army_will_be_stronge_tt
 		}
 	}
 
@@ -258,6 +271,7 @@ focus_tree = {
             add_to_variable = { UNI_wm_army_org_factor = 0.04 }
             add_to_variable = { UNI_wm_training_time_factor = -0.03 }
 			country_event = { id = karlt.11 }
+			custom_effect_tooltip = army_will_be_stronge_tt
 		}
 	}
 
@@ -295,6 +309,7 @@ focus_tree = {
             add_to_variable = { UNI_wm_army_speed_factor = 0.01 }
             add_to_variable = { UNI_wm_army_org_factor = 0.07 }
             add_to_variable = { UNI_wm_training_time_factor = -0.02 }
+			custom_effect_tooltip = army_will_be_stronge_tt
 		}
 	}
 
@@ -332,6 +347,7 @@ focus_tree = {
             add_to_variable = { UNI_wm_army_speed_factor = 0.02 }
             add_to_variable = { UNI_wm_army_org_factor = 0.04 }
             add_to_variable = { UNI_wm_training_time_factor = -0.03 }
+			custom_effect_tooltip = army_will_be_stronge_tt
 		}
 	}
 
@@ -370,6 +386,7 @@ focus_tree = {
             add_to_variable = { UNI_wm_army_speed_factor = 0.02 }
             add_to_variable = { UNI_wm_army_org_factor = 0.02 }
             add_to_variable = { UNI_wm_training_time_factor = -0.03 }
+			custom_effect_tooltip = army_will_be_stronge_tt
 		}
 	}
 }	

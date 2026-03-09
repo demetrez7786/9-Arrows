@@ -52,6 +52,7 @@ focus_tree = {
 			    elections_allowed = no
 		    }
 			news_event = { id = news.4 }
+			set_country_flag = UNI_socialists_in_power
 		}
 	}
 
@@ -154,6 +155,7 @@ focus_tree = {
             add_stability = 0.1
 			add_war_support = 0.1
 			add_manpower = -765
+			remove_ideas = UNI_sum_influence_idea
 		}
 	}
 
@@ -264,19 +266,19 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-		    add_political_power = 175
-            add_stability = 0.15
-			add_war_support = 0.15
+		    add_political_power = 75
+            add_stability = 0.1
+			add_war_support = 0.1
 			add_popularity = {
 				ideology = socialism
-				popularity = 0.2
+				popularity = 0.15
 			}
 		}
 	}
 
 	focus = {
 		id = UNI_transparency_laws
-		icon = GFX_UNI_militarism_came_to_power
+		icon = GFX_UNI_transparency_laws
 		x = 5
 		y = 9
 		prerequisite = { focus = UNI_new_constitution }
@@ -303,6 +305,38 @@ focus_tree = {
 
 		completion_reward = {
 		    add_ideas = UNI_transparency_law_idea
+		}
+	}
+
+	focus = {
+		id = UNI_declare_glasnost
+		icon = GFX_UNI_militarism_came_to_power
+		x = 4
+		y = 11
+		prerequisite = { focus = UNI_introduce_civil_services }
+		prerequisite = { focus = UNI_transparency_laws }
+
+		cost = 15
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		    country_event = { id = karlt.11 }
 		}
 	}
 

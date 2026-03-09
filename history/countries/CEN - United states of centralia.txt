@@ -41,4 +41,5 @@ add_ideas = {
 	secularism
 }
 
+recruit_character = USC_khan_doorman
 

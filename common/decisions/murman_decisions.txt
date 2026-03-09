@@ -1,0 +1,133 @@
+MUR_negotiations {
+    
+	MUR_demand_punishment_for_young_officers = {
+
+		icon = GFX_decision_generic_assassination
+
+		ai_will_do = {
+			base = 100
+		}
+	
+		allowed = {
+			original_tag = MUR
+		}
+		
+		fire_only_once = yes
+
+		available = {
+			has_country_flag = negotiatons_started
+		} 
+
+		visible = { 
+			has_country_flag = negotiatons_started
+		}
+
+		cost = 0
+
+		complete_effect = {
+		    DEL = {
+		    country_event = { id = delta.9 }
+			}
+		}
+	}
+	
+	MUR_demand_reparations_for_damage = {
+
+		icon = GFX_decision_generic_assassination
+
+		ai_will_do = {
+			base = 100
+		}
+	
+		allowed = {
+			original_tag = MUR
+		}
+		
+		fire_only_once = yes
+
+		available = {
+			has_country_flag = negotiatons_started
+		} 
+
+		visible = { 
+			has_country_flag = negotiatons_started
+		}
+
+		cost = 0
+
+		complete_effect = {
+		    DEL = {
+		    country_event = { id = delta.10 }
+			}
+		}
+	}
+	
+	MUR_demand_demilitarization_of_ports = {
+
+		icon = GFX_decision_generic_assassination
+
+		ai_will_do = {
+			base = 100
+		}
+	
+		allowed = {
+			original_tag = MUR
+		}
+		
+		fire_only_once = yes
+
+		available = {
+			has_country_flag = negotiatons_started
+		} 
+
+		visible = { 
+			has_country_flag = negotiatons_started
+		}
+
+		cost = 0
+
+		complete_effect = {
+		    DEL = {
+		    country_event = { id = delta.11 }
+			}
+		}
+	}
+	
+	MUR_peace_have_been_achived = {
+
+		icon = GFX_decision_generic_assassination
+
+		ai_will_do = {
+			base = 100
+		}
+	
+		allowed = {
+			original_tag = MUR
+		}
+		
+		fire_only_once = yes
+
+		available = {
+			check_variable = {
+				var = MUR_progress
+				value = 100
+				compare = greater_than_or_equals
+			}
+		} 
+
+		visible = { 
+			has_country_flag = negotiatons_started
+		}
+
+		cost = 0
+
+		complete_effect = {
+		    add_stability = 0.15
+			DEL = {
+			    add_stability = 0.15
+				set_country_flag = negitoations_ended
+			}
+			set_country_flag = negitoations_ended
+		}
+	}
+}

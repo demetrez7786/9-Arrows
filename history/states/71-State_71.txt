@@ -7,7 +7,10 @@ state={
 	
 	history={
 		owner = MUR
-		add_core_of = MUR
+		add_core_of = UNI
+		set_demilitarized_zone = yes
+		start_resistance = yes
+		set_resistance = 65
 	}
 	
 	buildings_max_level_factor=1.000

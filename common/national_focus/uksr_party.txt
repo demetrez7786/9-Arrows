@@ -139,9 +139,8 @@ focus_tree = {
 
 		completion_reward = {
 		    add_political_power = 75
-            add_stability = 0.1
-			add_war_support = 0.1
-			country_event = { id = karlt.1 }
+            add_stability = -0.1
+			add_war_support = -0.1
 		}
 	}
 
@@ -311,7 +310,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-		    add_political_power = 150
+		    add_political_power = 90
             add_stability = 0.15
 		}
 	}
@@ -344,10 +343,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-		    add_political_power = 75
-            add_stability = 0.1
-			add_war_support = 0.1
-			country_event = { id = karlt.1 }
+		    country_event = { id = karlt.11 }
 		}
 	}
 }	

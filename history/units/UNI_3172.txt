@@ -1,5 +1,5 @@
 ﻿division_template = {
-	name = "Infantry Division"
+	name = "Pekhotnaya diviziya"
 	division_names_group = UNI_INF_01
 
 	regiments = {
@@ -25,7 +25,7 @@ units = {
 			name_order = 1
 		}
 		location = 7953
-		division_template = "Infantry Division"
+		division_template = "Pekhotnaya diviziya"
 		start_experience_factor = 0.3
 	}
 	
@@ -35,7 +35,7 @@ units = {
 			name_order = 2
 		}
 		location = 7953
-		division_template = "Infantry Division"
+		division_template = "Pekhotnaya diviziya"
 		start_experience_factor = 0.3
 	}
 	
@@ -45,7 +45,7 @@ units = {
 			name_order = 3
 		}
 		location = 7953
-		division_template = "Infantry Division"
+		division_template = "Pekhotnaya diviziya"
 		start_experience_factor = 0.3
 	}
 	
@@ -55,7 +55,7 @@ units = {
 			name_order = 4
 		}
 		location = 7953
-		division_template = "Infantry Division"
+		division_template = "Pekhotnaya diviziya"
 		start_experience_factor = 0.3
 	}
 	
@@ -65,7 +65,7 @@ units = {
 			name_order = 5
 		}
 		location = 7953
-		division_template = "Infantry Division"
+		division_template = "Pekhotnaya diviziya"
 		start_experience_factor = 0.3
 	}
 }

@@ -5,6 +5,8 @@ ideologies = {
 		types = {
 
 			liberalism_generic = { }
+			
+			democrats_party = { can_be_randomly_selected = no }
 
 		}
 
@@ -533,6 +535,8 @@ ideologies = {
 		types = {
 
 			militarism_generic = { }
+			
+			officers_council = { can_be_randomly_selected = no }
 
 		}
 

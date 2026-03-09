@@ -3,6 +3,86 @@ spriteTypes = {
 	#### Murder drones icons
 	
 	SpriteType = {
+	name = "GFX_DEL_rumors_of_uprisings"
+	texturefile = "gfx/interface/goals/DEL_rumors_of_uprisings.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_DEL_send_riotpolice"
+	texturefile = "gfx/interface/goals/DEL_send_riotpolice.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_DEL_negotiations_ended"
+	texturefile = "gfx/interface/goals/DEL_negotiations_ended.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_DEL_send_delegation"
+	texturefile = "gfx/interface/goals/DEL_send_delegation.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_UNI_arrest_them"
+	texturefile = "gfx/interface/goals/UNI_arrest_them.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_UNI_internal_opposition_is_controlled"
+	texturefile = "gfx/interface/goals/UNI_internal_opposition_is_controlled.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_UNI_silent_killing"
+	texturefile = "gfx/interface/goals/UNI_silent_killing.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_UNI_control_internal_opposition"
+	texturefile = "gfx/interface/goals/UNI_control_internal_opposition.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_DEL_orphegan_incident"
+	texturefile = "gfx/interface/goals/DEL_orphegan_incident.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_DEL_military_section"
+	texturefile = "gfx/interface/goals/DEL_military_section.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_DEL_address_deserters_issue"
+	texturefile = "gfx/interface/goals/DEL_address_deserters_issue.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_DEL_emergency_general_meeting"
+	texturefile = "gfx/interface/goals/DEL_emergency_general_meeting.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_DEL_seize_opposition_channels"
+	texturefile = "gfx/interface/goals/DEL_seize_opposition_channels.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_DEL_recruitment_offices"
+	texturefile = "gfx/interface/goals/DEL_recruitment_offices.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_DEL_civil_administration_issues"
+	texturefile = "gfx/interface/goals/DEL_civil_administration_issues.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_DEL_aftermath_of_elections"
+	texturefile = "gfx/interface/goals/DEL_aftermath_of_elections.png"
+	}
+	
+	SpriteType = {
 	name = "GFX_UNI_military_sickness"
 	texturefile = "gfx/interface/goals/UNI_military_sickness.png"
 	}

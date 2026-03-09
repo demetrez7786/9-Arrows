@@ -1,6 +1,36 @@
 spriteTypes = {
 	
 	spriteType = {
+		name = "GFX_news_event_orphegan_incident"
+		texturefile = "gfx/event_pictures/news_event_orphegan_incident.png"
+	}
+	
+	spriteType = {
+		name = "GFX_news_event_war_for_delta"
+		texturefile = "gfx/event_pictures/news_event_war_for_delta.png"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_no_guns_protest"
+		texturefile = "gfx/event_pictures/report_event_no_guns_protest.png"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_DEL_protest_escalated"
+		texturefile = "gfx/event_pictures/report_event_DEL_protest_escalated.png"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_DEL_incident_in_orphegan"
+		texturefile = "gfx/event_pictures/report_event_DEL_incident_in_orphegan.png"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_NAA_power"
+		texturefile = "gfx/event_pictures/report_event_NAA_power.png"
+	}
+	
+	spriteType = {
 		name = "GFX_report_event_MUR_lesson_war"
 		texturefile = "gfx/event_pictures/report_event_MUR_lesson_war.png"
 	}

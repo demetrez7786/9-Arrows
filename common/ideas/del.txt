@@ -1,0 +1,88 @@
+ideas = {
+	country = {
+
+		DEL_no_guns_protest = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = DEL_no_guns_protest
+			
+			modifier = {
+				stability_factor = -0.15
+				liberalism_drift = 0.01
+				conservatism_drift = 0.01
+			}
+		}
+		
+		DEL_deadlocked_parliament = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = RES_element_of_suprise
+			
+			modifier = {
+				political_power_factor = -0.1
+			}
+		}
+		
+		DEL_desrters_issue = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = DEL_deserters_issue
+			
+			modifier = {
+				weekly_manpower = -150
+			}
+		}
+		
+		DEL_naval_race_MUR = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = RES_element_of_suprise
+			
+			modifier = {
+			    production_speed_dockyard_factor = 0.5 
+				production_cost_max_convoy = -0.5
+                production_cost_max_ship_hull_submarine = -0.5
+                production_cost_max_ship_hull_light = -0.5
+                production_cost_max_ship_hull_heavy = -0.5
+                production_cost_max_ship_hull_cruiser = -0.5
+                production_cost_max_ship_hull_carrier = -0.5
+			}
+		}
+	}
+}

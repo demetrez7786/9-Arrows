@@ -9,6 +9,26 @@ spriteTypes = {
 		name = "GFX_idea_traits_strip"
 		texturefile = "gfx/interface/ideas/traits_strip.png"
 	}
+	
+	spriteType = {
+		name = "GFX_idea_DEL_deserters_issue"
+		texturefile = "gfx/interface/ideas/DEL_deserters_issue.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_DEL_no_guns_protest"
+		texturefile = "gfx/interface/ideas/DEL_no_guns_protest.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_CHS_divided_church"
+		texturefile = "gfx/interface/ideas/CHS_divided_church.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_CHS_crusade_of_copper_nine_idea"
+		texturefile = "gfx/interface/ideas/CHS_crusade_of_copper_nine_idea.png"
+	}
 
     spriteType = {
 		name = "GFX_idea_MUR_opposition"
@@ -92,6 +112,30 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_strong_opposition_desc_photo"
 		textureFile = "/gfx/interface/ideas/strong_opposition_desc_photo.png"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_idea_divided_church_desc_photo"
+		textureFile = "/gfx/interface/ideas/divided_church_desc_photo.png"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_idea_crusade_of_copper_nine_idea_desc_photo"
+		textureFile = "/gfx/interface/ideas/crusade_of_copper_nine_idea_desc_photo.png"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_idea_deny_guns_protest_desc_photo"
+		textureFile = "/gfx/interface/ideas/deny_guns_protest_desc_photo.png"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_idea_deadlocked_parliament_desc_photo"
+		textureFile = "/gfx/interface/ideas/deadlocked_parliament_desc_photo.png"
 		legacy_lazy_load = no
 	}
 	

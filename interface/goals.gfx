@@ -3,6 +3,21 @@ spriteTypes = {
 	#### Murder drones icons
 	
 	SpriteType = {
+	name = "GFX_DEL_hunt_red_demons"
+	texturefile = "gfx/interface/goals/DEL_hunt_red_demons.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_DEL_emergency_powers"
+	texturefile = "gfx/interface/goals/DEL_emergency_powers.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_DEL_aftermath_of_civil_war"
+	texturefile = "gfx/interface/goals/DEL_aftermath_of_civil_war.png"
+	}
+	
+	SpriteType = {
 	name = "GFX_DEL_rumors_of_uprisings"
 	texturefile = "gfx/interface/goals/DEL_rumors_of_uprisings.png"
 	}

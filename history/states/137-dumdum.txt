@@ -1,0 +1,17 @@
+state={
+	id=137
+	name="STATE_137"
+	provinces={
+		188 199 457 1552 2022 2916 3039 3568 4053 4240 4921 5399 5591 5864 10045 10059 10078 10090 10110 10113 10138 10148 10151 10171 10202 10212 10235 
+	}
+	
+	History = {
+	    owner = SHU
+		add_core_of = SHU
+	}
+	
+	manpower=1000
+	buildings_max_level_factor=1
+	state_category=town
+	local_supplies=0
+}

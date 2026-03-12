@@ -1,0 +1,51 @@
+ideas = {
+	country = {
+
+		CHS_crusade_of_copper_nine_idea = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = CHS_crusade_of_copper_nine_idea
+			
+			modifier = {
+				political_power_factor = 0.01
+				war_support_factor = 0.15
+				party_popularity_stability_factor = 0.2
+				surrender_limit = 0.45
+				theocracy_drift = 0.1
+				conservatism_drift = 0.1
+				army_attack_factor = 0.1
+			}
+		}
+		
+		CHS_divided_church = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = CHS_divided_church
+			
+			modifier = {
+				political_power_factor = -0.05
+				war_support_factor = -0.05
+				stability_factor = -0.05
+				army_org_factor = -0.05
+			}
+		}
+	}
+}

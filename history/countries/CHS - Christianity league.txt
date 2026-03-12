@@ -31,4 +31,7 @@ set_popularities = {
 	conservatism = 20
 }
 
-
+add_ideas = {
+    CHS_crusade_of_copper_nine_idea
+	CHS_divided_church
+}

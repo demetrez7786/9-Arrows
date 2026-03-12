@@ -16,7 +16,7 @@ focus_tree = {
 
     focus = {
 		id = del_aftermath_of_civil_war
-		icon = GFX_DEL_aftermath_of_elections
+		icon = GFX_DEL_aftermath_of_civil_war
 		x = 5
 		y = 1
 
@@ -44,9 +44,163 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = del_economy_branch
+		icon = GFX_DEL_aftermath_of_elections
+		x = 14
+		y = 1
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			has_completed_focus = del_control_the_economy
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            country_event = { id = delta.1 }
+		}
+	}
+
+	focus = {
+		id = del_military_branch
+		icon = GFX_DEL_aftermath_of_elections
+		x = 23
+		y = 1
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			has_completed_focus = del_control_the_economy
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            country_event = { id = delta.1 }
+		}
+	}
+
+	focus = {
+		id = del_end_price_control
+		icon = GFX_DEL_aftermath_of_elections
+		x = 16
+		y = 3
+		prerequisite = { focus = del_economy_branch }
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            country_event = { id = delta.1 }
+		}
+	}
+
+	focus = {
+		id = del_nationalize_assets
+		icon = GFX_DEL_aftermath_of_elections
+		x = 12
+		y = 3
+		prerequisite = { focus = del_economy_branch }
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            country_event = { id = delta.1 }
+		}
+	}
+
+	focus = {
+		id = del_four_bigs
+		icon = GFX_DEL_aftermath_of_elections
+		x = 14
+		y = 3
+		prerequisite = { focus = del_economy_branch }
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			has_completed_focus = del_nationalize_assets
+			has_completed_focus = del_end_price_control
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            country_event = { id = delta.1 }
+		}
+	}
+
     focus = {
 		id = del_enact_emergency_powers
-		icon = GFX_DEL_aftermath_of_elections
+		icon = GFX_DEL_emergency_powers
 		x = 5
 		y = 3
         prerequisite = { focus = del_aftermath_of_civil_war }
@@ -77,7 +231,7 @@ focus_tree = {
 
 	focus = {
 		id = del_hunt_the_red_demons
-		icon = GFX_DEL_aftermath_of_elections
+		icon = GFX_DEL_hunt_red_demons
 		x = 5
 		y = 5
         prerequisite = { focus = del_enact_emergency_powers }
@@ -247,6 +401,35 @@ focus_tree = {
 
 		available = {
 			has_completed_focus = del_purge_mps
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            country_event = { id = delta.1 }
+		}
+	}
+
+	focus = {
+		id = del_the_dark_morning
+		icon = GFX_DEL_aftermath_of_elections
+		x = 5
+		y = 11
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
 		}
 		
 		bypass = {

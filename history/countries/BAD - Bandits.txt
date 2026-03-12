@@ -30,4 +30,4 @@ set_popularities = {
 	anarchism = 100
 }
 
-
+recruit_character = BAD_david_van_der_linde

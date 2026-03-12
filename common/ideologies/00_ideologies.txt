@@ -393,6 +393,8 @@ ideologies = {
 		types = {
 
 			anarchism_generic = { }
+			
+			van_der_linde_band = { can_be_randomly_selected = no }
 
 		}
 

@@ -8,6 +8,11 @@ state={
 	history={
 		owner = DEL
 		add_core_of = DEL
+		buildings = {
+		    9043 = {
+				naval_base = 5
+			}
+		}
 	}
 	
 	buildings_max_level_factor=1.000

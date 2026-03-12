@@ -4,6 +4,8 @@ set_research_slots = 3
 
 load_oob = "DEL_3172"
 
+set_convoys = 820
+
 set_country_flag = DEL_no_guns_protest_is_going_on
 
 activate_mission = DEL_protest_escalating
@@ -36,4 +38,9 @@ set_popularities = {
 	militarism = 100
 }
 
-
+add_ideas = {
+    DEL_no_guns_protest
+	DEL_deadlocked_parliament
+	DEL_desrters_issue
+	DEL_naval_race_MUR
+}

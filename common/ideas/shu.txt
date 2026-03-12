@@ -1,0 +1,24 @@
+ideas = {
+	country = {
+
+		SHU_cariland_war = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = MUR_failing_empire
+			
+			modifier = {
+				war_support_factor = -0.15
+				army_attack_factor = -0.1
+			}
+		}
+	}
+}

@@ -1,0 +1,16 @@
+characters = {
+	BAD_david_van_der_linde = {
+		name = "David Van Der Linde" 
+		portraits = {
+			civilian = {
+				large ="gfx/leaders/BAD/portrait_bad_david_van_der_linde.png"
+			}
+		}
+		country_leader = {
+			ideology = van_der_linde_band
+			expire = "4950.1.1.1"
+			id = -1
+		}
+	}
+}
+	

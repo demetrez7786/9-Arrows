@@ -1,0 +1,18 @@
+state={
+	id=136
+	name="STATE_136"
+	provinces={
+		619 720 729 896 985 1021 1522 1608 1740 1878 2211 2740 2822 2851 3324 3437 4337 4417 4428 4549 4599 5390 5430 5988 6312 6517 9564 9582 9584 9593 9601 9603 9610 9616 9620 9622 9629 9633 9640 9650 
+	}
+	
+	History = {
+	    owner = SAL
+		add_core_of = SAL
+		set_demilitarized_zone = yes
+	}
+	
+	manpower=1000
+	buildings_max_level_factor=1
+	state_category=town
+	local_supplies=0
+}

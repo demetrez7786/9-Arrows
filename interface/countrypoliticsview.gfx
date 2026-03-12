@@ -575,6 +575,11 @@ spriteTypes = {
 	}
 	
 	spriteType = {
+		name = "GFX_ideology_van_der_linde_band"
+		texturefile = "gfx/interface/ideologies/van_der_linde_band.png"
+	}
+	
+	spriteType = {
 		name = "GFX_ideology_unknown"
 		texturefile = "gfx/interface/ideologies/unknown.dds"
 		legacy_lazy_load = no

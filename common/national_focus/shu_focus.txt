@@ -1,0 +1,46 @@
+focus_tree = {
+	id = shu_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 30
+			tag = SHU
+		}
+	}
+	
+	default = no
+	
+	continuous_focus_position = { x = 50 y = 7000 }
+
+    focus = {
+		id = SHU_remilitarize_cariland
+		icon = GFX_DEL_aftermath_of_elections
+		x = 15
+		y = 1
+
+		cost = 35
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            country_event = { id = delta.1 }
+		}
+	}
+}

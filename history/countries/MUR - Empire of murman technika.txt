@@ -58,6 +58,7 @@ add_ideas = {
 	MUR_strong_opposition
 	MUR_separatists_movements
 	MUR_divided_parliament
+	DEL_naval_race_MUR
 }
 
 recruit_character = MUR_uzi_doorman

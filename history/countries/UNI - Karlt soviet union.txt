@@ -61,4 +61,4 @@ add_ideas = {
 	low_military_spending
 }
 
-
+recruit_character = UNI_beriansk_edirashvili

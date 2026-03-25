@@ -20,18 +20,32 @@ set_grand_doctrine = mass_assault
 set_grand_doctrine = new_fleet_in_being
 
 set_politics = {
-	ruling_party = authoritarianism
+	ruling_party = nationalism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 set_popularities = {
-	authoritarianism = 87
+	nationalism = 87
 	liberalism = 3
-	nationalism = 6
-	socialism = 2
-	progressivism = 2
+	communism = 9
+	socialism = 1
 }
 
+add_ideas = {
+    SHU_cariland_war
+	SHU_treaty_of_zugdad
+	SHU_military_opposition
+	christianity
+	the_free_media
+	closed_borders
+	very_low_military_spending
+	low_security_spending
+}
 
+recruit_character = SHU_kaiser_vaxen
+recruit_character = SHU_august_von_oldenburg
+recruit_character = SHU_friedrich_von_hindenburg_schleyer
+recruit_character = SHU_lothar_von_wettin
+recruit_character = SHU_karl_ludwig_von_wittelsbach

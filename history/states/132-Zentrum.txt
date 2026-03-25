@@ -4,7 +4,13 @@ state={
 	provinces={
 		369 1147 1263 1278 1678 1771 2069 2223 2480 2600 2649 3858 4097 5133 5311 5503 5753 6491 10280 10308 10324 10355 10365 10366 10394 
 	}
-	manpower=1000
+	
+	history={
+		owner = ZEN
+		add_core_of = ZEN
+	}
+	
+	manpower=4211000
 	buildings_max_level_factor=1
 	state_category=town
 	local_supplies=0

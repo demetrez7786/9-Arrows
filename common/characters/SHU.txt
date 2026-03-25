@@ -1,0 +1,84 @@
+characters = {
+	SHU_kaiser_vaxen = {
+		name = "Kaiser Vaxen" 
+		portraits = {
+			civilian = {
+				large ="gfx/leaders/SHU/portrait_shu_kaiser_vaxen.png"
+			}
+		}
+		country_leader = {
+			ideology = shuan_national_restoration_front
+			expire = "4950.1.1.1"
+			id = -1
+		}
+	}
+	
+	SHU_august_von_oldenburg = {
+		name = "August von Oldenburg"
+		portraits = {
+			army = {
+				large = "gfx/leaders/MDR/portrait_mdr_thad.png"
+			}
+		}
+		field_marshal = { 
+			traits = { old_guard }
+			skill = 5
+			attack_skill = 3
+			defense_skill = 5
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+	
+	SHU_friedrich_von_hindenburg_schleyer = {
+		name = "Friedrich von Hindenburg-Schleyer"
+		portraits = {
+			army = {
+				large = "gfx/leaders/MDR/portrait_mdr_thad.png"
+			}
+		}
+		corps_commander = {
+			traits = { combined_arms_expert }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	
+	SHU_lothar_von_wettin = {
+		name = "Lothar von Wettin"
+		portraits = {
+			army = {
+				large = "gfx/leaders/MDR/portrait_mdr_thad.png"
+			}
+		}
+		corps_commander = {
+			traits = { combined_arms_expert }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 1
+		}
+	}
+	
+	SHU_karl_ludwig_von_wittelsbach = {
+		name = "Karl-Ludwig von Wittelsbach"
+		portraits = {
+			army = {
+				large = "gfx/leaders/MDR/portrait_mdr_thad.png"
+			}
+		}
+		corps_commander = {
+			traits = { combined_arms_expert }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 1
+		}
+	}
+}
+	

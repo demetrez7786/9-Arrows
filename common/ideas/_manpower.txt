@@ -28,7 +28,8 @@ ideas = {
 			level = 6
 
 			available = {
-				#has_manpower_for_recruit_change_to =  { value = 0.015 group = mobilization_laws }
+				original_tag = SHU
+				NOT = { has_idea = SHU_treaty_of_zugdad }
 			}
 
 			ai_will_do = {
@@ -265,7 +266,7 @@ ideas = {
 			}
 
 			modifier = {
-				conscription_factor = 0.25
+				conscription_factor = 0.05
 				stability_factor = -0.1
 			}
 
@@ -283,7 +284,7 @@ ideas = {
 			}
 
 			modifier = {
-				conscription_factor = 0.1
+				conscription_factor = 0.025
 			}
 
 			cancel_if_invalid = no

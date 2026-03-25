@@ -240,3 +240,28 @@ news_event = {
 		trigger = { TAG = DEL }
 	}
 }
+
+# populists win the election
+news_event = {
+	id = news.10
+	title = news.10.t
+	desc = news.10.d
+	picture = GFX_news_event_war_for_delta
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.10.a
+		trigger = {
+			NOT = {
+				TAG = CEN
+			}
+		}
+	}
+	option = {
+		name = news.10.b
+		trigger = { TAG = CEN }
+	}
+}

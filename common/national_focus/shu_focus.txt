@@ -15,12 +15,1510 @@ focus_tree = {
 	continuous_focus_position = { x = 50 y = 7000 }
 
     focus = {
-		id = SHU_remilitarize_cariland
-		icon = GFX_DEL_aftermath_of_elections
+		id = SHU_consolidate_the_power
+		icon = GFX_SHU_consolidate_the_power
 		x = 15
 		y = 1
 
+		cost = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            
+		}
+	}
+
+	focus = {
+		id = SHU_stage_the_terrorist_attack
+		icon = GFX_SHU_terrorist_attack_on_parliament
+		x = 15
+		y = 3
+		prerequisite = { focus = SHU_consolidate_the_power }
+
+		cost = 15
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            unlock_decision_category_tooltip = SHU_staging_the_attack
+		}
+	}
+
+	focus = {
+		id = SHU_question_of_speech
+		icon = GFX_SHU_question_of_speech
+		x = 15
+		y = 5
+		prerequisite = { focus = SHU_stage_the_terrorist_attack }
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			has_country_flag = SHU_terrorist_attack_happened
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            add_ideas = only_government_approved
+		}
+	}
+
+	focus = {
+		id = SHU_question_of_religion
+		icon = GFX_SHU_question_of_religion
+		x = 14
+		y = 7
+		prerequisite = { focus = SHU_question_of_speech }
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            add_ideas = state_atheism
+		}
+	}
+
+	focus = {
+		id = SHU_question_of_education
+		icon = GFX_SHU_question_of_education
+		x = 16
+		y = 7
+		prerequisite = { focus = SHU_question_of_speech }
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            country_event = { id = shua.10 }
+		}
+	}
+
+	focus = {
+		id = SHU_question_of_national_unity
+		icon = GFX_SHU_question_of_national_unity
+		x = 15
+		y = 9
+		prerequisite = { focus = SHU_question_of_education }
+		prerequisite = { focus = SHU_question_of_religion }
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            add_political_power = 100
+			add_stability = 0.1
+			add_war_support = 0.1
+		}
+	}
+
+	focus = {
+		id = SHU_end_zugdad_treaty
+		icon = GFX_SHU_break_treaty
+		x = 15
+		y = 11
+		prerequisite = { focus = SHU_question_of_national_unity }
+
+		cost = 15
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            remove_ideas = SHU_treaty_of_zugdad
+			custom_effect_tooltip = SHU_centralia_might_be_angry
+		}
+	}
+
+	focus = {
+		id = SHU_remilitarize_cariland
+		icon = GFX_SHU_remilitarize_south_cariland
+		x = 15
+		y = 13
+		prerequisite = { focus = SHU_end_zugdad_treaty }
+		
+		cost = 20
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            112 = { set_demilitarized_zone = no }
+			102 = { set_demilitarized_zone = no }
+			136 = { set_demilitarized_zone = no }
+			custom_effect_tooltip = SHU_centralia_might_be_angry
+		}
+	}
+
+	focus = {
+		id = SHU_political_front
+		icon = GFX_SHU_political_front
+		x = 15
+		y = 15
+		prerequisite = { focus = SHU_remilitarize_cariland }
+		
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            add_political_power = 10
+		}
+	}
+
+	focus = {
+		id = SHU_military_front
+		icon = GFX_SHU_military_front
+		x = 25
+		y = 15
+		prerequisite = { focus = SHU_remilitarize_cariland }
+		
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            army_experience = 20
+		}
+	}
+
+	focus = {
+		id = SHU_economic_front
+		icon = GFX_SHU_economic_front
+		x = 40
+		y = 15
+		prerequisite = { focus = SHU_remilitarize_cariland }
+		
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            add_stability = 0.025
+		}
+	}
+
+	focus = {
+		id = SHU_introduce_sei_vouchers
+		icon = GFX_DEL_aftermath_of_elections
+		x = 40
+		y = 17
+		prerequisite = { focus = SHU_economic_front }
+		
+		cost = 25
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            add_ideas = SHU_sei_vouchers
+		}
+	}
+
+	focus = {
+		id = SHU_four_years_plan
+		icon = GFX_DEL_aftermath_of_elections
+		x = 40
+		y = 19
+		prerequisite = { focus = SHU_introduce_sei_vouchers }
+		
+		cost = 15
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            country_event = { id = delta.1 }
+		}
+	}
+
+	focus = {
+		id = SHU_new_factories_in_hannover
+		icon = GFX_DEL_aftermath_of_elections
+		x = 38
+		y = 21
+		prerequisite = { focus = SHU_four_years_plan }
+		
+		cost = 25
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            country_event = { id = delta.1 }
+		}
+	}
+
+	focus = {
+		id = SHU_militarize_north
+		icon = GFX_DEL_aftermath_of_elections
+		x = 38
+		y = 23
+		prerequisite = { focus = SHU_new_factories_in_hannover }
+		
+		cost = 25
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            country_event = { id = delta.1 }
+		}
+	}
+
+	focus = {
+		id = SHU_nationalize_carilands_factories
+		icon = GFX_DEL_aftermath_of_elections
+		x = 36
+		y = 23
+		prerequisite = { focus = SHU_roads_for_nation }
+		
+		cost = 25
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            country_event = { id = delta.1 }
+		}
+	}
+
+	focus = {
+		id = SHU_roads_for_nation
+		icon = GFX_DEL_aftermath_of_elections
+		x = 36
+		y = 21
+		prerequisite = { focus = SHU_four_years_plan }
+		
+		cost = 25
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            country_event = { id = delta.1 }
+		}
+	}
+
+	focus = {
+		id = SHU_autarky
+		icon = GFX_DEL_aftermath_of_elections
+		x = 45
+		y = 21
+		prerequisite = { focus = SHU_four_years_plan }
+		
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            country_event = { id = delta.1 }
+		}
+	}
+
+	focus = {
+		id = SHU_reform_heer
+		icon = GFX_SHU_reform_heer
+		x = 25
+		y = 17
+		prerequisite = { focus = SHU_military_front }
+		
+		cost = 15
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            add_ideas = SHU_reform_heer_idea
+		}
+	}
+
+	focus = {
+		id = SHU_great_purge
+		icon = GFX_SHU_great_purge
+		x = 25
+		y = 19
+		prerequisite = { focus = SHU_reform_heer }
+		
+		cost = 15
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            add_timed_idea = {
+				idea = SHU_great_purge_idea
+				days = 180
+			}
+			hidden_effect = {
+				country_event = {
+					id = shua.2
+					days = 40
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SHU_school_of_blitz
+		icon = GFX_SHU_school_of_blitz
+		x = 24
+		y = 21
+		prerequisite = { focus = SHU_great_purge }
+		
+		cost = 25
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            add_ideas = SHU_school_of_blitz_idea
+		}
+	}
+
+	focus = {
+		id = SHU_plan_v
+		icon = GFX_DEL_aftermath_of_elections
+		x = 21
+		y = 21
+		prerequisite = { focus = SHU_great_purge }
+		mutually_exclusive = { focus = SHU_sea_wolves }
+		
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            country_event = { id = delta.1 }
+		}
+	}
+
+	focus = {
+		id = SHU_sea_wolves
+		icon = GFX_DEL_aftermath_of_elections
+		x = 19
+		y = 21
+		prerequisite = { focus = SHU_great_purge }
+		mutually_exclusive = { focus = SHU_plan_v }
+		
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            country_event = { id = delta.1 }
+		}
+	}
+
+	focus = {
+		id = SHU_pilots_club
+		icon = GFX_DEL_aftermath_of_elections
+		x = 29
+		y = 21
+		prerequisite = { focus = SHU_great_purge }
+		
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            add_ideas = SHU_pilots_club_idea
+		}
+	}
+
+	focus = {
+		id = SHU_ground_support_doctrine
+		icon = GFX_DEL_aftermath_of_elections
+		x = 29
+		y = 23
+		prerequisite = { focus = SHU_pilots_club }
+		
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            country_event = { id = delta.1 }
+		}
+	}
+
+	focus = {
+		id = SHU_air_support_to_emirate
+		icon = GFX_DEL_aftermath_of_elections
+		x = 31
+		y = 23
+		prerequisite = { focus = SHU_pilots_club }
+		
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            send_equipment = {
+                equipment = fighter_equipment
+                amount = 75
+                target = ISL
+            }
+		}
+	}
+
+	focus = {
+		id = SHU_oust_the_traditionalists
+		icon = GFX_SHU_oust_traditionalists
+		x = 26
+		y = 21
+		prerequisite = { focus = SHU_great_purge }
+		
 		cost = 35
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            retire_character = SHU_august_von_oldenburg
+			retire_character = SHU_friedrich_von_hindenburg_schleyer
+			retire_character = SHU_lothar_von_wettin
+			retire_character = SHU_karl_ludwig_von_wittelsbach
+			remove_ideas = SHU_military_opposition
+		}
+	}
+
+	focus = {
+		id = SHU_mandatory_service_act
+		icon = GFX_SHU_mandatory_service_act
+		x = 26
+		y = 23
+		prerequisite = { focus = SHU_oust_the_traditionalists }
+		
+		cost = 25
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            add_manpower = 5000
+			add_ideas = extensive_conscription
+		}
+	}
+
+	focus = {
+		id = SHU_deal_with_mauser_reise
+		icon = GFX_SHU_deal_with_mauser
+		x = 24
+		y = 23
+		prerequisite = { focus = SHU_school_of_blitz }
+		
+		cost = 25
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            country_event = { id = delta.1 }
+		}
+	}
+
+	focus = {
+		id = SHU_mobile_corps
+		icon = GFX_DEL_aftermath_of_elections
+		x = 24
+		y = 25
+		prerequisite = { focus = SHU_deal_with_mauser_reise }
+		
+		cost = 25
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            add_tech_bonus = {
+                bonus = 0.75
+                uses = 3
+                category = armor
+            }
+			add_tech_bonus = {
+                bonus = 0.75
+                uses = 3
+                category = motorized_equipment
+            }
+		}
+	}
+
+	focus = {
+		id = SHU_rise_military_budget
+		icon = GFX_SHU_rise_military_budget
+		x = 26
+		y = 25
+		prerequisite = { focus = SHU_mandatory_service_act }
+		
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            add_ideas = normal_military_spending
+		}
+	}
+
+	focus = {
+		id = SHU_end_the_reforms
+		icon = GFX_SHU_end_the_reforms
+		x = 25
+		y = 27
+		prerequisite = { focus = SHU_mobile_corps }
+		prerequisite = { focus = SHU_rise_military_budget }
+		
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            remove_ideas = SHU_reform_heer_idea
+		}
+	}
+
+	focus = {
+		id = SHU_expand_the_security
+		icon = GFX_SHU_expand_the_security
+		x = 15
+		y = 17
+		prerequisite = { focus = SHU_political_front }
+		
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            country_event = { id = delta.1 }
+		}
+	}
+
+	focus = {
+		id = SHU_form_the_gestapo
+		icon = GFX_SHU_form_the_gestapo
+		x = 14
+		y = 19
+		prerequisite = { focus = SHU_expand_the_security }
+		
+		cost = 25
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            add_ideas = SHU_gestapo
+		}
+	}
+
+	focus = {
+		id = SHU_rise_security_spending
+		icon = GFX_SHU_rise_security_funding
+		x = 16
+		y = 19
+		prerequisite = { focus = SHU_expand_the_security }
+		
+		cost = 25
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            add_ideas = high_security_spending
+		}
+	}
+
+	focus = {
+		id = SHU_ministry_of_tv
+		icon = GFX_SHU_ministry_of_tv
+		x = 15
+		y = 21
+		prerequisite = { focus = SHU_form_the_gestapo }
+		prerequisite = { focus = SHU_rise_security_spending }
+		
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            add_ideas = SHU_ministry_of_tv_idea
+		}
+	}
+
+	focus = {
+		id = SHU_shuan_labors
+		icon = GFX_SHU_shuan_labours
+		x = 13
+		y = 23
+		prerequisite = { focus = SHU_ministry_of_tv }
+		
+		cost = 15
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            add_ideas = SHU_shuan_labours_idea
+			add_manpower = 50
+			add_popularity = {
+				ideology = socialism
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = nationalism
+				popularity = 0.05
+			}
+		}
+	}
+
+	focus = {
+		id = SHU_loyality_oath
+		icon = GFX_DEL_aftermath_of_elections
+		x = 15
+		y = 23
+		prerequisite = { focus = SHU_ministry_of_tv }
+		
+		cost = 15
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            country_event = { id = shua.6 }
+		}
+	}
+
+	focus = {
+		id = SHU_national_athletics
+		icon = GFX_DEL_aftermath_of_elections
+		x = 17
+		y = 23
+		prerequisite = { focus = SHU_ministry_of_tv }
+		
+		cost = 15
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            country_event = { id = delta.1 }
+		}
+	}
+
+	focus = {
+		id = SHU_diplomacy
+		icon = GFX_DEL_aftermath_of_elections
+		x = 15
+		y = 25
+		prerequisite = { focus = SHU_loyality_oath }
+		prerequisite = { focus = SHU_shuan_labors }
+		prerequisite = { focus = SHU_national_athletics }
+		
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            country_event = { id = delta.1 }
+		}
+	}
+
+	focus = {
+		id = SHU_anschluss
+		icon = GFX_DEL_aftermath_of_elections
+		x = 12
+		y = 27
+		prerequisite = { focus = SHU_diplomacy }
+		
+		cost = 25
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			has_army_manpower = { size > 499999 }
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			NOD = {
+            country_event = { id = shua.7 }
+			}
+			BER = {
+            country_event = { id = shua.7 }
+			}
+			HAF = {
+            country_event = { id = shua.7 }
+			}
+			ZEN = {
+            country_event = { id = shua.7 }
+			}
+			KUP = {
+            country_event = { id = shua.7 }
+			}
+			EIS = {
+            country_event = { id = shua.7 }
+			}
+			SAN = {
+            country_event = { id = shua.7 }
+			}
+		}
+	}
+
+	focus = {
+		id = SHU_landing_on_vesta
+		icon = GFX_DEL_aftermath_of_elections
+		x = 12
+		y = 29
+		prerequisite = { focus = SHU_anschluss }
+		
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            create_wargoal = {
+                type = puppet_wargoal_focus
+                target = VES
+            }
+		}
+	}
+
+	focus = {
+		id = SHU_expand_the_shuan_influence
+		icon = GFX_DEL_aftermath_of_elections
+		x = 15
+		y = 27
+		prerequisite = { focus = SHU_diplomacy }
+		
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            country_event = { id = delta.1 }
+		}
+	}
+
+	focus = {
+		id = SHU_metal_pact
+		icon = GFX_DEL_aftermath_of_elections
+		x = 18
+		y = 27
+		prerequisite = { focus = SHU_diplomacy }
+		
+		cost = 25
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            country_event = { id = delta.1 }
+		}
+	}
+
+	focus = {
+		id = SHU_control_westphalia
+		icon = GFX_DEL_aftermath_of_elections
+		x = 14
+		y = 29
+		prerequisite = { focus = SHU_expand_the_shuan_influence }
+		
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            country_event = { id = delta.1 }
+		}
+	}
+
+	focus = {
+		id = SHU_control_ostreich
+		icon = GFX_DEL_aftermath_of_elections
+		x = 16
+		y = 29
+		prerequisite = { focus = SHU_expand_the_shuan_influence }
+		
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            country_event = { id = delta.1 }
+		}
+	}
+
+	focus = {
+		id = SHU_take_their_oil
+		icon = GFX_DEL_aftermath_of_elections
+		x = 15
+		y = 31
+		prerequisite = { focus = SHU_control_ostreich }
+		
+		cost = 5
 
 		ai_will_do = {
 			factor = 1

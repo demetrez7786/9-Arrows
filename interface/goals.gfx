@@ -3,6 +3,126 @@ spriteTypes = {
 	#### Murder drones icons
 	
 	SpriteType = {
+	name = "GFX_SHU_end_the_reforms"
+	texturefile = "gfx/interface/goals/SHU_end_the_reforms.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_SHU_rise_military_budget"
+	texturefile = "gfx/interface/goals/SHU_rise_military_budget.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_SHU_oust_traditionalists"
+	texturefile = "gfx/interface/goals/SHU_oust_traditionalists.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_SHU_rise_security_funding"
+	texturefile = "gfx/interface/goals/SHU_rise_security_funding.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_SHU_mandatory_service_act"
+	texturefile = "gfx/interface/goals/SHU_mandatory_service_act.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_SHU_deal_with_mauser"
+	texturefile = "gfx/interface/goals/SHU_deal_with_mauser.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_SHU_school_of_blitz"
+	texturefile = "gfx/interface/goals/SHU_school_of_blitz.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_SHU_shuan_labours"
+	texturefile = "gfx/interface/goals/SHU_shuan_labours.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_SHU_ministry_of_tv"
+	texturefile = "gfx/interface/goals/SHU_ministry_of_tv.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_SHU_form_the_gestapo"
+	texturefile = "gfx/interface/goals/SHU_form_the_gestapo.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_SHU_expand_the_security"
+	texturefile = "gfx/interface/goals/SHU_expand_the_security.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_SHU_great_purge"
+	texturefile = "gfx/interface/goals/SHU_great_purge.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_SHU_reform_heer"
+	texturefile = "gfx/interface/goals/SHU_reform_heer.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_SHU_economic_front"
+	texturefile = "gfx/interface/goals/SHU_economic_front.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_SHU_military_front"
+	texturefile = "gfx/interface/goals/SHU_military_front.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_SHU_political_front"
+	texturefile = "gfx/interface/goals/SHU_political_front.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_SHU_remilitarize_south_cariland"
+	texturefile = "gfx/interface/goals/SHU_remilitarize_south_cariland.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_SHU_break_treaty"
+	texturefile = "gfx/interface/goals/SHU_break_treaty.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_SHU_terrorist_attack_on_parliament"
+	texturefile = "gfx/interface/goals/SHU_terrorist_attack_on_parliament.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_SHU_question_of_national_unity"
+	texturefile = "gfx/interface/goals/SHU_question_of_national_unity.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_SHU_question_of_education"
+	texturefile = "gfx/interface/goals/SHU_question_of_education.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_SHU_question_of_religion"
+	texturefile = "gfx/interface/goals/SHU_question_of_religion.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_SHU_question_of_speech"
+	texturefile = "gfx/interface/goals/SHU_question_of_speech.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_SHU_consolidate_the_power"
+	texturefile = "gfx/interface/goals/SHU_consolidate_the_power.png"
+	}
+	
+	SpriteType = {
 	name = "GFX_DEL_hunt_red_demons"
 	texturefile = "gfx/interface/goals/DEL_hunt_red_demons.png"
 	}

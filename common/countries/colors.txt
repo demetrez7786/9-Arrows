@@ -76,5 +76,37 @@ VES = {
 	color_ui = rgb { 149 85 83 }
 }
 
+SAN = {
+	color = rgb { 255 234 164 }
+	color_ui = rgb { 255 234 164 }
+}
 
+ZEN = {
+	color = rgb { 234 198 79 }
+	color_ui = rgb { 234 198 79 }
+}
 
+BER = {
+	color = rgb { 174 167 146 }
+	color_ui = rgb { 174 167 146 }
+}
+
+EIS = {
+	color = rgb { 153 81 22 }
+	color_ui = rgb { 153 81 22 }
+}
+
+HAF = {
+	color = rgb { 34 23 139 }
+	color_ui = rgb { 34 23 139 }
+}
+
+KUP = {
+	color = rgb { 252 128 60 }
+	color_ui = rgb { 252 128 60 }
+}
+
+NOD = {
+	color = rgb { 136 34 34 }
+	color_ui = rgb { 136 34 34 }
+}

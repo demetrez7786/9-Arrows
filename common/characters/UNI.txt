@@ -1,0 +1,16 @@
+characters = {
+	UNI_beriansk_edirashvili = {
+		name = "Beriansk Edirashvili" 
+		portraits = {
+			civilian = {
+				large ="gfx/leaders/UNI/portrait_uni_beriansk_edirashvili.png"
+			}
+		}
+		country_leader = {
+			ideology = kprf
+			expire = "4950.1.1.1"
+			id = -1
+		}
+	}
+}
+	

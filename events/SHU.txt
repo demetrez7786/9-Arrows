@@ -1,0 +1,175 @@
+add_namespace = shua
+
+# terrorist attack on parliament
+country_event = {
+	id = shua.1
+	title = shua.1.t
+	desc = shua.1.d
+	picture = GFX_report_event_SHU_attack_on_parliament
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = shua.1.a
+		set_country_flag = SHU_terrorist_attack_happened
+	}
+}
+
+# first knives night
+country_event = {
+	id = shua.2
+	title = shua.2.t
+	desc = shua.2.d
+	picture = GFX_report_event_SHU_attack_on_parliament
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = shua.2.a
+		hidden_effect = {
+		    country_event = {
+			    id = shua.3
+				days = 40
+			}
+		}
+	}
+}
+
+# second knives night
+country_event = {
+	id = shua.3
+	title = shua.3.t
+	desc = shua.3.d
+	picture = GFX_report_event_SHU_attack_on_parliament
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = shua.3.a
+		hidden_effect = {
+		    country_event = {
+			    id = shua.4
+				days = 45
+			}
+		}
+	}
+}
+
+# third knives night
+country_event = {
+	id = shua.4
+	title = shua.4.t
+	desc = shua.4.d
+	picture = GFX_report_event_SHU_attack_on_parliament
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = shua.4.a
+		hidden_effect = {
+		    country_event = {
+			    id = shua.5
+				days = 23
+			}
+		}
+	}
+}
+
+# forth knives night
+country_event = {
+	id = shua.5
+	title = shua.5.t
+	desc = shua.5.d
+	picture = GFX_report_event_SHU_attack_on_parliament
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = shua.5.a
+	}
+}
+
+# Soldiers Oath
+country_event = {
+	id = shua.6
+	title = shua.6.t
+	desc = shua.6.d
+	picture = GFX_report_event_SHU_attack_on_parliament
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = shua.6.a
+	}
+}
+
+# anschluss question
+country_event = {
+	id = shua.7
+	title = shua.7.t
+	desc = shua.7.d
+	picture = GFX_report_event_SHU_attack_on_parliament
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = shua.7.a
+		SHU = {
+		    annex_country = {
+                target = ROOT
+                transfer_troops = yes
+            }
+		}
+	}
+}
+
+# emirate at war
+country_event = {
+	id = shua.8
+	title = shua.8.t
+	desc = shua.8.d
+	picture = GFX_report_event_SHU_attack_on_parliament
+	
+	trigger = {
+		ISL = { has_war_with = JEW }
+	}
+	
+	option = {
+		name = shua.8.a
+		add_ideas = SHU_intervantionist_corps
+	}
+}
+
+# landing failed
+country_event = {
+	id = shua.9
+	title = shua.9.t
+	desc = shua.9.d
+	picture = GFX_report_event_SHU_attack_on_parliament
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = shua.9.a
+		add_war_support = -0.1
+		add_popularity = {
+		    ideology = nationalism
+			popularity = -0.15
+		}
+	}
+}
+
+# question of education
+country_event = {
+	id = shua.10
+	title = shua.10.t
+	desc = shua.10.d
+	picture = GFX_report_event_SHU_attack_on_parliament
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = shua.10.a
+		add_ideas = SHU_ministry_of_censure
+	}
+}

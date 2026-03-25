@@ -243,6 +243,8 @@ ideologies = {
 		types = {
 
 			communism_generic = { }
+			
+			kprf = { can_be_randomly_selected = no }
 
 		}
 
@@ -491,6 +493,8 @@ ideologies = {
 		types = {
 
 			nationalism_generic = { }
+			
+			shuan_national_restoration_front = { can_be_randomly_selected = no }
 
 		}
 

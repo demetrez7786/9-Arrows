@@ -4,7 +4,13 @@ state={
 	provinces={
 		899 2590 5948 10407 
 	}
-	manpower=1000
+	
+	history={
+		owner = HAF
+		add_core_of = HAF
+	}
+	
+	manpower=64000
 	buildings_max_level_factor=1
 	state_category=town
 	local_supplies=0

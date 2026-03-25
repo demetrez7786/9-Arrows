@@ -1,0 +1,135 @@
+SHU_staging_the_attack {
+    
+	SHU_gather_the_guns = {
+
+		icon = GFX_decision_generic_assassination
+
+		ai_will_do = {
+			base = 100
+		}
+	
+		allowed = {
+			original_tag = SHU
+		}
+		
+		fire_only_once = yes
+
+		available = {
+			has_completed_focus = SHU_stage_the_terrorist_attack
+		} 
+
+		visible = { 
+			has_completed_focus = SHU_stage_the_terrorist_attack
+		}
+
+		cost = 0
+
+		complete_effect = {
+		    custom_effect_tooltip = SHU_attackers_will_be_armed_tt
+			add_to_variable = {
+                var = readiness_for_attack
+	            value = 25
+			}
+		}
+	}
+	
+	SHU_lower_the_guard = {
+
+		icon = GFX_decision_generic_assassination
+
+		ai_will_do = {
+			base = 100
+		}
+	
+		allowed = {
+			original_tag = SHU
+		}
+		
+		fire_only_once = yes
+
+		available = {
+			has_completed_focus = SHU_stage_the_terrorist_attack
+		} 
+
+		visible = { 
+			has_completed_focus = SHU_stage_the_terrorist_attack
+		}
+
+		cost = 0
+
+		complete_effect = {
+		    custom_effect_tooltip = SHU_damage_will_be_bigger_tt
+			add_to_variable = {
+                var = readiness_for_attack
+	            value = 25
+			}
+		}
+	}
+	
+	SHU_prepare_the_government_media = {
+
+		icon = GFX_decision_generic_assassination
+
+		ai_will_do = {
+			base = 100
+		}
+	
+		allowed = {
+			original_tag = SHU
+		}
+		
+		fire_only_once = yes
+
+		available = {
+			has_completed_focus = SHU_stage_the_terrorist_attack
+		} 
+
+		visible = { 
+			has_completed_focus = SHU_stage_the_terrorist_attack
+		}
+
+		cost = 0
+
+		complete_effect = {
+		    custom_effect_tooltip = SHU_government_media_will_immediately_accuse_the_opposition_tt
+			add_to_variable = {
+                var = readiness_for_attack
+	            value = 50
+			}
+		}
+	}
+	
+	SHU_launch_the_attack = {
+
+		icon = GFX_decision_generic_assassination
+
+		ai_will_do = {
+			base = 100
+		}
+	
+		allowed = {
+			original_tag = SHU
+		}
+		
+		fire_only_once = yes
+
+		available = {
+			has_completed_focus = SHU_stage_the_terrorist_attack
+			check_variable = {
+				var = readiness_for_attack
+				value = 100
+				compare = greater_than_or_equals
+			}
+		} 
+
+		visible = { 
+			has_completed_focus = SHU_stage_the_terrorist_attack
+		}
+
+		cost = 0
+
+		complete_effect = {
+		    country_event = { id = shua.1 }
+		}
+	}
+}

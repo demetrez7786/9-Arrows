@@ -9,7 +9,6 @@ tags={
 	"Graphics"
 	"Ideologies"
 }
-
 replace_path="common/abilities"
 replace_path="common/ai_areas"
 replace_path="common/ai_equipment"
@@ -44,6 +43,6 @@ replace_path="history/units"
 replace_path="gfx/loadingscreens"
 replace_path="map/strategicregions"
 replace_path="events"
-
 name="Copper-9 Devs"
 supported_version="1.17.3.0"
+remote_file_id="3689381874"

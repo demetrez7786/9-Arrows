@@ -20,5 +20,271 @@ ideas = {
 				army_attack_factor = -0.1
 			}
 		}
+		
+		SHU_treaty_of_zugdad = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = MUR_failing_empire
+			
+			modifier = {
+			    political_power_factor = -0.01
+				war_support_factor = -0.15
+				stability_factor = -0.15
+			}
+		}
+		
+		SHU_military_opposition = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = MUR_failing_empire
+			
+			modifier = {
+			    political_power_factor = -0.01
+				war_support_factor = -0.15
+				conscription = -0.025
+				army_org_factor = -0.3
+				militarism_drift = 0.01
+				monarchism_drift = 0.01
+			}
+		}
+		
+		SHU_gestapo = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = MUR_failing_empire
+			
+			modifier = {
+			    resistance_activity = -0.5
+				stability_factor = 0.1
+				drift_defence_factor = 0.05
+				communism_drift = -0.01
+				socialism_drift = -0.01
+				anarchism_drift = -0.01
+				liberalism_drift = -0.01
+				conservatism_drift = -0.01
+				populism_drift = -0.01
+				monarchism_drift = -0.01
+				theocracy_drift = -0.01
+			}
+		}
+		
+		SHU_ministry_of_tv_idea = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = MUR_failing_empire
+			
+			modifier = {
+				stability_factor = 0.1
+				war_support_factor = 0.1
+				nationalism_drift = 0.01
+			}
+		}
+		
+		SHU_great_purge_idea = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = MUR_failing_empire
+			
+			modifier = {
+				weekly_manpower = -10
+			}
+		}
+		
+		SHU_shuan_labours_idea = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = MUR_failing_empire
+			
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				consumer_goods_factor = -0.1
+				supply_node_range = 0.05
+			}
+		}
+		
+		SHU_reform_heer_idea = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = MUR_failing_empire
+			
+			modifier = {
+				experience_gain_army = 0.025
+				army_org_factor = -0.35
+			}
+		}
+		
+		SHU_pilots_club_idea = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = MUR_failing_empire
+			
+			modifier = {
+				experience_gain_air = 0.05
+				air_accidents_factor = -0.05
+				air_ace_generation_chance_factor = 0.1
+			}
+		}
+		
+		SHU_sei_vouchers = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = MUR_failing_empire
+			
+			modifier = {
+				consumer_goods_factor = -0.33
+				production_speed_arms_factory_factor = 0.25
+				production_speed_dockyard_factor = 0.25
+				production_speed_naval_base_factor = 0.25
+				production_speed_coastal_bunker_factor = 0.25
+				production_speed_bunker_factor = 0.25
+				production_speed_air_base_factor = 0.25
+				production_speed_anti_air_building_factor = 0.25
+				production_speed_radar_station_factor = 0.25
+				production_speed_fuel_silo_factor = 0.25
+				production_speed_synthetic_refinery_factor = 0.15
+				political_power_cost = 0.2
+			}
+		}
+		
+		SHU_school_of_blitz_idea = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = MUR_failing_empire
+			
+			modifier = {
+				army_speed = 0.25
+				army_org_factor = 0.1
+			}
+		}
+		
+		SHU_intervantionist_corps = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = MUR_failing_empire
+			
+			modifier = {
+				send_volunteer_size = 7
+			}
+		}
+		
+		SHU_ministry_of_censure = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = MUR_failing_empire
+			
+			modifier = {
+			    political_power_cost = -0.03
+				stability_factor = 0.05
+				nationalism_drift = 0.01
+			}
+		}
 	}
 }

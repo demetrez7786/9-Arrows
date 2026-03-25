@@ -4,7 +4,13 @@ state={
 	provinces={
 		456 
 	}
-	manpower=1000
+	
+	history={
+		owner = BER
+		add_core_of = BER
+	}
+	
+	manpower=29000
 	buildings_max_level_factor=1
 	state_category=town
 	local_supplies=0

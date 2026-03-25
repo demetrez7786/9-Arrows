@@ -1,4 +1,26 @@
 ﻿l_english:
+ 
+ DEL_negotiations:0 "Negotiations"
+ DEL_negotiations_desc:0 "We must de-escalate to avoid another war. \n\n §7Progress:§! [?DEL_progress|.01%%+]"
+ 
+ MUR_negotiations:0 "Negotiations"
+ MUR_negotiations_desc:0 "We must de-escalate to avoid another war. \n\n §7Progress:§! [?MUR_progress|.01%%+]"
+ 
+ SHU_staging_the_attack:0 "Staging the Attack"
+ SHU_staging_the_attack_desc:0 "We must stage the attack and then blame the opposition for it to justify our authoritarianism. \n\n §7Readiness for Attack:§! [?readiness_for_attack|.01%%+]"
+ SHU_gather_the_guns:0 "Gather the Guns"
+ SHU_lower_the_guard:0 "Lower the Guard"
+ SHU_prepare_the_government_media:0 "Prepare the Government Media"
+
+
+
+
+
+
+
+
+ 
+
  DECISIONVIEW_TITLE:0 "Events and Decisions"
  DECISIONSVIEW_EVENT_HEADER:0 "Events"
  POPUP_NEWS:0 "News Popup"
@@ -20,10 +42,6 @@
  ADD_DAYS_TO_MISSION:0 "Add $DAYS|H$ days to Mission $MISSION|H$"
  REMOVE_DAYS_TO_MISSION:0 "Remove $DAYS|H$ days from Mission $MISSION|H$"
  CLICK_TO_TOGGLE_ALL_CATEGORY_DECISION_TRACKING:0 "§GClick§! to toggle notification status for all decisions under this category."
- DEL_negotiations:0 "Negotiations"
- DEL_negotiations_desc:0 "We must de-escalate to avoid another war. \n\n §7Progress:§! [?DEL_progress|.01%%+]"
- MUR_negotiations:0 "Negotiations"
- MUR_negotiations_desc:0 "We must de-escalate to avoid another war. \n\n §7Progress:§! [?MUR_progress|.01%%+]"
  
  decision_cost_CP_15:0 "£command_power  §Y15§!"
  decision_cost_CP_15_blocked:0 "£command_power  §R15§!"

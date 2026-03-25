@@ -1,0 +1,11 @@
+SHU_staging_the_attack = {
+	priority = 999
+	visible_when_empty = no
+	icon = GFX_decision_cat_mdr_parliament
+	allowed = {
+		original_tag = SHU
+	}
+	visible = {
+		has_completed_focus = SHU_stage_the_terrorist_attack
+	}
+}

@@ -580,6 +580,16 @@ spriteTypes = {
 	}
 	
 	spriteType = {
+		name = "GFX_ideology_kprf"
+		texturefile = "gfx/interface/ideologies/kprf.png"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_shuan_national_restoration_front"
+		texturefile = "gfx/interface/ideologies/shuan_national_restoration_front.png"
+	}
+	
+	spriteType = {
 		name = "GFX_ideology_unknown"
 		texturefile = "gfx/interface/ideologies/unknown.dds"
 		legacy_lazy_load = no

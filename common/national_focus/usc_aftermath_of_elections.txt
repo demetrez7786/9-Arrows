@@ -1,0 +1,853 @@
+focus_tree = {
+	id = usc_democrats_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = CEN
+		}
+	}
+	
+	default = no
+	
+	continuous_focus_position = { x = 50 y = 7000 }
+
+    focus = {
+		id = CEN_democrats_won
+		icon = GFX_CEN_democrats_remain
+		x = 4
+		y = 1
+
+		cost = 1
+
+		allow_branch = {
+			has_country_flag = CEN_democrats_won_again
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            add_political_power = 100
+            add_stability = 0.15
+            add_popularity = {
+                ideology = liberalism
+                popularity = 0.3
+            }
+            news_event = { id = news.5 }
+		}
+	}
+
+	focus = {
+		id = CEN_populists_won
+		icon = GFX_CEN_democrats_remain
+		x = 4
+		y = 1
+
+		cost = 1
+
+		allow_branch = {
+			has_country_flag = CEN_populists_won_the_election
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            add_political_power = 100
+            add_stability = 0.15
+            add_popularity = {
+                ideology = populism
+                popularity = 0.55
+            }
+            set_politics = { 
+			    ruling_party = populism
+			    elections_allowed = no
+		    }
+            news_event = { id = news.10 }
+		}
+	}
+
+	focus = {
+		id = CEN_defund_the_police
+		icon = GFX_CEN_democrats_remain
+		x = 4
+		y = 3
+		prerequisite = { focus = CEN_populists_won }
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            
+		}
+	}
+
+	focus = {
+		id = CEN_set_up_border_defence
+		icon = GFX_CEN_democrats_remain
+		x = 2
+		y = 3
+		prerequisite = { focus = CEN_populists_won }
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = CEN_invest_in_corporate_partnerships
+		icon = GFX_CEN_democrats_remain
+		x = 6
+		y = 3
+		prerequisite = { focus = CEN_populists_won }
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            
+		}
+	}
+
+	focus = {
+		id = CEN_kick_out_illegals
+		icon = GFX_CEN_democrats_remain
+		x = 4
+		y = 5
+		prerequisite = { focus = CEN_defund_the_police }
+		prerequisite = { focus = CEN_set_up_border_defence }
+		prerequisite = { focus = CEN_invest_in_corporate_partnerships }
+
+		cost = 25
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            
+		}
+	}
+
+	focus = {
+		id = CEN_counter_terrorism_populist
+		icon = GFX_CEN_democrats_remain
+		x = 4
+		y = 7
+		prerequisite = { focus = CEN_kick_out_illegals }
+
+		cost = 25
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            
+		}
+	}
+
+	focus = {
+		id = CEN_entrench_our_positions
+		icon = GFX_CEN_entrentch_our_position
+		x = 4
+		y = 3
+		prerequisite = { focus = CEN_democrats_won }
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            add_political_power = 75
+            add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = CEN_reopen_talks_with_populists
+		icon = GFX_CEN_reopen_talks_with_populists
+		x = 4
+		y = 5
+		prerequisite = { focus = CEN_entrench_our_positions }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            add_political_power = 5
+            add_stability = 0.02
+            add_popularity = {
+                ideology = liberalism
+                popularity = 0.01
+            }
+			custom_effect_tooltip = CEN_talks_with_populist_tt
+		}
+	}
+
+	focus = {
+		id = CEN_give_them_seats_in_senat
+		icon = GFX_CEN_give_them_seats_in_senate
+		x = 2
+		y = 7
+		prerequisite = { focus = CEN_reopen_talks_with_populists }
+
+		cost = 25
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            add_political_power = -20
+			add_war_support = -0.07
+            add_popularity = {
+                ideology = populism
+                popularity = 0.1
+            }
+		}
+	}
+
+	focus = {
+		id = CEN_apologize_for_police_actions
+		icon = GFX_CEN_apologize_for_police_actions
+		x = 6
+		y = 7
+		prerequisite = { focus = CEN_reopen_talks_with_populists }
+
+		cost = 25
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            add_political_power = -100
+            add_stability = 0.2
+			add_war_support = -0.15
+		}
+	}
+
+	focus = {
+		id = CEN_start_public_debates
+		icon = GFX_CEN_start_public_debates
+		x = 4
+		y = 7
+		prerequisite = { focus = CEN_reopen_talks_with_populists }
+
+		cost = 25
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            add_political_power = 5
+            add_stability = 0.07
+			add_war_support = 0.03
+            add_popularity = {
+                ideology = liberalism
+                popularity = 0.02
+            }
+			add_popularity = {
+                ideology = populism
+                popularity = 0.02
+            }
+			add_popularity = {
+                ideology = conservatism
+                popularity = 0.02
+            }
+		}
+	}
+
+	focus = {
+		id = CEN_populists_protests_is_over
+		icon = GFX_CEN_protest_is_over
+		x = 4
+		y = 9
+		prerequisite = { focus = CEN_give_them_seats_in_senat }
+		prerequisite = { focus = CEN_start_public_debates }
+		prerequisite = { focus = CEN_apologize_for_police_actions }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            add_political_power = 100
+            add_stability = 0.15
+            add_popularity = {
+                ideology = liberalism
+                popularity = 0.3
+            }
+            news_event = { id = news.5 }
+		}
+	}
+
+	focus = {
+		id = CEN_alliance
+		icon = GFX_CEN_alliance
+		x = 3
+		y = 11
+		prerequisite = { focus = CEN_populists_protests_is_over }
+		mutually_exclusive = { focus = CEN_continue_alone }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            add_political_power = 100
+            add_stability = 0.15
+            add_popularity = {
+                ideology = liberalism
+                popularity = 0.3
+            }
+            news_event = { id = news.5 }
+		}
+	}
+
+	focus = {
+		id = CEN_continue_alone
+		icon = GFX_CEN_continue_alone
+		x = 5
+		y = 11
+		prerequisite = { focus = CEN_populists_protests_is_over }
+		mutually_exclusive = { focus = CEN_alliance }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            add_political_power = 100
+            add_stability = 0.15
+            add_popularity = {
+                ideology = liberalism
+                popularity = 0.3
+            }
+            news_event = { id = news.5 }
+		}
+	}
+
+	focus = {
+		id = CEN_counter_terrorism_demo
+		icon = GFX_CEN_counter_terrorism
+		x = 4
+		y = 13
+		prerequisite = { focus = CEN_alliance focus = CEN_continue_alone }
+
+		cost = 25
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            add_political_power = 100
+            add_stability = 0.15
+            add_popularity = {
+                ideology = liberalism
+                popularity = 0.3
+            }
+            news_event = { id = news.5 }
+		}
+	}
+
+	focus = {
+		id = CEN_republicans_won
+		icon = GFX_CEN_republicans_won
+		x = 4
+		y = 1
+
+		cost = 1
+
+		allow_branch = {
+			has_country_flag = CEN_republicans_finally_won
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            add_political_power = 100
+            add_stability = 0.15
+            add_popularity = {
+                ideology = conservatism
+                popularity = 0.55
+            }
+            set_politics = { 
+			    ruling_party = conservatism
+			    elections_allowed = no
+		    }
+            news_event = { id = news.6 }
+		}
+	}
+
+    focus = {
+		id = CEN_internal_affairs
+		icon = GFX_CEN_internal_affairs
+		x = 4
+		y = 3
+        prerequisite = { focus = CEN_republicans_won }
+
+		cost = 15
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            custom_effect_tooltip = CEN_internal_affairs_tt
+		}
+	}
+
+    focus = {
+		id = CEN_counter_terrorism
+		icon = GFX_CEN_counter_terrorism
+		x = 4
+		y = 7
+        prerequisite = { focus = CEN_deal_with_populists }
+		prerequisite = { focus = CEN_restricted_borders }
+
+		cost = 25
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            custom_modifier_tooltip = CEN_counter_terrorism_tt
+		}
+	}
+
+    focus = {
+		id = CEN_restricted_borders
+		icon = GFX_CEN_restrict_borders
+		x = 5
+		y = 5
+        prerequisite = { focus = CEN_internal_affairs }
+
+		cost = 25
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            add_ideas = restricted_borders
+		}
+	}
+
+	focus = {
+		id = CEN_deal_with_populists
+		icon = GFX_CEN_deal_with_populists
+		x = 3
+		y = 5
+        prerequisite = { focus = CEN_internal_affairs }
+
+		cost = 25
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            add_ideas = restricted_borders
+		}
+	}
+
+	focus = {
+		id = CEN_expand_cia
+		icon = GFX_CEN_expand_cia
+		x = 4
+		y = 9
+        prerequisite = { focus = CEN_deal_with_populists }
+
+		cost = 25
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            
+		}
+	}
+
+	focus = {
+		id = CEN_economic_interesets
+		icon = GFX_CEN_expand_cia
+		x = 3
+		y = 11
+        prerequisite = { focus = CEN_expand_cia }
+
+		cost = 25
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            
+		}
+	}
+
+	focus = {
+		id = CEN_military_interesets
+		icon = GFX_CEN_expand_cia
+		x = 5
+		y = 11
+        prerequisite = { focus = CEN_expand_cia }
+
+		cost = 25
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            
+		}
+	}
+}

@@ -8,10 +8,18 @@ state={
 	History = {
 	    owner = SHU
 		add_core_of = SHU
+		victory_points = { 9663 25 }
+		victory_points = { 3375 25 }
+		victory_points = { 9726 25 }
+		buildings = {
+			infrastructure = 3
+			arms_factory = 2
+			industrial_complex = 3
+		}
 	}
 	
-	manpower=1000
+	manpower=3200000
 	buildings_max_level_factor=1
-	state_category=town
+	state_category=large_town
 	local_supplies=0
 }

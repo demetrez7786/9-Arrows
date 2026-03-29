@@ -11,6 +11,71 @@ spriteTypes = {
 	}
 	
 	spriteType = {
+		name = "GFX_idea_SHU_ministry_of_tv"
+		texturefile = "gfx/interface/ideas/SHU_ministry_of_tv.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_SHU_shuan_influence"
+		texturefile = "gfx/interface/ideas/SHU_shuan_influence.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_SHU_international_corps"
+		texturefile = "gfx/interface/ideas/SHU_international_corps.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_SHU_school_of_blitz"
+		texturefile = "gfx/interface/ideas/SHU_school_of_blitz.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_SHU_sei_vouchers"
+		texturefile = "gfx/interface/ideas/SHU_sei_vouchers.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_SHU_reform_heer"
+		texturefile = "gfx/interface/ideas/SHU_reform_heer.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_SHU_shuan_labours"
+		texturefile = "gfx/interface/ideas/SHU_shuan_labours.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_SHU_great_purge"
+		texturefile = "gfx/interface/ideas/SHU_great_purge.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_SHU_ministry_of_tv"
+		texturefile = "gfx/interface/ideas/SHU_ministry_of_tv.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_SHU_gestapo"
+		texturefile = "gfx/interface/ideas/SHU_gestapo.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_SHU_militarist_opposition"
+		texturefile = "gfx/interface/ideas/SHU_militarist_opposition.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_SHU_zugdid_treaty"
+		texturefile = "gfx/interface/ideas/SHU_zugdid_treaty.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_SHU_cariland_war"
+		texturefile = "gfx/interface/ideas/SHU_cariland_war.png"
+	}
+	
+	spriteType = {
 		name = "GFX_idea_DEL_deserters_issue"
 		texturefile = "gfx/interface/ideas/DEL_deserters_issue.png"
 	}

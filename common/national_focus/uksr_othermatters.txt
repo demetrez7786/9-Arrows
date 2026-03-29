@@ -447,6 +447,285 @@ focus_tree = {
 	}
 
 	focus = {
+		id = UNI_economic_sickness
+		icon = GFX_UNI_military_sickness
+		x = 30
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		    
+		}
+	}
+
+	focus = {
+		id = UNI_five_years_plan
+		icon = GFX_UNI_military_sickness
+		x = 30
+		y = 3
+		prerequisite = { focus = UNI_economic_sickness }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		    
+		}
+	}
+
+	focus = {
+		id = UNI_hunt_down_oligarchs
+		icon = GFX_UNI_military_sickness
+		x = 29
+		y = 5
+		prerequisite = { focus = UNI_five_years_plan }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		    
+		}
+	}
+
+	focus = {
+		id = UNI_establish_central_bank
+		icon = GFX_UNI_military_sickness
+		x = 29
+		y = 7
+		prerequisite = { focus = UNI_hunt_down_oligarchs }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		    
+		}
+	}
+
+	focus = {
+		id = UNI_raid_black_market
+		icon = GFX_UNI_military_sickness
+		x = 31
+		y = 5
+		prerequisite = { focus = UNI_five_years_plan }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		    
+		}
+	}
+
+	focus = {
+		id = UNI_reforms_schools
+		icon = GFX_UNI_military_sickness
+		x = 31
+		y = 7
+		prerequisite = { focus = UNI_raid_black_market }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		    
+		}
+	}
+
+	focus = {
+		id = UNI_national_collectivization
+		icon = GFX_UNI_military_sickness
+		x = 30
+		y = 9
+		prerequisite = { focus = UNI_reforms_schools }
+		prerequisite = { focus = UNI_establish_central_bank }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		    
+		}
+	}
+
+	focus = {
+		id = UNI_roads_in_the_abyss
+		icon = GFX_UNI_military_sickness
+		x = 25
+		y = 5
+		prerequisite = { focus = UNI_five_years_plan }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		    
+		}
+	}
+
+	focus = {
+		id = UNI_modernize_metro
+		icon = GFX_UNI_military_sickness
+		x = 25
+		y = 7
+		prerequisite = { focus = UNI_roads_in_the_abyss }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		    
+		}
+	}
+
+	focus = {
 		id = UNI_land_force
 		icon = GFX_UNI_militarism_came_to_power
 		x = 15

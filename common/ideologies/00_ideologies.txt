@@ -295,6 +295,8 @@ ideologies = {
 		types = {
 
 			socialism_generic = { }
+			
+			peoples_union = { can_be_randomly_selected = no }
 
 		}
 
@@ -543,6 +545,8 @@ ideologies = {
 			militarism_generic = { }
 			
 			officers_council = { can_be_randomly_selected = no }
+			
+			defenders_of_the_motherland = { can_be_randomly_selected = no }
 
 		}
 

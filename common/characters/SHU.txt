@@ -30,6 +30,23 @@ characters = {
 		}
 	}
 	
+	SHU_von_falken = {
+		name = "Von Falken"
+		portraits = {
+			army = {
+				large = "gfx/leaders/MDR/portrait_mdr_thad.png"
+			}
+		}
+		field_marshal = { 
+			traits = { old_guard }
+			skill = 5
+			attack_skill = 3
+			defense_skill = 5
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+	
 	SHU_friedrich_von_hindenburg_schleyer = {
 		name = "Friedrich von Hindenburg-Schleyer"
 		portraits = {
@@ -78,6 +95,74 @@ characters = {
 			defense_skill = 3
 			planning_skill = 3
 			logistics_skill = 1
+		}
+	}
+	
+	SHU_richter = {
+		name = "Richter"
+		portraits = {
+			army = {
+				large = "gfx/leaders/MDR/portrait_mdr_thad.png"
+			}
+		}
+		corps_commander = {
+			traits = { combined_arms_expert }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	
+	SHU_elara = {
+		name = "Elara"
+		portraits = {
+			army = {
+				large = "gfx/leaders/MDR/portrait_mdr_thad.png"
+			}
+		}
+		corps_commander = {
+			traits = { combined_arms_expert }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 4
+		}
+	}
+	
+	SHU_brandt = {
+		name = "Brandt"
+		portraits = {
+			army = {
+				large = "gfx/leaders/MDR/portrait_mdr_thad.png"
+			}
+		}
+		corps_commander = {
+			traits = { combined_arms_expert }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+	
+	SHU_oberst_lutz = {
+		name = "Oberst Lutz"
+		portraits = {
+			army = {
+				large = "gfx/leaders/MDR/portrait_mdr_thad.png"
+			}
+		}
+		corps_commander = {
+			traits = { combined_arms_expert }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 2
 		}
 	}
 }

@@ -13,7 +13,7 @@ ideas = {
 
 			removal_cost = -1
 			
-			picture = MUR_failing_empire
+			picture = SHU_cariland_war
 			
 			modifier = {
 				war_support_factor = -0.15
@@ -33,7 +33,7 @@ ideas = {
 
 			removal_cost = -1
 			
-			picture = MUR_failing_empire
+			picture = SHU_zugdid_treaty
 			
 			modifier = {
 			    political_power_factor = -0.01
@@ -54,12 +54,12 @@ ideas = {
 
 			removal_cost = -1
 			
-			picture = MUR_failing_empire
+			picture = SHU_militarist_opposition
 			
 			modifier = {
 			    political_power_factor = -0.01
 				war_support_factor = -0.15
-				conscription = -0.025
+				conscription = -0.005
 				army_org_factor = -0.3
 				militarism_drift = 0.01
 				monarchism_drift = 0.01
@@ -78,7 +78,7 @@ ideas = {
 
 			removal_cost = -1
 			
-			picture = MUR_failing_empire
+			picture = SHU_gestapo
 			
 			modifier = {
 			    resistance_activity = -0.5
@@ -107,7 +107,7 @@ ideas = {
 
 			removal_cost = -1
 			
-			picture = MUR_failing_empire
+			picture = SHU_ministry_of_tv
 			
 			modifier = {
 				stability_factor = 0.1
@@ -128,7 +128,7 @@ ideas = {
 
 			removal_cost = -1
 			
-			picture = MUR_failing_empire
+			picture = SHU_great_purge
 			
 			modifier = {
 				weekly_manpower = -10
@@ -147,7 +147,7 @@ ideas = {
 
 			removal_cost = -1
 			
-			picture = MUR_failing_empire
+			picture = SHU_shuan_labours
 			
 			modifier = {
 				production_speed_buildings_factor = 0.05
@@ -168,7 +168,7 @@ ideas = {
 
 			removal_cost = -1
 			
-			picture = MUR_failing_empire
+			picture = SHU_reform_heer
 			
 			modifier = {
 				experience_gain_army = 0.025
@@ -188,7 +188,7 @@ ideas = {
 
 			removal_cost = -1
 			
-			picture = MUR_failing_empire
+			picture = unknown_idea
 			
 			modifier = {
 				experience_gain_air = 0.05
@@ -209,7 +209,7 @@ ideas = {
 
 			removal_cost = -1
 			
-			picture = MUR_failing_empire
+			picture = SHU_sei_vouchers
 			
 			modifier = {
 				consumer_goods_factor = -0.33
@@ -239,7 +239,7 @@ ideas = {
 
 			removal_cost = -1
 			
-			picture = MUR_failing_empire
+			picture = SHU_school_of_blitz
 			
 			modifier = {
 				army_speed = 0.25
@@ -259,7 +259,7 @@ ideas = {
 
 			removal_cost = -1
 			
-			picture = MUR_failing_empire
+			picture = SHU_international_corps
 			
 			modifier = {
 				send_volunteer_size = 7
@@ -278,12 +278,51 @@ ideas = {
 
 			removal_cost = -1
 			
-			picture = MUR_failing_empire
+			picture = unknown_idea
 			
 			modifier = {
 			    political_power_cost = -0.03
 				stability_factor = 0.05
 				nationalism_drift = 0.01
+			}
+		}
+		
+		SHU_national_athletics_idea = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = unknown_idea
+			
+			modifier = {
+			    army_morale_factor = 0.1
+			}
+		}
+		
+		SHU_shuan_influence = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = SHU_shuan_influence
+			
+			modifier = {
+			    nationalism_acceptance = 75
+				nationalism_drift = 0.1
 			}
 		}
 	}

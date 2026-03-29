@@ -8,6 +8,11 @@ state={
 	history={
 		owner = BER
 		add_core_of = BER
+		victory_points = { 456 5 }
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+		}
 	}
 	
 	manpower=29000

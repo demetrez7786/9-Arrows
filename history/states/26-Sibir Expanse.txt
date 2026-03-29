@@ -10,7 +10,7 @@ state={
 		add_core_of = UNI
 	}
 	
-	manpower=1000
+	manpower=1450000
 	buildings_max_level_factor=1
 	state_category=town
 	local_supplies=0

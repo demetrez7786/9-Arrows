@@ -8,6 +8,11 @@ state={
 	history={
 		owner = HAF
 		add_core_of = HAF
+		victory_points = { 899 5 }
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
 	}
 	
 	manpower=64000

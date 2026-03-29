@@ -8,9 +8,27 @@ state={
 	history={
 		owner = UNI
 		add_core_of = UNI
+		victory_points = { 8111 20 }
+		victory_points = { 8568 15 }
+		victory_points = { 1783 15 }
+		
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 1
+			8111 = {
+				naval_base = 5
+			}
+			1783 = {
+				naval_base = 3
+			}
+			8568 = {
+				naval_base = 3
+			}
+		}
 	}
 	
 	buildings_max_level_factor=1.000
-    manpower=1000
+    manpower=33584900
     state_category = town
 }

@@ -8,6 +8,12 @@ state={
 	history={
 		owner = KUP
 		add_core_of = KUP
+		victory_points = { 711 10 }
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
 	}
 	
 	manpower=2211000

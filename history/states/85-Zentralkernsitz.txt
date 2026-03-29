@@ -8,10 +8,19 @@ state={
 	History = {
 	    owner = SHU
 		add_core_of = SHU
+		victory_points = { 6476 50 }
+		victory_points = { 3211 35 }
+		victory_points = { 6476 50 }
+		buildings = {
+			infrastructure = 5
+			air_base = 5
+			arms_factory = 3
+			industrial_complex = 5
+		}
 	}
 	
-	manpower=1000
+	manpower=4500000
 	buildings_max_level_factor=1
-	state_category=town
+	state_category=megalopolis
 	local_supplies=0
 }

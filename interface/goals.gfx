@@ -3,6 +3,16 @@ spriteTypes = {
 	#### Murder drones icons
 	
 	SpriteType = {
+	name = "GFX_SHU_roads_for_nation"
+	texturefile = "gfx/interface/goals/SHU_roads_for_nation.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_SHU_sei_vouchers"
+	texturefile = "gfx/interface/goals/SHU_sei_vouchers.png"
+	}
+	
+	SpriteType = {
 	name = "GFX_SHU_end_the_reforms"
 	texturefile = "gfx/interface/goals/SHU_end_the_reforms.png"
 	}

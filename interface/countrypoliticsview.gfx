@@ -590,6 +590,16 @@ spriteTypes = {
 	}
 	
 	spriteType = {
+		name = "GFX_ideology_peoples_union"
+		texturefile = "gfx/interface/ideologies/peoples_union.png"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_defenders_of_the_motherland"
+		texturefile = "gfx/interface/ideologies/defenders_of_the_motherland.png"
+	}
+	
+	spriteType = {
 		name = "GFX_ideology_unknown"
 		texturefile = "gfx/interface/ideologies/unknown.dds"
 		legacy_lazy_load = no

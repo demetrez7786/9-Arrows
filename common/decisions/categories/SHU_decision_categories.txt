@@ -9,3 +9,13 @@ SHU_staging_the_attack = {
 		has_completed_focus = SHU_stage_the_terrorist_attack
 	}
 }
+
+SHU_take_vesta = {
+
+	icon = GFX_decision_category_military_operation
+	priority = 50
+	allowed = {
+		original_tag = SHU
+	}
+	visible_when_empty = no
+}

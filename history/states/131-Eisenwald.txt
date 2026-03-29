@@ -8,6 +8,11 @@ state={
 	history={
 		owner = EIS
 		add_core_of = EIS
+		victory_points = { 1647 5 }
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
 	}
 	
 	manpower=11000

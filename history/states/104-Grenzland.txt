@@ -8,6 +8,12 @@ state={
 	history={
 		owner = NOD
 		add_core_of = NOD
+		victory_points = { 3300 10 }
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
 	}
 	
 	manpower=7379000

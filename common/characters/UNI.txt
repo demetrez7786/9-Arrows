@@ -12,5 +12,67 @@ characters = {
 			id = -1
 		}
 	}
+	
+	UNI_mikhail_sokolov = {
+		name = "Mikhail Sokolov" 
+		portraits = {
+			civilian = {
+				large ="gfx/leaders/UNI/portrait_uni_beriansk_edirashvili.png"
+			}
+		}
+		country_leader = {
+			ideology = peoples_union
+			expire = "4950.1.1.1"
+			id = -1
+		}
+	}
+	
+	UNI_viktor_volkov = {
+		name = "Viktor Volkov" 
+		portraits = {
+			civilian = {
+				large ="gfx/leaders/UNI/portrait_uni_beriansk_edirashvili.png"
+			}
+		}
+		country_leader = {
+			ideology = defenders_of_the_motherland
+			expire = "4950.1.1.1"
+			id = -1
+		}
+	}
+	
+	UNI_elena_petrova = {
+		name = "Elena Petrova"
+		portraits = {
+			army = {
+				large = "gfx/leaders/MDR/portrait_mdr_thad.png"
+			}
+		}
+		corps_commander = {
+			traits = { combined_arms_expert }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	
+	UNI_ivan_zhukov = {
+		name = "Ivan Zhukov"
+		portraits = {
+			army = {
+				large = "gfx/leaders/MDR/portrait_mdr_thad.png"
+			}
+		}
+		corps_commander = {
+			traits = { combined_arms_expert }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
 }
 	

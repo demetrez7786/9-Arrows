@@ -173,3 +173,20 @@ country_event = {
 		add_ideas = SHU_ministry_of_censure
 	}
 }
+
+# mission secure vesta in 30 days
+country_event = {
+	id = shua.11
+	title = shua.11.t
+	desc = shua.11.d
+	picture = GFX_report_event_SHU_attack_on_parliament
+	
+	trigger = {
+		SHU = { has_war_with = VES }
+	}
+	
+	option = {
+		name = shua.11.a
+		activate_mission = SHU_take_vesta_in_days
+	}
+}

@@ -20,3 +20,7 @@ EIS = "countries/Eisenwald.txt"
 KUP = "countries/Kupfer-Tal.txt"
 HAF = "countries/Hafen-Punkt.txt"
 SAN = "countries/Sankt-Varian.txt"
+WEP = "countries/Westphalia.txt"
+OST = "countries/Ostreich.txt"
+AUR = "countries/Aurora.txt
+JOM = "countries/Jormsrealm.txt"

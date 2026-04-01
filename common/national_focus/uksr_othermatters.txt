@@ -50,7 +50,7 @@ focus_tree = {
 
 	focus = {
 		id = UNI_silence_opposition
-		icon = GFX_UNI_militarism_came_to_power
+		icon = GFX_UNI_silent_killing
 		x = 5
 		y = 3
 		prerequisite = { focus = UNI_internal_instability }
@@ -259,7 +259,7 @@ focus_tree = {
 
 	focus = {
 		id = UNI_control_internal_opposition
-		icon = GFX_UNI_militarism_came_to_power
+		icon = GFX_UNI_control_internal_opposition
 		x = 5
 		y = 3
 		prerequisite = { focus = UNI_internal_cracks }
@@ -290,7 +290,7 @@ focus_tree = {
 
 	focus = {
 		id = UNI_silent_killing
-		icon = GFX_UNI_militarism_came_to_power
+		icon = GFX_UNI_silent_killing
 		x = 6
 		y = 5
 		prerequisite = { focus = UNI_control_internal_opposition }
@@ -321,7 +321,7 @@ focus_tree = {
 
 	focus = {
 		id = UNI_arrest_them
-		icon = GFX_UNI_militarism_came_to_power
+		icon = GFX_UNI_arrest_them
 		x = 4
 		y = 5
 		prerequisite = { focus = UNI_control_internal_opposition }
@@ -352,7 +352,7 @@ focus_tree = {
 
 	focus = {
 		id = UNI_opposition_is_controlled
-		icon = GFX_UNI_militarism_came_to_power
+		icon = GFX_UNI_internal_opposition_is_controlled
 		x = 5
 		y = 7
 		prerequisite = { focus = UNI_arrest_them }
@@ -448,7 +448,7 @@ focus_tree = {
 
 	focus = {
 		id = UNI_economic_sickness
-		icon = GFX_UNI_military_sickness
+		icon = GFX_UNI_economic_sickness
 		x = 30
 		y = 1
 
@@ -478,12 +478,12 @@ focus_tree = {
 
 	focus = {
 		id = UNI_five_years_plan
-		icon = GFX_UNI_military_sickness
+		icon = GFX_UNI_five_years_plan
 		x = 30
 		y = 3
 		prerequisite = { focus = UNI_economic_sickness }
 
-		cost = 5
+		cost = 15
 
 		ai_will_do = {
 			factor = 1
@@ -503,18 +503,21 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-		    
+		   add_timed_idea = {
+				idea = UNI_five_years_plan_idea
+				days = 1826
+			}
 		}
 	}
 
 	focus = {
 		id = UNI_hunt_down_oligarchs
-		icon = GFX_UNI_military_sickness
+		icon = GFX_UNI_hunt_down_oligarchs
 		x = 29
 		y = 5
 		prerequisite = { focus = UNI_five_years_plan }
 
-		cost = 5
+		cost = 25
 
 		ai_will_do = {
 			factor = 1
@@ -534,18 +537,25 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-		    
+		    add_political_power = 100
+			add_to_variable = { UNI_fe_consumer_goods_factor = -0.1 }
+            add_to_variable = { UNI_fe_production_speed_buildings_factor = 0.05 }
+            add_to_variable = { UNI_fe_production_speed_industrial_complex_factor = 0.05 }
+            add_to_variable = { UNI_fe_production_speed_arms_factory_factor = 0.05 }
+            add_to_variable = { UNI_fe_industrial_capacity_dockyard = 0.05 }
+            add_to_variable = { UNI_fe_industrial_capacity_factory = 0.05 }
+			custom_effect_tooltip = economy_will_get_better
 		}
 	}
 
 	focus = {
 		id = UNI_establish_central_bank
-		icon = GFX_UNI_military_sickness
+		icon = GFX_UNI_form_central_bank
 		x = 29
 		y = 7
 		prerequisite = { focus = UNI_hunt_down_oligarchs }
 
-		cost = 5
+		cost = 25
 
 		ai_will_do = {
 			factor = 1
@@ -565,18 +575,24 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-		    
+		    add_to_variable = { UNI_fe_consumer_goods_factor = -0.1 }
+            add_to_variable = { UNI_fe_production_speed_buildings_factor = 0.05 }
+            add_to_variable = { UNI_fe_production_speed_industrial_complex_factor = 0.05 }
+            add_to_variable = { UNI_fe_production_speed_arms_factory_factor = 0.05 }
+            add_to_variable = { UNI_fe_industrial_capacity_dockyard = 0.05 }
+            add_to_variable = { UNI_fe_industrial_capacity_factory = 0.05 }
+			custom_effect_tooltip = economy_will_get_better
 		}
 	}
 
 	focus = {
 		id = UNI_raid_black_market
-		icon = GFX_UNI_military_sickness
+		icon = GFX_goal_unknown
 		x = 31
 		y = 5
 		prerequisite = { focus = UNI_five_years_plan }
 
-		cost = 5
+		cost = 25
 
 		ai_will_do = {
 			factor = 1
@@ -596,18 +612,24 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-		    
+		    add_to_variable = { UNI_fe_consumer_goods_factor = -0.1 }
+            add_to_variable = { UNI_fe_production_speed_buildings_factor = 0.05 }
+            add_to_variable = { UNI_fe_production_speed_industrial_complex_factor = 0.05 }
+            add_to_variable = { UNI_fe_production_speed_arms_factory_factor = 0.05 }
+            add_to_variable = { UNI_fe_industrial_capacity_dockyard = 0.05 }
+            add_to_variable = { UNI_fe_industrial_capacity_factory = 0.05 }
+			custom_effect_tooltip = economy_will_get_better
 		}
 	}
 
 	focus = {
 		id = UNI_reforms_schools
-		icon = GFX_UNI_military_sickness
+		icon = GFX_goal_unknown
 		x = 31
 		y = 7
 		prerequisite = { focus = UNI_raid_black_market }
 
-		cost = 5
+		cost = 25
 
 		ai_will_do = {
 			factor = 1
@@ -627,19 +649,23 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-		    
+		    add_to_variable = { UNI_fe_consumer_goods_factor = -0.1 }
+            add_to_variable = { UNI_fe_production_speed_buildings_factor = 0.05 }
+            add_to_variable = { UNI_fe_industrial_capacity_dockyard = 0.05 }
+            add_to_variable = { UNI_fe_industrial_capacity_factory = 0.05 }
+			custom_effect_tooltip = economy_will_get_better
 		}
 	}
 
 	focus = {
 		id = UNI_national_collectivization
-		icon = GFX_UNI_military_sickness
+		icon = GFX_UNI_national_collectiivization
 		x = 30
 		y = 9
 		prerequisite = { focus = UNI_reforms_schools }
 		prerequisite = { focus = UNI_establish_central_bank }
 
-		cost = 5
+		cost = 25
 
 		ai_will_do = {
 			factor = 1
@@ -659,18 +685,18 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-		    
+		    remove_dynamic_modifier = { modifier = UNI_failing_economy }
 		}
 	}
 
 	focus = {
 		id = UNI_roads_in_the_abyss
-		icon = GFX_UNI_military_sickness
+		icon = GFX_UNI_roads_into_the_abyss
 		x = 25
 		y = 5
 		prerequisite = { focus = UNI_five_years_plan }
 
-		cost = 5
+		cost = 25
 
 		ai_will_do = {
 			factor = 1
@@ -690,18 +716,24 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-		    
+		    26 = {
+			    add_building_construction = {
+                    type = infrastructure
+                    level = 2
+                    instant_build = yes
+                }
+			}
 		}
 	}
 
 	focus = {
 		id = UNI_modernize_metro
-		icon = GFX_UNI_military_sickness
+		icon = GFX_UNI_modernize_metro
 		x = 25
 		y = 7
 		prerequisite = { focus = UNI_roads_in_the_abyss }
 
-		cost = 5
+		cost = 25
 
 		ai_will_do = {
 			factor = 1
@@ -727,7 +759,7 @@ focus_tree = {
 
 	focus = {
 		id = UNI_land_force
-		icon = GFX_UNI_militarism_came_to_power
+		icon = GFX_UNI_land_force
 		x = 15
 		y = 3
 		prerequisite = { focus = UNI_military_sickness }
@@ -758,7 +790,7 @@ focus_tree = {
 
 	focus = {
 		id = UNI_navy_force
-		icon = GFX_UNI_militarism_came_to_power
+		icon = GFX_UNI_navy_force
 		x = 19
 		y = 3
 		prerequisite = { focus = UNI_military_sickness }
@@ -789,7 +821,7 @@ focus_tree = {
 
 	focus = {
 		id = UNI_air_force
-		icon = GFX_UNI_militarism_came_to_power
+		icon = GFX_UNI_air_force
 		x = 11
 		y = 3
 		prerequisite = { focus = UNI_military_sickness }
@@ -820,7 +852,7 @@ focus_tree = {
 
 	focus = {
 		id = UNI_hunt_corruption
-		icon = GFX_UNI_militarism_came_to_power
+		icon = GFX_goal_unknown
 		x = 14
 		y = 5
 		prerequisite = { focus = UNI_land_force }
@@ -851,12 +883,13 @@ focus_tree = {
             add_to_variable = { UNI_wm_army_speed_factor = 0.03 }
             add_to_variable = { UNI_wm_army_org_factor = 0.04 }
             add_to_variable = { UNI_wm_training_time_factor = -0.03 }
+			custom_effect_tooltip = army_will_be_stronge_tt
 		}
 	}
 
 	focus = {
 		id = UNI_centralize_air_command
-		icon = GFX_UNI_militarism_came_to_power
+		icon = GFX_goal_unknown
 		x = 11
 		y = 7
 		prerequisite = { focus = UNI_modernize_aircrafts }
@@ -885,13 +918,14 @@ focus_tree = {
 			add_to_variable = { UNI_soviet_airforce_air_accidents_factor = -0.05 }
             add_to_variable = { UNI_soviet_airforce_air_ace_generation_chance_factor = 0.05 }
             add_to_variable = { UNI_soviet_airforce_air_night_penalty = -0.05 }
-            add_to_variable = { UNI_soviet_airforce_air_weather_penalty = -0.05 }		    
+            add_to_variable = { UNI_soviet_airforce_air_weather_penalty = -0.05 }
+			custom_effect_tooltip = army_will_be_stronge_tt		    
 		}
 	}
 
 	focus = {
 		id = UNI_rebuild_pilot_corps
-		icon = GFX_UNI_militarism_came_to_power
+		icon = GFX_UNI_rebuild_pilot_corps
 		x = 10
 		y = 5
 		prerequisite = { focus = UNI_air_force }
@@ -920,12 +954,13 @@ focus_tree = {
             add_to_variable = { UNI_soviet_airforce_air_ace_generation_chance_factor = 0.05 }
             add_to_variable = { UNI_soviet_airforce_air_night_penalty = -0.05 }
             add_to_variable = { UNI_soviet_airforce_air_weather_penalty = -0.05 }
+			custom_effect_tooltip = army_will_be_stronge_tt
 		}
 	}
 
 	focus = {
 		id = UNI_modernize_aircrafts
-		icon = GFX_UNI_militarism_came_to_power
+		icon = GFX_UNI_modernize_aircrafts
 		x = 12
 		y = 5
 		prerequisite = { focus = UNI_air_force }
@@ -953,13 +988,14 @@ focus_tree = {
 			add_to_variable = { UNI_soviet_airforce_air_accidents_factor = -0.05 }
             add_to_variable = { UNI_soviet_airforce_air_ace_generation_chance_factor = 0.05 }
             add_to_variable = { UNI_soviet_airforce_air_night_penalty = -0.05 }
-            add_to_variable = { UNI_soviet_airforce_air_weather_penalty = -0.05 }		    
+            add_to_variable = { UNI_soviet_airforce_air_weather_penalty = -0.05 }
+			custom_effect_tooltip = army_will_be_stronge_tt		    
 		}
 	}
 
 	focus = {
 		id = UNI_modernize_the_arsenal
-		icon = GFX_UNI_militarism_came_to_power
+		icon = GFX_goal_unknown
 		x = 16
 		y = 5
 		prerequisite = { focus = UNI_land_force }
@@ -990,12 +1026,13 @@ focus_tree = {
             add_to_variable = { UNI_wm_army_speed_factor = 0.03 }
             add_to_variable = { UNI_wm_army_org_factor = 0.02 }
             add_to_variable = { UNI_wm_training_time_factor = -0.03 }
+			custom_effect_tooltip = army_will_be_stronge_tt
 		}
 	}
 
 	focus = {
 		id = UNI_audit_the_fleet
-		icon = GFX_UNI_militarism_came_to_power
+		icon = GFX_UNI_audit_the_navy
 		x = 18
 		y = 5
 		prerequisite = { focus = UNI_navy_force }
@@ -1025,13 +1062,14 @@ focus_tree = {
             add_to_variable = { UNI_red_fleet_positioning = 0.05 }
             add_to_variable = { UNI_red_fleet_screening_efficiency = 0.05 }
             add_to_variable = { UNI_red_fleet_naval_invasion_capacity = 5 }
-            add_to_variable = { UNI_red_fleet_invasion_preparation = 0.05 }		    
+            add_to_variable = { UNI_red_fleet_invasion_preparation = -0.05 }
+			custom_effect_tooltip = army_will_be_stronge_tt		    
 		}
 	}
 
 	focus = {
 		id = UNI_reorganize_naval_command
-		icon = GFX_UNI_militarism_came_to_power
+		icon = GFX_UNI_reorganize_naval_command
 		x = 20
 		y = 5
 		prerequisite = { focus = UNI_navy_force }
@@ -1061,13 +1099,14 @@ focus_tree = {
             add_to_variable = { UNI_red_fleet_positioning = 0.05 }
             add_to_variable = { UNI_red_fleet_screening_efficiency = 0.05 }
             add_to_variable = { UNI_red_fleet_naval_invasion_capacity = 5 }
-            add_to_variable = { UNI_red_fleet_invasion_preparation = 0.05 }			    
+            add_to_variable = { UNI_red_fleet_invasion_preparation = -0.05 }
+			custom_effect_tooltip = army_will_be_stronge_tt			    
 		}
 	}
 
 	focus = {
 		id = UNI_form_naval_academy
-		icon = GFX_UNI_militarism_came_to_power
+		icon = GFX_goal_unknown
 		x = 19
 		y = 7
 		prerequisite = { focus = UNI_audit_the_fleet }
@@ -1098,13 +1137,14 @@ focus_tree = {
             add_to_variable = { UNI_red_fleet_positioning = 0.05 }
             add_to_variable = { UNI_red_fleet_screening_efficiency = 0.05 }
             add_to_variable = { UNI_red_fleet_naval_invasion_capacity = 5 }
-            add_to_variable = { UNI_red_fleet_invasion_preparation = 0.05 }		    
+            add_to_variable = { UNI_red_fleet_invasion_preparation = -0.05 }
+			custom_effect_tooltip = army_will_be_stronge_tt		    
 		}
 	}
 
 	focus = {
 		id = UNI_reform_officer_training
-		icon = GFX_UNI_militarism_came_to_power
+		icon = GFX_UNI_officers_training
 		x = 15
 		y = 7
 		prerequisite = { focus = UNI_hunt_corruption }
@@ -1135,13 +1175,14 @@ focus_tree = {
             add_to_variable = { UNI_wm_army_defence_factor = 0.03 }
             add_to_variable = { UNI_wm_army_speed_factor = 0.03 }
             add_to_variable = { UNI_wm_army_org_factor = 0.02 }
-            add_to_variable = { UNI_wm_training_time_factor = -0.03 }		    
+            add_to_variable = { UNI_wm_training_time_factor = -0.03 }
+			custom_effect_tooltip = army_will_be_stronge_tt		    
 		}
 	}
 
 	focus = {
 		id = UNI_red_army
-		icon = GFX_UNI_militarism_came_to_power
+		icon = GFX_UNI_the_red_army
 		x = 15
 		y = 9
 		prerequisite = { focus = UNI_reform_officer_training }
@@ -1168,7 +1209,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-		    
+		    add_ideas = UNI_red_army_idea
 		}
 	}
 }

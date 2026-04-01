@@ -110,3 +110,23 @@ NOD = {
 	color = rgb { 136 34 34 }
 	color_ui = rgb { 136 34 34 }
 }
+
+JOM = {
+	color = rgb { 67 59 59 }
+	color_ui = rgb { 67 59 59 }
+}
+
+OST = {
+	color = rgb { 110 96 96 }
+	color_ui = rgb { 110 96 96 }
+}
+
+WEP = {
+	color = rgb { 173 84 84 }
+	color_ui = rgb { 173 84 84 }
+}
+
+AUR = {
+	color = rgb { 130 151 243 }
+	color_ui = rgb { 130 151 243 }
+}

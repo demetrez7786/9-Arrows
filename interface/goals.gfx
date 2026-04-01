@@ -3,6 +3,86 @@ spriteTypes = {
 	#### Murder drones icons
 	
 	SpriteType = {
+	name = "GFX_UNI_the_red_army"
+	texturefile = "gfx/interface/goals/UNI_the_red_army.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_UNI_reorganize_naval_command"
+	texturefile = "gfx/interface/goals/UNI_reorganize_naval_command.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_UNI_audit_the_navy"
+	texturefile = "gfx/interface/goals/UNI_audit_the_navy.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_UNI_rebuild_pilot_corps"
+	texturefile = "gfx/interface/goals/UNI_rebuild_pilot_corps.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_UNI_modernize_aircrafts"
+	texturefile = "gfx/interface/goals/UNI_modernize_aircrafts.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_UNI_officers_training"
+	texturefile = "gfx/interface/goals/UNI_officers_training.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_UNI_navy_force"
+	texturefile = "gfx/interface/goals/UNI_navy_force.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_UNI_air_force"
+	texturefile = "gfx/interface/goals/UNI_air_force.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_UNI_land_force"
+	texturefile = "gfx/interface/goals/UNI_land_force.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_UNI_national_collectiivization"
+	texturefile = "gfx/interface/goals/UNI_national_collectiivization.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_UNI_roads_into_the_abyss"
+	texturefile = "gfx/interface/goals/UNI_roads_into_the_abyss.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_UNI_form_central_bank"
+	texturefile = "gfx/interface/goals/UNI_form_central_bank.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_UNI_hunt_down_oligarchs"
+	texturefile = "gfx/interface/goals/UNI_hunt_down_oligarchs.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_UNI_modernize_metro"
+	texturefile = "gfx/interface/goals/UNI_modernize_metro.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_UNI_five_years_plan"
+	texturefile = "gfx/interface/goals/UNI_five_years_plan.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_UNI_economic_sickness"
+	texturefile = "gfx/interface/goals/UNI_economic_sickness.png"
+	}
+	
+	SpriteType = {
 	name = "GFX_SHU_roads_for_nation"
 	texturefile = "gfx/interface/goals/SHU_roads_for_nation.png"
 	}

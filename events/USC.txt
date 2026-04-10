@@ -108,3 +108,26 @@ country_event = {
 		
 	}
 }
+
+# workers strikes
+country_event = {
+	id = centralia.7
+	title = centralia.7.t
+	desc = centralia.7.d
+	picture = GFX_report_event_MDR_winter_massacre
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = centralia.7.a
+		set_country_flag = CEN_workers_strikes_ongoing
+		add_dynamic_modifier = { modifier = CEN_workers_strikes }
+        add_to_variable = { CEN_ws_consumer_goods_factor = 0.30 }
+        add_to_variable = { CEN_ws_production_speed_buildings_factor = -0.30 }
+        add_to_variable = { CEN_ws_production_speed_industrial_complex_factor = -0.30 }
+        add_to_variable = { CEN_ws_production_speed_arms_factory_factor = -0.30 }
+        add_to_variable = { CEN_ws_industrial_capacity_dockyard = -0.30 }
+        add_to_variable = { CEN_ws_industrial_capacity_factory = -0.30 }
+		add_to_variable = { CEN_ws_stability_factory = -0.30 }
+	}
+}

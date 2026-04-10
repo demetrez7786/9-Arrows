@@ -11,6 +11,61 @@ spriteTypes = {
 	}
 	
 	spriteType = {
+		name = "GFX_idea_CEN_workers_strikes"
+		texturefile = "gfx/interface/ideas/CEN_workers_strikes.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_CEN_economic_prosperity"
+		texturefile = "gfx/interface/ideas/CEN_economic_prosperity.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_UNI_navy_force"
+		texturefile = "gfx/interface/ideas/UNI_navy_force.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_UNI_air_force"
+		texturefile = "gfx/interface/ideas/UNI_air_force.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_UNI_red_army"
+		texturefile = "gfx/interface/ideas/UNI_red_army.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_UNI_five_years_plan"
+		texturefile = "gfx/interface/ideas/UNI_five_years_plan.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_UNI_red_guard"
+		texturefile = "gfx/interface/ideas/UNI_red_guard.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_UNI_draconian_laws"
+		texturefile = "gfx/interface/ideas/UNI_draconian_laws.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_UNI_public_service"
+		texturefile = "gfx/interface/ideas/UNI_public_service.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_UNI_military_ads"
+		texturefile = "gfx/interface/ideas/UNI_military_ads.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_UNI_reorganize_military"
+		texturefile = "gfx/interface/ideas/UNI_reorganize_military.png"
+	}
+	
+	spriteType = {
 		name = "GFX_idea_SHU_ministry_of_tv"
 		texturefile = "gfx/interface/ideas/SHU_ministry_of_tv.png"
 	}
@@ -173,6 +228,48 @@ spriteTypes = {
 	###################
 	### Desc Photos ###
 	###################
+	
+	spriteType = {
+		name = "GFX_idea_school_of_blitz_desc_photo"
+		textureFile = "/gfx/interface/ideas/school_of_blitz_desc_photo.png"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_idea_shuan_labors_desc_photo"
+		textureFile = "/gfx/interface/ideas/shuan_labors_desc_photo.png"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_idea_reform_heer_desc_photo"
+		textureFile = "/gfx/interface/ideas/reform_heer_desc_photo.png"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_idea_gestapo_desc_photo"
+		textureFile = "/gfx/interface/ideas/shuan_labors_desc_photo.png"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_idea_military_opposition_desc_photo"
+		textureFile = "/gfx/interface/ideas/military_opposition_desc_photo.png"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_idea_treaty_of_zugdad_desc_photo"
+		textureFile = "/gfx/interface/ideas/treaty_of_zugdad_desc_photo.png"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_idea_cariland_war_desc_photoo"
+		textureFile = "/gfx/interface/ideas/cariland_war_desc_photoo.png"
+		legacy_lazy_load = no
+	}
 	
 	spriteType = {
 		name = "GFX_idea_strong_opposition_desc_photo"

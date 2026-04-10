@@ -22,5 +22,5 @@ HAF = "countries/Hafen-Punkt.txt"
 SAN = "countries/Sankt-Varian.txt"
 WEP = "countries/Westphalia.txt"
 OST = "countries/Ostreich.txt"
-AUR = "countries/Aurora.txt
+AUR = "countries/Aurora.txt"
 JOM = "countries/Jormsrealm.txt"

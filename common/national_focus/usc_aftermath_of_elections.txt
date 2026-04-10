@@ -51,6 +51,10 @@ focus_tree = {
                 popularity = 0.3
             }
             news_event = { id = news.5 }
+			country_event = {
+				id = centralia.7
+				days = 184
+			}
 		}
 	}
 
@@ -95,6 +99,10 @@ focus_tree = {
 			    elections_allowed = no
 		    }
             news_event = { id = news.10 }
+			country_event = {
+				id = centralia.7
+				days = 184
+			}
 		}
 	}
 
@@ -225,7 +233,7 @@ focus_tree = {
 
 	focus = {
 		id = CEN_counter_terrorism_populist
-		icon = GFX_CEN_democrats_remain
+		icon = GFX_CEN_counter_terrorism
 		x = 4
 		y = 7
 		prerequisite = { focus = CEN_kick_out_illegals }
@@ -633,6 +641,757 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = CEN_economic_branch_republican
+		icon = GFX_CEN_economy
+		x = 13
+		y = 1
+
+		cost = 1
+
+		allow_branch = {
+			has_country_flag = CEN_republicans_finally_won
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            add_dynamic_modifier = { modifier = CEN_economic_prosperity }
+            add_to_variable = { CEN_ep_consumer_goods_factor = -0.05 }
+            add_to_variable = { CEN_ep_production_speed_buildings_factor = 0.05 }
+            add_to_variable = { CEN_ep_production_speed_industrial_complex_factor = 0.05 }
+            add_to_variable = { CEN_ep_production_speed_arms_factory_factor = 0.05 }
+            add_to_variable = { CEN_ep_industrial_capacity_dockyard = 0.05 }
+            add_to_variable = { CEN_ep_industrial_capacity_factory = 0.05 }
+		}
+	}
+
+	focus = {
+		id = CEN_economic_branch_populist
+		icon = GFX_CEN_economy
+		x = 13
+		y = 1
+
+		cost = 1
+
+		allow_branch = {
+			has_country_flag = CEN_populists_won_the_election
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			has_country_flag = CEN_workers_strikes_ongoing
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            add_stability = 0.01
+		}
+	}
+
+	focus = {
+		id = CEN_economic_branch_democratic
+		icon = GFX_CEN_expand_cia
+		x = 13
+		y = 1
+
+		cost = 1
+
+		allow_branch = {
+			has_country_flag = CEN_democrats_won_again
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            
+		}
+	}
+
+	focus = {
+		id = CEN_economic_branch_democratic
+		icon = GFX_CEN_economy
+		x = 13
+		y = 1
+
+		cost = 1
+
+		allow_branch = {
+			has_country_flag = CEN_democrats_won_again
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			has_country_flag = CEN_workers_strikes_ongoing
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            add_stability = 0.01
+		}
+	}
+
+	focus = {
+		id = CEN_banking_holiday
+		icon = GFX_goal_unknown
+		x = 13
+		y = 3
+		prerequisite = { focus = CEN_economic_branch_democratic }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+        add_to_variable = { CEN_ws_consumer_goods_factor = -0.05 }
+        add_to_variable = { CEN_ws_production_speed_buildings_factor = 0.05 }
+        add_to_variable = { CEN_ws_production_speed_industrial_complex_factor = 0.05 }
+        add_to_variable = { CEN_ws_production_speed_arms_factory_factor = 0.05 }
+        add_to_variable = { CEN_ws_industrial_capacity_dockyard = 0.05 }
+        add_to_variable = { CEN_ws_industrial_capacity_factory = 0.05 }
+		add_to_variable = { CEN_ws_stability_factory = 0.05 }
+		}
+	}
+
+	focus = {
+		id = CEN_alphabet_agencies
+		icon = GFX_CEN_alphabet_agencies
+		x = 12
+		y = 5
+		prerequisite = { focus = CEN_banking_holiday }
+
+		cost = 15
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+        add_to_variable = { CEN_ws_consumer_goods_factor = -0.05 }
+        add_to_variable = { CEN_ws_production_speed_buildings_factor = 0.05 }
+        add_to_variable = { CEN_ws_production_speed_industrial_complex_factor = 0.05 }
+        add_to_variable = { CEN_ws_production_speed_arms_factory_factor = 0.05 }
+        add_to_variable = { CEN_ws_industrial_capacity_dockyard = 0.05 }
+        add_to_variable = { CEN_ws_industrial_capacity_factory = 0.05 }
+		add_to_variable = { CEN_ws_stability_factory = 0.05 }
+		}
+	}
+
+	focus = {
+		id = CEN_wagner_accord
+		icon = GFX_goal_unknown
+		x = 14
+		y = 5
+		prerequisite = { focus = CEN_banking_holiday }
+
+		cost = 15
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+        add_to_variable = { CEN_ws_consumer_goods_factor = -0.05 }
+        add_to_variable = { CEN_ws_production_speed_buildings_factor = 0.05 }
+        add_to_variable = { CEN_ws_production_speed_industrial_complex_factor = 0.05 }
+        add_to_variable = { CEN_ws_production_speed_arms_factory_factor = 0.05 }
+        add_to_variable = { CEN_ws_industrial_capacity_dockyard = 0.05 }
+        add_to_variable = { CEN_ws_industrial_capacity_factory = 0.05 }
+		add_to_variable = { CEN_ws_stability_factory = 0.05 }
+		}
+	}
+
+	focus = {
+		id = CEN_fireside_economics
+		icon = GFX_CEN_fireside_economics
+		x = 14
+		y = 7
+		prerequisite = { focus = CEN_wagner_accord }
+
+		cost = 25
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+        add_to_variable = { CEN_ws_consumer_goods_factor = -0.05 }
+        add_to_variable = { CEN_ws_production_speed_buildings_factor = 0.05 }
+        add_to_variable = { CEN_ws_production_speed_industrial_complex_factor = 0.05 }
+        add_to_variable = { CEN_ws_production_speed_arms_factory_factor = 0.05 }
+        add_to_variable = { CEN_ws_industrial_capacity_dockyard = 0.05 }
+        add_to_variable = { CEN_ws_industrial_capacity_factory = 0.05 }
+		add_to_variable = { CEN_ws_stability_factory = 0.05 }
+		}
+	}
+
+	focus = {
+		id = CEN_social_security_act
+		icon = GFX_CEN_social_security_act
+		x = 12
+		y = 7
+		prerequisite = { focus = CEN_alphabet_agencies }
+
+		cost = 25
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+        add_to_variable = { CEN_ws_consumer_goods_factor = -0.05 }
+        add_to_variable = { CEN_ws_production_speed_buildings_factor = 0.05 }
+        add_to_variable = { CEN_ws_production_speed_industrial_complex_factor = 0.05 }
+        add_to_variable = { CEN_ws_production_speed_arms_factory_factor = 0.05 }
+        add_to_variable = { CEN_ws_industrial_capacity_dockyard = 0.05 }
+        add_to_variable = { CEN_ws_industrial_capacity_factory = 0.05 }
+		add_to_variable = { CEN_ws_stability_factory = 0.05 }
+		}
+	}
+
+	focus = {
+		id = CEN_break_the_private_militias
+		icon = GFX_CEN_dismantle_private_militias
+		x = 13
+		y = 3
+		prerequisite = { focus = CEN_economic_branch_populist }
+
+		cost = 15
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+        add_to_variable = { CEN_ws_consumer_goods_factor = -0.05 }
+        add_to_variable = { CEN_ws_production_speed_buildings_factor = 0.05 }
+        add_to_variable = { CEN_ws_production_speed_industrial_complex_factor = 0.05 }
+        add_to_variable = { CEN_ws_production_speed_arms_factory_factor = 0.05 }
+        add_to_variable = { CEN_ws_industrial_capacity_dockyard = 0.05 }
+        add_to_variable = { CEN_ws_industrial_capacity_factory = 0.05 }
+		add_to_variable = { CEN_ws_stability_factory = 0.05 }
+		}
+	}
+
+	focus = {
+		id = CEN_share_our_wealth_plan
+		icon = GFX_goal_unknown
+		x = 12
+		y = 5
+		prerequisite = { focus = CEN_break_the_private_militias }
+
+		cost = 15
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+        add_to_variable = { CEN_ws_consumer_goods_factor = -0.05 }
+        add_to_variable = { CEN_ws_production_speed_buildings_factor = 0.05 }
+        add_to_variable = { CEN_ws_production_speed_industrial_complex_factor = 0.05 }
+        add_to_variable = { CEN_ws_production_speed_arms_factory_factor = 0.05 }
+        add_to_variable = { CEN_ws_industrial_capacity_dockyard = 0.05 }
+        add_to_variable = { CEN_ws_industrial_capacity_factory = 0.05 }
+		add_to_variable = { CEN_ws_stability_factory = 0.05 }
+		}
+	}
+
+	focus = {
+		id = CEN_nationalize_the_rails
+		icon = GFX_CEN_nationalize_rails
+		x = 14
+		y = 5
+		prerequisite = { focus = CEN_break_the_private_militias }
+
+		cost = 15
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+        add_to_variable = { CEN_ws_consumer_goods_factor = -0.05 }
+        add_to_variable = { CEN_ws_production_speed_buildings_factor = 0.05 }
+        add_to_variable = { CEN_ws_production_speed_industrial_complex_factor = 0.05 }
+        add_to_variable = { CEN_ws_production_speed_arms_factory_factor = 0.05 }
+        add_to_variable = { CEN_ws_industrial_capacity_dockyard = 0.05 }
+        add_to_variable = { CEN_ws_industrial_capacity_factory = 0.05 }
+		add_to_variable = { CEN_ws_stability_factory = 0.05 }   
+		}
+	}
+
+	focus = {
+		id = CEN_solidarity_pact
+		icon = GFX_CEN_solidarity_pact
+		x = 14
+		y = 7
+		prerequisite = { focus = CEN_nationalize_the_rails }
+
+		cost = 25
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+        add_to_variable = { CEN_ws_consumer_goods_factor = -0.05 }
+        add_to_variable = { CEN_ws_production_speed_buildings_factor = 0.05 }
+        add_to_variable = { CEN_ws_production_speed_industrial_complex_factor = 0.05 }
+        add_to_variable = { CEN_ws_production_speed_arms_factory_factor = 0.05 }
+        add_to_variable = { CEN_ws_industrial_capacity_dockyard = 0.05 }
+        add_to_variable = { CEN_ws_industrial_capacity_factory = 0.05 }
+		add_to_variable = { CEN_ws_stability_factory = 0.05 }    
+		}
+	}
+
+	focus = {
+		id = CEN_strikes_are_over_populist
+		icon = GFX_CEN_solidarity_pact
+		x = 13
+		y = 9
+		prerequisite = { focus = CEN_new_social_contract }
+		prerequisite = { focus = CEN_solidarity_pact }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+        remove_dynamic_modifier = { modifier = CEN_workers_strikes }
+		}
+	}
+
+	focus = {
+		id = CEN_strikes_are_over_democratic
+		icon = GFX_CEN_solidarity_pact
+		x = 13
+		y = 9
+		prerequisite = { focus = CEN_social_security_act }
+		prerequisite = { focus = CEN_fireside_economics }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+        remove_dynamic_modifier = { modifier = CEN_workers_strikes }
+		}
+	}
+
+	focus = {
+		id = CEN_new_social_contract
+		icon = GFX_CEN_new_social_contract
+		x = 12
+		y = 7
+		prerequisite = { focus = CEN_share_our_wealth_plan }
+
+		cost = 25
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+        add_to_variable = { CEN_ws_consumer_goods_factor = -0.05 }
+        add_to_variable = { CEN_ws_production_speed_buildings_factor = 0.05 }
+        add_to_variable = { CEN_ws_production_speed_industrial_complex_factor = 0.05 }
+        add_to_variable = { CEN_ws_production_speed_arms_factory_factor = 0.05 }
+        add_to_variable = { CEN_ws_industrial_capacity_dockyard = 0.05 }
+        add_to_variable = { CEN_ws_industrial_capacity_factory = 0.05 }
+		add_to_variable = { CEN_ws_stability_factory = 0.05 }    
+		}
+	}
+
+	focus = {
+		id = CEN_copy_the_mellons_doctrine
+		icon = GFX_CES_copy_the_mellons_doctrine
+		x = 13
+		y = 3
+		prerequisite = { focus = CEN_economic_branch_republican }
+
+		cost = 15
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = CEN_protective_tariffs
+		icon = GFX_CEN_tariffs
+		x = 12
+		y = 5
+		prerequisite = { focus = CEN_copy_the_mellons_doctrine }
+
+		cost = 15
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            add_to_variable = { CEN_ep_consumer_goods_factor = -0.05 }
+            add_to_variable = { CEN_ep_production_speed_buildings_factor = 0.05 }
+            add_to_variable = { CEN_ep_production_speed_industrial_complex_factor = 0.05 }
+            add_to_variable = { CEN_ep_production_speed_arms_factory_factor = 0.05 }
+            add_to_variable = { CEN_ep_industrial_capacity_dockyard = 0.05 }
+            add_to_variable = { CEN_ep_industrial_capacity_factory = 0.05 }
+		}
+	}
+
+	focus = {
+		id = CEN_golden_shackles
+		icon = GFX_goal_unknown
+		x = 14
+		y = 5
+		prerequisite = { focus = CEN_copy_the_mellons_doctrine }
+
+		cost = 15
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            add_to_variable = { CEN_ep_consumer_goods_factor = -0.05 }
+            add_to_variable = { CEN_ep_production_speed_buildings_factor = 0.05 }
+            add_to_variable = { CEN_ep_production_speed_industrial_complex_factor = 0.05 }
+            add_to_variable = { CEN_ep_production_speed_arms_factory_factor = 0.05 }
+            add_to_variable = { CEN_ep_industrial_capacity_dockyard = 0.05 }
+            add_to_variable = { CEN_ep_industrial_capacity_factory = 0.05 }
+		}
+	}
+
+	focus = {
+		id = CEN_assembly_line_revolution
+		icon = GFX_goal_unknown
+		x = 14
+		y = 7
+		prerequisite = { focus = CEN_golden_shackles }
+
+		cost = 25
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            add_to_variable = { CEN_ep_consumer_goods_factor = -0.05 }
+            add_to_variable = { CEN_ep_production_speed_buildings_factor = 0.05 }
+            add_to_variable = { CEN_ep_production_speed_industrial_complex_factor = 0.05 }
+            add_to_variable = { CEN_ep_production_speed_arms_factory_factor = 0.05 }
+            add_to_variable = { CEN_ep_industrial_capacity_dockyard = 0.05 }
+            add_to_variable = { CEN_ep_industrial_capacity_factory = 0.05 }
+		}
+	}
+
+	focus = {
+		id = CEN_invinsible_hand
+		icon = GFX_goal_unknown
+		x = 12
+		y = 7
+		prerequisite = { focus = CEN_protective_tariffs }
+
+		cost = 25
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            add_to_variable = { CEN_ep_consumer_goods_factor = -0.05 }
+            add_to_variable = { CEN_ep_production_speed_buildings_factor = 0.05 }
+            add_to_variable = { CEN_ep_production_speed_industrial_complex_factor = 0.05 }
+            add_to_variable = { CEN_ep_production_speed_arms_factory_factor = 0.05 }
+            add_to_variable = { CEN_ep_industrial_capacity_dockyard = 0.05 }
+            add_to_variable = { CEN_ep_industrial_capacity_factory = 0.05 }
+		}
+	}
+
     focus = {
 		id = CEN_internal_affairs
 		icon = GFX_CEN_internal_affairs
@@ -668,8 +1427,8 @@ focus_tree = {
 		id = CEN_counter_terrorism
 		icon = GFX_CEN_counter_terrorism
 		x = 4
-		y = 7
-        prerequisite = { focus = CEN_deal_with_populists }
+		y = 9
+        prerequisite = { focus = CEN_expand_cia }
 		prerequisite = { focus = CEN_restricted_borders }
 
 		cost = 25
@@ -762,70 +1521,9 @@ focus_tree = {
 		id = CEN_expand_cia
 		icon = GFX_CEN_expand_cia
 		x = 4
-		y = 9
+		y = 7
         prerequisite = { focus = CEN_deal_with_populists }
-
-		cost = 25
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_POLITICAL }
-
-		completion_reward = {
-            
-		}
-	}
-
-	focus = {
-		id = CEN_economic_interesets
-		icon = GFX_CEN_expand_cia
-		x = 3
-		y = 11
-        prerequisite = { focus = CEN_expand_cia }
-
-		cost = 25
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_POLITICAL }
-
-		completion_reward = {
-            
-		}
-	}
-
-	focus = {
-		id = CEN_military_interesets
-		icon = GFX_CEN_expand_cia
-		x = 5
-		y = 11
-        prerequisite = { focus = CEN_expand_cia }
+		prerequisite = { focus = CEN_restricted_borders }
 
 		cost = 25
 

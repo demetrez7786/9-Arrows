@@ -3,6 +3,61 @@ spriteTypes = {
 	#### Murder drones icons
 	
 	SpriteType = {
+	name = "GFX_SHU_anschluss"
+	texturefile = "gfx/interface/goals/SHU_anschluss.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_CEN_tariffs"
+	texturefile = "gfx/interface/goals/CEN_tariffs.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_CES_copy_the_mellons_doctrine"
+	texturefile = "gfx/interface/goals/CES_copy_the_mellons_doctrine.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_CEN_new_social_contract"
+	texturefile = "gfx/interface/goals/CEN_new_social_contract.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_CEN_solidarity_pact"
+	texturefile = "gfx/interface/goals/CEN_solidarity_pact.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_CEN_nationalize_rails"
+	texturefile = "gfx/interface/goals/CEN_nationalize_rails.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_CEN_dismantle_private_militias"
+	texturefile = "gfx/interface/goals/CEN_dismantle_private_militias.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_CEN_fireside_economics"
+	texturefile = "gfx/interface/goals/CEN_fireside_economics.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_CEN_social_security_act"
+	texturefile = "gfx/interface/goals/CEN_social_security_act.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_CEN_alphabet_agencies"
+	texturefile = "gfx/interface/goals/CEN_alphabet_agencies.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_CEN_economy"
+	texturefile = "gfx/interface/goals/CEN_economy.png"
+	}
+	
+	SpriteType = {
 	name = "GFX_UNI_the_red_army"
 	texturefile = "gfx/interface/goals/UNI_the_red_army.png"
 	}

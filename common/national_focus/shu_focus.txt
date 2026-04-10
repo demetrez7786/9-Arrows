@@ -655,7 +655,7 @@ focus_tree = {
 
 	focus = {
 		id = SHU_autarky
-		icon = GFX_DEL_aftermath_of_elections
+		icon = GFX_goal_unknown
 		x = 45
 		y = 21
 		prerequisite = { focus = SHU_four_years_plan }
@@ -908,7 +908,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-            country_event = { id = delta.1 }
+            
 		}
 	}
 
@@ -1041,7 +1041,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-            country_event = { id = delta.1 }
+            
 		}
 	}
 
@@ -1404,13 +1404,13 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-            country_event = { id = delta.1 }
+            
 		}
 	}
 
 	focus = {
 		id = SHU_anschluss
-		icon = GFX_goal_unknown
+		icon = GFX_SHU_anschluss
 		x = 12
 		y = 27
 		prerequisite = { focus = SHU_diplomacy }
@@ -1520,7 +1520,8 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-            country_event = { id = delta.1 }
+            add_political_power = 15
+			add_war_support = 0.025
 		}
 	}
 
@@ -1582,7 +1583,9 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-            country_event = { id = delta.1 }
+            WEP = {
+				add_ideas = SHU_shuan_influence
+			}
 		}
 	}
 
@@ -1613,7 +1616,9 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-            country_event = { id = delta.1 }
+            OST = {
+				add_ideas = SHU_shuan_influence
+			}
 		}
 	}
 
@@ -1644,7 +1649,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-            country_event = { id = delta.1 }
+            
 		}
 	}
 }

@@ -17,7 +17,7 @@ characters = {
 		name = "August von Oldenburg"
 		portraits = {
 			army = {
-				large = "gfx/leaders/MDR/portrait_mdr_thad.png"
+				large = "gfx/leaders/leader_unknown.png"
 			}
 		}
 		field_marshal = { 
@@ -34,7 +34,7 @@ characters = {
 		name = "Von Falken"
 		portraits = {
 			army = {
-				large = "gfx/leaders/MDR/portrait_mdr_thad.png"
+				large = "gfx/leaders/leader_unknown.png"
 			}
 		}
 		field_marshal = { 
@@ -51,7 +51,7 @@ characters = {
 		name = "Friedrich von Hindenburg-Schleyer"
 		portraits = {
 			army = {
-				large = "gfx/leaders/MDR/portrait_mdr_thad.png"
+				large = "gfx/leaders/leader_unknown.png"
 			}
 		}
 		corps_commander = {
@@ -68,7 +68,7 @@ characters = {
 		name = "Lothar von Wettin"
 		portraits = {
 			army = {
-				large = "gfx/leaders/MDR/portrait_mdr_thad.png"
+				large = "gfx/leaders/leader_unknown.png"
 			}
 		}
 		corps_commander = {
@@ -85,7 +85,7 @@ characters = {
 		name = "Karl-Ludwig von Wittelsbach"
 		portraits = {
 			army = {
-				large = "gfx/leaders/MDR/portrait_mdr_thad.png"
+				large = "gfx/leaders/leader_unknown.png"
 			}
 		}
 		corps_commander = {
@@ -102,7 +102,7 @@ characters = {
 		name = "Richter"
 		portraits = {
 			army = {
-				large = "gfx/leaders/MDR/portrait_mdr_thad.png"
+				large = "gfx/leaders/leader_unknown.png"
 			}
 		}
 		corps_commander = {
@@ -119,7 +119,7 @@ characters = {
 		name = "Elara"
 		portraits = {
 			army = {
-				large = "gfx/leaders/MDR/portrait_mdr_thad.png"
+				large = "gfx/leaders/leader_unknown.png"
 			}
 		}
 		corps_commander = {
@@ -136,7 +136,7 @@ characters = {
 		name = "Brandt"
 		portraits = {
 			army = {
-				large = "gfx/leaders/MDR/portrait_mdr_thad.png"
+				large = "gfx/leaders/leader_unknown.png"
 			}
 		}
 		corps_commander = {
@@ -153,7 +153,7 @@ characters = {
 		name = "Oberst Lutz"
 		portraits = {
 			army = {
-				large = "gfx/leaders/MDR/portrait_mdr_thad.png"
+				large = "gfx/leaders/leader_unknown.png"
 			}
 		}
 		corps_commander = {

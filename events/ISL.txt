@@ -1,0 +1,19 @@
+add_namespace = emirate
+
+# War with Israelits
+country_event = {
+	id = emirate.1
+	title = emirate.1.t
+	desc = emirate.1.d
+	picture = GFX_report_event_SHU_attack_on_parliament
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = emirate.1.a
+		declare_war_on = {
+            target = JEW
+            type = annex_everything
+        }
+	}
+}

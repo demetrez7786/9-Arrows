@@ -127,6 +127,6 @@ WEP = {
 }
 
 AUR = {
-	color = rgb { 130 151 243 }
-	color_ui = rgb { 130 151 243 }
+	color = rgb { 100 101 243 }
+	color_ui = rgb { 100 101 243 }
 }

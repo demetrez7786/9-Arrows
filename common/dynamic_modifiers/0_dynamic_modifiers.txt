@@ -26,7 +26,7 @@ UNI_failing_economy = { #NATIONAL SPIRIT
 UNI_airforce = { #NATIONAL SPIRIT
 	enable = { always = yes }
 
-	icon = GFX_idea_SOV_red_airforce_ccp_2d_sov_compatibility
+	icon = GFX_idea_UNI_air_force
 
 	air_accidents_factor = UNI_soviet_airforce_air_accidents_factor
 	air_ace_generation_chance_factor = UNI_soviet_airforce_air_ace_generation_chance_factor #-0.5
@@ -38,7 +38,7 @@ UNI_airforce = { #NATIONAL SPIRIT
 UNI_navy = { #NATIONAL SPIRIT
 	enable = { always = yes }
 
-	icon = GFX_idea_SOV_red_navy_ccp_2d_sov_compatibility
+	icon = GFX_idea_UNI_navy_force
 	
 	naval_coordination = UNI_red_fleet_naval_coordination #0.1 -> Advanced Manevuers
 	navy_visibility = UNI_red_fleet_navy_visibility #-0.05 -> Advanced Manevuers
@@ -46,4 +46,31 @@ UNI_navy = { #NATIONAL SPIRIT
 	screening_efficiency = UNI_red_fleet_screening_efficiency #0.1 -> Advanced Manevuers
 	naval_invasion_capacity = UNI_red_fleet_naval_invasion_capacity #10 -> Marines
 	invasion_preparation = UNI_red_fleet_invasion_preparation #-0.1 -> Marines
+}
+
+CEN_economic_prosperity = { #NATIONAL SPIRIT
+	enable = { always = yes }
+
+	icon = GFX_idea_CEN_economic_prosperity
+	
+	consumer_goods_factor = CEN_ep_consumer_goods_factor
+    production_speed_buildings_factor = CEN_ep_production_speed_buildings_factor
+	production_speed_industrial_complex_factor = CEN_ep_production_speed_industrial_complex_factor
+    production_speed_arms_factory_factor = CEN_ep_production_speed_arms_factory_factor
+	industrial_capacity_dockyard = CEN_ep_industrial_capacity_dockyard
+    industrial_capacity_factory = CEN_ep_industrial_capacity_factory
+}
+
+CEN_workers_strikes = { #NATIONAL SPIRIT
+	enable = { always = yes }
+
+	icon = GFX_idea_CEN_workers_strikes
+	
+	consumer_goods_factor = CEN_ws_consumer_goods_factor
+    production_speed_buildings_factor = CEN_ws_production_speed_buildings_factor
+	production_speed_industrial_complex_factor = CEN_ws_production_speed_industrial_complex_factor
+    production_speed_arms_factory_factor = CEN_ws_production_speed_arms_factory_factor
+	industrial_capacity_dockyard = CEN_ws_industrial_capacity_dockyard
+    industrial_capacity_factory = CEN_ws_industrial_capacity_factory
+	stability_factory = CEN_ws_stability_factory
 }

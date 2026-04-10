@@ -17,7 +17,7 @@ characters = {
 		name = "Mikhail Sokolov" 
 		portraits = {
 			civilian = {
-				large ="gfx/leaders/UNI/portrait_uni_beriansk_edirashvili.png"
+				large ="gfx/leaders/UNI/portrait_UNI_mikhail_sokolov.png"
 			}
 		}
 		country_leader = {
@@ -31,7 +31,7 @@ characters = {
 		name = "Viktor Volkov" 
 		portraits = {
 			civilian = {
-				large ="gfx/leaders/UNI/portrait_uni_beriansk_edirashvili.png"
+				large ="gfx/leaders/UNI/portrait_UNI_viktor_volkov.png"
 			}
 		}
 		country_leader = {
@@ -45,7 +45,7 @@ characters = {
 		name = "Elena Petrova"
 		portraits = {
 			army = {
-				large = "gfx/leaders/MDR/portrait_mdr_thad.png"
+				large = "gfx/leaders/leader_unknown.png"
 			}
 		}
 		corps_commander = {
@@ -62,7 +62,7 @@ characters = {
 		name = "Ivan Zhukov"
 		portraits = {
 			army = {
-				large = "gfx/leaders/MDR/portrait_mdr_thad.png"
+				large = "gfx/leaders/leader_unknown.png"
 			}
 		}
 		corps_commander = {

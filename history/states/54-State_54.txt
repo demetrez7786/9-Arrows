@@ -6,8 +6,8 @@ state={
 	}
 	
 	history={
-		owner = ISL
-		add_core_of = ISL
+		owner = JOM
+		add_core_of = JOM
 	}
 	
 	buildings_max_level_factor=1.000

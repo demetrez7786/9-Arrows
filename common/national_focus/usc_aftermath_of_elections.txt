@@ -1,49 +1,32 @@
 focus_tree = {
-	id = usc_democrats_focus
-	
-	country = {
-		factor = 0
-		
-		modifier = {
-			add = 10
-			tag = CEN
-		}
-	}
-	
-	default = no
-	
-	continuous_focus_position = { x = 50 y = 7000 }
+    id = usc_democrats_focus
+    country = {
+        factor = 0
+        modifier = {
+            add = 10
+            tag = CEN
+        }
+    }
+    default = no
+    continuous_focus_position = { x = 50 y = 7000 }
 
     focus = {
-		id = CEN_democrats_won
-		icon = GFX_CEN_democrats_remain
-		x = 4
-		y = 1
-
-		cost = 1
-
-		allow_branch = {
-			has_country_flag = CEN_democrats_won_again
-		}
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_POLITICAL }
-
-		completion_reward = {
+        id = CEN_democrats_won
+        icon = GFX_CEN_democrats_remain
+        x = 4
+        y = 1
+        cost = 1
+        available_if_capitulated = yes
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        allow_branch = {
+            has_country_flag = CEN_democrats_won_again
+        }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
             add_political_power = 100
             add_stability = 0.15
             add_popularity = {
@@ -51,626 +34,401 @@ focus_tree = {
                 popularity = 0.3
             }
             news_event = { id = news.5 }
-			country_event = {
-				id = centralia.7
-				days = 184
-			}
-		}
-	}
+            country_event = {
+                id = centralia.7
+                days = 184
+            }
+        }
+    }
 
-	focus = {
-		id = CEN_populists_won
-		icon = GFX_CEN_democrats_remain
-		x = 4
-		y = 1
-
-		cost = 1
-
-		allow_branch = {
-			has_country_flag = CEN_populists_won_the_election
-		}
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_POLITICAL }
-
-		completion_reward = {
+    focus = {
+        id = CEN_populists_won
+        icon = GFX_CEN_populists_won
+        x = 4
+        y = 1
+        cost = 1
+        available_if_capitulated = yes
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        allow_branch = {
+            has_country_flag = CEN_populists_won_the_election
+        }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
             add_political_power = 100
             add_stability = 0.15
             add_popularity = {
                 ideology = populism
                 popularity = 0.55
             }
-            set_politics = { 
-			    ruling_party = populism
-			    elections_allowed = no
-		    }
+            set_politics = {
+                ruling_party = populism
+                elections_allowed = no
+            }
             news_event = { id = news.10 }
-			country_event = {
-				id = centralia.7
-				days = 184
-			}
-		}
-	}
+            country_event = {
+                id = centralia.7
+                days = 184
+            }
+        }
+    }
 
-	focus = {
-		id = CEN_defund_the_police
-		icon = GFX_CEN_democrats_remain
-		x = 4
-		y = 3
-		prerequisite = { focus = CEN_populists_won }
+    focus = {
+        id = CEN_defund_the_police
+        icon = GFX_CEN_defund_the_police
+        x = 4
+        y = 3
+        cost = 10
+        available_if_capitulated = yes
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        prerequisite = { focus = CEN_populists_won }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            add_ideas = low_security_spending
+        }
+    }
 
-		cost = 10
+    focus = {
+        id = CEN_set_up_border_defence
+        icon = GFX_CEN_set_up_border_defence
+        x = 2
+        y = 3
+        cost = 10
+        available_if_capitulated = yes
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        prerequisite = { focus = CEN_populists_won }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            log = "[GetDateText]: [Root.GetName]: Focus CEN_set_up_border_defence completed"
+        }
+    }
 
-		ai_will_do = {
-			factor = 1
-		}
+    focus = {
+        id = CEN_invest_in_corporate_partnerships
+        icon = GFX_goal_unknown
+        x = 6
+        y = 3
+        cost = 10
+        available_if_capitulated = yes
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        prerequisite = { focus = CEN_populists_won }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            add_ideas = CEN_corporate_partnerships
+        }
+    }
 
-		available = {
+    focus = {
+        id = CEN_kick_out_illegals
+        icon = GFX_goal_unknown
+        x = 4
+        y = 5
+        cost = 25
+        available_if_capitulated = yes
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        prerequisite = { focus = CEN_defund_the_police }
+        prerequisite = { focus = CEN_set_up_border_defence }
+        prerequisite = { focus = CEN_invest_in_corporate_partnerships }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            log = "[GetDateText]: [Root.GetName]: Focus CEN_kick_out_illegals completed"
+        }
+    }
 
-		}
-		
-		bypass = {
+    focus = {
+        id = CEN_counter_terrorism_populist
+        icon = GFX_CEN_counter_terrorism
+        x = 4
+        y = 7
+        cost = 25
+        available_if_capitulated = yes
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        prerequisite = { focus = CEN_kick_out_illegals }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            custom_modifier_tooltip = CEN_counter_terrorism_tt
+            set_country_flag = CEN_start_counter_terrorism
+        }
+    }
 
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_POLITICAL }
-
-		completion_reward = {
-            
-		}
-	}
-
-	focus = {
-		id = CEN_set_up_border_defence
-		icon = GFX_CEN_democrats_remain
-		x = 2
-		y = 3
-		prerequisite = { focus = CEN_populists_won }
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_POLITICAL }
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = CEN_invest_in_corporate_partnerships
-		icon = GFX_CEN_democrats_remain
-		x = 6
-		y = 3
-		prerequisite = { focus = CEN_populists_won }
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_POLITICAL }
-
-		completion_reward = {
-            
-		}
-	}
-
-	focus = {
-		id = CEN_kick_out_illegals
-		icon = GFX_CEN_democrats_remain
-		x = 4
-		y = 5
-		prerequisite = { focus = CEN_defund_the_police }
-		prerequisite = { focus = CEN_set_up_border_defence }
-		prerequisite = { focus = CEN_invest_in_corporate_partnerships }
-
-		cost = 25
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_POLITICAL }
-
-		completion_reward = {
-            
-		}
-	}
-
-	focus = {
-		id = CEN_counter_terrorism_populist
-		icon = GFX_CEN_counter_terrorism
-		x = 4
-		y = 7
-		prerequisite = { focus = CEN_kick_out_illegals }
-
-		cost = 25
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_POLITICAL }
-
-		completion_reward = {
-            
-		}
-	}
-
-	focus = {
-		id = CEN_entrench_our_positions
-		icon = GFX_CEN_entrentch_our_position
-		x = 4
-		y = 3
-		prerequisite = { focus = CEN_democrats_won }
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_POLITICAL }
-
-		completion_reward = {
+    focus = {
+        id = CEN_entrench_our_positions
+        icon = GFX_CEN_entrentch_our_position
+        x = 4
+        y = 3
+        cost = 10
+        available_if_capitulated = yes
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        prerequisite = { focus = CEN_democrats_won }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
             add_political_power = 75
             add_stability = 0.05
-		}
-	}
+        }
+    }
 
-	focus = {
-		id = CEN_reopen_talks_with_populists
-		icon = GFX_CEN_reopen_talks_with_populists
-		x = 4
-		y = 5
-		prerequisite = { focus = CEN_entrench_our_positions }
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_POLITICAL }
-
-		completion_reward = {
+    focus = {
+        id = CEN_reopen_talks_with_populists
+        icon = GFX_CEN_reopen_talks_with_populists
+        x = 4
+        y = 5
+        cost = 5
+        available_if_capitulated = yes
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        prerequisite = { focus = CEN_entrench_our_positions }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
             add_political_power = 5
             add_stability = 0.02
             add_popularity = {
                 ideology = liberalism
                 popularity = 0.01
             }
-			custom_effect_tooltip = CEN_talks_with_populist_tt
-		}
-	}
+            custom_effect_tooltip = CEN_talks_with_populist_tt
+        }
+    }
 
-	focus = {
-		id = CEN_give_them_seats_in_senat
-		icon = GFX_CEN_give_them_seats_in_senate
-		x = 2
-		y = 7
-		prerequisite = { focus = CEN_reopen_talks_with_populists }
-
-		cost = 25
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_POLITICAL }
-
-		completion_reward = {
+    focus = {
+        id = CEN_give_them_seats_in_senat
+        icon = GFX_CEN_give_them_seats_in_senate
+        x = 2
+        y = 7
+        cost = 25
+        available_if_capitulated = yes
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        prerequisite = { focus = CEN_reopen_talks_with_populists }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
             add_political_power = -20
-			add_war_support = -0.07
+            add_war_support = -0.07
             add_popularity = {
                 ideology = populism
-                popularity = 0.1
+                popularity = 0.07
             }
-		}
-	}
+        }
+    }
 
-	focus = {
-		id = CEN_apologize_for_police_actions
-		icon = GFX_CEN_apologize_for_police_actions
-		x = 6
-		y = 7
-		prerequisite = { focus = CEN_reopen_talks_with_populists }
-
-		cost = 25
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_POLITICAL }
-
-		completion_reward = {
+    focus = {
+        id = CEN_apologize_for_police_actions
+        icon = GFX_CEN_apologize_for_police_actions
+        x = 6
+        y = 7
+        cost = 25
+        available_if_capitulated = yes
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        prerequisite = { focus = CEN_reopen_talks_with_populists }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
             add_political_power = -100
             add_stability = 0.2
-			add_war_support = -0.15
-		}
-	}
+            add_war_support = -0.15
+        }
+    }
 
-	focus = {
-		id = CEN_start_public_debates
-		icon = GFX_CEN_start_public_debates
-		x = 4
-		y = 7
-		prerequisite = { focus = CEN_reopen_talks_with_populists }
-
-		cost = 25
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_POLITICAL }
-
-		completion_reward = {
+    focus = {
+        id = CEN_start_public_debates
+        icon = GFX_CEN_start_public_debates
+        x = 4
+        y = 7
+        cost = 25
+        available_if_capitulated = yes
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        prerequisite = { focus = CEN_reopen_talks_with_populists }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
             add_political_power = 5
             add_stability = 0.07
-			add_war_support = 0.03
+            add_war_support = 0.03
             add_popularity = {
                 ideology = liberalism
                 popularity = 0.02
             }
-			add_popularity = {
+            add_popularity = {
                 ideology = populism
                 popularity = 0.02
             }
-			add_popularity = {
+            add_popularity = {
                 ideology = conservatism
                 popularity = 0.02
             }
-		}
-	}
+        }
+    }
 
-	focus = {
-		id = CEN_populists_protests_is_over
-		icon = GFX_CEN_protest_is_over
-		x = 4
-		y = 9
-		prerequisite = { focus = CEN_give_them_seats_in_senat }
-		prerequisite = { focus = CEN_start_public_debates }
-		prerequisite = { focus = CEN_apologize_for_police_actions }
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_POLITICAL }
-
-		completion_reward = {
+    focus = {
+        id = CEN_populists_protests_is_over
+        icon = GFX_CEN_protest_is_over
+        x = 4
+        y = 9
+        cost = 5
+        available_if_capitulated = yes
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        prerequisite = { focus = CEN_give_them_seats_in_senat }
+        prerequisite = { focus = CEN_start_public_debates }
+        prerequisite = { focus = CEN_apologize_for_police_actions }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
             add_political_power = 100
             add_stability = 0.15
-            add_popularity = {
-                ideology = liberalism
-                popularity = 0.3
-            }
-            news_event = { id = news.5 }
-		}
-	}
+            add_war_support = 0.15
+        }
+    }
 
-	focus = {
-		id = CEN_alliance
-		icon = GFX_CEN_alliance
-		x = 3
-		y = 11
-		prerequisite = { focus = CEN_populists_protests_is_over }
-		mutually_exclusive = { focus = CEN_continue_alone }
+    focus = {
+        id = CEN_alliance
+        icon = GFX_CEN_alliance
+        x = 3
+        y = 11
+        cost = 5
+        available_if_capitulated = yes
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        prerequisite = { focus = CEN_populists_protests_is_over }
+        mutually_exclusive = { focus = CEN_continue_alone }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            country_event = { id = centralia.8 }
+        }
+    }
 
-		cost = 5
+    focus = {
+        id = CEN_continue_alone
+        icon = GFX_CEN_continue_alone
+        x = 5
+        y = 11
+        cost = 5
+        available_if_capitulated = yes
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        prerequisite = { focus = CEN_populists_protests_is_over }
+        mutually_exclusive = { focus = CEN_alliance }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            add_political_power = 50
+            add_war_support = 0.25
+        }
+    }
 
-		ai_will_do = {
-			factor = 1
-		}
+    focus = {
+        id = CEN_counter_terrorism_demo
+        icon = GFX_CEN_counter_terrorism
+        x = 4
+        y = 13
+        cost = 25
+        available_if_capitulated = yes
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        prerequisite = { focus = CEN_alliance focus = CEN_continue_alone }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            custom_modifier_tooltip = CEN_counter_terrorism_tt
+            set_country_flag = CEN_start_counter_terrorism
+        }
+    }
 
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_POLITICAL }
-
-		completion_reward = {
-            add_political_power = 100
-            add_stability = 0.15
-            add_popularity = {
-                ideology = liberalism
-                popularity = 0.3
-            }
-            news_event = { id = news.5 }
-		}
-	}
-
-	focus = {
-		id = CEN_continue_alone
-		icon = GFX_CEN_continue_alone
-		x = 5
-		y = 11
-		prerequisite = { focus = CEN_populists_protests_is_over }
-		mutually_exclusive = { focus = CEN_alliance }
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_POLITICAL }
-
-		completion_reward = {
-            add_political_power = 100
-            add_stability = 0.15
-            add_popularity = {
-                ideology = liberalism
-                popularity = 0.3
-            }
-            news_event = { id = news.5 }
-		}
-	}
-
-	focus = {
-		id = CEN_counter_terrorism_demo
-		icon = GFX_CEN_counter_terrorism
-		x = 4
-		y = 13
-		prerequisite = { focus = CEN_alliance focus = CEN_continue_alone }
-
-		cost = 25
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_POLITICAL }
-
-		completion_reward = {
-            add_political_power = 100
-            add_stability = 0.15
-            add_popularity = {
-                ideology = liberalism
-                popularity = 0.3
-            }
-            news_event = { id = news.5 }
-		}
-	}
-
-	focus = {
-		id = CEN_republicans_won
-		icon = GFX_CEN_republicans_won
-		x = 4
-		y = 1
-
-		cost = 1
-
-		allow_branch = {
-			has_country_flag = CEN_republicans_finally_won
-		}
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_POLITICAL }
-
-		completion_reward = {
+    focus = {
+        id = CEN_republicans_won
+        icon = GFX_CEN_republicans_won
+        x = 4
+        y = 1
+        cost = 1
+        available_if_capitulated = yes
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        allow_branch = {
+            has_country_flag = CEN_republicans_finally_won
+        }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
             add_political_power = 100
             add_stability = 0.15
             add_popularity = {
                 ideology = conservatism
                 popularity = 0.55
             }
-            set_politics = { 
-			    ruling_party = conservatism
-			    elections_allowed = no
-		    }
+            set_politics = {
+                ruling_party = conservatism
+                elections_allowed = no
+            }
             news_event = { id = news.6 }
-		}
-	}
+        }
+    }
 
-	focus = {
-		id = CEN_economic_branch_republican
-		icon = GFX_CEN_economy
-		x = 13
-		y = 1
-
-		cost = 1
-
-		allow_branch = {
-			has_country_flag = CEN_republicans_finally_won
-		}
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_POLITICAL }
-
-		completion_reward = {
+    focus = {
+        id = CEN_economic_branch_republican
+        icon = GFX_CEN_economy
+        x = 13
+        y = 1
+        cost = 1
+        available_if_capitulated = yes
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        allow_branch = {
+            has_country_flag = CEN_republicans_finally_won
+        }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
             add_dynamic_modifier = { modifier = CEN_economic_prosperity }
             add_to_variable = { CEN_ep_consumer_goods_factor = -0.05 }
             add_to_variable = { CEN_ep_production_speed_buildings_factor = 0.05 }
@@ -678,874 +436,652 @@ focus_tree = {
             add_to_variable = { CEN_ep_production_speed_arms_factory_factor = 0.05 }
             add_to_variable = { CEN_ep_industrial_capacity_dockyard = 0.05 }
             add_to_variable = { CEN_ep_industrial_capacity_factory = 0.05 }
-		}
-	}
+        }
+    }
 
-	focus = {
-		id = CEN_economic_branch_populist
-		icon = GFX_CEN_economy
-		x = 13
-		y = 1
-
-		cost = 1
-
-		allow_branch = {
-			has_country_flag = CEN_populists_won_the_election
-		}
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			has_country_flag = CEN_workers_strikes_ongoing
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_POLITICAL }
-
-		completion_reward = {
+    focus = {
+        id = CEN_economic_branch_populist
+        icon = GFX_CEN_economy
+        x = 13
+        y = 1
+        cost = 1
+        available_if_capitulated = yes
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        available = {
+            has_country_flag = CEN_workers_strikes_ongoing
+        }
+        allow_branch = {
+            has_country_flag = CEN_populists_won_the_election
+        }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
             add_stability = 0.01
-		}
-	}
+        }
+    }
 
-	focus = {
-		id = CEN_economic_branch_democratic
-		icon = GFX_CEN_expand_cia
-		x = 13
-		y = 1
-
-		cost = 1
-
-		allow_branch = {
-			has_country_flag = CEN_democrats_won_again
-		}
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_POLITICAL }
-
-		completion_reward = {
-            
-		}
-	}
-
-	focus = {
-		id = CEN_economic_branch_democratic
-		icon = GFX_CEN_economy
-		x = 13
-		y = 1
-
-		cost = 1
-
-		allow_branch = {
-			has_country_flag = CEN_democrats_won_again
-		}
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			has_country_flag = CEN_workers_strikes_ongoing
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_POLITICAL }
-
-		completion_reward = {
+    focus = {
+        id = CEN_economic_branch_democratic
+        icon = GFX_CEN_economy
+        x = 13
+        y = 1
+        cost = 1
+        available_if_capitulated = yes
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        available = {
+            has_country_flag = CEN_workers_strikes_ongoing
+        }
+        allow_branch = {
+            has_country_flag = CEN_democrats_won_again
+        }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
             add_stability = 0.01
-		}
-	}
-
-	focus = {
-		id = CEN_banking_holiday
-		icon = GFX_goal_unknown
-		x = 13
-		y = 3
-		prerequisite = { focus = CEN_economic_branch_democratic }
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_POLITICAL }
-
-		completion_reward = {
-        add_to_variable = { CEN_ws_consumer_goods_factor = -0.05 }
-        add_to_variable = { CEN_ws_production_speed_buildings_factor = 0.05 }
-        add_to_variable = { CEN_ws_production_speed_industrial_complex_factor = 0.05 }
-        add_to_variable = { CEN_ws_production_speed_arms_factory_factor = 0.05 }
-        add_to_variable = { CEN_ws_industrial_capacity_dockyard = 0.05 }
-        add_to_variable = { CEN_ws_industrial_capacity_factory = 0.05 }
-		add_to_variable = { CEN_ws_stability_factory = 0.05 }
-		}
-	}
-
-	focus = {
-		id = CEN_alphabet_agencies
-		icon = GFX_CEN_alphabet_agencies
-		x = 12
-		y = 5
-		prerequisite = { focus = CEN_banking_holiday }
-
-		cost = 15
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_POLITICAL }
-
-		completion_reward = {
-        add_to_variable = { CEN_ws_consumer_goods_factor = -0.05 }
-        add_to_variable = { CEN_ws_production_speed_buildings_factor = 0.05 }
-        add_to_variable = { CEN_ws_production_speed_industrial_complex_factor = 0.05 }
-        add_to_variable = { CEN_ws_production_speed_arms_factory_factor = 0.05 }
-        add_to_variable = { CEN_ws_industrial_capacity_dockyard = 0.05 }
-        add_to_variable = { CEN_ws_industrial_capacity_factory = 0.05 }
-		add_to_variable = { CEN_ws_stability_factory = 0.05 }
-		}
-	}
-
-	focus = {
-		id = CEN_wagner_accord
-		icon = GFX_goal_unknown
-		x = 14
-		y = 5
-		prerequisite = { focus = CEN_banking_holiday }
-
-		cost = 15
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_POLITICAL }
-
-		completion_reward = {
-        add_to_variable = { CEN_ws_consumer_goods_factor = -0.05 }
-        add_to_variable = { CEN_ws_production_speed_buildings_factor = 0.05 }
-        add_to_variable = { CEN_ws_production_speed_industrial_complex_factor = 0.05 }
-        add_to_variable = { CEN_ws_production_speed_arms_factory_factor = 0.05 }
-        add_to_variable = { CEN_ws_industrial_capacity_dockyard = 0.05 }
-        add_to_variable = { CEN_ws_industrial_capacity_factory = 0.05 }
-		add_to_variable = { CEN_ws_stability_factory = 0.05 }
-		}
-	}
-
-	focus = {
-		id = CEN_fireside_economics
-		icon = GFX_CEN_fireside_economics
-		x = 14
-		y = 7
-		prerequisite = { focus = CEN_wagner_accord }
-
-		cost = 25
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_POLITICAL }
-
-		completion_reward = {
-        add_to_variable = { CEN_ws_consumer_goods_factor = -0.05 }
-        add_to_variable = { CEN_ws_production_speed_buildings_factor = 0.05 }
-        add_to_variable = { CEN_ws_production_speed_industrial_complex_factor = 0.05 }
-        add_to_variable = { CEN_ws_production_speed_arms_factory_factor = 0.05 }
-        add_to_variable = { CEN_ws_industrial_capacity_dockyard = 0.05 }
-        add_to_variable = { CEN_ws_industrial_capacity_factory = 0.05 }
-		add_to_variable = { CEN_ws_stability_factory = 0.05 }
-		}
-	}
-
-	focus = {
-		id = CEN_social_security_act
-		icon = GFX_CEN_social_security_act
-		x = 12
-		y = 7
-		prerequisite = { focus = CEN_alphabet_agencies }
-
-		cost = 25
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_POLITICAL }
-
-		completion_reward = {
-        add_to_variable = { CEN_ws_consumer_goods_factor = -0.05 }
-        add_to_variable = { CEN_ws_production_speed_buildings_factor = 0.05 }
-        add_to_variable = { CEN_ws_production_speed_industrial_complex_factor = 0.05 }
-        add_to_variable = { CEN_ws_production_speed_arms_factory_factor = 0.05 }
-        add_to_variable = { CEN_ws_industrial_capacity_dockyard = 0.05 }
-        add_to_variable = { CEN_ws_industrial_capacity_factory = 0.05 }
-		add_to_variable = { CEN_ws_stability_factory = 0.05 }
-		}
-	}
-
-	focus = {
-		id = CEN_break_the_private_militias
-		icon = GFX_CEN_dismantle_private_militias
-		x = 13
-		y = 3
-		prerequisite = { focus = CEN_economic_branch_populist }
-
-		cost = 15
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_POLITICAL }
-
-		completion_reward = {
-        add_to_variable = { CEN_ws_consumer_goods_factor = -0.05 }
-        add_to_variable = { CEN_ws_production_speed_buildings_factor = 0.05 }
-        add_to_variable = { CEN_ws_production_speed_industrial_complex_factor = 0.05 }
-        add_to_variable = { CEN_ws_production_speed_arms_factory_factor = 0.05 }
-        add_to_variable = { CEN_ws_industrial_capacity_dockyard = 0.05 }
-        add_to_variable = { CEN_ws_industrial_capacity_factory = 0.05 }
-		add_to_variable = { CEN_ws_stability_factory = 0.05 }
-		}
-	}
-
-	focus = {
-		id = CEN_share_our_wealth_plan
-		icon = GFX_goal_unknown
-		x = 12
-		y = 5
-		prerequisite = { focus = CEN_break_the_private_militias }
-
-		cost = 15
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_POLITICAL }
-
-		completion_reward = {
-        add_to_variable = { CEN_ws_consumer_goods_factor = -0.05 }
-        add_to_variable = { CEN_ws_production_speed_buildings_factor = 0.05 }
-        add_to_variable = { CEN_ws_production_speed_industrial_complex_factor = 0.05 }
-        add_to_variable = { CEN_ws_production_speed_arms_factory_factor = 0.05 }
-        add_to_variable = { CEN_ws_industrial_capacity_dockyard = 0.05 }
-        add_to_variable = { CEN_ws_industrial_capacity_factory = 0.05 }
-		add_to_variable = { CEN_ws_stability_factory = 0.05 }
-		}
-	}
-
-	focus = {
-		id = CEN_nationalize_the_rails
-		icon = GFX_CEN_nationalize_rails
-		x = 14
-		y = 5
-		prerequisite = { focus = CEN_break_the_private_militias }
-
-		cost = 15
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_POLITICAL }
-
-		completion_reward = {
-        add_to_variable = { CEN_ws_consumer_goods_factor = -0.05 }
-        add_to_variable = { CEN_ws_production_speed_buildings_factor = 0.05 }
-        add_to_variable = { CEN_ws_production_speed_industrial_complex_factor = 0.05 }
-        add_to_variable = { CEN_ws_production_speed_arms_factory_factor = 0.05 }
-        add_to_variable = { CEN_ws_industrial_capacity_dockyard = 0.05 }
-        add_to_variable = { CEN_ws_industrial_capacity_factory = 0.05 }
-		add_to_variable = { CEN_ws_stability_factory = 0.05 }   
-		}
-	}
-
-	focus = {
-		id = CEN_solidarity_pact
-		icon = GFX_CEN_solidarity_pact
-		x = 14
-		y = 7
-		prerequisite = { focus = CEN_nationalize_the_rails }
-
-		cost = 25
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_POLITICAL }
-
-		completion_reward = {
-        add_to_variable = { CEN_ws_consumer_goods_factor = -0.05 }
-        add_to_variable = { CEN_ws_production_speed_buildings_factor = 0.05 }
-        add_to_variable = { CEN_ws_production_speed_industrial_complex_factor = 0.05 }
-        add_to_variable = { CEN_ws_production_speed_arms_factory_factor = 0.05 }
-        add_to_variable = { CEN_ws_industrial_capacity_dockyard = 0.05 }
-        add_to_variable = { CEN_ws_industrial_capacity_factory = 0.05 }
-		add_to_variable = { CEN_ws_stability_factory = 0.05 }    
-		}
-	}
-
-	focus = {
-		id = CEN_strikes_are_over_populist
-		icon = GFX_CEN_solidarity_pact
-		x = 13
-		y = 9
-		prerequisite = { focus = CEN_new_social_contract }
-		prerequisite = { focus = CEN_solidarity_pact }
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_POLITICAL }
-
-		completion_reward = {
-        remove_dynamic_modifier = { modifier = CEN_workers_strikes }
-		}
-	}
-
-	focus = {
-		id = CEN_strikes_are_over_democratic
-		icon = GFX_CEN_solidarity_pact
-		x = 13
-		y = 9
-		prerequisite = { focus = CEN_social_security_act }
-		prerequisite = { focus = CEN_fireside_economics }
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_POLITICAL }
-
-		completion_reward = {
-        remove_dynamic_modifier = { modifier = CEN_workers_strikes }
-		}
-	}
-
-	focus = {
-		id = CEN_new_social_contract
-		icon = GFX_CEN_new_social_contract
-		x = 12
-		y = 7
-		prerequisite = { focus = CEN_share_our_wealth_plan }
-
-		cost = 25
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_POLITICAL }
-
-		completion_reward = {
-        add_to_variable = { CEN_ws_consumer_goods_factor = -0.05 }
-        add_to_variable = { CEN_ws_production_speed_buildings_factor = 0.05 }
-        add_to_variable = { CEN_ws_production_speed_industrial_complex_factor = 0.05 }
-        add_to_variable = { CEN_ws_production_speed_arms_factory_factor = 0.05 }
-        add_to_variable = { CEN_ws_industrial_capacity_dockyard = 0.05 }
-        add_to_variable = { CEN_ws_industrial_capacity_factory = 0.05 }
-		add_to_variable = { CEN_ws_stability_factory = 0.05 }    
-		}
-	}
-
-	focus = {
-		id = CEN_copy_the_mellons_doctrine
-		icon = GFX_CES_copy_the_mellons_doctrine
-		x = 13
-		y = 3
-		prerequisite = { focus = CEN_economic_branch_republican }
-
-		cost = 15
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_POLITICAL }
-
-		completion_reward = {
+        }
+    }
+
+    focus = {
+        id = CEN_banking_holiday
+        icon = GFX_goal_unknown
+        x = 13
+        y = 3
+        cost = 5
+        available_if_capitulated = yes
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        prerequisite = { focus = CEN_economic_branch_democratic }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            add_to_variable = { CEN_ws_consumer_goods_factor = -0.05 }
+            add_to_variable = { CEN_ws_production_speed_buildings_factor = 0.05 }
+            add_to_variable = { CEN_ws_production_speed_industrial_complex_factor = 0.05 }
+            add_to_variable = { CEN_ws_production_speed_arms_factory_factor = 0.05 }
+            add_to_variable = { CEN_ws_industrial_capacity_dockyard = 0.05 }
+            add_to_variable = { CEN_ws_industrial_capacity_factory = 0.05 }
+            add_to_variable = { CEN_ws_stability_factory = 0.05 }
+        }
+    }
+
+    focus = {
+        id = CEN_alphabet_agencies
+        icon = GFX_CEN_alphabet_agencies
+        x = 12
+        y = 5
+        cost = 15
+        available_if_capitulated = yes
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        prerequisite = { focus = CEN_banking_holiday }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            add_to_variable = { CEN_ws_consumer_goods_factor = -0.05 }
+            add_to_variable = { CEN_ws_production_speed_buildings_factor = 0.05 }
+            add_to_variable = { CEN_ws_production_speed_industrial_complex_factor = 0.05 }
+            add_to_variable = { CEN_ws_production_speed_arms_factory_factor = 0.05 }
+            add_to_variable = { CEN_ws_industrial_capacity_dockyard = 0.05 }
+            add_to_variable = { CEN_ws_industrial_capacity_factory = 0.05 }
+            add_to_variable = { CEN_ws_stability_factory = 0.05 }
+        }
+    }
+
+    focus = {
+        id = CEN_wagner_accord
+        icon = GFX_goal_unknown
+        x = 14
+        y = 5
+        cost = 15
+        available_if_capitulated = yes
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        prerequisite = { focus = CEN_banking_holiday }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            add_to_variable = { CEN_ws_consumer_goods_factor = -0.05 }
+            add_to_variable = { CEN_ws_production_speed_buildings_factor = 0.05 }
+            add_to_variable = { CEN_ws_production_speed_industrial_complex_factor = 0.05 }
+            add_to_variable = { CEN_ws_production_speed_arms_factory_factor = 0.05 }
+            add_to_variable = { CEN_ws_industrial_capacity_dockyard = 0.05 }
+            add_to_variable = { CEN_ws_industrial_capacity_factory = 0.05 }
+            add_to_variable = { CEN_ws_stability_factory = 0.05 }
+        }
+    }
+
+    focus = {
+        id = CEN_fireside_economics
+        icon = GFX_CEN_fireside_economics
+        x = 14
+        y = 7
+        cost = 25
+        available_if_capitulated = yes
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        prerequisite = { focus = CEN_wagner_accord }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            add_to_variable = { CEN_ws_consumer_goods_factor = -0.05 }
+            add_to_variable = { CEN_ws_production_speed_buildings_factor = 0.05 }
+            add_to_variable = { CEN_ws_production_speed_industrial_complex_factor = 0.05 }
+            add_to_variable = { CEN_ws_production_speed_arms_factory_factor = 0.05 }
+            add_to_variable = { CEN_ws_industrial_capacity_dockyard = 0.05 }
+            add_to_variable = { CEN_ws_industrial_capacity_factory = 0.05 }
+            add_to_variable = { CEN_ws_stability_factory = 0.05 }
+        }
+    }
+
+    focus = {
+        id = CEN_social_security_act
+        icon = GFX_CEN_social_security_act
+        x = 12
+        y = 7
+        cost = 25
+        available_if_capitulated = yes
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        prerequisite = { focus = CEN_alphabet_agencies }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            add_to_variable = { CEN_ws_consumer_goods_factor = -0.05 }
+            add_to_variable = { CEN_ws_production_speed_buildings_factor = 0.05 }
+            add_to_variable = { CEN_ws_production_speed_industrial_complex_factor = 0.05 }
+            add_to_variable = { CEN_ws_production_speed_arms_factory_factor = 0.05 }
+            add_to_variable = { CEN_ws_industrial_capacity_dockyard = 0.05 }
+            add_to_variable = { CEN_ws_industrial_capacity_factory = 0.05 }
+            add_to_variable = { CEN_ws_stability_factory = 0.05 }
+        }
+    }
+
+    focus = {
+        id = CEN_break_the_private_militias
+        icon = GFX_CEN_dismantle_private_militias
+        x = 13
+        y = 3
+        cost = 15
+        available_if_capitulated = yes
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        prerequisite = { focus = CEN_economic_branch_populist }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            add_to_variable = { CEN_ws_consumer_goods_factor = -0.05 }
+            add_to_variable = { CEN_ws_production_speed_buildings_factor = 0.05 }
+            add_to_variable = { CEN_ws_production_speed_industrial_complex_factor = 0.05 }
+            add_to_variable = { CEN_ws_production_speed_arms_factory_factor = 0.05 }
+            add_to_variable = { CEN_ws_industrial_capacity_dockyard = 0.05 }
+            add_to_variable = { CEN_ws_industrial_capacity_factory = 0.05 }
+            add_to_variable = { CEN_ws_stability_factory = 0.05 }
+        }
+    }
+
+    focus = {
+        id = CEN_share_our_wealth_plan
+        icon = GFX_goal_unknown
+        x = 12
+        y = 5
+        cost = 15
+        available_if_capitulated = yes
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        prerequisite = { focus = CEN_break_the_private_militias }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            add_to_variable = { CEN_ws_consumer_goods_factor = -0.05 }
+            add_to_variable = { CEN_ws_production_speed_buildings_factor = 0.05 }
+            add_to_variable = { CEN_ws_production_speed_industrial_complex_factor = 0.05 }
+            add_to_variable = { CEN_ws_production_speed_arms_factory_factor = 0.05 }
+            add_to_variable = { CEN_ws_industrial_capacity_dockyard = 0.05 }
+            add_to_variable = { CEN_ws_industrial_capacity_factory = 0.05 }
+            add_to_variable = { CEN_ws_stability_factory = 0.05 }
+        }
+    }
+
+    focus = {
+        id = CEN_nationalize_the_rails
+        icon = GFX_CEN_nationalize_rails
+        x = 14
+        y = 5
+        cost = 15
+        available_if_capitulated = yes
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        prerequisite = { focus = CEN_break_the_private_militias }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            add_to_variable = { CEN_ws_consumer_goods_factor = -0.05 }
+            add_to_variable = { CEN_ws_production_speed_buildings_factor = 0.05 }
+            add_to_variable = { CEN_ws_production_speed_industrial_complex_factor = 0.05 }
+            add_to_variable = { CEN_ws_production_speed_arms_factory_factor = 0.05 }
+            add_to_variable = { CEN_ws_industrial_capacity_dockyard = 0.05 }
+            add_to_variable = { CEN_ws_industrial_capacity_factory = 0.05 }
+            add_to_variable = { CEN_ws_stability_factory = 0.05 }
+        }
+    }
+
+    focus = {
+        id = CEN_solidarity_pact
+        icon = GFX_CEN_solidarity_pact
+        x = 14
+        y = 7
+        cost = 25
+        available_if_capitulated = yes
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        prerequisite = { focus = CEN_nationalize_the_rails }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            add_to_variable = { CEN_ws_consumer_goods_factor = -0.05 }
+            add_to_variable = { CEN_ws_production_speed_buildings_factor = 0.05 }
+            add_to_variable = { CEN_ws_production_speed_industrial_complex_factor = 0.05 }
+            add_to_variable = { CEN_ws_production_speed_arms_factory_factor = 0.05 }
+            add_to_variable = { CEN_ws_industrial_capacity_dockyard = 0.05 }
+            add_to_variable = { CEN_ws_industrial_capacity_factory = 0.05 }
+            add_to_variable = { CEN_ws_stability_factory = 0.05 }
+        }
+    }
+
+    focus = {
+        id = CEN_strikes_are_over_populist
+        icon = GFX_goal_unknown
+        x = 13
+        y = 9
+        cost = 5
+        available_if_capitulated = yes
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        prerequisite = { focus = CEN_new_social_contract }
+        prerequisite = { focus = CEN_solidarity_pact }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            remove_dynamic_modifier = { modifier = CEN_workers_strikes }
+        }
+    }
+
+    focus = {
+        id = CEN_strikes_are_over_democratic
+        icon = GFX_goal_unknown
+        x = 13
+        y = 9
+        cost = 5
+        available_if_capitulated = yes
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        prerequisite = { focus = CEN_social_security_act }
+        prerequisite = { focus = CEN_fireside_economics }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            remove_dynamic_modifier = { modifier = CEN_workers_strikes }
+        }
+    }
+
+    focus = {
+        id = CEN_new_social_contract
+        icon = GFX_CEN_new_social_contract
+        x = 12
+        y = 7
+        cost = 25
+        available_if_capitulated = yes
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        prerequisite = { focus = CEN_share_our_wealth_plan }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            add_to_variable = { CEN_ws_consumer_goods_factor = -0.05 }
+            add_to_variable = { CEN_ws_production_speed_buildings_factor = 0.05 }
+            add_to_variable = { CEN_ws_production_speed_industrial_complex_factor = 0.05 }
+            add_to_variable = { CEN_ws_production_speed_arms_factory_factor = 0.05 }
+            add_to_variable = { CEN_ws_industrial_capacity_dockyard = 0.05 }
+            add_to_variable = { CEN_ws_industrial_capacity_factory = 0.05 }
+            add_to_variable = { CEN_ws_stability_factory = 0.05 }
+        }
+    }
+
+    focus = {
+        id = CEN_copy_the_mellons_doctrine
+        icon = GFX_CES_copy_the_mellons_doctrine
+        x = 13
+        y = 3
+        cost = 15
+        available_if_capitulated = yes
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        prerequisite = { focus = CEN_economic_branch_republican }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
             add_political_power = 150
-		}
-	}
-
-	focus = {
-		id = CEN_protective_tariffs
-		icon = GFX_CEN_tariffs
-		x = 12
-		y = 5
-		prerequisite = { focus = CEN_copy_the_mellons_doctrine }
-
-		cost = 15
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_POLITICAL }
-
-		completion_reward = {
-            add_to_variable = { CEN_ep_consumer_goods_factor = -0.05 }
-            add_to_variable = { CEN_ep_production_speed_buildings_factor = 0.05 }
-            add_to_variable = { CEN_ep_production_speed_industrial_complex_factor = 0.05 }
-            add_to_variable = { CEN_ep_production_speed_arms_factory_factor = 0.05 }
-            add_to_variable = { CEN_ep_industrial_capacity_dockyard = 0.05 }
-            add_to_variable = { CEN_ep_industrial_capacity_factory = 0.05 }
-		}
-	}
-
-	focus = {
-		id = CEN_golden_shackles
-		icon = GFX_goal_unknown
-		x = 14
-		y = 5
-		prerequisite = { focus = CEN_copy_the_mellons_doctrine }
-
-		cost = 15
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_POLITICAL }
-
-		completion_reward = {
-            add_to_variable = { CEN_ep_consumer_goods_factor = -0.05 }
-            add_to_variable = { CEN_ep_production_speed_buildings_factor = 0.05 }
-            add_to_variable = { CEN_ep_production_speed_industrial_complex_factor = 0.05 }
-            add_to_variable = { CEN_ep_production_speed_arms_factory_factor = 0.05 }
-            add_to_variable = { CEN_ep_industrial_capacity_dockyard = 0.05 }
-            add_to_variable = { CEN_ep_industrial_capacity_factory = 0.05 }
-		}
-	}
-
-	focus = {
-		id = CEN_assembly_line_revolution
-		icon = GFX_goal_unknown
-		x = 14
-		y = 7
-		prerequisite = { focus = CEN_golden_shackles }
-
-		cost = 25
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_POLITICAL }
-
-		completion_reward = {
-            add_to_variable = { CEN_ep_consumer_goods_factor = -0.05 }
-            add_to_variable = { CEN_ep_production_speed_buildings_factor = 0.05 }
-            add_to_variable = { CEN_ep_production_speed_industrial_complex_factor = 0.05 }
-            add_to_variable = { CEN_ep_production_speed_arms_factory_factor = 0.05 }
-            add_to_variable = { CEN_ep_industrial_capacity_dockyard = 0.05 }
-            add_to_variable = { CEN_ep_industrial_capacity_factory = 0.05 }
-		}
-	}
-
-	focus = {
-		id = CEN_invinsible_hand
-		icon = GFX_goal_unknown
-		x = 12
-		y = 7
-		prerequisite = { focus = CEN_protective_tariffs }
-
-		cost = 25
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_POLITICAL }
-
-		completion_reward = {
-            add_to_variable = { CEN_ep_consumer_goods_factor = -0.05 }
-            add_to_variable = { CEN_ep_production_speed_buildings_factor = 0.05 }
-            add_to_variable = { CEN_ep_production_speed_industrial_complex_factor = 0.05 }
-            add_to_variable = { CEN_ep_production_speed_arms_factory_factor = 0.05 }
-            add_to_variable = { CEN_ep_industrial_capacity_dockyard = 0.05 }
-            add_to_variable = { CEN_ep_industrial_capacity_factory = 0.05 }
-		}
-	}
+        }
+    }
 
     focus = {
-		id = CEN_internal_affairs
-		icon = GFX_CEN_internal_affairs
-		x = 4
-		y = 3
+        id = CEN_protective_tariffs
+        icon = GFX_CEN_tariffs
+        x = 12
+        y = 5
+        cost = 15
+        available_if_capitulated = yes
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        prerequisite = { focus = CEN_copy_the_mellons_doctrine }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            add_to_variable = { CEN_ep_consumer_goods_factor = -0.05 }
+            add_to_variable = { CEN_ep_production_speed_buildings_factor = 0.05 }
+            add_to_variable = { CEN_ep_production_speed_industrial_complex_factor = 0.05 }
+            add_to_variable = { CEN_ep_production_speed_arms_factory_factor = 0.05 }
+            add_to_variable = { CEN_ep_industrial_capacity_dockyard = 0.05 }
+            add_to_variable = { CEN_ep_industrial_capacity_factory = 0.05 }
+        }
+    }
+
+    focus = {
+        id = CEN_golden_shackles
+        icon = GFX_goal_unknown
+        x = 14
+        y = 5
+        cost = 15
+        available_if_capitulated = yes
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        prerequisite = { focus = CEN_copy_the_mellons_doctrine }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            add_to_variable = { CEN_ep_consumer_goods_factor = -0.05 }
+            add_to_variable = { CEN_ep_production_speed_buildings_factor = 0.05 }
+            add_to_variable = { CEN_ep_production_speed_industrial_complex_factor = 0.05 }
+            add_to_variable = { CEN_ep_production_speed_arms_factory_factor = 0.05 }
+            add_to_variable = { CEN_ep_industrial_capacity_dockyard = 0.05 }
+            add_to_variable = { CEN_ep_industrial_capacity_factory = 0.05 }
+        }
+    }
+
+    focus = {
+        id = CEN_assembly_line_revolution
+        icon = GFX_goal_unknown
+        x = 14
+        y = 7
+        cost = 25
+        available_if_capitulated = yes
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        prerequisite = { focus = CEN_golden_shackles }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            add_to_variable = { CEN_ep_consumer_goods_factor = -0.05 }
+            add_to_variable = { CEN_ep_production_speed_buildings_factor = 0.05 }
+            add_to_variable = { CEN_ep_production_speed_industrial_complex_factor = 0.05 }
+            add_to_variable = { CEN_ep_production_speed_arms_factory_factor = 0.05 }
+            add_to_variable = { CEN_ep_industrial_capacity_dockyard = 0.05 }
+            add_to_variable = { CEN_ep_industrial_capacity_factory = 0.05 }
+        }
+    }
+
+    focus = {
+        id = CEN_invinsible_hand
+        icon = GFX_goal_unknown
+        x = 12
+        y = 7
+        cost = 25
+        available_if_capitulated = yes
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        prerequisite = { focus = CEN_protective_tariffs }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            add_to_variable = { CEN_ep_consumer_goods_factor = -0.05 }
+            add_to_variable = { CEN_ep_production_speed_buildings_factor = 0.05 }
+            add_to_variable = { CEN_ep_production_speed_industrial_complex_factor = 0.05 }
+            add_to_variable = { CEN_ep_production_speed_arms_factory_factor = 0.05 }
+            add_to_variable = { CEN_ep_industrial_capacity_dockyard = 0.05 }
+            add_to_variable = { CEN_ep_industrial_capacity_factory = 0.05 }
+        }
+    }
+
+    focus = {
+        id = CEN_internal_affairs
+        icon = GFX_CEN_internal_affairs
+        x = 4
+        y = 3
+        cost = 15
+        available_if_capitulated = yes
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
         prerequisite = { focus = CEN_republicans_won }
-
-		cost = 15
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_POLITICAL }
-
-		completion_reward = {
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
             custom_effect_tooltip = CEN_internal_affairs_tt
-		}
-	}
+        }
+    }
 
     focus = {
-		id = CEN_counter_terrorism
-		icon = GFX_CEN_counter_terrorism
-		x = 4
-		y = 9
+        id = CEN_counter_terrorism
+        icon = GFX_CEN_counter_terrorism
+        x = 4
+        y = 9
+        cost = 25
+        available_if_capitulated = yes
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
         prerequisite = { focus = CEN_expand_cia }
-		prerequisite = { focus = CEN_restricted_borders }
-
-		cost = 25
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_POLITICAL }
-
-		completion_reward = {
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
             custom_modifier_tooltip = CEN_counter_terrorism_tt
-		}
-	}
+            set_country_flag = CEN_start_counter_terrorism
+        }
+    }
 
     focus = {
-		id = CEN_restricted_borders
-		icon = GFX_CEN_restrict_borders
-		x = 5
-		y = 5
+        id = CEN_great_awakening_act
+        icon = GFX_CEN_great_awakening
+        x = 4
+        y = 11
+        cost = 5
+        available_if_capitulated = yes
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        prerequisite = { focus = CEN_counter_terrorism }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            custom_modifier_tooltip = CEN_counter_terrorism_tt
+        }
+    }
+
+    focus = {
+        id = CEN_murman_problem
+        icon = GFX_CEN_murman_problem
+        x = 3
+        y = 13
+        cost = 1
+        available_if_capitulated = yes
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        prerequisite = { focus = CEN_great_awakening_act }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            custom_modifier_tooltip = CEN_counter_terrorism_tt
+        }
+    }
+
+    focus = {
+        id = CEN_solver_problem
+        icon = GFX_CEN_solvers_problem
+        x = 5
+        y = 13
+        cost = 1
+        available_if_capitulated = yes
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        prerequisite = { focus = CEN_great_awakening_act }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            custom_modifier_tooltip = CEN_counter_terrorism_tt
+        }
+    }
+
+    focus = {
+        id = CEN_bombe_cultists
+        icon = GFX_goal_unknown
+        x = 5
+        y = 15
+        cost = 15
+        available_if_capitulated = yes
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        prerequisite = { focus = CEN_solver_problem }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            custom_modifier_tooltip = CEN_counter_terrorism_tt
+        }
+    }
+
+    focus = {
+        id = CEN_peacekeeping_missions
+        icon = GFX_CEN_peacekeeping
+        x = 3
+        y = 15
+        cost = 15
+        available_if_capitulated = yes
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        prerequisite = { focus = CEN_murman_problem }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            custom_modifier_tooltip = CEN_counter_terrorism_tt
+        }
+    }
+
+    focus = {
+        id = CEN_restricted_borders
+        icon = GFX_CEN_restrict_borders
+        x = 5
+        y = 5
+        cost = 25
+        available_if_capitulated = yes
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
         prerequisite = { focus = CEN_internal_affairs }
-
-		cost = 25
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_POLITICAL }
-
-		completion_reward = {
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
             add_ideas = restricted_borders
-		}
-	}
+        }
+    }
 
-	focus = {
-		id = CEN_deal_with_populists
-		icon = GFX_CEN_deal_with_populists
-		x = 3
-		y = 5
+    focus = {
+        id = CEN_deal_with_populists
+        icon = GFX_CEN_deal_with_populists
+        x = 3
+        y = 5
+        cost = 25
+        available_if_capitulated = yes
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
         prerequisite = { focus = CEN_internal_affairs }
-
-		cost = 25
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_POLITICAL }
-
-		completion_reward = {
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
             add_ideas = restricted_borders
-		}
-	}
+        }
+    }
 
-	focus = {
-		id = CEN_expand_cia
-		icon = GFX_CEN_expand_cia
-		x = 4
-		y = 7
+    focus = {
+        id = CEN_expand_cia
+        icon = GFX_CEN_expand_cia
+        x = 4
+        y = 7
+        cost = 25
+        available_if_capitulated = yes
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
         prerequisite = { focus = CEN_deal_with_populists }
-		prerequisite = { focus = CEN_restricted_borders }
+        prerequisite = { focus = CEN_restricted_borders }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            log = "[GetDateText]: [Root.GetName]: Focus CEN_expand_cia completed"
+        }
+    }
 
-		cost = 25
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_POLITICAL }
-
-		completion_reward = {
-            
-		}
-	}
 }

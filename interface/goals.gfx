@@ -3,6 +3,41 @@ spriteTypes = {
 	#### Murder drones icons
 	
 	SpriteType = {
+	name = "GFX_CEN_set_up_border_defence"
+	texturefile = "gfx/interface/goals/CEN_set_up_border_defence.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_CEN_defund_the_police"
+	texturefile = "gfx/interface/goals/CEN_defund_the_police.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_CEN_populists_won"
+	texturefile = "gfx/interface/goals/CEN_populists_won.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_CEN_great_awakening"
+	texturefile = "gfx/interface/goals/CEN_great_awakening.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_CEN_murman_problem"
+	texturefile = "gfx/interface/goals/CEN_murman_problem.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_CEN_solvers_problem"
+	texturefile = "gfx/interface/goals/CEN_solvers_problem.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_CEN_peacekeeping"
+	texturefile = "gfx/interface/goals/CEN_peacekeeping.png"
+	}
+	
+	SpriteType = {
 	name = "GFX_SHU_anschluss"
 	texturefile = "gfx/interface/goals/SHU_anschluss.png"
 	}

@@ -1,0 +1,216 @@
+guiTypes = {
+	containerWindowType = {
+		name = "centralias_election_gui"
+		size = { width = 345 height = 220 }
+		position = { x = 0 y = 0 }
+
+		buttonType = {
+			name = "centralia_election_button"
+			spriteType = "GFX_election_button"
+			position = { x = 175 y = 25 }
+			pdx_tooltip = "[CAT_OPENING]"
+			clicksound = click_ok
+			oversound = ui_menu_over
+		}
+
+
+    }
+
+	containerWindowType = {
+		name = "election_main_screen_window"
+		size = { width = 1500 height = 900 }
+		position = { x = 0 y = 0 }
+		orientation = center
+		origo = center
+
+		background = {
+			name = "Background"
+			quadTextureSprite = "GFX_election_window"
+		}
+
+		buttonType = {
+			name = "close_map_button"
+			position = { x = 1447 y = 22 }
+			quadTextureSprite = "GFX_closebutton"
+			pdx_tooltip = "CLOSE"
+			clicksound = click_close
+			shortcut = "ESCAPE"
+		}
+
+		buttonType = {
+			name = "campaign_in_here_button"
+			spriteType = "GFX_event_option_entry"
+			position = { x = 360 y = 695 }
+			buttonText = "campaign_in_here"
+			buttonFont = "hoi_16mbs"
+			pdx_tooltip = "campaign_in_here_tt"
+			clicksound = click_close
+			oversound = ui_menu_over
+		}
+
+		buttonType = {
+			name = "discredit_the_other_party_button"
+			spriteType = "GFX_event_option_entry"
+			position = { x = 360 y = 775 }
+			buttonText = "discredit_the_other_party"
+			buttonFont = "hoi_16mbs"
+			pdx_tooltip = "discredit_the_other_party_tt"
+			clicksound = click_close
+			oversound = ui_menu_over
+		}
+
+		instantTextBoxType {
+			name = "CEN_region_selected"
+			text = "[get_state_name]"
+			font = "hoi_30header"
+			maxWidth = 315
+			maxHeigth = 12
+			position = { x = 85 y = 825 }
+			pdx_tooltip = "[CAT_OPENING]"
+		}
+		
+		###states
+
+		buttonType = {
+			name = "oakhaven_button"
+			position = { x = 1012 y = 173 }
+			spriteType = "GFX_state_oakhaven"
+			clicksound = click_ok
+			oversound = ui_menu_over
+			multiline = yes
+		}
+
+		buttonType = {
+			name = "veronia_button"
+			position = { x = 1023 y = 230 }
+			spriteType = "GFX_state_veronia"
+			clicksound = click_ok
+			oversound = ui_menu_over
+			multiline = yes
+			scale = 0.9
+		}
+
+		buttonType = {
+			name = "north_kanata_button"
+			position = { x = 932 y = 133 }
+			spriteType = "GFX_state_north_kanata"
+			clicksound = click_ok
+			oversound = ui_menu_over
+			multiline = yes
+		}
+
+		buttonType = {
+			name = "south_kanata_button"
+			position = { x = 928 y = 210 }
+			spriteType = "GFX_state_south_kanata"
+			clicksound = click_ok
+			oversound = ui_menu_over
+			multiline = yes
+		}
+
+		buttonType = {
+			name = "aridona_button"
+			position = { x = 821 y = 91 }
+			spriteType = "GFX_state_aridona"
+			clicksound = click_ok
+			oversound = ui_menu_over
+			multiline = yes
+		}
+
+		buttonType = {
+			name = "franklinia_button"
+			position = { x = 787 y = 207 }
+			spriteType = "GFX_state_franklinia"
+			clicksound = click_ok
+			oversound = ui_menu_over
+			multiline = yes
+		}
+
+		buttonType = {
+			name = "piedmont_button"
+			position = { x = 404 y = 263 }
+			spriteType = "GFX_state_piedmont"
+			clicksound = click_ok
+			oversound = ui_menu_over
+			multiline = yes
+			scale = 0.95
+		}
+
+		buttonType = {
+			name = "cirdillera_button"
+			position = { x = 585 y = 210 }
+			spriteType = "GFX_state_cordillera"
+			clicksound = click_ok
+			oversound = ui_menu_over
+			multiline = yes
+		}
+
+		buttonType = {
+			name = "gulflandia_button"
+			position = { x = 498 y = 128 }
+			spriteType = "GFX_state_gulflandia"
+			clicksound = click_ok
+			oversound = ui_menu_over
+			multiline = yes
+		}
+
+		buttonType = {
+			name = "three_sisters_button"
+			position = { x = 697 y = 329 }
+			spriteType = "GFX_states_three_sisters"
+			clicksound = click_ok
+			oversound = ui_menu_over
+			multiline = yes
+		}
+
+		buttonType = {
+			name = "khan_button"
+			position = { x = 817 y = 300 }
+			spriteType = "GFX_state_khan"
+			clicksound = click_ok
+			oversound = ui_menu_over
+			multiline = yes
+		}
+
+		buttonType = {
+			name = "sierra_alta_button"
+			position = { x = 710 y = 204 }
+			spriteType = "GFX_state_sierra_alta"
+			clicksound = click_ok
+			oversound = ui_menu_over
+			multiline = yes
+		}
+
+        buttonType = {
+			name = "kanawha_button"
+			position = { x = 663 y = 134 }
+			spriteType = "GFX_state_kanawha"
+			clicksound = click_ok
+			oversound = ui_menu_over
+			multiline = yes
+		}
+
+		buttonType = {
+			name = "ironwood_button"
+			position = { x = 723 y = 95 }
+			spriteType = "GFX_state_ironwood"
+			clicksound = click_ok
+			oversound = ui_menu_over
+			multiline = yes
+		}
+
+		iconType = {
+			name = "map_outline"
+			position = { x = 381 y = 80 }
+			spriteType = "GFX_map_outline"
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "empty_picture"
+			position = { x = 67 y = 688 }
+			spriteType = "GFX_empty_picture"
+			alwaystransparent = yes
+		}
+    }
+}

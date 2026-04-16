@@ -1,0 +1,911 @@
+scripted_gui = {
+
+    centralias_election_gui = {
+       context_type = decision_category
+	   window_name = "centralias_election_gui"
+ 
+        visible = {
+            tag = CEN
+        }
+ 
+		effects = {
+			centralia_election_button_click = {
+				if = {
+					limit = { has_variable = CEN_show_election_window }
+					clear_variable = CEN_show_election_window
+				}
+				else = {
+					set_variable = { CEN_show_election_window = 1 }
+				}
+			}
+		}
+        triggers = {
+        }
+		
+		properties = {
+			
+		}
+    }
+
+    election_main_screen_window = {
+       context_type = player_context 
+	   window_name = "election_main_screen_window"
+ 
+        visible = {
+            tag = CEN
+            check_variable = { CEN_show_election_window > 0 }
+        }
+ 
+		effects = {
+			close_map_button_click = {
+				set_variable = { CEN_show_election_window = 0 }
+			}
+			
+			###states
+			
+			oakhaven_button_click = {
+				set_variable = { CEN_oakhaven_selected = 1 }
+				if = {
+					limit = { has_variable = CEN_aridona_selected }
+					clear_variable = CEN_aridona_selected
+				}
+				if = {
+					limit = { has_variable = CEN_cordillera_selected }
+					clear_variable = CEN_cordillera_selected
+				}
+				if = {
+					limit = { has_variable = CEN_franklinia_selected }
+					clear_variable = CEN_franklinia_selected
+				}
+				if = {
+					limit = { has_variable = CEN_gulflandia_selected }
+					clear_variable = CEN_gulflandia_selected
+				}
+				if = {
+					limit = { has_variable = CEN_ironwood_selected }
+					clear_variable = CEN_ironwood_selected
+				}
+				if = {
+					limit = { has_variable = CEN_kanawha_selected }
+					clear_variable = CEN_kanawha_selected
+				}
+				if = {
+					limit = { has_variable = CEN_khan_selected }
+					clear_variable = CEN_khan_selected
+				}
+				if = {
+					limit = { has_variable = CEN_north_kanata_selected }
+					clear_variable = CEN_north_kanata_selected
+				}
+				if = {
+					limit = { has_variable = CEN_south_kanata_selected }
+					clear_variable = CEN_south_kanata_selected
+				}
+				
+				if = {
+					limit = { has_variable = CEN_piedmont_selected }
+					clear_variable = CEN_piedmont_selected
+				}
+				
+				if = {
+					limit = { has_variable = CEN_sierra_alta_selected }
+					clear_variable = CEN_sierra_alta_selected
+				}
+				
+				if = {
+					limit = { has_variable = CEN_veronia_selected }
+					clear_variable = CEN_veronia_selected
+				}
+				
+				if = {
+					limit = { has_variable = CEN_three_sisters_selected }
+					clear_variable = CEN_three_sisters_selected
+				}
+
+			}
+			
+			aridona_button_click = {
+				set_variable = { CEN_aridona_selected = 1 }
+				if = {
+					limit = { has_variable = CEN_oakhaven_selected }
+					clear_variable = CEN_oakhaven_selected
+				}
+				if = {
+					limit = { has_variable = CEN_cordillera_selected }
+					clear_variable = CEN_cordillera_selected
+				}
+				if = {
+					limit = { has_variable = CEN_franklinia_selected }
+					clear_variable = CEN_franklinia_selected
+				}
+				if = {
+					limit = { has_variable = CEN_gulflandia_selected }
+					clear_variable = CEN_gulflandia_selected
+				}
+				if = {
+					limit = { has_variable = CEN_ironwood_selected }
+					clear_variable = CEN_ironwood_selected
+				}
+				if = {
+					limit = { has_variable = CEN_kanawha_selected }
+					clear_variable = CEN_kanawha_selected
+				}
+				if = {
+					limit = { has_variable = CEN_khan_selected }
+					clear_variable = CEN_khan_selected
+				}
+				if = {
+					limit = { has_variable = CEN_north_kanata_selected }
+					clear_variable = CEN_north_kanata_selected
+				}
+				if = {
+					limit = { has_variable = CEN_south_kanata_selected }
+					clear_variable = CEN_south_kanata_selected
+				}
+				
+				if = {
+					limit = { has_variable = CEN_piedmont_selected }
+					clear_variable = CEN_piedmont_selected
+				}
+				
+				if = {
+					limit = { has_variable = CEN_sierra_alta_selected }
+					clear_variable = CEN_sierra_alta_selected
+				}
+				
+				if = {
+					limit = { has_variable = CEN_veronia_selected }
+					clear_variable = CEN_veronia_selected
+				}
+				
+				if = {
+					limit = { has_variable = CEN_three_sisters_selected }
+					clear_variable = CEN_three_sisters_selected
+				}
+
+			}
+			
+			cordillera_button_click = {
+				set_variable = { CEN_cordillera_selected = 1 }
+				if = {
+					limit = { has_variable = CEN_oakhaven_selected }
+					clear_variable = CEN_oakhaven_selected
+				}
+				if = {
+					limit = { has_variable = CEN_aridona_selected }
+					clear_variable = CEN_aridona_selected
+				}
+				if = {
+					limit = { has_variable = CEN_franklinia_selected }
+					clear_variable = CEN_franklinia_selected
+				}
+				if = {
+					limit = { has_variable = CEN_gulflandia_selected }
+					clear_variable = CEN_gulflandia_selected
+				}
+				if = {
+					limit = { has_variable = CEN_ironwood_selected }
+					clear_variable = CEN_ironwood_selected
+				}
+				if = {
+					limit = { has_variable = CEN_kanawha_selected }
+					clear_variable = CEN_kanawha_selected
+				}
+				if = {
+					limit = { has_variable = CEN_khan_selected }
+					clear_variable = CEN_khan_selected
+				}
+				if = {
+					limit = { has_variable = CEN_north_kanata_selected }
+					clear_variable = CEN_north_kanata_selected
+				}
+				if = {
+					limit = { has_variable = CEN_south_kanata_selected }
+					clear_variable = CEN_south_kanata_selected
+				}
+				
+				if = {
+					limit = { has_variable = CEN_piedmont_selected }
+					clear_variable = CEN_piedmont_selected
+				}
+				
+				if = {
+					limit = { has_variable = CEN_sierra_alta_selected }
+					clear_variable = CEN_sierra_alta_selected
+				}
+				
+				if = {
+					limit = { has_variable = CEN_veronia_selected }
+					clear_variable = CEN_veronia_selected
+				}
+				
+				if = {
+					limit = { has_variable = CEN_three_sisters_selected }
+					clear_variable = CEN_three_sisters_selected
+				}
+
+			}
+			
+			franklinia_button_click = {
+				set_variable = { CEN_franklinia_selected = 1 }
+				if = {
+					limit = { has_variable = CEN_oakhaven_selected }
+					clear_variable = CEN_oakhaven_selected
+				}
+				if = {
+					limit = { has_variable = CEN_aridona_selected }
+					clear_variable = CEN_aridona_selected
+				}
+				if = {
+					limit = { has_variable = CEN_cordillera_selected }
+					clear_variable = CEN_cordillera_selected
+				}
+				if = {
+					limit = { has_variable = CEN_gulflandia_selected }
+					clear_variable = CEN_gulflandia_selected
+				}
+				if = {
+					limit = { has_variable = CEN_ironwood_selected }
+					clear_variable = CEN_ironwood_selected
+				}
+				if = {
+					limit = { has_variable = CEN_kanawha_selected }
+					clear_variable = CEN_kanawha_selected
+				}
+				if = {
+					limit = { has_variable = CEN_khan_selected }
+					clear_variable = CEN_khan_selected
+				}
+				if = {
+					limit = { has_variable = CEN_north_kanata_selected }
+					clear_variable = CEN_north_kanata_selected
+				}
+				if = {
+					limit = { has_variable = CEN_south_kanata_selected }
+					clear_variable = CEN_south_kanata_selected
+				}
+				
+				if = {
+					limit = { has_variable = CEN_piedmont_selected }
+					clear_variable = CEN_piedmont_selected
+				}
+				
+				if = {
+					limit = { has_variable = CEN_sierra_alta_selected }
+					clear_variable = CEN_sierra_alta_selected
+				}
+				
+				if = {
+					limit = { has_variable = CEN_veronia_selected }
+					clear_variable = CEN_veronia_selected
+				}
+				
+				if = {
+					limit = { has_variable = CEN_three_sisters_selected }
+					clear_variable = CEN_three_sisters_selected
+				}
+
+			}
+			
+			gulflandia_button_click = {
+				set_variable = { CEN_gulflandia_selected = 1 }
+				if = {
+					limit = { has_variable = CEN_oakhaven_selected }
+					clear_variable = CEN_oakhaven_selected
+				}
+				if = {
+					limit = { has_variable = CEN_aridona_selected }
+					clear_variable = CEN_aridona_selected
+				}
+				if = {
+					limit = { has_variable = CEN_cordillera_selected }
+					clear_variable = CEN_cordillera_selected
+				}
+				if = {
+					limit = { has_variable = CEN_franklinia_selected }
+					clear_variable = CEN_franklinia_selected
+				}
+				if = {
+					limit = { has_variable = CEN_ironwood_selected }
+					clear_variable = CEN_ironwood_selected
+				}
+				if = {
+					limit = { has_variable = CEN_kanawha_selected }
+					clear_variable = CEN_kanawha_selected
+				}
+				if = {
+					limit = { has_variable = CEN_khan_selected }
+					clear_variable = CEN_khan_selected
+				}
+				if = {
+					limit = { has_variable = CEN_north_kanata_selected }
+					clear_variable = CEN_north_kanata_selected
+				}
+				if = {
+					limit = { has_variable = CEN_south_kanata_selected }
+					clear_variable = CEN_south_kanata_selected
+				}
+				
+				if = {
+					limit = { has_variable = CEN_piedmont_selected }
+					clear_variable = CEN_piedmont_selected
+				}
+				
+				if = {
+					limit = { has_variable = CEN_sierra_alta_selected }
+					clear_variable = CEN_sierra_alta_selected
+				}
+				
+				if = {
+					limit = { has_variable = CEN_veronia_selected }
+					clear_variable = CEN_veronia_selected
+				}
+				
+				if = {
+					limit = { has_variable = CEN_three_sisters_selected }
+					clear_variable = CEN_three_sisters_selected
+				}
+
+			}
+			
+			ironwood_button_click = {
+				set_variable = { CEN_ironwood_selected = 1 }
+				if = {
+					limit = { has_variable = CEN_oakhaven_selected }
+					clear_variable = CEN_oakhaven_selected
+				}
+				if = {
+					limit = { has_variable = CEN_aridona_selected }
+					clear_variable = CEN_aridona_selected
+				}
+				if = {
+					limit = { has_variable = CEN_cordillera_selected }
+					clear_variable = CEN_cordillera_selected
+				}
+				if = {
+					limit = { has_variable = CEN_franklinia_selected }
+					clear_variable = CEN_franklinia_selected
+				}
+				if = {
+					limit = { has_variable = CEN_gulflandia_selected }
+					clear_variable = CEN_gulflandia_selected
+				}
+				if = {
+					limit = { has_variable = CEN_kanawha_selected }
+					clear_variable = CEN_kanawha_selected
+				}
+				if = {
+					limit = { has_variable = CEN_khan_selected }
+					clear_variable = CEN_khan_selected
+				}
+				if = {
+					limit = { has_variable = CEN_north_kanata_selected }
+					clear_variable = CEN_north_kanata_selected
+				}
+				if = {
+					limit = { has_variable = CEN_south_kanata_selected }
+					clear_variable = CEN_south_kanata_selected
+				}
+				
+				if = {
+					limit = { has_variable = CEN_piedmont_selected }
+					clear_variable = CEN_piedmont_selected
+				}
+				
+				if = {
+					limit = { has_variable = CEN_sierra_alta_selected }
+					clear_variable = CEN_sierra_alta_selected
+				}
+				
+				if = {
+					limit = { has_variable = CEN_veronia_selected }
+					clear_variable = CEN_veronia_selected
+				}
+				
+				if = {
+					limit = { has_variable = CEN_three_sisters_selected }
+					clear_variable = CEN_three_sisters_selected
+				}
+
+			}
+			
+			kanawha_button_click = {
+				set_variable = { CEN_kanawha_selected = 1 }
+				if = {
+					limit = { has_variable = CEN_oakhaven_selected }
+					clear_variable = CEN_oakhaven_selected
+				}
+				if = {
+					limit = { has_variable = CEN_aridona_selected }
+					clear_variable = CEN_aridona_selected
+				}
+				if = {
+					limit = { has_variable = CEN_cordillera_selected }
+					clear_variable = CEN_cordillera_selected
+				}
+				if = {
+					limit = { has_variable = CEN_franklinia_selected }
+					clear_variable = CEN_franklinia_selected
+				}
+				if = {
+					limit = { has_variable = CEN_gulflandia_selected }
+					clear_variable = CEN_gulflandia_selected
+				}
+				if = {
+					limit = { has_variable = CEN_ironwood_selected }
+					clear_variable = CEN_ironwood_selected
+				}
+				if = {
+					limit = { has_variable = CEN_khan_selected }
+					clear_variable = CEN_khan_selected
+				}
+				if = {
+					limit = { has_variable = CEN_north_kanata_selected }
+					clear_variable = CEN_north_kanata_selected
+				}
+				if = {
+					limit = { has_variable = CEN_south_kanata_selected }
+					clear_variable = CEN_south_kanata_selected
+				}
+				
+				if = {
+					limit = { has_variable = CEN_piedmont_selected }
+					clear_variable = CEN_piedmont_selected
+				}
+				
+				if = {
+					limit = { has_variable = CEN_sierra_alta_selected }
+					clear_variable = CEN_sierra_alta_selected
+				}
+				
+				if = {
+					limit = { has_variable = CEN_veronia_selected }
+					clear_variable = CEN_veronia_selected
+				}
+				
+				if = {
+					limit = { has_variable = CEN_three_sisters_selected }
+					clear_variable = CEN_three_sisters_selected
+				}
+
+			}
+			
+			khan_button_click = {
+				set_variable = { CEN_khan_selected = 1 }
+				if = {
+					limit = { has_variable = CEN_oakhaven_selected }
+					clear_variable = CEN_oakhaven_selected
+				}
+				if = {
+					limit = { has_variable = CEN_aridona_selected }
+					clear_variable = CEN_aridona_selected
+				}
+				if = {
+					limit = { has_variable = CEN_cordillera_selected }
+					clear_variable = CEN_cordillera_selected
+				}
+				if = {
+					limit = { has_variable = CEN_franklinia_selected }
+					clear_variable = CEN_franklinia_selected
+				}
+				if = {
+					limit = { has_variable = CEN_gulflandia_selected }
+					clear_variable = CEN_gulflandia_selected
+				}
+				if = {
+					limit = { has_variable = CEN_ironwood_selected }
+					clear_variable = CEN_ironwood_selected
+				}
+				if = {
+					limit = { has_variable = CEN_kanawha_selected }
+					clear_variable = CEN_kanawha_selected
+				}
+				if = {
+					limit = { has_variable = CEN_north_kanata_selected }
+					clear_variable = CEN_north_kanata_selected
+				}
+				if = {
+					limit = { has_variable = CEN_south_kanata_selected }
+					clear_variable = CEN_south_kanata_selected
+				}
+				
+				if = {
+					limit = { has_variable = CEN_piedmont_selected }
+					clear_variable = CEN_piedmont_selected
+				}
+				
+				if = {
+					limit = { has_variable = CEN_sierra_alta_selected }
+					clear_variable = CEN_sierra_alta_selected
+				}
+				
+				if = {
+					limit = { has_variable = CEN_veronia_selected }
+					clear_variable = CEN_veronia_selected
+				}
+				
+				if = {
+					limit = { has_variable = CEN_three_sisters_selected }
+					clear_variable = CEN_three_sisters_selected
+				}
+
+			}
+			
+			north_kanata_button_click = {
+				set_variable = { CEN_north_kanata_selected = 1 }
+				if = {
+					limit = { has_variable = CEN_oakhaven_selected }
+					clear_variable = CEN_oakhaven_selected
+				}
+				if = {
+					limit = { has_variable = CEN_aridona_selected }
+					clear_variable = CEN_aridona_selected
+				}
+				if = {
+					limit = { has_variable = CEN_cordillera_selected }
+					clear_variable = CEN_cordillera_selected
+				}
+				if = {
+					limit = { has_variable = CEN_franklinia_selected }
+					clear_variable = CEN_franklinia_selected
+				}
+				if = {
+					limit = { has_variable = CEN_gulflandia_selected }
+					clear_variable = CEN_gulflandia_selected
+				}
+				if = {
+					limit = { has_variable = CEN_ironwood_selected }
+					clear_variable = CEN_ironwood_selected
+				}
+				if = {
+					limit = { has_variable = CEN_kanawha_selected }
+					clear_variable = CEN_kanawha_selected
+				}
+				if = {
+					limit = { has_variable = CEN_khan_selected }
+					clear_variable = CEN_khan_selected
+				}
+				if = {
+					limit = { has_variable = CEN_south_kanata_selected }
+					clear_variable = CEN_south_kanata_selected
+				}
+				
+				if = {
+					limit = { has_variable = CEN_piedmont_selected }
+					clear_variable = CEN_piedmont_selected
+				}
+				
+				if = {
+					limit = { has_variable = CEN_sierra_alta_selected }
+					clear_variable = CEN_sierra_alta_selected
+				}
+				
+				if = {
+					limit = { has_variable = CEN_veronia_selected }
+					clear_variable = CEN_veronia_selected
+				}
+				
+				if = {
+					limit = { has_variable = CEN_three_sisters_selected }
+					clear_variable = CEN_three_sisters_selected
+				}
+
+			}
+			
+			south_kanata_button_click = {
+				set_variable = { CEN_south_kanata_selected = 1 }
+				if = {
+					limit = { has_variable = CEN_oakhaven_selected }
+					clear_variable = CEN_oakhaven_selected
+				}
+				if = {
+					limit = { has_variable = CEN_aridona_selected }
+					clear_variable = CEN_aridona_selected
+				}
+				if = {
+					limit = { has_variable = CEN_cordillera_selected }
+					clear_variable = CEN_cordillera_selected
+				}
+				if = {
+					limit = { has_variable = CEN_franklinia_selected }
+					clear_variable = CEN_franklinia_selected
+				}
+				if = {
+					limit = { has_variable = CEN_gulflandia_selected }
+					clear_variable = CEN_gulflandia_selected
+				}
+				if = {
+					limit = { has_variable = CEN_ironwood_selected }
+					clear_variable = CEN_ironwood_selected
+				}
+				if = {
+					limit = { has_variable = CEN_kanawha_selected }
+					clear_variable = CEN_kanawha_selected
+				}
+				if = {
+					limit = { has_variable = CEN_khan_selected }
+					clear_variable = CEN_khan_selected
+				}
+				if = {
+					limit = { has_variable = CEN_north_kanata_selected }
+					clear_variable = CEN_north_kanata_selected
+				}
+				
+				if = {
+					limit = { has_variable = CEN_piedmont_selected }
+					clear_variable = CEN_piedmont_selected
+				}
+				
+				if = {
+					limit = { has_variable = CEN_sierra_alta_selected }
+					clear_variable = CEN_sierra_alta_selected
+				}
+				
+				if = {
+					limit = { has_variable = CEN_veronia_selected }
+					clear_variable = CEN_veronia_selected
+				}
+				
+				if = {
+					limit = { has_variable = CEN_three_sisters_selected }
+					clear_variable = CEN_three_sisters_selected
+				}
+
+			}
+			
+			piedmont_button_click = {
+				set_variable = { CEN_piedmont_selected = 1 }
+				if = {
+					limit = { has_variable = CEN_oakhaven_selected }
+					clear_variable = CEN_oakhaven_selected
+				}
+				if = {
+					limit = { has_variable = CEN_aridona_selected }
+					clear_variable = CEN_aridona_selected
+				}
+				if = {
+					limit = { has_variable = CEN_cordillera_selected }
+					clear_variable = CEN_cordillera_selected
+				}
+				if = {
+					limit = { has_variable = CEN_franklinia_selected }
+					clear_variable = CEN_franklinia_selected
+				}
+				if = {
+					limit = { has_variable = CEN_gulflandia_selected }
+					clear_variable = CEN_gulflandia_selected
+				}
+				if = {
+					limit = { has_variable = CEN_ironwood_selected }
+					clear_variable = CEN_ironwood_selected
+				}
+				if = {
+					limit = { has_variable = CEN_kanawha_selected }
+					clear_variable = CEN_kanawha_selected
+				}
+				if = {
+					limit = { has_variable = CEN_khan_selected }
+					clear_variable = CEN_khan_selected
+				}
+				if = {
+					limit = { has_variable = CEN_north_kanata_selected }
+					clear_variable = CEN_north_kanata_selected
+				}
+				
+				if = {
+					limit = { has_variable = CEN_south_kanata_selected }
+					clear_variable = CEN_south_kanata_selected
+				}
+				
+				if = {
+					limit = { has_variable = CEN_sierra_alta_selected }
+					clear_variable = CEN_sierra_alta_selected
+				}
+				
+				if = {
+					limit = { has_variable = CEN_veronia_selected }
+					clear_variable = CEN_veronia_selected
+				}
+				
+				if = {
+					limit = { has_variable = CEN_three_sisters_selected }
+					clear_variable = CEN_three_sisters_selected
+				}
+
+			}
+			
+			sierra_alta_button_click = {
+				set_variable = { CEN_sierra_alta_selected = 1 }
+				if = {
+					limit = { has_variable = CEN_oakhaven_selected }
+					clear_variable = CEN_oakhaven_selected
+				}
+				if = {
+					limit = { has_variable = CEN_aridona_selected }
+					clear_variable = CEN_aridona_selected
+				}
+				if = {
+					limit = { has_variable = CEN_cordillera_selected }
+					clear_variable = CEN_cordillera_selected
+				}
+				if = {
+					limit = { has_variable = CEN_franklinia_selected }
+					clear_variable = CEN_franklinia_selected
+				}
+				if = {
+					limit = { has_variable = CEN_gulflandia_selected }
+					clear_variable = CEN_gulflandia_selected
+				}
+				if = {
+					limit = { has_variable = CEN_ironwood_selected }
+					clear_variable = CEN_ironwood_selected
+				}
+				if = {
+					limit = { has_variable = CEN_kanawha_selected }
+					clear_variable = CEN_kanawha_selected
+				}
+				if = {
+					limit = { has_variable = CEN_khan_selected }
+					clear_variable = CEN_khan_selected
+				}
+				if = {
+					limit = { has_variable = CEN_north_kanata_selected }
+					clear_variable = CEN_north_kanata_selected
+				}
+				
+				if = {
+					limit = { has_variable = CEN_south_kanata_selected }
+					clear_variable = CEN_south_kanata_selected
+				}
+				
+				if = {
+					limit = { has_variable = CEN_piedmont_selected }
+					clear_variable = CEN_piedmont_selected
+				}
+				
+				if = {
+					limit = { has_variable = CEN_veronia_selected }
+					clear_variable = CEN_veronia_selected
+				}
+				
+				if = {
+					limit = { has_variable = CEN_three_sisters_selected }
+					clear_variable = CEN_three_sisters_selected
+				}
+
+			}
+			
+			veronia_button_click = {
+				set_variable = { CEN_veronia_selected = 1 }
+				if = {
+					limit = { has_variable = CEN_oakhaven_selected }
+					clear_variable = CEN_oakhaven_selected
+				}
+				if = {
+					limit = { has_variable = CEN_aridona_selected }
+					clear_variable = CEN_aridona_selected
+				}
+				if = {
+					limit = { has_variable = CEN_cordillera_selected }
+					clear_variable = CEN_cordillera_selected
+				}
+				if = {
+					limit = { has_variable = CEN_franklinia_selected }
+					clear_variable = CEN_franklinia_selected
+				}
+				if = {
+					limit = { has_variable = CEN_gulflandia_selected }
+					clear_variable = CEN_gulflandia_selected
+				}
+				if = {
+					limit = { has_variable = CEN_ironwood_selected }
+					clear_variable = CEN_ironwood_selected
+				}
+				if = {
+					limit = { has_variable = CEN_kanawha_selected }
+					clear_variable = CEN_kanawha_selected
+				}
+				if = {
+					limit = { has_variable = CEN_khan_selected }
+					clear_variable = CEN_khan_selected
+				}
+				if = {
+					limit = { has_variable = CEN_north_kanata_selected }
+					clear_variable = CEN_north_kanata_selected
+				}
+				
+				if = {
+					limit = { has_variable = CEN_south_kanata_selected }
+					clear_variable = CEN_south_kanata_selected
+				}
+				
+				if = {
+					limit = { has_variable = CEN_piedmont_selected }
+					clear_variable = CEN_piedmont_selected
+				}
+				
+				if = {
+					limit = { has_variable = CEN_sierra_alta_selected }
+					clear_variable = CEN_sierra_alta_selected
+				}
+				
+				if = {
+					limit = { has_variable = CEN_three_sisters_selected }
+					clear_variable = CEN_three_sisters_selected
+				}
+
+			}
+			
+			three_sisters_button_click = {
+				set_variable = { CEN_three_sisters_selected = 1 }
+				if = {
+					limit = { has_variable = CEN_oakhaven_selected }
+					clear_variable = CEN_oakhaven_selected
+				}
+				if = {
+					limit = { has_variable = CEN_aridona_selected }
+					clear_variable = CEN_aridona_selected
+				}
+				if = {
+					limit = { has_variable = CEN_cordillera_selected }
+					clear_variable = CEN_cordillera_selected
+				}
+				if = {
+					limit = { has_variable = CEN_franklinia_selected }
+					clear_variable = CEN_franklinia_selected
+				}
+				if = {
+					limit = { has_variable = CEN_gulflandia_selected }
+					clear_variable = CEN_gulflandia_selected
+				}
+				if = {
+					limit = { has_variable = CEN_ironwood_selected }
+					clear_variable = CEN_ironwood_selected
+				}
+				if = {
+					limit = { has_variable = CEN_kanawha_selected }
+					clear_variable = CEN_kanawha_selected
+				}
+				if = {
+					limit = { has_variable = CEN_khan_selected }
+					clear_variable = CEN_khan_selected
+				}
+				if = {
+					limit = { has_variable = CEN_north_kanata_selected }
+					clear_variable = CEN_north_kanata_selected
+				}
+				
+				if = {
+					limit = { has_variable = CEN_south_kanata_selected }
+					clear_variable = CEN_south_kanata_selected
+				}
+				
+				if = {
+					limit = { has_variable = CEN_piedmont_selected }
+					clear_variable = CEN_piedmont_selected
+				}
+				
+				if = {
+					limit = { has_variable = CEN_sierra_alta_selected }
+					clear_variable = CEN_sierra_alta_selected
+				}
+				
+				if = {
+					limit = { has_variable = CEN_veronia_selected }
+					clear_variable = CEN_veronia_selected
+				}
+
+			}
+		}
+
+        triggers = {
+
+        }
+		
+		properties = {
+			empty_picture = {
+				image = "[get_empty_picture]"
+			}
+		}
+    }
+}

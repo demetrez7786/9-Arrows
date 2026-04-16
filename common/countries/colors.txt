@@ -130,3 +130,20 @@ AUR = {
 	color = rgb { 100 101 243 }
 	color_ui = rgb { 100 101 243 }
 }
+
+ALE = {
+	color = rgb { 144 85 95 }
+	color_ui = rgb { 144 85 95 }
+}
+
+
+SEA = {
+	color = rgb { 69 128 224 }
+	color_ui = rgb { 69 128 224 }
+}
+
+
+ARE = {
+	color = rgb { 239 226 228 }
+	color_ui = rgb { 239 226 228 }
+}

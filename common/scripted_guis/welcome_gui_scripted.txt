@@ -1,0 +1,18 @@
+scripted_gui = {
+    welcome_gui = {
+        context_type = player_context
+        window_name = "welcome_gui"
+
+        visible = {
+            has_global_flag = show_welcome_gui
+			NOT = { has_global_flag = close_welcome_sign }
+        }
+		
+		effects = {
+		    close_welcome_button_click = {
+                name = "close_welcome_button"
+                set_global_flag = close_welcome_sign
+            }
+		}
+    }
+}

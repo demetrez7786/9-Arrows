@@ -1,0 +1,20 @@
+state={
+	id=38
+	name="STATE_38"
+	provinces={
+		307 625 1265 1698 1962 2167 2796 3826 5294 6193 8997 
+	}
+	
+	history={
+		owner = CEN
+		add_core_of = CEN
+		victory_points = { 8997 15 }
+		buildings = {
+		8997 = { naval_base = 3 }
+	    }
+	}
+	
+	buildings_max_level_factor=1.000
+    manpower=679000
+    state_category = town
+}

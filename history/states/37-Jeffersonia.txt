@@ -1,0 +1,17 @@
+state={
+	id=37
+	name="STATE_37"
+	provinces={
+		2328 8864 8890 8912 
+	}
+	
+	history={
+		owner = CEN
+		add_core_of = CEN
+		victory_points = { 8890 10 }
+	}
+	
+	buildings_max_level_factor=1.000
+    manpower=679000
+    state_category = town
+}

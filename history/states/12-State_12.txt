@@ -6,8 +6,8 @@ state={
 	}
 	
 	history={
-		owner = CEN
-		add_core_of = CEN
+		owner = ARE
+		add_core_of = ARE
 	}
 	
 	buildings_max_level_factor=1.000

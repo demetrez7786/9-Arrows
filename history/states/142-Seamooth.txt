@@ -1,0 +1,17 @@
+state={
+	id=142
+	name="STATE_142"
+	provinces={
+		67 112 375 812 830 855 862 1127 1139 1356 1366 1390 1602 1675 1955 2182 2215 2348 2631 3497 3975 4442 4444 4489 4635 4671 4936 4942 4952 4974 6268 6454 6508 6609 9287 9319 9331 9335 9336 9346 9354 9410 9415 9428 9435 
+	}
+	
+	history = {
+	    owner = SEA
+		add_core_of = SEA
+	}
+	
+	manpower=1000
+	buildings_max_level_factor=1
+	state_category=town
+	local_supplies=0
+}

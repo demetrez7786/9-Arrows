@@ -76,16 +76,19 @@ country_event = {
 	option = {
 		name = centralia.5.a
 		load_focus_tree = usc_democrats_focus
+		set_country_flag = CEN_democrats_won_again
 	}
 	
 	option = {
 		name = centralia.5.b
 		load_focus_tree = usc_populists_focus
+		set_country_flag = CEN_populists_won_the_election
 	}
 	
 	option = {
 		name = centralia.5.g
 		load_focus_tree = usc_republicans_focus
+		set_country_flag = CEN_republicans_finally_won
 	}
 }
 
@@ -129,5 +132,21 @@ country_event = {
         add_to_variable = { CEN_ws_industrial_capacity_dockyard = -0.30 }
         add_to_variable = { CEN_ws_industrial_capacity_factory = -0.30 }
 		add_to_variable = { CEN_ws_stability_factory = -0.30 }
+	}
+}
+
+# populists agree with alliance
+country_event = {
+	id = centralia.8
+	title = centralia.8.t
+	desc = centralia.8.d
+	picture = GFX_report_event_MDR_winter_massacre
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = centralia.8.a
+		add_political_power = 150
+		add_stability = 0.25
 	}
 }

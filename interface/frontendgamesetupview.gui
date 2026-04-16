@@ -43,7 +43,7 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "spirit_idea_entry"
-		size = { width=60 height=68 }
+		size = { width=100 height=68 }
 		clipping = no
 
 		iconType = {
@@ -112,7 +112,7 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "focus_entry"
-		size = { width=60 height=80}
+		size = { width=60 height=95}
 		clipping = no
 
 		iconType = {
@@ -130,7 +130,7 @@ guiTypes = {
 		buttonType = {
 			name = "country_leader"
 			quadTextureSprite ="GFX_leader_unknown"
-			position = { x = 17 y = 22 }
+			position = { x = 90 y = 22 }
 			scale=0.75
 			clicksound = click_checkbox
 		}
@@ -138,7 +138,7 @@ guiTypes = {
 		iconType = {
 			name = "country_flag"
 			quadTextureSprite ="GFX_shield_medium"
-			position = { x = 34 y = 188 }
+			position = { x = 106 y = 188 }
 			Orientation = "UPPER_LEFT"
 			alwaystransparent = yes
 		}
@@ -146,7 +146,7 @@ guiTypes = {
 		buttonType = {
 			name = "country"
 			quadTextureSprite = "GFX_country_selection_entry"
-			position = { x=0 y =0 }
+			position = { x=73 y =0 }
 			clicksound = click_checkbox
 		}
 		
@@ -159,7 +159,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "country_name"
-			position = { x = 8 y = 247 }
+			position = { x = 80 y = 247 }
 			font = "hoi_20b"
 			borderSize = {x = 0 y = 0}
 			maxWidth = 131
@@ -704,19 +704,18 @@ guiTypes = {
 				format = "UPPER_LEFT"
 			}
 		}
+		
+		iconType = {
+			name ="minor_portrait_overlay"
+			spriteType = "GFX_minor_portrait_overlay"
+			position = { x= 297 y = 435 }
+		}
 
 		iconType = {
 			name = "minor_country_leader"
 			quadTextureSprite ="GFX_leader_unknown"
-			position = { x = 289 y = 441 }
+			position = { x = 305 y = 443 }
 			scale=0.696
-			rotation=-0.04
-		}
-
-		iconType = {
-				name ="minor_portrait_overlay"
-				spriteType = "GFX_minor_portrait_overlay"
-				position = { x= 280 y = 430 }
 		}
 
 

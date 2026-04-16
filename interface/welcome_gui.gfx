@@ -1,0 +1,7 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_welcome_window"
+		texturefile = "gfx/interface/welcome_gui/welcome_window.png"
+	}
+}

@@ -1,0 +1,109 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_election_button"
+		texturefile = "gfx/interface/centralias_election_gui/election_button.png"
+	}
+	
+	spriteType = {
+		name = "GFX_election_window"
+		texturefile = "gfx/interface/centralias_election_gui/election_window.png"
+	}
+	
+	spriteType = {
+		name = "GFX_map_outline"
+		texturefile = "gfx/interface/centralias_election_gui/map_outline.png"
+	}
+	
+	spriteType = {
+		name = "GFX_republican"
+		texturefile = "gfx/interface/centralias_election_gui/republican.png"
+	}
+	
+	spriteType = {
+		name = "GFX_populist"
+		texturefile = "gfx/interface/centralias_election_gui/populist.png"
+	}
+	
+	spriteType = {
+		name = "GFX_democratic"
+		texturefile = "gfx/interface/centralias_election_gui/democratic.png"
+	}
+	
+	###states
+	
+	spriteType = {
+		name = "GFX_state_aridona"
+		texturefile = "gfx/interface/centralias_election_gui/state_aridona.png"
+	}
+	
+	spriteType = {
+		name = "GFX_state_cordillera"
+		texturefile = "gfx/interface/centralias_election_gui/state_cordillera.png"
+	}
+	
+	spriteType = {
+		name = "GFX_state_franklinia"
+		texturefile = "gfx/interface/centralias_election_gui/state_franklinia.png"
+	}
+	
+	spriteType = {
+		name = "GFX_state_gulflandia"
+		texturefile = "gfx/interface/centralias_election_gui/state_gulflandia.png"
+	}
+	
+	spriteType = {
+		name = "GFX_state_ironwood"
+		texturefile = "gfx/interface/centralias_election_gui/state_ironwood.png"
+	}
+	
+	spriteType = {
+		name = "GFX_state_kanawha"
+		texturefile = "gfx/interface/centralias_election_gui/state_kanawha.png"
+	}
+	
+	spriteType = {
+		name = "GFX_state_khan"
+		texturefile = "gfx/interface/centralias_election_gui/state_khan.png"
+	}
+	
+	spriteType = {
+		name = "GFX_state_north_kanata"
+		texturefile = "gfx/interface/centralias_election_gui/state_north_kanata.png"
+	}
+	
+	spriteType = {
+		name = "GFX_state_piedmont"
+		texturefile = "gfx/interface/centralias_election_gui/state_piedmont.png"
+	}
+	
+	spriteType = {
+		name = "GFX_state_sierra_alta"
+		texturefile = "gfx/interface/centralias_election_gui/state_sierra_alta.png"
+	}
+	
+	spriteType = {
+		name = "GFX_state_south_kanata"
+		texturefile = "gfx/interface/centralias_election_gui/state_south_kanata.png"
+	}
+	
+	spriteType = {
+		name = "GFX_state_veronia"
+		texturefile = "gfx/interface/centralias_election_gui/state_veronia.png"
+	}
+	
+	spriteType = {
+		name = "GFX_states_three_sisters"
+		texturefile = "gfx/interface/centralias_election_gui/states_three_sisters.png"
+	}
+	
+	spriteType = {
+		name = "GFX_state_oakhaven"
+		texturefile = "gfx/interface/centralias_election_gui/state_oakhaven.png"
+	}
+	
+	spriteType = {
+		name = "GFX_empty_picture"
+		texturefile = "gfx/interface/centralias_election_gui/empty_picture.png"
+	}
+}

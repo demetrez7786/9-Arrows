@@ -1,0 +1,179 @@
+###names
+
+defined_text = {
+    name = get_state_name
+
+    text = {
+        trigger = {
+            has_variable = CEN_gulflandia_selected
+        }
+        localization_key = "gulflandia_select"
+    }
+
+    text = {
+        trigger = {
+            has_variable = CEN_oakhaven_selected
+        }
+        localization_key = "oakhaven_select"
+    }
+
+    text = {
+        trigger = {
+            has_variable = CEN_aridona_selected
+        }
+        localization_key = "aridona_select"
+    }
+
+    text = {
+        trigger = {
+            has_variable = CEN_cordillera_selected
+        }
+        localization_key = "cordillera_select"
+    }
+
+    text = {
+        trigger = {
+            has_variable = CEN_franklinia_selected
+        }
+        localization_key = "franklinia_select"
+    }
+
+    text = {
+        trigger = {
+            has_variable = CEN_ironwood_selected
+        }
+        localization_key = "ironwood_select"
+    }
+
+    text = {
+        trigger = {
+            has_variable = CEN_kanawha_selected
+        }
+        localization_key = "kanawha_select"
+    }
+
+    text = {
+        trigger = {
+            has_variable = CEN_khan_selected
+        }
+        localization_key = "khan_select"
+    }
+    
+    text = {
+        trigger = {
+            has_variable = CEN_north_kanata_selected
+        }
+        localization_key = "north_kanata_select"
+    }
+
+    text = {
+        trigger = {
+            has_variable = CEN_south_kanata_selected
+        }
+        localization_key = "south_kanata_select"
+    }
+	
+	text = {
+        trigger = {
+            has_variable = CEN_piedmont_selected
+        }
+        localization_key = "piedmont_select"
+    }
+	
+	text = {
+        trigger = {
+            has_variable = CEN_sierra_alta_selected
+        }
+        localization_key = "sierra_alta_select"
+    }
+	
+	text = {
+        trigger = {
+            has_variable = CEN_veronia_selected
+        }
+        localization_key = "veronia_select"
+    }
+	
+	text = {
+        trigger = {
+            has_variable = CEN_three_sisters_selected
+        }
+        localization_key = "three_sisters_select"
+    }
+}
+
+## Images of city
+
+defined_text = {
+    name = get_empty_picture
+
+    text = {
+        trigger = {
+            has_variable = CHE_grozny_selected
+        }
+        localization_key = "GFX_Grozny_image"
+    }
+
+    text = {
+        trigger = {
+            has_variable = CHE_north_chechnya_selected
+        }
+        localization_key = "GFX_North_Chechnya_image"
+    }
+
+    text = {
+        trigger = {
+            has_variable = CHE_groznensky_district_selected
+        }
+        localization_key = "GFX_Groznensky_District_image"
+    }
+
+    text = {
+        trigger = {
+            has_variable = CHE_south_chechnya_selected
+        }
+        localization_key = "GFX_South_Chechnya_image"
+    }
+
+    text = {
+        trigger = {
+            has_variable = CHE_achoi_martanovsky_district_selected
+        }
+        localization_key = "GFX_Achoi_Martanovsky_image"
+    }
+
+    text = {
+        trigger = {
+            has_variable = CHE_gudemarsky_district_selected
+        }
+        localization_key = "GFX_Gudermes_image"
+    }
+
+    text = {
+        trigger = {
+            has_variable = CHE_shalinsky_district_selected
+        }
+        localization_key = "GFX_Shalinsky_District_image"
+    }
+
+    text = {
+        trigger = {
+            has_variable = CHE_shatoisky_district_selected
+        }
+        localization_key = "GFX_Shatoisky_District_image"
+    }
+    
+    text = {
+        trigger = {
+            has_variable = CHE_vedensky_district_selected
+        }
+        localization_key = "GFX_Vedensky_District_image"
+    }
+
+    text = {
+        trigger = {
+            has_variable = CHE_urus_martonovsky_district_selected
+        }
+        localization_key = "GFX_Urus_Martanovsky_District_image"
+    }
+}

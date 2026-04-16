@@ -1,0 +1,55 @@
+guiTypes = {
+    containerWindowType = {
+        name = "welcome_gui"
+        position = { x = 0 y = 0 }
+        size = { width = 1300 height = 770 }
+        orientation = CENTER
+        origo = CENTER
+        moveable = no
+
+        background = {
+            name = "background"
+            spriteType = "GFX_welcome_window"
+        }
+		
+		instantTextBoxType = {
+            name = "welcome_text"
+            position = { x = 570 y = 100 }
+            font = "hoi_36header"
+            text = "WELCOME IN COPPER-9: SO FAR FROM EARTH"
+            maxWidth = 800
+            maxHeight = 400
+            format = left
+        }
+		
+		instantTextBoxType = {
+            name = "made_by_text"
+            position = { x = 85 y = 240 }
+            font = "hoi_24header"
+            text = "made_by_text_loc" #I needed localization for this one T_T
+            maxWidth = 800
+            maxHeight = 400
+            format = left
+        }
+		
+		instantTextBoxType = {
+            name = "warning_text"
+            position = { x = 500 y = 290 }
+            font = "hoi_36header"
+            text = "warning_text_loc" #I needed localization for this one T_T
+            maxWidth = 800
+            maxHeight = 400
+            format = left
+        }
+		
+		buttonType = {
+			name = "close_welcome_button"
+			position = { x = 1235 y = 23 }
+			quadTextureSprite = "GFX_closebutton"
+			pdx_tooltip = "CLOSE"
+			clicksound = click_close
+			shortcut = "ESCAPE"
+			scale = 1.2
+		}
+    }
+}

@@ -1,0 +1,26 @@
+CEN_counter_terrorism_cat = {
+	priority = 999
+	visible_when_empty = no
+	icon = GFX_decision_cat_mdr_parliament
+	allowed = {
+		original_tag = CEN
+	}
+	visible = {
+		has_country_flag = CEN_start_counter_terrorism
+	}
+}
+
+CEN_election_cat = {
+	priority = 999
+	visible_when_empty = yes
+	icon = GFX_decision_cat_mdr_parliament
+	
+	scripted_gui = centralias_election_gui
+	
+	allowed = {
+		original_tag = CEN
+	}
+	visible = {
+		has_completed_focus = CEN_last_bastion_of_democracy
+	}
+}

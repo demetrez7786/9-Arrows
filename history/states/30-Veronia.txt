@@ -1,0 +1,17 @@
+state={
+	id=30
+	name="STATE_30"
+	provinces={
+		220 315 768 1302 1303 1435 1503 2162 2307 2652 2807 3147 3156 3304 3388 3842 4115 4750 5061 5287 5663 5793 5953 8236 8246 8264 8286 8293 8342 8358 8382 8393 8398 8403 8404 8447 8467 8471 8522 8611 
+	}
+	
+	history={
+		owner = CEN
+		add_core_of = CEN
+		victory_points = { 8398 25 }
+	}
+	
+	buildings_max_level_factor=1.000
+    manpower=2354000
+    state_category = city
+}

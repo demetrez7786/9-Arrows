@@ -36,9 +36,12 @@ add_ideas = {
     CEN_the_bastion_of_democracy
     CEN_doormans_terrorism
 	CEN_populists_riots
+	CEN_sleeping_giant
+	disarmed_nation
 	open_borders
 	the_free_media
 	secularism
+	normal_security_spending
 }
 
 recruit_character = USC_khan_doorman

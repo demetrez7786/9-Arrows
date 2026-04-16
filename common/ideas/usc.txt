@@ -108,5 +108,46 @@ ideas = {
 				populism_drift = 0.01
 			}
 		}
+		
+		CEN_sleeping_giant = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = CEN_populists_protest
+			
+			modifier = {
+			    political_power_factor = 0.01
+				war_support_factor = -0.35
+			}
+		}
+		
+		CEN_corporate_partnerships = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = CEN_populists_protest
+			
+			modifier = {
+			    political_power_factor = 0.01
+				stability_factor = 0.1
+				consumer_goods_factor = -0.1
+			}
+		}
 	}
 }	

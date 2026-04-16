@@ -1,0 +1,17 @@
+state={
+	id=50
+	name="STATE_50"
+	provinces={
+		3400 4310 5286 9753 9761 9772 9780 
+	}
+	
+	history={
+		owner = ALE
+		add_core_of = ALE
+		victory_points = { 5286 50 }
+	}
+	
+	buildings_max_level_factor=1.000
+    manpower=10000
+    state_category = metropolis
+}

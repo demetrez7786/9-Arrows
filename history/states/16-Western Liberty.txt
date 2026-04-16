@@ -1,0 +1,21 @@
+state={
+	id=16
+	name="STATE_16"
+	provinces={
+		2049 2934 3064 4772 4838 5159 5418 6619 7274 7337 
+	}
+	
+	history={
+		owner = CEN
+		add_core_of = CEN
+		victory_points = { 7337 5 }
+		victory_points = { 7274 5 }
+		buildings = {
+		7274 = { naval_base = 2 }
+	    }
+	}
+	
+	buildings_max_level_factor=1.000
+    manpower=3000
+    state_category = small_island
+}

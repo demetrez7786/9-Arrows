@@ -8,10 +8,10 @@ state={
 	history={
 		owner = CEN
 		add_core_of = CEN
-		victory_points= { 3777 40 }
+		victory_points= { 3777 50 }
 	}
 	
-	manpower=7450600
+	manpower=12450600
 	buildings_max_level_factor=1
 	state_category=large_city
 	local_supplies=0

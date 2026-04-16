@@ -1,0 +1,19 @@
+state={
+	id=143
+	name="STATE_143"
+	provinces={
+		166 196 254 288 822 889 1360 1893 1918 2306 2408 3301 3554 3763 4262 4316 4470 5094 6208 6231 6380 6514 7631 7632 7647 7701 7743 7746 7795 7860 7900 7974 8036 
+	}
+	
+	history = {
+	    owner = CEN
+		add_core_of = CEN
+		victory_points = { 7974 15 }
+		victory_points = { 7743 15 }
+	}
+	
+	manpower=5340000
+	buildings_max_level_factor=1
+	state_category=city
+	local_supplies=0
+}

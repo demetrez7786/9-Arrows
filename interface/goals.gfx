@@ -490,6 +490,7 @@ spriteTypes = {
 	SpriteType = {
 	name = "GFX_MUR_failing_economy"
 	texturefile = "gfx/interface/goals/MUR_failing_economy.png"
+	transparencecheck = yes
 	}
 	
 	SpriteType = {
@@ -520,6 +521,7 @@ spriteTypes = {
 	SpriteType = {
 	name = "GFX_MUR_attack_communists"
 	texturefile = "gfx/interface/goals/MUR_attack_communists.png"
+	transparencecheck = yes
 	}
 	
 	SpriteType = {
@@ -545,6 +547,7 @@ spriteTypes = {
 	SpriteType = {
 	name = "GFX_MUR_failing_empire"
 	texturefile = "gfx/interface/goals/MUR_failing_empire.png"
+	transparencecheck = yes
 	}
 	
 	SpriteType = {
@@ -580,6 +583,7 @@ spriteTypes = {
 	SpriteType = {
 	name = "GFX_CEN_upcoming_elections"
 	texturefile = "gfx/interface/goals/CEN_upcoming_elections.png"
+	transparencecheck = yes
 	}
 	
 	SpriteType = {
@@ -635,11 +639,13 @@ spriteTypes = {
 	SpriteType = {
 	name = "GFX_CEN_status_of_the_eagle"
 	texturefile = "gfx/interface/goals/CEN_status_of_the_eagle.png"
+	transparencecheck = yes
 	}
 	
 	SpriteType = {
 	name = "GFX_CEN_last_bastion_of_democracy"
 	texturefile = "gfx/interface/goals/CEN_last_bastion_of_democracy.png"
+	transparencecheck = yes
 	}
 	
 	SpriteType = {
@@ -785,6 +791,7 @@ spriteTypes = {
 	SpriteType = {
 	name = "GFX_UNI_this_is_not_working"
 	texturefile = "gfx/interface/goals/UNI_this_is_not_working.png"
+	transparencecheck = yes
 	}
 	
 	SpriteType = {
@@ -810,11 +817,13 @@ spriteTypes = {
 	SpriteType = {
 	name = "GFX_UNI_aftermath_of_karlt_wars"
 	texturefile = "gfx/interface/goals/UNI_aftermath_of_karlt_wars.png"
+	transparencecheck = yes
 	}
 	
 	SpriteType = {
 	name = "GFX_UNI_begin_the_work"
 	texturefile = "gfx/interface/goals/UNI_begin_the_work.png"
+	transparencecheck = yes
 	}
 	
 	SpriteType = {

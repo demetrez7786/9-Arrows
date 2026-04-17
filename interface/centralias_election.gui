@@ -137,7 +137,7 @@ guiTypes = {
 		}
 
 		buttonType = {
-			name = "cirdillera_button"
+			name = "cordillera_button"
 			position = { x = 585 y = 210 }
 			spriteType = "GFX_state_cordillera"
 			clicksound = click_ok

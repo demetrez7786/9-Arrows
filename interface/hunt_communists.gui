@@ -1,0 +1,78 @@
+guiTypes = {
+	containerWindowType = {
+		name = "hunt_communists_gui"
+		size = { width = 345 height = 220 }
+		position = { x = 0 y = 0 }
+
+		buttonType = {
+			name = "operation_button"
+			spriteType = "GFX_operation_button"
+			position = { x = 175 y = 25 }
+			pdx_tooltip = "[CAT_OPENING]"
+			clicksound = click_ok
+			oversound = ui_menu_over
+		}
+
+
+    }
+
+	containerWindowType = {
+		name = "operation_main_screen_window"
+		size = { width = 1500 height = 900 }
+		position = { x = 0 y = 0 }
+		orientation = center
+		origo = center
+
+		background = {
+			name = "Background"
+			quadTextureSprite = "GFX_hunt_communists_window"
+		}
+
+		buttonType = {
+			name = "close_operation_map_button"
+			position = { x = 1447 y = 22 }
+			quadTextureSprite = "GFX_closebutton"
+			pdx_tooltip = "CLOSE"
+			clicksound = click_close
+			shortcut = "ESCAPE"
+		}
+
+		buttonType = {
+			name = "attack_communists_button"
+			spriteType = "GFX_attack_button"
+			position = { x = 25 y = 825 }
+			buttonText = ""
+			buttonFont = "hoi_16mbs"
+			pdx_tooltip = "attack_communists_tt"
+			clicksound = click_close
+			oversound = ui_menu_over
+		}
+
+		buttonType = {
+			name = "spread_misinformation_button"
+			spriteType = "GFX_misinformation_button"
+			position = { x = 25 y = 765 }
+			buttonText = ""
+			buttonFont = "hoi_16mbs"
+			pdx_tooltip = "spread_misinformation_tt"
+			clicksound = click_close
+			oversound = ui_menu_over
+		}
+
+		instantTextBoxType = {
+			name ="DEL_communists_popularity_value"
+			position = { x = 1025 y = 745 }
+			font = "hoi_30header"
+			text = "DEL_communists_popularity"
+			format = centre
+			maxWidth = 450
+		}
+
+		iconType = {
+            name = "communists_symbols"
+            position = { x = 810 y = 640 }
+            spriteType = "GFX_communists_symbols"
+			scale = 0.8
+        }
+    }
+}

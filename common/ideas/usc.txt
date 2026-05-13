@@ -121,11 +121,11 @@ ideas = {
 
 			removal_cost = -1
 			
-			picture = CEN_populists_protest
+			picture = CEN_sleeping_giant
 			
 			modifier = {
 			    political_power_factor = 0.01
-				war_support_factor = -0.35
+				war_support_factor = -0.4
 			}
 		}
 		
@@ -141,7 +141,7 @@ ideas = {
 
 			removal_cost = -1
 			
-			picture = CEN_populists_protest
+			picture = CEN_coorporate_partnerships
 			
 			modifier = {
 			    political_power_factor = 0.01

@@ -46,9 +46,9 @@ set_politics = {
 }
 
 set_popularities = {
-	monarchism = 62
+	monarchism = 59
 	liberalism = 13
-	nationalism = 8
+	nationalism = 11
 	socialism = 7
 	militarism = 10
 }

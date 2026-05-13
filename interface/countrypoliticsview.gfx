@@ -570,6 +570,21 @@ spriteTypes = {
 	}
 	
 	spriteType = {
+		name = "GFX_ideology_republicans_party"
+		texturefile = "gfx/interface/ideologies/republicans_party.png"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_kprf_again"
+		texturefile = "gfx/interface/ideologies/kprf_again.png"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_centralian_populism_party"
+		texturefile = "gfx/interface/ideologies/centralian_populism_party.png"
+	}
+	
+	spriteType = {
 		name = "GFX_ideology_officers_council"
 		texturefile = "gfx/interface/ideologies/officers_council.png"
 	}

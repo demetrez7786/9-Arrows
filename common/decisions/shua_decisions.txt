@@ -2,7 +2,7 @@ SHU_staging_the_attack {
     
 	SHU_gather_the_guns = {
 
-		icon = GFX_decision_generic_assassination
+		icon = GFX_decision_guns
 
 		ai_will_do = {
 			base = 100
@@ -35,7 +35,7 @@ SHU_staging_the_attack {
 	
 	SHU_lower_the_guard = {
 
-		icon = GFX_decision_generic_assassination
+		icon = GFX_decision_guard
 
 		ai_will_do = {
 			base = 100
@@ -68,7 +68,7 @@ SHU_staging_the_attack {
 	
 	SHU_prepare_the_government_media = {
 
-		icon = GFX_decision_generic_assassination
+		icon = GFX_decision_media
 
 		ai_will_do = {
 			base = 100
@@ -101,7 +101,7 @@ SHU_staging_the_attack {
 	
 	SHU_launch_the_attack = {
 
-		icon = GFX_decision_generic_assassination
+		icon = GFX_decision_fire
 
 		ai_will_do = {
 			base = 100
@@ -138,7 +138,7 @@ SHU_take_vesta = {
 
     SHU_take_vesta_in_days = {
 
-		icon = GFX_decision_generic_ignite_civil_war
+		icon = GFX_decision_soldier
 		is_good = no
 		selectable_mission = no
 		fire_only_once = yes

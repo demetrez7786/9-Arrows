@@ -3,6 +3,86 @@ spriteTypes = {
 	#### Murder drones icons
 	
 	SpriteType = {
+	name = "GFX_DEL_control_economy"
+	texturefile = "gfx/interface/goals/DEL_control_economy.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_DEL_control_the_army"
+	texturefile = "gfx/interface/goals/DEL_control_the_army.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_DEL_centralization_completed"
+	texturefile = "gfx/interface/goals/DEL_centralization_completed.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_DEL_constitutional_reform"
+	texturefile = "gfx/interface/goals/DEL_constitutional_reform.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_DEL_execute_murman_simps"
+	texturefile = "gfx/interface/goals/DEL_execute_murman_simps.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_DEL_hunt_christians"
+	texturefile = "gfx/interface/goals/DEL_hunt_christians.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_DEL_raid_operations"
+	texturefile = "gfx/interface/goals/DEL_raid_operations.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_DEL_hunt_opposition"
+	texturefile = "gfx/interface/goals/DEL_hunt_opposition.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_DEL_massive_parade"
+	texturefile = "gfx/interface/goals/DEL_massive_parade.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_DEL_heroism_award"
+	texturefile = "gfx/interface/goals/DEL_heroism_award.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_DEL_form_right_wing_youth_group"
+	texturefile = "gfx/interface/goals/DEL_form_right_wing_youth_group.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_DEL_puppet_constitutional_court"
+	texturefile = "gfx/interface/goals/DEL_puppet_constitutional_court.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_DEL_purge_generals"
+	texturefile = "gfx/interface/goals/DEL_purge_generals.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_DEL_purge_mps"
+	texturefile = "gfx/interface/goals/DEL_purge_mps.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_DEL_form_national_guard"
+	texturefile = "gfx/interface/goals/DEL_form_national_guard.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_DEL_centralization"
+	texturefile = "gfx/interface/goals/DEL_centralization.png"
+	}
+	
+	SpriteType = {
 	name = "GFX_CEN_set_up_border_defence"
 	texturefile = "gfx/interface/goals/CEN_set_up_border_defence.png"
 	}
@@ -490,7 +570,6 @@ spriteTypes = {
 	SpriteType = {
 	name = "GFX_MUR_failing_economy"
 	texturefile = "gfx/interface/goals/MUR_failing_economy.png"
-	transparencecheck = yes
 	}
 	
 	SpriteType = {
@@ -521,7 +600,6 @@ spriteTypes = {
 	SpriteType = {
 	name = "GFX_MUR_attack_communists"
 	texturefile = "gfx/interface/goals/MUR_attack_communists.png"
-	transparencecheck = yes
 	}
 	
 	SpriteType = {
@@ -547,7 +625,6 @@ spriteTypes = {
 	SpriteType = {
 	name = "GFX_MUR_failing_empire"
 	texturefile = "gfx/interface/goals/MUR_failing_empire.png"
-	transparencecheck = yes
 	}
 	
 	SpriteType = {
@@ -583,7 +660,6 @@ spriteTypes = {
 	SpriteType = {
 	name = "GFX_CEN_upcoming_elections"
 	texturefile = "gfx/interface/goals/CEN_upcoming_elections.png"
-	transparencecheck = yes
 	}
 	
 	SpriteType = {
@@ -639,13 +715,11 @@ spriteTypes = {
 	SpriteType = {
 	name = "GFX_CEN_status_of_the_eagle"
 	texturefile = "gfx/interface/goals/CEN_status_of_the_eagle.png"
-	transparencecheck = yes
 	}
 	
 	SpriteType = {
 	name = "GFX_CEN_last_bastion_of_democracy"
 	texturefile = "gfx/interface/goals/CEN_last_bastion_of_democracy.png"
-	transparencecheck = yes
 	}
 	
 	SpriteType = {
@@ -791,7 +865,6 @@ spriteTypes = {
 	SpriteType = {
 	name = "GFX_UNI_this_is_not_working"
 	texturefile = "gfx/interface/goals/UNI_this_is_not_working.png"
-	transparencecheck = yes
 	}
 	
 	SpriteType = {
@@ -817,13 +890,11 @@ spriteTypes = {
 	SpriteType = {
 	name = "GFX_UNI_aftermath_of_karlt_wars"
 	texturefile = "gfx/interface/goals/UNI_aftermath_of_karlt_wars.png"
-	transparencecheck = yes
 	}
 	
 	SpriteType = {
 	name = "GFX_UNI_begin_the_work"
 	texturefile = "gfx/interface/goals/UNI_begin_the_work.png"
-	transparencecheck = yes
 	}
 	
 	SpriteType = {

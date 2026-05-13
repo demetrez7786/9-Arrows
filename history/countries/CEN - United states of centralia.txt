@@ -2,8 +2,6 @@ capital = 97
 
 set_research_slots = 4
 
-load_oob = "CEN_3172"
-
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
@@ -47,4 +45,6 @@ add_ideas = {
 }
 
 recruit_character = USC_khan_doorman
+recruit_character = USC_john_evan
+recruit_character = USC_peter_smith
 

@@ -2,7 +2,7 @@ MUR_negotiations {
     
 	MUR_demand_punishment_for_young_officers = {
 
-		icon = GFX_decision_generic_assassination
+		icon = GFX_decision_generic_signing_smth
 
 		ai_will_do = {
 			base = 100
@@ -33,7 +33,7 @@ MUR_negotiations {
 	
 	MUR_demand_reparations_for_damage = {
 
-		icon = GFX_decision_generic_assassination
+		icon = GFX_decision_generic_signing_smth
 
 		ai_will_do = {
 			base = 100
@@ -64,7 +64,7 @@ MUR_negotiations {
 	
 	MUR_demand_demilitarization_of_ports = {
 
-		icon = GFX_decision_generic_assassination
+		icon = GFX_decision_generic_signing_smth
 
 		ai_will_do = {
 			base = 100
@@ -95,7 +95,7 @@ MUR_negotiations {
 	
 	MUR_peace_have_been_achived = {
 
-		icon = GFX_decision_generic_assassination
+		icon = GFX_decision_generic_peace
 
 		ai_will_do = {
 			base = 100

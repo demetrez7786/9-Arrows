@@ -13,6 +13,20 @@ characters = {
 		}
 	}
 	
+	UNI_communist_party = {
+		name = "Communist Party"
+		portraits = {
+			civilian = {
+				large ="gfx/leaders/UNI/portrait_uni_communist_party.png"
+			}
+		}
+		country_leader = {
+			ideology = kprf_again
+			expire = "4950.1.1.1"
+			id = -1
+		}
+	}
+	
 	UNI_mikhail_sokolov = {
 		name = "Mikhail Sokolov" 
 		portraits = {

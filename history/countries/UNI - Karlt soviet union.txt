@@ -62,6 +62,7 @@ add_ideas = {
 }
 
 recruit_character = UNI_beriansk_edirashvili
+recruit_character = UNI_communist_party
 recruit_character = UNI_mikhail_sokolov
 recruit_character = UNI_viktor_volkov
 recruit_character = UNI_elena_petrova

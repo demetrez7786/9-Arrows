@@ -41,6 +41,62 @@ scripted_gui = {
 				set_variable = { CEN_show_election_window = 0 }
 			}
 			
+			campaign_in_here_button_click = { 
+				if = {
+					limit = {
+						pol_power > 14
+						NOT = {
+							has_country_flag = CEN_campaign_started
+							has_country_flag = CEN_discrediting_the_other_party
+						}
+					}
+					add_political_power = -15
+					set_country_flag = CEN_campaign_started
+					random_list = {
+					    50 = {
+					        country_event = {
+						        id = centralia.9
+						        days = 25
+					        }
+						}
+						50 = {
+					        country_event = {
+						        id = centralia.10
+						        days = 25
+					        }
+						}
+					}
+				}
+			}
+			
+			discredit_the_other_party_button_click = { 
+				if = {
+					limit = {
+						political_power > 24
+						NOT = {
+							has_country_flag = CEN_campaign_started
+							has_country_flag = CEN_discrediting_the_other_party
+						}
+					}
+					add_political_power = -25
+					set_country_flag = CEN_discrediting_the_other_party
+					random_list = {
+					    50 = {
+					        country_event = {
+						        id = centralia.11
+						        days = 25
+					        }
+						}
+						50 = {
+					        country_event = {
+						        id = centralia.12
+						        days = 25
+					        }
+						}
+					}
+				}
+			}
+			
 			###states
 			
 			oakhaven_button_click = {

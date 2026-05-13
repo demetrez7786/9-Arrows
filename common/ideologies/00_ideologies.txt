@@ -66,6 +66,8 @@ ideologies = {
 		types = {
 
 			conservatism_generic = { }
+			
+			republicans_party = { can_be_randomly_selected = no }
 
 		}
 
@@ -125,6 +127,8 @@ ideologies = {
 		types = {
 
 			populism_generic = { }
+			
+			centralian_populism_party = { can_be_randomly_selected = no }
 
 		}
 
@@ -245,6 +249,8 @@ ideologies = {
 			communism_generic = { }
 			
 			kprf = { can_be_randomly_selected = no }
+			
+			kprf_again = { can_be_randomly_selected = no }
 
 		}
 

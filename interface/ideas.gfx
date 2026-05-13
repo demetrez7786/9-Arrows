@@ -11,6 +11,16 @@ spriteTypes = {
 	}
 	
 	spriteType = {
+		name = "GFX_idea_CEN_coorporate_partnerships"
+		texturefile = "gfx/interface/ideas/CEN_coorporate_partnerships.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_CEN_sleeping_giant"
+		texturefile = "gfx/interface/ideas/CEN_sleeping_giant.png"
+	}
+	
+	spriteType = {
 		name = "GFX_idea_CEN_workers_strikes"
 		texturefile = "gfx/interface/ideas/CEN_workers_strikes.png"
 	}
@@ -228,6 +238,42 @@ spriteTypes = {
 	###################
 	### Desc Photos ###
 	###################
+	
+	spriteType = {
+		name = "GFX_idea_soviet_navy_desc_photo"
+		textureFile = "/gfx/interface/ideas/soviet_navy_desc_photo.png"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_idea_air_force_desc_photos"
+		textureFile = "/gfx/interface/ideas/air_force_desc_photos.png"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_idea_red_army_desc_photo"
+		textureFile = "/gfx/interface/ideas/red_army_desc_photo.png"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_idea_five_years_plans_desc_photo"
+		textureFile = "/gfx/interface/ideas/five_years_plans_desc_photo.png"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_idea_military_ads_desc_photo"
+		textureFile = "/gfx/interface/ideas/military_ads_desc_photo.png"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_idea_workers_strike_desc_photo"
+		textureFile = "/gfx/interface/ideas/workers_strike_desc_photo.png"
+		legacy_lazy_load = no
+	}
 	
 	spriteType = {
 		name = "GFX_idea_school_of_blitz_desc_photo"

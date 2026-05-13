@@ -1,0 +1,6 @@
+﻿l_english:
+ attack_communists_tt:0 "§LClick to raid communists bases. You can only start 1 attack at a time.\n§YDuration: §t15 days\n§YCost: §R15£GFX_command_power"
+ spread_misinformation_tt:0 "§LClick to spread misinformation against communists. You can only start 1 misinformation campaign at a time.\n§YDuration: §t20 days\n§YCost: §R10£GFX_command_power §R15£GFX_pol_power"
+ 
+ DEL_communists_popularity:0 "Communists Popularity in the Region: §R[?DEL_communists_popularity_value|%%]§!"
+ 

@@ -29,3 +29,32 @@ CEN_counter_terrorism_cat = {
 		}
 	}
 }
+
+CEN_election_cat = {
+    
+	CEN_incoming_elections = {
+
+		icon = GFX_decision_incoming_election
+		is_good = no
+		selectable_mission = no
+		fire_only_once = yes
+		days_mission_timeout = 185
+		
+		#Fail trigger
+		available = {
+			always = no
+		}
+
+		activation = {
+			always = no
+		}
+
+		complete_effect = {
+			
+		}
+
+		timeout_effect = {
+			country_event = { id = centralia.13 }
+		}
+	}
+}

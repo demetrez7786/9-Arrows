@@ -11,6 +11,54 @@ country_event = {
 	
 	option = {
 		name = shua.1.a
+		add_political_power = 150
+		add_stability = -0.25
+		add_war_support = -0.25
+		set_party_name = {
+            ideology = communism
+            long_name = SHU_communism_party_after_pact_long
+            name = SHU_communism_party_after_pact
+        }
+		set_party_name = {
+            ideology = liberalism
+            long_name = SHU_liberalism_party_after_pact_long
+            name = SHU_liberalism_party_after_pact
+        }
+		set_party_name = {
+            ideology = populism
+            long_name = SHU_populism_party_after_pact_long
+            name = SHU_populism_party_after_pact
+        }
+		set_party_name = {
+            ideology = anarchism
+            long_name = SHU_anarchism_party_after_pact_long
+            name = SHU_anarchism_party_after_pact
+        }
+		set_party_name = {
+            ideology = syndicalism
+            long_name = SHU_syndicalism_party_after_pact_long
+            name = SHU_syndicalism_party_after_pact
+        }
+		add_popularity = {
+		    ideology = communism
+			popularity = -1
+		}
+		add_popularity = {
+		    ideology = liberalism
+			popularity = -1
+		}
+		add_popularity = {
+		    ideology = populism
+			popularity = -1
+		}
+		add_popularity = {
+		    ideology = anarchism
+			popularity = -1
+		}
+		add_popularity = {
+		    ideology = syndicalism
+			popularity = -1
+		}
 		set_country_flag = SHU_terrorist_attack_happened
 	}
 }
@@ -20,12 +68,13 @@ country_event = {
 	id = shua.2
 	title = shua.2.t
 	desc = shua.2.d
-	picture = GFX_report_event_SHU_attack_on_parliament
+	picture = GFX_report_event_SHU_long_knives
 	
 	is_triggered_only = yes
 	
 	option = {
 		name = shua.2.a
+		add_manpower = -12
 		hidden_effect = {
 		    country_event = {
 			    id = shua.3
@@ -40,12 +89,13 @@ country_event = {
 	id = shua.3
 	title = shua.3.t
 	desc = shua.3.d
-	picture = GFX_report_event_SHU_attack_on_parliament
+	picture = GFX_report_event_SHU_long_knives
 	
 	is_triggered_only = yes
 	
 	option = {
 		name = shua.3.a
+		add_manpower = -73
 		hidden_effect = {
 		    country_event = {
 			    id = shua.4
@@ -60,12 +110,13 @@ country_event = {
 	id = shua.4
 	title = shua.4.t
 	desc = shua.4.d
-	picture = GFX_report_event_SHU_attack_on_parliament
+	picture = GFX_report_event_SHU_long_knives
 	
 	is_triggered_only = yes
 	
 	option = {
 		name = shua.4.a
+		add_manpower = -91
 		hidden_effect = {
 		    country_event = {
 			    id = shua.5
@@ -80,12 +131,13 @@ country_event = {
 	id = shua.5
 	title = shua.5.t
 	desc = shua.5.d
-	picture = GFX_report_event_SHU_attack_on_parliament
+	picture = GFX_report_event_SHU_long_knives
 	
 	is_triggered_only = yes
 	
 	option = {
 		name = shua.5.a
+		add_manpower = -9
 	}
 }
 
@@ -94,12 +146,14 @@ country_event = {
 	id = shua.6
 	title = shua.6.t
 	desc = shua.6.d
-	picture = GFX_report_event_SHU_attack_on_parliament
+	picture = GFX_report_event_SHU_soldiers_oath
 	
 	is_triggered_only = yes
 	
 	option = {
 		name = shua.6.a
+		add_manpower = 1500
+		add_war_support = 0.025
 	}
 }
 
@@ -108,7 +162,7 @@ country_event = {
 	id = shua.7
 	title = shua.7.t
 	desc = shua.7.d
-	picture = GFX_report_event_SHU_attack_on_parliament
+	picture = GFX_report_event_SHU_anschluss
 	
 	is_triggered_only = yes
 	
@@ -128,11 +182,9 @@ country_event = {
 	id = shua.8
 	title = shua.8.t
 	desc = shua.8.d
-	picture = GFX_report_event_SHU_attack_on_parliament
+	picture = GFX_report_event_SHU_emirate_at_war
 	
-	trigger = {
-		ISL = { has_war_with = JEW }
-	}
+	is_triggered_only = yes
 	
 	option = {
 		name = shua.8.a
@@ -145,13 +197,13 @@ country_event = {
 	id = shua.9
 	title = shua.9.t
 	desc = shua.9.d
-	picture = GFX_report_event_SHU_attack_on_parliament
+	picture = GFX_report_event_SHU_landing_failed
 	
 	is_triggered_only = yes
 	
 	option = {
 		name = shua.9.a
-		add_war_support = -0.1
+		add_war_support = -0.15
 		add_popularity = {
 		    ideology = nationalism
 			popularity = -0.15
@@ -164,7 +216,7 @@ country_event = {
 	id = shua.10
 	title = shua.10.t
 	desc = shua.10.d
-	picture = GFX_report_event_SHU_attack_on_parliament
+	picture = GFX_report_event_SHU_education
 	
 	is_triggered_only = yes
 	
@@ -179,9 +231,12 @@ country_event = {
 	id = shua.11
 	title = shua.11.t
 	desc = shua.11.d
-	picture = GFX_report_event_SHU_attack_on_parliament
+	picture = GFX_report_event_SHU_take_vesta
+	
+	fire_only_once = yes
 	
 	trigger = {
+	    tag = SHU
 		SHU = { has_war_with = VES }
 	}
 	

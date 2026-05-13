@@ -5,7 +5,7 @@ country_event = {
 	id = emirate.1
 	title = emirate.1.t
 	desc = emirate.1.d
-	picture = GFX_report_event_SHU_attack_on_parliament
+	picture = GFX_report_event_SHU_emirate_at_war
 	
 	is_triggered_only = yes
 	
@@ -15,5 +15,14 @@ country_event = {
             target = JEW
             type = annex_everything
         }
+		SHU = {
+		country_event = {
+	        id = shua.8
+			days = 3
+		}
+		}
+		hidden_effect = {
+		    news_event = { id = news.12 }
+		}
 	}
 }

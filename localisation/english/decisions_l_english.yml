@@ -1,18 +1,27 @@
 ﻿l_english:
  
+ DEL_protest:0 "Protest"
+ DEL_protest_escalating:0 "Protest Escalating"
  DEL_negotiations:0 "Negotiations"
  DEL_negotiations_desc:0 "We must de-escalate to avoid another war. \n\n §7Progress:§! [?DEL_progress|.01%%+]"
  
  MUR_negotiations:0 "Negotiations"
  MUR_negotiations_desc:0 "We must de-escalate to avoid another war. \n\n §7Progress:§! [?MUR_progress|.01%%+]"
+ MUR_demand_punishment_for_young_officers:0 "Demand Punishment for Young Officers"
+ MUR_demand_reparations_for_damage:0 "Demand Reparations for Damage"
+ MUR_demand_demilitarization_of_ports:0 "Demand Demilitarization of Ports"
+ MUR_peace_have_been_achived:0 "Peace has been Achived!"
  
  SHU_staging_the_attack:0 "Staging the Attack"
  SHU_staging_the_attack_desc:0 "We must stage the attack and then blame the opposition for it to justify our authoritarianism. \n\n §7Readiness for Attack:§! [?readiness_for_attack|.01%%+]"
  SHU_gather_the_guns:0 "Gather the Guns"
  SHU_lower_the_guard:0 "Lower the Guard"
  SHU_prepare_the_government_media:0 "Prepare the Government Media"
+ SHU_take_vesta:0 "Take Vesta"
+ SHU_take_vesta_in_days:0 "Take Vesta in 30 Days"
 
-
+ CEN_election_cat:0 "Election"
+ CEN_incoming_elections:0 "Incoming Election"
 
 
 

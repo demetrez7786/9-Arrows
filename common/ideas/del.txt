@@ -41,7 +41,7 @@ ideas = {
 			}
 		}
 		
-		DEL_desrters_issue = {
+		DEL_deserters_issue = {
 			
 			allowed = {
 				always = yes
@@ -75,13 +75,13 @@ ideas = {
 			picture = RES_element_of_suprise
 			
 			modifier = {
-			    production_speed_dockyard_factor = 0.5 
-				production_cost_max_convoy = -0.5
-                production_cost_max_ship_hull_submarine = -0.5
-                production_cost_max_ship_hull_light = -0.5
-                production_cost_max_ship_hull_heavy = -0.5
-                production_cost_max_ship_hull_cruiser = -0.5
-                production_cost_max_ship_hull_carrier = -0.5
+			    production_speed_dockyard_factor = 0.5
+				production_cost_max_convoy = -5000
+                production_cost_max_ship_hull_submarine = -5000
+                production_cost_max_ship_hull_light = -5000
+                production_cost_max_ship_hull_heavy = -5000
+                production_cost_max_ship_hull_cruiser = -5000
+                production_cost_max_ship_hull_carrier = -5000
 			}
 		}
 	}

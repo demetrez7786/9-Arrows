@@ -77,7 +77,7 @@ focus_tree = {
 	focus = {
 		id = del_military_branch
 		icon = GFX_DEL_aftermath_of_elections
-		x = 23
+		x = 27
 		y = 1
 
 		cost = 1
@@ -87,7 +87,307 @@ focus_tree = {
 		}
 
 		available = {
-			has_completed_focus = del_control_the_economy
+			has_completed_focus = del_control_the_army
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            country_event = { id = delta.1 }
+		}
+	}
+
+	focus = {
+		id = del_land_force
+		icon = GFX_DEL_aftermath_of_elections
+		x = 23
+		y = 3
+		prerequisite = { focus = del_military_branch }
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            country_event = { id = delta.1 }
+		}
+	}
+
+	focus = {
+		id = del_extend_mandatory_trainng
+		icon = GFX_DEL_aftermath_of_elections
+		x = 21
+		y = 5
+		prerequisite = { focus = del_land_force }
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            country_event = { id = delta.1 }
+		}
+	}
+
+	focus = {
+		id = del_extend_conscription
+		icon = GFX_DEL_aftermath_of_elections
+		x = 23
+		y = 5
+		prerequisite = { focus = del_land_force }
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            country_event = { id = delta.1 }
+		}
+	}
+
+	focus = {
+		id = del_form_military_academy
+		icon = GFX_DEL_aftermath_of_elections
+		x = 19
+		y = 5
+		prerequisite = { focus = del_land_force }
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            country_event = { id = delta.1 }
+		}
+	}
+
+	focus = {
+		id = del_fund_warlords
+		icon = GFX_DEL_aftermath_of_elections
+		x = 20
+		y = 7
+		prerequisite = { focus = del_land_force }
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            country_event = { id = delta.1 }
+		}
+	}
+
+	focus = {
+		id = del_modernize_equipment
+		icon = GFX_DEL_aftermath_of_elections
+		x = 22
+		y = 7
+		prerequisite = { focus = del_land_force }
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            country_event = { id = delta.1 }
+		}
+	}
+
+	focus = {
+		id = del_race_in_sea
+		icon = GFX_DEL_aftermath_of_elections
+		x = 31
+		y = 3
+		prerequisite = { focus = del_military_branch }
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            country_event = { id = delta.1 }
+		}
+	}
+
+	focus = {
+		id = del_new_port
+		icon = GFX_DEL_aftermath_of_elections
+		x = 31
+		y = 5
+		prerequisite = { focus = del_race_in_sea }
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            country_event = { id = delta.1 }
+		}
+	}
+
+	focus = {
+		id = del_fund_her_navy
+		icon = GFX_DEL_aftermath_of_elections
+		x = 33
+		y = 5
+		prerequisite = { focus = del_race_in_sea }
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            country_event = { id = delta.1 }
+		}
+	}
+
+	focus = {
+		id = del_new_ships
+		icon = GFX_DEL_aftermath_of_elections
+		x = 35
+		y = 5
+		prerequisite = { focus = del_race_in_sea }
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
 		}
 		
 		bypass = {
@@ -198,6 +498,196 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = del_guns_for_me
+		icon = GFX_DEL_aftermath_of_elections
+		x = 12
+		y = 5
+		prerequisite = { focus = del_four_bigs }
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            country_event = { id = delta.1 }
+		}
+	}
+
+	focus = {
+		id = del_industrialize_countryside
+		icon = GFX_DEL_aftermath_of_elections
+		x = 15
+		y = 7
+		prerequisite = { focus = del_four_bigs }
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            country_event = { id = delta.1 }
+		}
+	}
+
+	focus = {
+		id = del_invest_into_dockyards
+		icon = GFX_DEL_aftermath_of_elections
+		x = 13
+		y = 7
+		prerequisite = { focus = del_four_bigs }
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            country_event = { id = delta.1 }
+		}
+	}
+
+	focus = {
+		id = del_surgical_therapy
+		icon = GFX_DEL_aftermath_of_elections
+		x = 14
+		y = 9
+		prerequisite = { focus = del_guns_for_me }
+		prerequisite = { focus = del_hammer_for_me }
+		prerequisite = { focus = del_oligarchs_night }
+		prerequisite = { focus = del_invest_into_dockyards }
+		prerequisite = { focus = del_industrialize_countryside }
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			has_country_flag = DEMETRE_sorry_this_is_for_next_update
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            country_event = { id = delta.1 }
+		}
+	}
+
+	focus = {
+		id = del_hammer_for_me
+		icon = GFX_DEL_aftermath_of_elections
+		x = 14
+		y = 5
+		prerequisite = { focus = del_four_bigs }
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            country_event = { id = delta.1 }
+		}
+	}
+
+	focus = {
+		id = del_oligarchs_night
+		icon = GFX_DEL_aftermath_of_elections
+		x = 16
+		y = 5
+		prerequisite = { focus = del_four_bigs }
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            country_event = { id = delta.1 }
+		}
+	}
+
     focus = {
 		id = del_enact_emergency_powers
 		icon = GFX_DEL_emergency_powers
@@ -256,13 +746,16 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-            country_event = { id = delta.1 }
+            add_to_variable = {
+			    value = 65
+			    var = DEL_communists_popularity_value
+		    }
 		}
 	}
 
 	focus = {
 		id = del_control_the_army
-		icon = GFX_DEL_aftermath_of_elections
+		icon = GFX_DEL_control_the_army
 		x = 3
 		y = 5
         prerequisite = { focus = del_enact_emergency_powers }
@@ -293,7 +786,7 @@ focus_tree = {
 
 	focus = {
 		id = del_control_the_economy
-		icon = GFX_DEL_aftermath_of_elections
+		icon = GFX_DEL_control_economy
 		x = 7
 		y = 5
         prerequisite = { focus = del_enact_emergency_powers }
@@ -323,8 +816,8 @@ focus_tree = {
 	}
 
 	focus = {
-		id = del_puppet_the_government
-		icon = GFX_DEL_aftermath_of_elections
+		id = del_centralization
+		icon = GFX_DEL_centralization
 		x = 5
 		y = 7
         prerequisite = { focus = del_hunt_the_red_demons }
@@ -357,10 +850,10 @@ focus_tree = {
 
 	focus = {
 		id = del_purge_mps
-		icon = GFX_DEL_aftermath_of_elections
-		x = 4
+		icon = GFX_DEL_purge_mps
+		x = 5
 		y = 9
-        prerequisite = { focus = del_puppet_the_government }
+        prerequisite = { focus = del_centralization }
 
 		cost = 5
 
@@ -387,11 +880,11 @@ focus_tree = {
 	}
 
 	focus = {
-		id = del_pressure_pm
-		icon = GFX_DEL_aftermath_of_elections
-		x = 6
+		id = del_form_national_guard
+		icon = GFX_DEL_form_national_guard
+		x = 7
 		y = 9
-        prerequisite = { focus = del_puppet_the_government }
+        prerequisite = { focus = del_centralization }
 
 		cost = 5
 
@@ -400,7 +893,381 @@ focus_tree = {
 		}
 
 		available = {
-			has_completed_focus = del_purge_mps
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            country_event = { id = delta.1 }
+		}
+	}
+
+	focus = {
+		id = del_form_youth_wing
+		icon = GFX_DEL_form_right_wing_youth_group
+		x = 7
+		y = 11
+        prerequisite = { focus = del_form_national_guard }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            country_event = { id = delta.1 }
+		}
+	}
+
+	focus = {
+		id = del_state_heroism_award
+		icon = GFX_DEL_heroism_award
+		x = 7
+		y = 13
+        prerequisite = { focus = del_form_youth_wing }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            country_event = { id = delta.1 }
+		}
+	}
+
+	focus = {
+		id = del_massive_parade
+		icon = GFX_DEL_massive_parade
+		x = 7
+		y = 15
+        prerequisite = { focus = del_state_heroism_award }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            country_event = { id = delta.1 }
+		}
+	}
+
+	focus = {
+		id = del_constitutional_reform
+		icon = GFX_DEL_constitutional_reform
+		x = 5
+		y = 17
+        prerequisite = { focus = del_massive_parade }
+		prerequisite = { focus = del_personal_oath_to_him }
+		prerequisite = { focus = del_execute_murman_simps }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            country_event = { id = delta.1 }
+		}
+	}
+
+	focus = {
+		id = del_centralization_finished
+		icon = GFX_DEL_centralization_completed
+		x = 5
+		y = 19
+        prerequisite = { focus = del_constitutional_reform }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            country_event = { id = delta.1 }
+		}
+	}
+
+	focus = {
+		id = del_puppet_constitutional_court
+		icon = GFX_DEL_puppet_constitutional_court
+		x = 5
+		y = 11
+        prerequisite = { focus = del_purge_mps }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            country_event = { id = delta.1 }
+		}
+	}
+
+	focus = {
+		id = del_purge_generals
+		icon = GFX_DEL_purge_generals
+		x = 5
+		y = 13
+        prerequisite = { focus = del_puppet_constitutional_court }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            country_event = { id = delta.1 }
+		}
+	}
+
+	focus = {
+		id = del_personal_oath_to_him
+		icon = GFX_goal_unknown
+		x = 5
+		y = 15
+        prerequisite = { focus = del_purge_generals }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            country_event = { id = delta.1 }
+		}
+	}
+
+	focus = {
+		id = del_hunt_opposition
+		icon = GFX_DEL_hunt_opposition
+		x = 3
+		y = 9
+        prerequisite = { focus = del_centralization }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            country_event = { id = delta.1 }
+		}
+	}
+
+	focus = {
+		id = del_raid_operations
+		icon = GFX_DEL_raid_operations
+		x = 3
+		y = 11
+        prerequisite = { focus = del_hunt_opposition }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            country_event = { id = delta.1 }
+		}
+	}
+
+	focus = {
+		id = del_hunt_christians
+		icon = GFX_DEL_hunt_christians
+		x = 3
+		y = 13
+        prerequisite = { focus = del_raid_operations }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+            country_event = { id = delta.1 }
+		}
+	}
+
+	focus = {
+		id = del_execute_murman_simps
+		icon = GFX_DEL_execute_murman_simps
+		x = 3
+		y = 15
+        prerequisite = { focus = del_hunt_christians }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
 		}
 		
 		bypass = {
@@ -421,7 +1288,7 @@ focus_tree = {
 		id = del_the_dark_morning
 		icon = GFX_DEL_aftermath_of_elections
 		x = 5
-		y = 11
+		y = 21
 
 		cost = 5
 
@@ -430,6 +1297,7 @@ focus_tree = {
 		}
 
 		available = {
+			has_country_flag = DEMETRE_sorry_this_is_for_next_update
 		}
 		
 		bypass = {

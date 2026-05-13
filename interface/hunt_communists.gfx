@@ -1,0 +1,27 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_operation_button"
+		texturefile = "gfx/interface/delta_hunt_communists/operation_button.png"
+	}
+	
+	spriteType = {
+		name = "GFX_hunt_communists_window"
+		texturefile = "gfx/interface/delta_hunt_communists/hunt_communists_window.png"
+	}
+	
+	spriteType = {
+		name = "GFX_communists_symbols"
+		texturefile = "gfx/interface/delta_hunt_communists/communists_symbols.png"
+	}
+	
+	spriteType = {
+		name = "GFX_attack_button"
+		texturefile = "gfx/interface/delta_hunt_communists/attack_button.png"
+	}
+	
+	spriteType = {
+		name = "GFX_misinformation_button"
+		texturefile = "gfx/interface/delta_hunt_communists/misinformation_button.png"
+	}
+}

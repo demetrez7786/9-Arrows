@@ -59,14 +59,29 @@ guiTypes = {
 			oversound = ui_menu_over
 		}
 
+		iconType = {
+            name = "centralias_emblem"
+            position = { x = 25 y = 30 }
+            spriteType = "GFX_centralias_emblem"
+			scale = 1.1
+        }
+
 		instantTextBoxType {
 			name = "CEN_region_selected"
 			text = "[get_state_name]"
 			font = "hoi_30header"
 			maxWidth = 315
-			maxHeigth = 12
 			position = { x = 85 y = 825 }
 			pdx_tooltip = "[CAT_OPENING]"
+		}
+
+		instantTextBoxType = {
+			name ="CEN_party_popularity_value"
+			position = { x = 1005 y = 745 }
+			font = "hoi_30header"
+			text = "CEN_popularity"
+			format = centre
+			maxWidth = 450
 		}
 		
 		###states

@@ -8,9 +8,10 @@ state={
 	history = {
 	    owner = SEA
 		add_core_of = SEA
+		victory_points = { 1139 15 }
 	}
 	
-	manpower=1000
+	manpower=712000
 	buildings_max_level_factor=1
 	state_category=town
 	local_supplies=0

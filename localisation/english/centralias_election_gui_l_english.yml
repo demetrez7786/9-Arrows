@@ -1,5 +1,9 @@
 ﻿l_english:
  VIEW_ELECTION:0 "View Election"
+ campaign_in_here:0 "Campaign in Here"
+ campaign_in_here_tt:0 "§LClick to start the campaign. To start the campaign, select a region where you will conduct the campaign. You can only start 1 campaign at a time.\n§YDuration: §t25 days\n§YCost: §R15£GFX_pol_power"
+ discredit_the_other_party:0 "Discredit the Other Party"
+ discredit_the_other_party_tt:0 "§LClick to discredit the other party. To discredit the other party, select a region where you will discredit the other party. You can only do 1 discrediting at a time.\n§YDuration: §t25 days\n§YCost: §R25£GFX_pol_power"
  gulflandia_select:0 "Gulflandia"
  oakhaven_select:0 "Oakhaven"
  aridona_select:0 "Aridona"
@@ -14,4 +18,5 @@
  sierra_alta_select:0 "Sierra Alta"
  veronia_select:0 "Veronia"
  three_sisters_select:0 "Three Sisters"
+ CEN_popularity:0 "Party Popularity: §Y[?CEN_party_popularity_value|%%]§!"
  

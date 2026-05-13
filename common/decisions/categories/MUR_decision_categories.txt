@@ -1,6 +1,6 @@
 MUR_negotiations = {
 	priority = 9999
-	icon = GFX_decision_cat_mdr_parliament
+	icon = GFX_decision_cat_negotiations
 	allowed = {
 		original_tag = MUR
 	}

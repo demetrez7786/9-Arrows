@@ -1,0 +1,101 @@
+scripted_gui = {
+
+    hunt_communists_gui = {
+       context_type = decision_category
+	   window_name = "hunt_communists_gui"
+ 
+        visible = {
+            tag = DEL
+        }
+ 
+		effects = {
+			operation_button_click = {
+				if = {
+					limit = { has_variable = DEL_show_operation_window }
+					clear_variable = DEL_show_operation_window
+				}
+				else = {
+					set_variable = { DEL_show_operation_window = 1 }
+				}
+			}
+			
+			attack_communists_button_click = { 
+				if = {
+					limit = {
+						command_power > 14
+						NOT = {
+							has_country_flag = DEL_attack_started
+						}
+					}
+					add_command_power = -15
+					set_country_flag = DEL_attack_started
+					random_list = {
+					    50 = {
+					        country_event = {
+						        id = centralia.9
+						        days = 25
+					        }
+						}
+						50 = {
+					        country_event = {
+						        id = centralia.10
+						        days = 25
+					        }
+						}
+					}
+				}
+			}
+			
+			spread_misinformation_button_click = { 
+				if = {
+					limit = {
+						command_power > 9
+						pol_power > 14
+						NOT = {
+							has_country_flag = DEL_misinformation_campaign_started
+						}
+					}
+					add_command_power = -10
+					add_political_power = -15
+					set_country_flag = DEL_misinformation_campaign_started
+					random_list = {
+					    50 = {
+					        country_event = {
+						        id = centralia.9
+						        days = 25
+					        }
+						}
+						50 = {
+					        country_event = {
+						        id = centralia.10
+						        days = 25
+					        }
+						}
+					}
+				}
+			}
+		}
+        triggers = {
+        }
+		
+		properties = {
+			
+		}
+    }
+	
+	operation_main_screen_window = {
+       context_type = player_context 
+	   window_name = "operation_main_screen_window"
+ 
+        visible = {
+            tag = DEL
+            check_variable = { DEL_show_operation_window > 0 }
+        }
+ 
+		effects = {
+			close_operation_map_button_click = {
+				set_variable = { DEL_show_operation_window = 0 }
+			}
+		}
+	}
+}

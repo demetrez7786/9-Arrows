@@ -1,0 +1,7 @@
+CEN_party_popularity_clamp_and_update_ui_effect = {
+	clamp_variable = {
+		var = CEN_party_popularity_value
+		min = 0
+		max = 100
+	}
+}

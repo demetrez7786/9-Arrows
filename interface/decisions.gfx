@@ -1,0 +1,77 @@
+spriteTypes = {	
+	
+	spriteType = {
+		name = "GFX_decision_soldier"
+		texturefile = "gfx/interface/decisions/decision_soldier.png"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_cat_vesta_war"
+		texturefile = "gfx/interface/decisions/decision_cat_vesta_war.png"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_fire"
+		texturefile = "gfx/interface/decisions/decision_fire.png"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_guard"
+		texturefile = "gfx/interface/decisions/decision_guard.png"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_media"
+		texturefile = "gfx/interface/decisions/decision_media.png"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_guns"
+		texturefile = "gfx/interface/decisions/decision_guns.png"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_cat_shuan_decisions"
+		texturefile = "gfx/interface/decisions/decision_cat_shuan_decisions.png"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_generic_peace"
+		texturefile = "gfx/interface/decisions/decision_generic_peace.png"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_generic_signing_smth"
+		texturefile = "gfx/interface/decisions/decision_generic_signing_smth.png"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_cat_negotiations"
+		texturefile = "gfx/interface/decisions/decision_cat_negotiations.png"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_cat_hunt_communists"
+		texturefile = "gfx/interface/decisions/decision_cat_hunt_communists.png"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_protest"
+		texturefile = "gfx/interface/decisions/decision_protest.png"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_cat_protest"
+		texturefile = "gfx/interface/decisions/decision_cat_protest.png"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_incoming_election"
+		texturefile = "gfx/interface/decisions/decision_incoming_election.png"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_cat_elections"
+		texturefile = "gfx/interface/decisions/decision_cat_elections.png"
+	}
+}

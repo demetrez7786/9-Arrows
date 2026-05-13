@@ -1,0 +1,68 @@
+debug_decisions = {
+
+	debug_show_decisions = {
+		priority = 100
+		allowed = {
+			always = yes
+		}
+
+		visible = {
+			is_ai = no
+			is_debug = yes
+			NOT = { has_global_flag = show_debug_decisions_flag }
+		}
+		complete_effect = {
+			set_global_flag = show_debug_decisions_flag
+		}
+	}
+ 
+	debug_hide_decisions = {
+		priority = -1
+		allowed = {
+			always = yes 
+		}
+
+		visible = {
+			is_ai = no
+			is_debug = yes
+			has_global_flag = show_debug_decisions_flag
+		}
+		complete_effect = {
+			clr_global_flag = show_debug_decisions_flag
+		}
+	}
+
+	debug_max_infleunce = {
+		priority = -1
+		allowed = {
+			always = yes 
+		}
+
+		visible = {
+			is_ai = no
+			is_debug = yes
+			has_global_flag = show_debug_decisions_flag
+			is_in_faction = yes
+		}
+		complete_effect = {
+			add_faction_influence_ratio = 1
+		}
+	}
+	
+	debug_aotcw_delta = {
+		priority = 100
+		allowed = {
+			always = yes
+		}
+
+		visible = {
+			is_ai = no
+			is_debug = yes
+			has_global_flag = show_debug_decisions_flag 
+		}
+		
+		complete_effect = {
+			load_focus_tree = del_aftermath_of_civil_war_focus
+		}
+	}
+}

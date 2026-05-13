@@ -116,9 +116,17 @@ spriteTypes = {
 		transparencecheck = yes
 	}
 	
+	###other stuff
+	
 	spriteType = {
 		name = "GFX_empty_picture"
 		texturefile = "gfx/interface/centralias_election_gui/empty_picture.png"
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "GFX_centralias_emblem"
+		texturefile = "gfx/interface/centralias_election_gui/centralias_emblem.png"
 		transparencecheck = yes
 	}
 }

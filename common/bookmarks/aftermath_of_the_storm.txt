@@ -78,7 +78,9 @@ bookmarks = {
 			history = "DEL_AFTERMATH_OF_THE_STORM_DESC"
 			ideology = militarism
 			ideas = {
-				
+				DEL_no_guns_protest
+				DEL_deadlocked_parliament
+				DEL_deserters_issue
 			}
 			focuses = {
 				

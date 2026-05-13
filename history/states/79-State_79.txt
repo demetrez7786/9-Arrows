@@ -8,9 +8,18 @@ state={
 	history={
 		owner = DEL
 		add_core_of = DEL
+		victory_points = { 1835 15 }
+		buildings = {
+		    1835 = {
+				naval_base = 3
+			}
+			
+			infrastructure = 3
+			industrial_complex = 2
+		}
 	}
 	
 	buildings_max_level_factor=1.000
-    manpower=1000
+    manpower=1235000
     state_category = town
 }

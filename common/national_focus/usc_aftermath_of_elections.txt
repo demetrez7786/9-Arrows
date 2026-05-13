@@ -1,5 +1,5 @@
 focus_tree = {
-    id = usc_democrats_focus
+    id = usc_aftermath_of_elections
     country = {
         factor = 0
         modifier = {

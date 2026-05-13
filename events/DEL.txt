@@ -339,5 +339,6 @@ country_event = {
 		add_stability = 0.15
 	    load_focus_tree = del_aftermath_of_civil_war_focus
 		news_event = { id = news.9 }
+		clr_country_flag = delta_civil_war
 	}
 }

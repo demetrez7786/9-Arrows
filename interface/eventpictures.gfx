@@ -1,6 +1,96 @@
 spriteTypes = {
 	
 	spriteType = {
+		name = "GFX_news_event_shua_vesta_war"
+		texturefile = "gfx/event_pictures/news_event_shua_vesta_war.png"
+	}
+	
+	spriteType = {
+		name = "GFX_news_event_israel_emirate_war"
+		texturefile = "gfx/event_pictures/news_event_israel_emirate_war.png"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_CEN_senate"
+		texturefile = "gfx/event_pictures/report_event_CEN_senate.png"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_CEN_election_campaign"
+		texturefile = "gfx/event_pictures/report_event_CEN_election_campaign.png"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_CEN_workers_strike"
+		texturefile = "gfx/event_pictures/report_event_CEN_workers_strike.png"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_CEN_elections"
+		texturefile = "gfx/event_pictures/report_event_CEN_elections.png"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_UNI_party_congress"
+		texturefile = "gfx/event_pictures/report_event_UNI_party_congress.png"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_UNI_military_is_reorganized"
+		texturefile = "gfx/event_pictures/report_event_UNI_military_is_reorganized.png"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_UNI_elections"
+		texturefile = "gfx/event_pictures/report_event_UNI_elections.png"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_UNI_beriansk_resignes"
+		texturefile = "gfx/event_pictures/report_event_UNI_beriansk_resignes.png"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_UNI_general_protest"
+		texturefile = "gfx/event_pictures/report_event_UNI_general_protest.png"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_SHU_take_vesta"
+		texturefile = "gfx/event_pictures/report_event_SHU_take_vesta.png"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_SHU_education"
+		texturefile = "gfx/event_pictures/report_event_SHU_education.png"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_SHU_landing_failed"
+		texturefile = "gfx/event_pictures/report_event_SHU_landing_failed.png"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_SHU_emirate_at_war"
+		texturefile = "gfx/event_pictures/report_event_SHU_emirate_at_war.png"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_SHU_anschluss"
+		texturefile = "gfx/event_pictures/report_event_SHU_anschluss.png"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_SHU_soldiers_oath"
+		texturefile = "gfx/event_pictures/report_event_SHU_soldiers_oath.png"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_SHU_long_knives"
+		texturefile = "gfx/event_pictures/report_event_SHU_long_knives.png"
+	}
+	
+	spriteType = {
 		name = "GFX_news_event_orphegan_incident"
 		texturefile = "gfx/event_pictures/news_event_orphegan_incident.png"
 	}

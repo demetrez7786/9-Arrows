@@ -28,8 +28,7 @@ ideas = {
 			level = 6
 
 			available = {
-				original_tag = SHU
-				NOT = { has_idea = SHU_treaty_of_zugdad }
+			
 			}
 
 			ai_will_do = {

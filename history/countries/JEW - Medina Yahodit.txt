@@ -1,13 +1,8 @@
-capital = 55
+capital = 56
 
-set_research_slots = 3
+set_research_slots = 4
 
-country_event = {
-    id = emirate.1
-	days = 138
-}
-
-load_oob = "ISL_3172"
+load_oob = "JEW_3172"
 
 # Starting tech
 set_technology = {

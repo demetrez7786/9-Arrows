@@ -8,9 +8,15 @@ state={
 	history={
 		owner = ISL
 		add_core_of = ISL
+		victory_points = { 10262 30 }
+		buildings = {
+		    infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 1
+		}
 	}
 	
 	buildings_max_level_factor=1.000
-    manpower=1000
+    manpower=1123000
     state_category = town
 }

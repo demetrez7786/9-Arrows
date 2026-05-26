@@ -1,6 +1,31 @@
 spriteTypes = {
 	
 	spriteType = {
+		name = "GFX_news_event_democrats_remain"
+		texturefile = "gfx/event_pictures/news_event_democrats_remain.png"
+	}
+	
+	spriteType = {
+		name = "GFX_news_event_socialists_uksr"
+		texturefile = "gfx/event_pictures/news_event_socialists_uksr.png"
+	}
+	
+	spriteType = {
+		name = "GFX_news_event_party_remains"
+		texturefile = "gfx/event_pictures/news_event_party_remains.png"
+	}
+	
+	spriteType = {
+		name = "GFX_news_event_military_junta_uksr"
+		texturefile = "gfx/event_pictures/news_event_military_junta_uksr.png"
+	}
+	
+	spriteType = {
+		name = "GFX_news_event_beriansk_resigns"
+		texturefile = "gfx/event_pictures/news_event_beriansk_resigns.png"
+	}
+	
+	spriteType = {
 		name = "GFX_news_event_shua_vesta_war"
 		texturefile = "gfx/event_pictures/news_event_shua_vesta_war.png"
 	}

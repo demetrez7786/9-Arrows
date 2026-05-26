@@ -46,7 +46,7 @@ focus_tree = {
 
 	focus = {
 		id = del_economy_branch
-		icon = GFX_DEL_aftermath_of_elections
+		icon = GFX_DEL_economic_branch
 		x = 14
 		y = 1
 
@@ -76,7 +76,7 @@ focus_tree = {
 
 	focus = {
 		id = del_military_branch
-		icon = GFX_DEL_aftermath_of_elections
+		icon = GFX_DEL_military_branch
 		x = 27
 		y = 1
 
@@ -100,18 +100,18 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-            country_event = { id = delta.1 }
+            army_experience = 25
 		}
 	}
 
 	focus = {
 		id = del_land_force
-		icon = GFX_DEL_aftermath_of_elections
+		icon = GFX_DEL_land_force
 		x = 23
 		y = 3
 		prerequisite = { focus = del_military_branch }
 
-		cost = 1
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -130,18 +130,18 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-            country_event = { id = delta.1 }
+			add_dynamic_modifier = { modifier = DEL_land_foce }
 		}
 	}
 
 	focus = {
 		id = del_extend_mandatory_trainng
-		icon = GFX_DEL_aftermath_of_elections
+		icon = GFX_GFX_goal_unknown
 		x = 21
 		y = 5
 		prerequisite = { focus = del_land_force }
 
-		cost = 1
+		cost = 15
 
 		ai_will_do = {
 			factor = 1
@@ -160,18 +160,22 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-            country_event = { id = delta.1 }
+            add_to_variable = { DEL_lf_army_attack_factor = 0.05 }
+            add_to_variable = { DEL_lf_army_defence_factor = 0.05 }
+            add_to_variable = { DEL_lf_army_org_factor = 0.05 }
+            add_to_variable = { DEL_lf_training_time_factor = 0.05 }
+			custom_effect_tooltip = army_will_be_stronge_tt
 		}
 	}
 
 	focus = {
 		id = del_extend_conscription
-		icon = GFX_DEL_aftermath_of_elections
+		icon = GFX_GFX_goal_unknown
 		x = 23
 		y = 5
 		prerequisite = { focus = del_land_force }
 
-		cost = 1
+		cost = 15
 
 		ai_will_do = {
 			factor = 1
@@ -190,18 +194,18 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-            country_event = { id = delta.1 }
+            add_ideas = extensive_conscription
 		}
 	}
 
 	focus = {
 		id = del_form_military_academy
-		icon = GFX_DEL_aftermath_of_elections
+		icon = GFX_DEL_military_university
 		x = 19
 		y = 5
 		prerequisite = { focus = del_land_force }
 
-		cost = 1
+		cost = 20
 
 		ai_will_do = {
 			factor = 1
@@ -220,18 +224,23 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-            country_event = { id = delta.1 }
+            add_to_variable = { DEL_lf_army_attack_factor = 0.05 }
+            add_to_variable = { DEL_lf_army_defence_factor = 0.05 }
+            add_to_variable = { DEL_lf_army_speed_factor = 0.05 }
+            add_to_variable = { DEL_lf_army_org_factor = 0.1 }
+            add_to_variable = { DEL_lf_training_time_factor = 0.05 }
+			custom_effect_tooltip = army_will_be_stronge_tt
 		}
 	}
 
 	focus = {
 		id = del_fund_warlords
-		icon = GFX_DEL_aftermath_of_elections
+		icon = GFX_DEL_fund_warlords
 		x = 20
 		y = 7
 		prerequisite = { focus = del_land_force }
 
-		cost = 1
+		cost = 20
 
 		ai_will_do = {
 			factor = 1
@@ -250,18 +259,18 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-            country_event = { id = delta.1 }
+            add_political_power = -90
 		}
 	}
 
 	focus = {
 		id = del_modernize_equipment
-		icon = GFX_DEL_aftermath_of_elections
+		icon = GFX_DEL_modernize_equipment
 		x = 22
 		y = 7
 		prerequisite = { focus = del_land_force }
 
-		cost = 1
+		cost = 20
 
 		ai_will_do = {
 			factor = 1
@@ -280,18 +289,21 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-            country_event = { id = delta.1 }
+            add_to_variable = { DEL_lf_army_attack_factor = 0.1 }
+            add_to_variable = { DEL_lf_army_defence_factor = 0.1 }
+            add_to_variable = { DEL_lf_army_speed_factor = 0.05 }
+			custom_effect_tooltip = army_will_be_stronge_tt
 		}
 	}
 
 	focus = {
 		id = del_race_in_sea
-		icon = GFX_DEL_aftermath_of_elections
+		icon = GFX_DEL_delta_navy
 		x = 31
 		y = 3
 		prerequisite = { focus = del_military_branch }
 
-		cost = 1
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -310,18 +322,18 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-            country_event = { id = delta.1 }
+            navy_experience = 25
 		}
 	}
 
 	focus = {
 		id = del_new_port
-		icon = GFX_DEL_aftermath_of_elections
+		icon = GFX_GFX_goal_unknown
 		x = 31
 		y = 5
 		prerequisite = { focus = del_race_in_sea }
 
-		cost = 1
+		cost = 25
 
 		ai_will_do = {
 			factor = 1
@@ -340,18 +352,18 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-            country_event = { id = delta.1 }
+            
 		}
 	}
 
 	focus = {
 		id = del_fund_her_navy
-		icon = GFX_DEL_aftermath_of_elections
+		icon = GFX_GFX_goal_unknown
 		x = 33
 		y = 5
 		prerequisite = { focus = del_race_in_sea }
 
-		cost = 1
+		cost = 15
 
 		ai_will_do = {
 			factor = 1
@@ -370,18 +382,18 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-            country_event = { id = delta.1 }
+            add_ideas = DEL_fund_her_navy_idea
 		}
 	}
 
 	focus = {
 		id = del_new_ships
-		icon = GFX_DEL_aftermath_of_elections
+		icon = GFX_GFX_goal_unknown
 		x = 35
 		y = 5
 		prerequisite = { focus = del_race_in_sea }
 
-		cost = 1
+		cost = 25
 
 		ai_will_do = {
 			factor = 1
@@ -400,18 +412,18 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-            country_event = { id = delta.1 }
+            
 		}
 	}
 
 	focus = {
 		id = del_end_price_control
-		icon = GFX_DEL_aftermath_of_elections
+		icon = GFX_MDR_end_price_control
 		x = 16
 		y = 3
 		prerequisite = { focus = del_economy_branch }
 
-		cost = 1
+		cost = 15
 
 		ai_will_do = {
 			factor = 1
@@ -431,18 +443,18 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-            country_event = { id = delta.1 }
+            add_stability = 0.05
 		}
 	}
 
 	focus = {
 		id = del_nationalize_assets
-		icon = GFX_DEL_aftermath_of_elections
+		icon = GFX_DEL_nationalize_assets
 		x = 12
 		y = 3
 		prerequisite = { focus = del_economy_branch }
 
-		cost = 1
+		cost = 15
 
 		ai_will_do = {
 			factor = 1
@@ -462,18 +474,19 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-            country_event = { id = delta.1 }
+            add_offsite_building = { type = arms_factory level = 2 }
+			add_offsite_building = { type = industrial_complex level = 3 }
 		}
 	}
 
 	focus = {
 		id = del_four_bigs
-		icon = GFX_DEL_aftermath_of_elections
+		icon = GFX_goal_unknown
 		x = 14
 		y = 3
 		prerequisite = { focus = del_economy_branch }
 
-		cost = 1
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -500,12 +513,12 @@ focus_tree = {
 
 	focus = {
 		id = del_guns_for_me
-		icon = GFX_DEL_aftermath_of_elections
+		icon = GFX_goal_unknown
 		x = 12
 		y = 5
 		prerequisite = { focus = del_four_bigs }
 
-		cost = 1
+		cost = 25
 
 		ai_will_do = {
 			factor = 1
@@ -525,18 +538,25 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-            country_event = { id = delta.1 }
+            random_owned_state = {
+			    add_building_construction = {
+                    type = arms_factory
+                    level = 2
+                    instant_build = yes
+                }
+				add_extra_state_shared_building_slots = 2
+            }
 		}
 	}
 
 	focus = {
 		id = del_industrialize_countryside
-		icon = GFX_DEL_aftermath_of_elections
+		icon = GFX_goal_unknown
 		x = 15
 		y = 7
 		prerequisite = { focus = del_four_bigs }
 
-		cost = 1
+		cost = 20
 
 		ai_will_do = {
 			factor = 1
@@ -556,18 +576,30 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-            country_event = { id = delta.1 }
+			20 = {
+            add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+            }
+			add_building_construction = {
+                    type = arms_factory
+                    level = 1
+                    instant_build = yes
+			}
+				add_extra_state_shared_building_slots = 2
+		    }
 		}
 	}
 
 	focus = {
 		id = del_invest_into_dockyards
-		icon = GFX_DEL_aftermath_of_elections
+		icon = GFX_goal_unknown
 		x = 13
 		y = 7
 		prerequisite = { focus = del_four_bigs }
 
-		cost = 1
+		cost = 15
 
 		ai_will_do = {
 			factor = 1
@@ -587,18 +619,25 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-            country_event = { id = delta.1 }
+            random_owned_state = {
+			    add_building_construction = {
+                    type = dockyard
+                    level = 2
+                    instant_build = yes
+                }
+				add_extra_state_shared_building_slots = 2
+            }
 		}
 	}
 
 	focus = {
 		id = del_surgical_therapy
-		icon = GFX_DEL_aftermath_of_elections
+		icon = GFX_goal_unknown
 		x = 14
 		y = 9
 		prerequisite = { focus = del_guns_for_me }
 		prerequisite = { focus = del_hammer_for_me }
-		prerequisite = { focus = del_oligarchs_night }
+		prerequisite = { focus = del_wine_for_me }
 		prerequisite = { focus = del_invest_into_dockyards }
 		prerequisite = { focus = del_industrialize_countryside }
 
@@ -622,18 +661,18 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-            country_event = { id = delta.1 }
+            
 		}
 	}
 
 	focus = {
 		id = del_hammer_for_me
-		icon = GFX_DEL_aftermath_of_elections
+		icon = GFX_goal_unknown
 		x = 14
 		y = 5
 		prerequisite = { focus = del_four_bigs }
 
-		cost = 1
+		cost = 25
 
 		ai_will_do = {
 			factor = 1
@@ -653,18 +692,25 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-            country_event = { id = delta.1 }
+            random_owned_state = {
+			    add_building_construction = {
+                    type = industrial_complex
+                    level = 2
+                    instant_build = yes
+                }
+				add_extra_state_shared_building_slots = 2
+            }
 		}
 	}
 
 	focus = {
-		id = del_oligarchs_night
-		icon = GFX_DEL_aftermath_of_elections
+		id = del_wine_for_me
+		icon = GFX_goal_unknown
 		x = 16
 		y = 5
 		prerequisite = { focus = del_four_bigs }
 
-		cost = 1
+		cost = 10
 
 		ai_will_do = {
 			factor = 1
@@ -684,7 +730,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-            country_event = { id = delta.1 }
+            add_political_power = 150
 		}
 	}
 
@@ -746,6 +792,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
+			unlock_decision_category_tooltip = DEL_hunt_communists_cat
             add_to_variable = {
 			    value = 65
 			    var = DEL_communists_popularity_value
@@ -780,7 +827,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-            country_event = { id = delta.1 }
+            custom_effect_tooltip = generic_unlocks_new_focus_branch
 		}
 	}
 
@@ -811,7 +858,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-            country_event = { id = delta.1 }
+            custom_effect_tooltip = generic_unlocks_new_focus_branch
 		}
 	}
 
@@ -844,7 +891,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-            country_event = { id = delta.1 }
+            add_political_power = 50
 		}
 	}
 
@@ -855,7 +902,7 @@ focus_tree = {
 		y = 9
         prerequisite = { focus = del_centralization }
 
-		cost = 5
+		cost = 25
 
 		ai_will_do = {
 			factor = 1
@@ -875,7 +922,13 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-            country_event = { id = delta.1 }
+            add_stability = -0.05
+			add_war_support = -0.025
+			add_political_power = -75
+			add_popularity = {
+				ideology = militarism
+				popularity = 0.1
+			}
 		}
 	}
 
@@ -886,7 +939,7 @@ focus_tree = {
 		y = 9
         prerequisite = { focus = del_centralization }
 
-		cost = 5
+		cost = 25
 
 		ai_will_do = {
 			factor = 1
@@ -917,7 +970,7 @@ focus_tree = {
 		y = 11
         prerequisite = { focus = del_form_national_guard }
 
-		cost = 5
+		cost = 25
 
 		ai_will_do = {
 			factor = 1
@@ -937,7 +990,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-            country_event = { id = delta.1 }
+            add_ideas = DEL_youth_wing
 		}
 	}
 
@@ -948,7 +1001,7 @@ focus_tree = {
 		y = 13
         prerequisite = { focus = del_form_youth_wing }
 
-		cost = 5
+		cost = 25
 
 		ai_will_do = {
 			factor = 1
@@ -968,7 +1021,13 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-            country_event = { id = delta.1 }
+            add_political_power = 25
+			add_stability = 0.1
+			add_war_support = 0.5
+			add_popularity = {
+				ideology = militarism
+				popularity = 0.025
+			}
 		}
 	}
 
@@ -979,7 +1038,7 @@ focus_tree = {
 		y = 15
         prerequisite = { focus = del_state_heroism_award }
 
-		cost = 5
+		cost = 25
 
 		ai_will_do = {
 			factor = 1
@@ -999,7 +1058,12 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-            country_event = { id = delta.1 }
+            add_manpower = 5000
+			add_war_support = 0.15
+			add_popularity = {
+				ideology = militarism
+				popularity = 0.05
+			}
 		}
 	}
 
@@ -1012,7 +1076,7 @@ focus_tree = {
 		prerequisite = { focus = del_personal_oath_to_him }
 		prerequisite = { focus = del_execute_murman_simps }
 
-		cost = 5
+		cost = 15
 
 		ai_will_do = {
 			factor = 1
@@ -1032,7 +1096,13 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-            country_event = { id = delta.1 }
+            add_political_power = 200
+			add_stability = 0.55
+			add_war_support = 0.45
+			add_popularity = {
+				ideology = militarism
+				popularity = 0.25
+			}
 		}
 	}
 
@@ -1063,7 +1133,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-            country_event = { id = delta.1 }
+            
 		}
 	}
 
@@ -1074,7 +1144,7 @@ focus_tree = {
 		y = 11
         prerequisite = { focus = del_purge_mps }
 
-		cost = 5
+		cost = 25
 
 		ai_will_do = {
 			factor = 1
@@ -1094,7 +1164,8 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-            country_event = { id = delta.1 }
+            add_political_power = -75
+			add_stability = 0.15
 		}
 	}
 
@@ -1105,7 +1176,7 @@ focus_tree = {
 		y = 13
         prerequisite = { focus = del_puppet_constitutional_court }
 
-		cost = 5
+		cost = 25
 
 		ai_will_do = {
 			factor = 1
@@ -1125,7 +1196,8 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-            country_event = { id = delta.1 }
+            add_manpower = -12
+			add_war_support = -0.2
 		}
 	}
 
@@ -1136,7 +1208,7 @@ focus_tree = {
 		y = 15
         prerequisite = { focus = del_purge_generals }
 
-		cost = 5
+		cost = 25
 
 		ai_will_do = {
 			factor = 1
@@ -1156,7 +1228,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-            country_event = { id = delta.1 }
+            
 		}
 	}
 
@@ -1167,7 +1239,7 @@ focus_tree = {
 		y = 9
         prerequisite = { focus = del_centralization }
 
-		cost = 5
+		cost = 25
 
 		ai_will_do = {
 			factor = 1
@@ -1187,7 +1259,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-            country_event = { id = delta.1 }
+            custom_effect_tooltip = generic_mechanism_will_be_in_next_update
 		}
 	}
 
@@ -1198,7 +1270,7 @@ focus_tree = {
 		y = 11
         prerequisite = { focus = del_hunt_opposition }
 
-		cost = 5
+		cost = 25
 
 		ai_will_do = {
 			factor = 1
@@ -1218,7 +1290,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-            country_event = { id = delta.1 }
+            custom_effect_tooltip = generic_mechanism_will_be_in_next_update
 		}
 	}
 
@@ -1229,7 +1301,7 @@ focus_tree = {
 		y = 13
         prerequisite = { focus = del_raid_operations }
 
-		cost = 5
+		cost = 25
 
 		ai_will_do = {
 			factor = 1
@@ -1249,7 +1321,15 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-            country_event = { id = delta.1 }
+            add_political_power = 80
+			add_stability = -0.25
+			add_war_support = -0.15
+			CHS = {
+			add_opinion_modifier = {
+                target = DEL
+                modifier = anti_christian
+            }
+		    }
 		}
 	}
 
@@ -1260,7 +1340,7 @@ focus_tree = {
 		y = 15
         prerequisite = { focus = del_hunt_christians }
 
-		cost = 5
+		cost = 25
 
 		ai_will_do = {
 			factor = 1
@@ -1280,13 +1360,14 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-            country_event = { id = delta.1 }
+            add_manpower = -2500
+			add_war_support = 0.05
 		}
 	}
 
 	focus = {
 		id = del_the_dark_morning
-		icon = GFX_DEL_aftermath_of_elections
+		icon = GFX_goal_unknown
 		x = 5
 		y = 21
 

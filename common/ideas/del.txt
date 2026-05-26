@@ -34,7 +34,7 @@ ideas = {
 
 			removal_cost = -1
 			
-			picture = RES_element_of_suprise
+			picture = DEL_deadlocked_parliament
 			
 			modifier = {
 				political_power_factor = -0.1
@@ -60,6 +60,53 @@ ideas = {
 			}
 		}
 		
+		DEL_youth_wing = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = DEL_youth_wing
+			
+			modifier = {
+				drift_defence_factor = 0.1
+				war_support_factor = 0.05
+			}
+		}
+		
+		DEL_fund_her_navy_idea = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = unknown_idea
+			
+			modifier = {
+			    research_speed_factor = 0.05
+				production_speed_dockyard_factor = 0.1
+				production_speed_port_factor = 0.1
+				production_cost_max_convoy = -1000
+                production_cost_max_ship_hull_submarine = -1000
+                production_cost_max_ship_hull_light = -1000
+                production_cost_max_ship_hull_heavy = -1000
+                production_cost_max_ship_hull_cruiser = -1000
+                production_cost_max_ship_hull_carrier = -1000
+			}
+		}
+		
 		DEL_naval_race_MUR = {
 			
 			allowed = {
@@ -72,10 +119,11 @@ ideas = {
 
 			removal_cost = -1
 			
-			picture = RES_element_of_suprise
+			picture = DEL_naval_race_MUR
 			
 			modifier = {
 			    production_speed_dockyard_factor = 0.5
+				production_speed_port_factor = 0.5
 				production_cost_max_convoy = -5000
                 production_cost_max_ship_hull_submarine = -5000
                 production_cost_max_ship_hull_light = -5000

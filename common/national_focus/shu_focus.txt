@@ -241,7 +241,7 @@ focus_tree = {
 		y = 13
 		prerequisite = { focus = SHU_end_zugdad_treaty }
 		
-		cost = 20
+		cost = 25
 
 		ai_will_do = {
 			factor = 1
@@ -1552,7 +1552,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-            country_event = { id = delta.1 }
+            custom_effect_tooltip = generic_mechanism_will_be_in_next_update
 		}
 	}
 

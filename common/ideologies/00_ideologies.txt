@@ -553,6 +553,8 @@ ideologies = {
 			officers_council = { can_be_randomly_selected = no }
 			
 			defenders_of_the_motherland = { can_be_randomly_selected = no }
+			
+			gun_socity = { can_be_randomly_selected = no }
 
 		}
 

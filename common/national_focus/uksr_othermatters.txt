@@ -1210,6 +1210,9 @@ focus_tree = {
 
 		completion_reward = {
 		    add_ideas = UNI_red_army_idea
+			remove_dynamic_modifier = { modifier = UNI_navy }
+			remove_dynamic_modifier = { modifier = UNI_weak_military }
+			remove_dynamic_modifier = { modifier = UNI_airforce }
 		}
 	}
 }

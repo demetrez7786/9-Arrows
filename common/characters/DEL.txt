@@ -1,0 +1,15 @@
+characters = {
+	DEL_bill_clinton = {
+		name = "Bill Clinton" 
+		portraits = {
+			civilian = {
+				large ="gfx/leaders/DEL/portrait_DEL_bill_clinton.png"
+			}
+		}
+		country_leader = {
+			ideology = gun_socity
+			expire = "4950.1.1.1"
+			id = -1
+		}
+	}
+}

@@ -69,6 +69,19 @@
  CEN_workers_strikes:0 "Workers Strikes"
  CEN_workers_strikes_desc:0 "\n\n\n\n£GFX_idea_workers_strike_desc_photo\n\n\n\n\n\n\nWorkers have gone on strike after working conditions and the economy were left undiscussed."
  
+ DEL_no_guns_protest:0 "No Guns Protest"
+ DEL_no_guns_protest_desc:0 "\n\n\n\n£GFX_idea_deny_guns_protest_desc_photo\n\n\n\n\n\n\n"
+ DEL_deadlocked_parliament:0 "Deadlocked Parliament"
+ DEL_deadlocked_parliament_desc:0 "\n\n\n\n£GFX_idea_deadlocked_parliament_desc_photo\n\n\n\n\n\n\n"
+ DEL_deserters_issue:0 "Deserters Issue"
+ DEL_deserters_issue_desc:0 "\n\n\n\n£GFX_idea_deserters_issue_desc_photo\n\n\n\n\n\n\n"
+ DEL_youth_wing:0 "Youth Wing"
+ DEL_youth_wing_desc:0 "\n\n\n\n£GFX_idea_youth_wing_desc_photo\n\n\n\n\n\n\n"
+ DEL_fund_her_navy_idea:0 "'Fund Her Navy'"
+ 
+ DEL_naval_race_MUR:0 "Naval Race"
+ DEL_naval_race_MUR_desc:0 "\n\n\n\n£GFX_idea_naval_race_desc_photo\n\n\n\n\n\n\n""
+ 
  MUR_failing_empire:0 "Failing Empire"
  MUR_failing_empire_desc:0 "\n\n\n\n£GFX_idea_failing_empire_desc_photo\n\n\n\n\n\n\n"
  MUR_strong_opposition:0 "Strong Opposition"

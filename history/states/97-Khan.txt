@@ -9,6 +9,12 @@ state={
 		owner = CEN
 		add_core_of = CEN
 		victory_points= { 3777 50 }
+		buildings = {
+		    3777 = { naval_base = 5 }
+			infrastructure = 5
+			industrial_complex = 3
+			arms_factory = 2
+	    }
 	}
 	
 	manpower=12450600

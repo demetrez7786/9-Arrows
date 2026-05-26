@@ -169,8 +169,7 @@ focus_tree = {
             factor = 1
         }
         completion_reward = {
-            custom_modifier_tooltip = CEN_counter_terrorism_tt
-            set_country_flag = CEN_start_counter_terrorism
+            custom_effect_tooltip = generic_mechanism_will_be_in_next_update
         }
     }
 
@@ -376,8 +375,7 @@ focus_tree = {
             factor = 1
         }
         completion_reward = {
-            custom_modifier_tooltip = CEN_counter_terrorism_tt
-            set_country_flag = CEN_start_counter_terrorism
+            custom_effect_tooltip = generic_mechanism_will_be_in_next_update
         }
     }
 
@@ -926,8 +924,7 @@ focus_tree = {
             factor = 1
         }
         completion_reward = {
-            custom_modifier_tooltip = CEN_counter_terrorism_tt
-            set_country_flag = CEN_start_counter_terrorism
+            custom_effect_tooltip = generic_mechanism_will_be_in_next_update
         }
     }
 
@@ -1003,7 +1000,7 @@ focus_tree = {
             factor = 1
         }
         completion_reward = {
-            custom_modifier_tooltip = CEN_counter_terrorism_tt
+            custom_effect_tooltip = generic_mechanism_will_be_in_next_update
         }
     }
 
@@ -1022,7 +1019,7 @@ focus_tree = {
             factor = 1
         }
         completion_reward = {
-            custom_modifier_tooltip = CEN_counter_terrorism_tt
+            custom_effect_tooltip = generic_mechanism_will_be_in_next_update
         }
     }
 

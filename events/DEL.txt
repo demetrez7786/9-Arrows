@@ -342,3 +342,85 @@ country_event = {
 		clr_country_flag = delta_civil_war
 	}
 }
+
+# attack on communists succsseded
+country_event = {
+	id = delta.18
+	title = delta.18.t
+	desc = delta.18.d
+	picture = GFX_report_event_DEL_incident_in_orphegan
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = delta.18.a
+		add_to_variable = {
+			value = -10
+		    var = DEL_communists_popularity_value
+		}
+		clr_country_flag = DEL_attack_started
+	}
+}
+
+# attack on communists failed
+country_event = {
+	id = delta.19
+	title = delta.19.t
+	desc = delta.19.d
+	picture = GFX_report_event_DEL_incident_in_orphegan
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = delta.19.a
+		clr_country_flag = DEL_attack_started
+	}
+}
+
+# misinformation succsseded
+country_event = {
+	id = delta.20
+	title = delta.20.t
+	desc = delta.20.d
+	picture = GFX_report_event_DEL_incident_in_orphegan
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = delta.20.a
+		add_to_variable = {
+			value = -5
+		    var = DEL_communists_popularity_value
+		}
+		clr_country_flag = DEL_misinformation_campaign_started
+	}
+}
+
+# misinformation failed
+country_event = {
+	id = delta.21
+	title = delta.21.t
+	desc = delta.21.d
+	picture = GFX_report_event_DEL_incident_in_orphegan
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = delta.21.a
+		clr_country_flag = DEL_misinformation_campaign_started
+	}
+}
+
+# address the deserters issue
+country_event = {
+	id = delta.22
+	title = delta.22.t
+	desc = delta.22.d
+	picture = GFX_report_event_DEL_incident_in_orphegan
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = delta.22.a
+	}
+}

@@ -3,6 +3,76 @@ spriteTypes = {
 	#### Murder drones icons
 	
 	SpriteType = {
+	name = "GFX_MUR_support_government_media"
+	texturefile = "gfx/interface/goals/MUR_support_government_media.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_MUR_restrict_opposition_channels"
+	texturefile = "gfx/interface/goals/MUR_restrict_opposition_channels.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_MUR_political_front"
+	texturefile = "gfx/interface/goals/MUR_political_front.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_DEL_relocate_divisions"
+	texturefile = "gfx/interface/goals/DEL_relocate_divisions.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_MUR_call_for_reservists"
+	texturefile = "gfx/interface/goals/MUR_call_for_reservists.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_MDR_end_price_control"
+	texturefile = "gfx/interface/goals/MDR_end_price_control.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_DEL_military_branch"
+	texturefile = "gfx/interface/goals/DEL_military_branch.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_DEL_nationalize_assets"
+	texturefile = "gfx/interface/goals/DEL_nationalize_assets.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_DEL_economic_branch"
+	texturefile = "gfx/interface/goals/DEL_economic_branch.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_DEL_delta_navy"
+	texturefile = "gfx/interface/goals/DEL_delta_navy.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_DEL_modernize_equipment"
+	texturefile = "gfx/interface/goals/DEL_modernize_equipment.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_DEL_fund_warlords"
+	texturefile = "gfx/interface/goals/DEL_fund_warlords.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_DEL_military_university"
+	texturefile = "gfx/interface/goals/DEL_military_university.png"
+	}
+	
+	SpriteType = {
+	name = "GFX_DEL_land_force"
+	texturefile = "gfx/interface/goals/DEL_land_force.png"
+	}
+	
+	SpriteType = {
 	name = "GFX_DEL_control_economy"
 	texturefile = "gfx/interface/goals/DEL_control_economy.png"
 	}

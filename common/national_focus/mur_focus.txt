@@ -46,7 +46,7 @@ focus_tree = {
 
 	focus = {
 		id = MUR_preparation_for_war
-		icon = GFX_MUR_failing_empire
+		icon = GFX_DEL_orphegan_incident
 		x = 19
 		y = 1
 
@@ -82,7 +82,7 @@ focus_tree = {
 
 	focus = {
 		id = MUR_call_for_reservists
-		icon = GFX_MUR_failing_empire
+		icon = GFX_MUR_call_for_reservists
 		x = 19
 		y = 3
 		prerequisite = { focus = MUR_preparation_for_war }
@@ -118,7 +118,7 @@ focus_tree = {
 
 	focus = {
 		id = MUR_relocate_divisions
-		icon = GFX_MUR_failing_empire
+		icon = GFX_DEL_relocate_divisions
 		x = 17
 		y = 3
 		prerequisite = { focus = MUR_preparation_for_war }
@@ -151,7 +151,7 @@ focus_tree = {
 
 	focus = {
 		id = MUR_sabotage_ports
-		icon = GFX_MUR_failing_empire
+		icon = GFX_goal_unknown
 		x = 21
 		y = 3
 		prerequisite = { focus = MUR_preparation_for_war }
@@ -460,7 +460,7 @@ focus_tree = {
 
 	focus = {
 		id = MUR_make_prisoners_work
-		icon = GFX_MUR_eastern_threat
+		icon = GFX_goal_unknown
 		x = 10
 		y = 7
 		prerequisite = { focus = MUR_fund_rural_sectors }
@@ -490,7 +490,7 @@ focus_tree = {
 
 	focus = {
 		id = MUR_political_front
-		icon = GFX_MUR_eastern_threat
+		icon = GFX_MUR_political_front
 		x = 10
 		y = 9
 		prerequisite = { focus = MUR_make_prisoners_work }
@@ -525,7 +525,7 @@ focus_tree = {
 
 	focus = {
 		id = MUR_expose_corruption_in_opposition
-		icon = GFX_MUR_eastern_threat
+		icon = GFX_goal_unknown
 		x = 10
 		y = 11
 		prerequisite = { focus = MUR_political_front }
@@ -556,7 +556,7 @@ focus_tree = {
 
 	focus = {
 		id = MUR_restrict_opposition_media
-		icon = GFX_MUR_eastern_threat
+		icon = GFX_MUR_restrict_opposition_channels
 		x = 8
 		y = 11
 		prerequisite = { focus = MUR_political_front }
@@ -587,7 +587,7 @@ focus_tree = {
 
 	focus = {
 		id = MUR_fund_government_media
-		icon = GFX_MUR_eastern_threat
+		icon = GFX_MUR_support_government_media
 		x = 12
 		y = 11
 		prerequisite = { focus = MUR_political_front }

@@ -1,9 +1,13 @@
 ﻿l_english:
  CEN_internal_affairs_tt: "§GWe must stabilize our country§!"
- MUR_striking_partisans_tt: "§GWe gonna conduct airstrikes on partisans§!"
+ MUR_striking_partisans_tt: "§YWe gonna conduct airstrikes on partisans§!"
  CEN_talks_with_populist_tt: "With these talks, the protest should end once and for all."
  DEL_weak_opposition_tt: "§GOpposition will get weaker because of this§!"
  DEL_police_tt: "§GPolice will be ready if protests escalate§!"
  army_will_be_stronge_tt: "§GArmy will be stronger§!"
  economy_will_get_better: "§GEconomy will get better§!"
- SHU_centralia_might_be_angry: "Centralia might get angry!"
+ SHU_centralia_might_be_angry: "§RCentralia Might Get Angry!§!"
+ generic_unlocks_new_focus_branch: "§GUnlocked the New Focus Branch!§!"
+ generic_mechanism_will_be_in_next_update:0 "MECHANISM WILL BE ADDED IN THE NEXT UPDATE!"
+ 
+ DEMETRE_sorry_this_is_for_next_update:0 "Demetre: SORRY THIS IS FOR THE NEXT UPDATE!"

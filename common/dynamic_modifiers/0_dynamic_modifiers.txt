@@ -1,4 +1,15 @@
 
+DEL_land_foce = { #NATIONAL SPIRIT
+    enable = { always = yes }
+    icon = GFX_idea_UNI_weak_military_idea
+
+    army_attack_factor = DEL_lf_army_attack_factor
+    army_defence_factor = DEL_lf_army_defence_factor
+	army_speed_factor = DEL_lf_army_speed_factor
+    army_org_factor = DEL_lf_army_org_factor
+	training_time_factor = DEL_lf_training_time_factor
+}
+
 UNI_weak_military = { #NATIONAL SPIRIT
     enable = { always = yes }
     icon = GFX_idea_UNI_weak_military_idea

@@ -11,6 +11,21 @@ spriteTypes = {
 	}
 	
 	spriteType = {
+		name = "GFX_idea_DEL_naval_race_MUR"
+		texturefile = "gfx/interface/ideas/DEL_naval_race_MUR.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_DEL_youth_wing"
+		texturefile = "gfx/interface/ideas/DEL_youth_wing.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_DEL_deadlocked_parliament"
+		texturefile = "gfx/interface/ideas/DEL_deadlocked_parliament.png"
+	}
+	
+	spriteType = {
 		name = "GFX_idea_CEN_coorporate_partnerships"
 		texturefile = "gfx/interface/ideas/CEN_coorporate_partnerships.png"
 	}
@@ -344,6 +359,24 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_deadlocked_parliament_desc_photo"
 		textureFile = "/gfx/interface/ideas/deadlocked_parliament_desc_photo.png"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_idea_deserters_issue_desc_photo"
+		textureFile = "/gfx/interface/ideas/deserters_issue_desc_photo.png"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_idea_youth_wing_desc_photo"
+		textureFile = "/gfx/interface/ideas/youth_wing_desc_photo.png"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_idea_naval_race_desc_photo"
+		textureFile = "/gfx/interface/ideas/naval_race_desc_photo.png"
 		legacy_lazy_load = no
 	}
 	

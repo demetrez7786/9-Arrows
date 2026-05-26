@@ -4,7 +4,7 @@ bookmarks = {
 		desc = "AFTERMATH_OF_THE_STORM_DESC"
 		date = 3172.1.1.12
 		picture = "GFX_select_date_3172"
-		default_country = "MUR"
+		default_country = "UNI"
 		default = yes
 		
 		"CEN"={
@@ -17,19 +17,21 @@ bookmarks = {
 			}
 			focuses = {
 				CEN_last_bastion_of_democracy
-				CEN_the_eagles_status
 				CEN_upcoming_elections
 			}
 		}
 		
 		"SHU"={
 			history = "SHU_AFTERMATH_OF_THE_STORM_DESC"
-			ideology = authoritarianism
+			ideology = nationalism
 			ideas = {
-				
+				SHU_treaty_of_zugdad
+				SHU_military_opposition
+				SHU_cariland_war
 			}
 			focuses = {
-				
+				SHU_remilitarize_cariland
+				SHU_anschluss
 			}
 		}
 		
@@ -54,14 +56,13 @@ bookmarks = {
 			}
 			focuses = {
 				UNI_aftermath_of_karlt_wars
-				UNI_begin_the_work
 				UNI_this_is_not_working
 			}
 		}
 		
 		"MUR"={
 			history = "MUR_AFTERMATH_OF_THE_STORM_DESC"
-			ideology = monarchist
+			ideology = monarchism
 			ideas = {
 				MUR_failing_empire
 				MUR_separatists_movements
@@ -70,7 +71,6 @@ bookmarks = {
 			focuses = {
 				MUR_the_failing_empire
 				MUR_counter_communist_sympatizers
-				MUR_failing_economy
 			}
 		}
 		
@@ -83,7 +83,8 @@ bookmarks = {
 				DEL_deserters_issue
 			}
 			focuses = {
-				
+				del_incident_in_orphegan
+				del_rumors_of_uprisings
 			}
 		}
 		

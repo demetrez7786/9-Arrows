@@ -18,6 +18,71 @@ division_template = {
 	}
 }
 
+division_template = {
+	name = "National Guard Division"
+	division_names_group = DEL_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+        infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		artillery_line = { x = 3 y = 0 }
+		artillery_line = { x = 3 y = 1 }
+	}
+	support = {
+       	engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Motorized Division"
+	division_names_group = DEL_MOT_01
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+        motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+        motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+	}
+	support = {
+       	engineer = { x = 0 y = 0 }
+		mot_recon = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Tank Division"
+	division_names_group = DEL_ARM_01
+
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+		light_armor = { x = 0 y = 2 }
+        light_armor = { x = 1 y = 0 }
+		light_armor = { x = 1 y = 1 }
+		light_armor = { x = 1 y = 2 }
+        light_armor = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+	}
+	support = {
+       	engineer = { x = 0 y = 0 }
+		mot_recon = { x = 0 y = 0 }
+	}
+}
+
 units = {
 	division= {
 		division_name = {
@@ -44,7 +109,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 3
 		}
-		location = 3187
+		location = 5835
 		division_template = "Infantry Division"
 		start_experience_factor = 0.5
 	}
@@ -54,7 +119,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 4
 		}
-		location = 3187
+		location = 5835
 		division_template = "Infantry Division"
 		start_experience_factor = 0.5
 	}
@@ -64,7 +129,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 5
 		}
-		location = 3187
+		location = 9043
 		division_template = "Infantry Division"
 		start_experience_factor = 0.5
 	}
@@ -74,7 +139,77 @@ units = {
 			is_name_ordered = yes
 			name_order = 6
 		}
-		location = 3187
+		location = 8816
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 4800
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location = 4800
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 2947
+		division_template = "Motorized Division"
+		start_experience_factor = 0.5
+	}
+	
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 2947
+		division_template = "Motorized Division"
+		start_experience_factor = 0.5
+	}
+	
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 2947
+		division_template = "Tank Division"
+		start_experience_factor = 0.5
+	}
+	
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 2947
+		division_template = "Tank Division"
+		start_experience_factor = 0.5
+	}
+	
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 9
+		}
+		location = 7561
 		division_template = "Infantry Division"
 		start_experience_factor = 0.5
 	}

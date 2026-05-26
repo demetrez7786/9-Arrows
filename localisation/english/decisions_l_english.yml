@@ -4,6 +4,7 @@
  DEL_protest_escalating:0 "Protest Escalating"
  DEL_negotiations:0 "Negotiations"
  DEL_negotiations_desc:0 "We must de-escalate to avoid another war. \n\n §7Progress:§! [?DEL_progress|.01%%+]"
+ DEL_hunt_communists_cat:0 "Hunt Communists"
  
  MUR_negotiations:0 "Negotiations"
  MUR_negotiations_desc:0 "We must de-escalate to avoid another war. \n\n §7Progress:§! [?MUR_progress|.01%%+]"

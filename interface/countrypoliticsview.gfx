@@ -565,6 +565,11 @@ spriteTypes = {
 	}
 	
 	spriteType = {
+		name = "GFX_ideology_gun_socity"
+		texturefile = "gfx/interface/ideologies/gun_socity.png"
+	}
+	
+	spriteType = {
 		name = "GFX_ideology_democrats_party"
 		texturefile = "gfx/interface/ideologies/democrats_party.png"
 	}

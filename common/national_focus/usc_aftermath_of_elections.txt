@@ -100,7 +100,7 @@ focus_tree = {
         icon = GFX_CEN_set_up_border_defence
         x = 2
         y = 3
-        cost = 10
+        cost = 20
         available_if_capitulated = yes
         cancel_if_invalid = yes
         continue_if_invalid = no
@@ -335,7 +335,10 @@ focus_tree = {
             factor = 1
         }
         completion_reward = {
+            custom_effect_tooltip = CEN_we_will_reach_populists_for_alliance
+            hidden_effect = {
             country_event = { id = centralia.8 }
+            }
         }
     }
 
@@ -943,7 +946,7 @@ focus_tree = {
             factor = 1
         }
         completion_reward = {
-            custom_modifier_tooltip = CEN_counter_terrorism_tt
+            
         }
     }
 
@@ -962,7 +965,7 @@ focus_tree = {
             factor = 1
         }
         completion_reward = {
-            custom_modifier_tooltip = CEN_counter_terrorism_tt
+            
         }
     }
 
@@ -981,7 +984,7 @@ focus_tree = {
             factor = 1
         }
         completion_reward = {
-            custom_modifier_tooltip = CEN_counter_terrorism_tt
+            
         }
     }
 
@@ -1057,7 +1060,7 @@ focus_tree = {
             factor = 1
         }
         completion_reward = {
-            add_ideas = restricted_borders
+            remove_ideas = CEN_populists_riots
         }
     }
 

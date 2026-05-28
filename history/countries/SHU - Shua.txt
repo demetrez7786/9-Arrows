@@ -53,12 +53,3 @@ add_ideas = {
 }
 
 recruit_character = SHU_kaiser_vaxen
-recruit_character = SHU_august_von_oldenburg
-recruit_character = SHU_friedrich_von_hindenburg_schleyer
-recruit_character = SHU_lothar_von_wettin
-recruit_character = SHU_karl_ludwig_von_wittelsbach
-recruit_character = SHU_von_falken
-recruit_character = SHU_richter
-recruit_character = SHU_elara
-recruit_character = SHU_brandt
-recruit_character = SHU_oberst_lutz

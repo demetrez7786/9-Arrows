@@ -78,6 +78,7 @@ country_event = {
 		activate_mission = CEN_incoming_elections
 		set_country_flag = CEN_democrats_won_again
 		set_country_flag = CEN_campaign_for_election
+		unlock_decision_category_tooltip = CEN_election_cat
 	}
 	
 	option = {
@@ -85,6 +86,7 @@ country_event = {
 		activate_mission = CEN_incoming_elections
 		set_country_flag = CEN_populists_won_the_election
 		set_country_flag = CEN_campaign_for_election
+		unlock_decision_category_tooltip = CEN_election_cat
 	}
 	
 	option = {
@@ -92,6 +94,7 @@ country_event = {
 		activate_mission = CEN_incoming_elections
 		set_country_flag = CEN_republicans_finally_won
 		set_country_flag = CEN_campaign_for_election
+		unlock_decision_category_tooltip = CEN_election_cat
 	}
 }
 

@@ -4,6 +4,211 @@ spriteTypes = {
 		name = "GFX_idea_porsche"
 		texturefile = "gfx/interface/ideas/porsche.png"
 	}
+	
+	spriteType = {
+		name = "GFX_idea_christianity"
+		texturefile = "gfx/interface/ideas/christianity.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_volunteer_only"
+		texturefile = "gfx/interface/ideas/volunteer_only.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_disarmed_nation"
+		texturefile = "gfx/interface/ideas/disarmed_nation.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_no_women"
+		texturefile = "gfx/interface/ideas/no_women.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_volunteer_service"
+		texturefile = "gfx/interface/ideas/volunteer_service.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_mandatory_service"
+		texturefile = "gfx/interface/ideas/mandatory_service.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_the_free_media"
+		texturefile = "gfx/interface/ideas/the_free_media.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_mixed_media"
+		texturefile = "gfx/interface/ideas/mixed_media.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_only_government_approved"
+		texturefile = "gfx/interface/ideas/only_government_approved.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_secularism"
+		texturefile = "gfx/interface/ideas/secularism.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_judaism"
+		texturefile = "gfx/interface/ideas/judaism.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_islam"
+		texturefile = "gfx/interface/ideas/islam.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_state_atheism"
+		texturefile = "gfx/interface/ideas/state_atheism.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_open_borders"
+		texturefile = "gfx/interface/ideas/open_borders.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_restricted_borders"
+		texturefile = "gfx/interface/ideas/restricted_borders.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_closed_borders"
+		texturefile = "gfx/interface/ideas/closed_borders.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_very_low_education_spending"
+		texturefile = "gfx/interface/ideas/very_low_education_spending.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_low_education_spending"
+		texturefile = "gfx/interface/ideas/low_education_spending.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_normal_education_spending"
+		texturefile = "gfx/interface/ideas/normal_education_spending.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_high_education_spending"
+		texturefile = "gfx/interface/ideas/high_education_spending.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_very_high_education_spending"
+		texturefile = "gfx/interface/ideas/very_high_education_spending.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_very_low_healthcare_spending"
+		texturefile = "gfx/interface/ideas/very_low_healthcare_spending.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_low_healthcare_spending"
+		texturefile = "gfx/interface/ideas/low_healthcare_spending.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_normal_healthcare_spending"
+		texturefile = "gfx/interface/ideas/normal_healthcare_spending.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_high_healthcare_spending"
+		texturefile = "gfx/interface/ideas/high_healthcare_spending.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_very_high_healthcare_spending"
+		texturefile = "gfx/interface/ideas/very_high_healthcare_spending.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_very_low_security_spending"
+		texturefile = "gfx/interface/ideas/very_low_security_spending.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_low_security_spending"
+		texturefile = "gfx/interface/ideas/low_security_spending.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_normal_security_spending"
+		texturefile = "gfx/interface/ideas/normal_security_spending.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_high_security_spending"
+		texturefile = "gfx/interface/ideas/high_security_spending.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_very_high_security_spending"
+		texturefile = "gfx/interface/ideas/very_high_security_spending.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_very_low_administration_spending"
+		texturefile = "gfx/interface/ideas/very_low_administration_spending.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_low_administration_spending"
+		texturefile = "gfx/interface/ideas/low_administration_spending.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_normal_administration_spending"
+		texturefile = "gfx/interface/ideas/normal_administration_spending.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_high_administration_spending"
+		texturefile = "gfx/interface/ideas/high_administration_spending.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_very_high_administration_spending"
+		texturefile = "gfx/interface/ideas/very_high_administration_spending.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_low_military_spending"
+		texturefile = "gfx/interface/ideas/low_military_spending.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_very_low_military_spending"
+		texturefile = "gfx/interface/ideas/very_low_military_spending.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_very_high_military_spending"
+		texturefile = "gfx/interface/ideas/very_high_military_spending.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_high_military_spending"
+		texturefile = "gfx/interface/ideas/high_military_spending.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_normal_military_spending"
+		texturefile = "gfx/interface/ideas/normal_military_spending.png"
+	}
 
     spriteType = {
 		name = "GFX_idea_traits_strip"
